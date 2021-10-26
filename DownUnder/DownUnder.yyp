@@ -1,7 +1,11 @@
 {
   "resources": [
+    {"id":{"name":"o_cam_test","path":"objects/o_cam_test/o_cam_test.yy",},"order":1,},
+    {"id":{"name":"o_mouse","path":"objects/o_mouse/o_mouse.yy",},"order":2,},
     {"id":{"name":"o_camera","path":"objects/o_camera/o_camera.yy",},"order":0,},
+    {"id":{"name":"spr_tiles","path":"sprites/spr_tiles/spr_tiles.yy",},"order":0,},
     {"id":{"name":"ro_ini","path":"rooms/ro_ini/ro_ini.yy",},"order":1,},
+    {"id":{"name":"o_fish","path":"objects/o_fish/o_fish.yy",},"order":3,},
     {"id":{"name":"ro_start_screen","path":"rooms/ro_start_screen/ro_start_screen.yy",},"order":2,},
     {"id":{"name":"ro_game","path":"rooms/ro_game/ro_game.yy",},"order":0,},
   ],
@@ -25,9 +29,9 @@
     "children": [],
   },
   "RoomOrderNodes": [
+    {"roomId":{"name":"ro_game","path":"rooms/ro_game/ro_game.yy",},},
     {"roomId":{"name":"ro_ini","path":"rooms/ro_ini/ro_ini.yy",},},
     {"roomId":{"name":"ro_start_screen","path":"rooms/ro_start_screen/ro_start_screen.yy",},},
-    {"roomId":{"name":"ro_game","path":"rooms/ro_game/ro_game.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},

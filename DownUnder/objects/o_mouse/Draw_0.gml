@@ -1,0 +1,1 @@
+draw_circle_color(mouse_x,mouse_y,5,c_red,c_red,false);
