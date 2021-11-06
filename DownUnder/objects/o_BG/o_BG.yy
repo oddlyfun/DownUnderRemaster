@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_background",
-    "path": "sprites/spr_background/spr_background.yy",
+    "name": "Full_Area",
+    "path": "sprites/Full_Area/Full_Area.yy",
   },
   "solid": false,
   "visible": true,

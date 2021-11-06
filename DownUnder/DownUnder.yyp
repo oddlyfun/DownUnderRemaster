@@ -2,7 +2,7 @@
   "resources": [
     {"id":{"name":"odell_tile_8","path":"sprites/odell_tile_8/odell_tile_8.yy",},"order":1,},
     {"id":{"name":"odell_tile_1","path":"sprites/odell_tile_1/odell_tile_1.yy",},"order":6,},
-    {"id":{"name":"o_testBox","path":"objects/o_testBox/o_testBox.yy",},"order":4,},
+    {"id":{"name":"o_test","path":"objects/o_test/o_test.yy",},"order":4,},
     {"id":{"name":"spr_background","path":"sprites/spr_background/spr_background.yy",},"order":10,},
     {"id":{"name":"odell_tile_7","path":"sprites/odell_tile_7/odell_tile_7.yy",},"order":3,},
     {"id":{"name":"odell_tile_2","path":"sprites/odell_tile_2/odell_tile_2.yy",},"order":5,},
@@ -15,6 +15,7 @@
     {"id":{"name":"ro_ini","path":"rooms/ro_ini/ro_ini.yy",},"order":1,},
     {"id":{"name":"o_fish","path":"objects/o_fish/o_fish.yy",},"order":3,},
     {"id":{"name":"odell_tile_9","path":"sprites/odell_tile_9/odell_tile_9.yy",},"order":2,},
+    {"id":{"name":"Full_Area","path":"sprites/Full_Area/Full_Area.yy",},"order":11,},
     {"id":{"name":"ro_start_screen","path":"rooms/ro_start_screen/ro_start_screen.yy",},"order":2,},
     {"id":{"name":"odell_tile_4","path":"sprites/odell_tile_4/odell_tile_4.yy",},"order":8,},
     {"id":{"name":"odell_tile_6","path":"sprites/odell_tile_6/odell_tile_6.yy",},"order":4,},

@@ -1,30 +1,30 @@
 var _inst = instance_nearest(0,0,o_fish);
 
 var _camx = camera_get_view_x(view_camera[0]);
-var _camy = camera_get_view_y(view_camera[1]);
+var _camy = camera_get_view_y(view_camera[0]);
 
 var _dist_left = mouse_x - _camx;
 var _dist_right = abs(mouse_x - (_camx + view_width));
+var _dist_top = abs(mouse_y - (_camy));
+var _dist_bottom = abs(mouse_y - (_camy + view_height));
 
-//show_debug_message(_camx);
+var _vx = _camx;
+var _vy = _camy;
 
-var _vy = clamp(_camy,0, room_height - view_height );
 
 if ( _dist_left <= 50 )
 {
-
-	
 	if (_camx < -abs(view_width/2) )
 	{
 		var _temp = room_width + _camx;
 		_inst.x = _inst.x + room_width;
-		camera_set_view_pos(view_camera[0],_temp,_vy);
+		_vx = _temp;
 	} else
 	{
-		camera_set_view_pos(view_camera[0],_camx - cam_speed,_vy);
+		_vx = _camx - cam_speed;
 	}
-	
 }
+
 
 if ( _dist_right <= 50 )
 {
@@ -33,9 +33,25 @@ if ( _dist_right <= 50 )
 	{
 		var _temp = _camx - room_width;
 		_inst.x = _inst.x - room_width;
-		camera_set_view_pos(view_camera[0],_temp,_vy);
+		_vx = _temp;
 	} else
 	{
-		camera_set_view_pos(view_camera[0],_camx + cam_speed,_vy);
+		_vx = _camx + cam_speed;
 	}
 }
+
+
+if ( _dist_top <= 50 )
+{
+	_vy = _camy - cam_speed;
+}
+
+if ( _dist_bottom <= 50 )
+{
+	_vy = _camy + cam_speed;
+}
+
+
+
+_vy = clamp(_vy,0, room_height - view_height );
+camera_set_view_pos(view_camera[0],_vx,_vy);
