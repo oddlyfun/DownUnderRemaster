@@ -1,4 +1,4 @@
-var _inst = instance_nearest(0,0,o_fish);
+var _inst = instance_nearest(0,0,o_player_fish);
 
 var _camx = camera_get_view_x(view_camera[0]);
 var _camy = camera_get_view_y(view_camera[0]);

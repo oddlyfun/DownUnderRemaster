@@ -5,7 +5,6 @@
   "resources": [
     {"id":{"name":"odell_tile_8","path":"sprites/odell_tile_8/odell_tile_8.yy",},"order":1,},
     {"id":{"name":"odell_tile_1","path":"sprites/odell_tile_1/odell_tile_1.yy",},"order":6,},
-    {"id":{"name":"o_test","path":"objects/o_test/o_test.yy",},"order":4,},
     {"id":{"name":"spr_background","path":"sprites/spr_background/spr_background.yy",},"order":10,},
     {"id":{"name":"odell_tile_7","path":"sprites/odell_tile_7/odell_tile_7.yy",},"order":3,},
     {"id":{"name":"odell_tile_2","path":"sprites/odell_tile_2/odell_tile_2.yy",},"order":5,},
@@ -16,10 +15,12 @@
     {"id":{"name":"o_BG","path":"objects/o_BG/o_BG.yy",},"order":1,},
     {"id":{"name":"odell_tile_3","path":"sprites/odell_tile_3/odell_tile_3.yy",},"order":7,},
     {"id":{"name":"ro_ini","path":"rooms/ro_ini/ro_ini.yy",},"order":1,},
-    {"id":{"name":"o_fish","path":"objects/o_fish/o_fish.yy",},"order":3,},
+    {"id":{"name":"o_player_fish","path":"objects/o_player_fish/o_player_fish.yy",},"order":3,},
+    {"id":{"name":"o_game_master","path":"objects/o_game_master/o_game_master.yy",},"order":2,},
     {"id":{"name":"odell_tile_9","path":"sprites/odell_tile_9/odell_tile_9.yy",},"order":2,},
     {"id":{"name":"Full_Area","path":"sprites/Full_Area/Full_Area.yy",},"order":11,},
     {"id":{"name":"ro_start_screen","path":"rooms/ro_start_screen/ro_start_screen.yy",},"order":2,},
+    {"id":{"name":"o_fish_parent","path":"objects/o_fish_parent/o_fish_parent.yy",},"order":0,},
     {"id":{"name":"odell_tile_4","path":"sprites/odell_tile_4/odell_tile_4.yy",},"order":8,},
     {"id":{"name":"odell_tile_6","path":"sprites/odell_tile_6/odell_tile_6.yy",},"order":4,},
     {"id":{"name":"ro_game","path":"rooms/ro_game/ro_game.yy",},"order":0,},
@@ -53,6 +54,10 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Notes","folderPath":"folders/Notes.yy","order":13,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Objects","folderPath":"folders/Objects.yy","order":9,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Controllers","folderPath":"folders/Objects/Controllers.yy","order":1,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Lifeforms","folderPath":"folders/Objects/Lifeforms.yy","order":5,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Fish Food","folderPath":"folders/Objects/Lifeforms/Fish Food.yy","order":3,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Playable Fish","folderPath":"folders/Objects/Lifeforms/Playable Fish.yy","order":1,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Static","folderPath":"folders/Objects/Lifeforms/Static.yy","order":2,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Paths","folderPath":"folders/Paths.yy","order":4,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Rooms","folderPath":"folders/Rooms.yy","order":10,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Scripts","folderPath":"folders/Scripts.yy","order":5,},
@@ -69,7 +74,9 @@
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","isScaled":true,"compressFormat":"bz2","loadType":"default","directory":"","autocrop":true,"border":2,"mipsToGenerate":0,"groupParent":null,"targets":-1,},
   ],
-  "IncludedFiles": [],
+  "IncludedFiles": [
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"sea_life.json","CopyToMask":3035426170322551022,"filePath":"datafiles",},
+  ],
   "MetaData": {
     "IDEVersion": "2022.0.0.19",
   },
