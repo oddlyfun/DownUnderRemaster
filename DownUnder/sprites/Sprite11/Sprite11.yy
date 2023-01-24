@@ -68,7 +68,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "DownUnder",
-    "path": "DownUnder.yyp",
+    "name": "Sprites",
+    "path": "folders/Sprites.yy",
   },
 }

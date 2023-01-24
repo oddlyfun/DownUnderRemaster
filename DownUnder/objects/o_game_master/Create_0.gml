@@ -9,3 +9,9 @@ if ( file_exists(global.all_life_json_filename))
 	
 	global.all_life = json_parse(_string);
 }
+
+
+#macro WARN = "warning";
+#macro INFO = "info";
+#macro ERROR = "error";
+global.message_q = ds_queue_create();
