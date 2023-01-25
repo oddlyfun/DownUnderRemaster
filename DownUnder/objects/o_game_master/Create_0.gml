@@ -1,3 +1,4 @@
+randomize();
 // loading the sea life json data
 global.all_life = undefined;
 global.all_life_json_filename = "sea_life.json";
