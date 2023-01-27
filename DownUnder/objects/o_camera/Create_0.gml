@@ -14,6 +14,7 @@ global.main_camera = camera_create_view(0,0,view_width,view_height);
 
 var _i = 0;
 
+
 while( room_exists(_i) )
 {
 	room_set_view_enabled(_i,true);

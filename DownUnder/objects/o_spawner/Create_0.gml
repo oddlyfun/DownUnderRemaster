@@ -4,4 +4,5 @@ spawn_list = ds_list_create();
 spawn_id_list = ds_list_create();
 
 max_spawns = 1;
-seconds_between_spawns = 60;
+
+alarm_set(0,1);

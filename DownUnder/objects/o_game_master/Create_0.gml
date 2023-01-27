@@ -1,8 +1,12 @@
 randomize();
+game_set_speed(60, gamespeed_fps);
+
 window_set_cursor(cr_none);
 // loading the sea life json data
 global.all_life = undefined;
 global.all_life_json_filename = "sea_life.json";
+
+global.player_fish_id = 1;
 
 if ( file_exists(global.all_life_json_filename))
 {

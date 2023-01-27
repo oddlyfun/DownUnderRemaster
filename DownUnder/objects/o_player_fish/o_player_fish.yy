@@ -11,7 +11,10 @@
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "o_sea_life",
+    "path": "objects/o_sea_life/o_sea_life.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
