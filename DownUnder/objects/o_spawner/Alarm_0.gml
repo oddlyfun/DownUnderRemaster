@@ -18,7 +18,7 @@ var _right_x = _cam_x + room_width;
 var _right_cam = collision_rectangle(_right_x, _cam_y, _right_x + _cam_w, _cam_h + _cam_y, id, false, false);
 
 
-if ( _center_cam == false and _left_cam == false and _right_cam == false )
+if ( _center_cam == noone and _left_cam == noone and _right_cam == noone )
 {
 	// adds a spawn to its list if it has space
 	if (ds_list_size(spawn_list) < max_spawns)
@@ -52,6 +52,8 @@ if ( _center_cam == false and _left_cam == false and _right_cam == false )
 			my_scientific_name		: _fish.scientific_name
 			
 		});
+		
+		//show_debug_message("Fish Spawn");
 		
 		ds_list_add(spawn_list,_inst);
 	}

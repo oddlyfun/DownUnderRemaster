@@ -4,6 +4,9 @@ cam_speed = 4;
 view_width = 640; 
 view_height = 360; 
 
+pad_x = 160;
+pad_y = 120;
+
 display_set_gui_size(640,360);  
 
 
