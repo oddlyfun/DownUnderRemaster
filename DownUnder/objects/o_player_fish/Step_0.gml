@@ -2,19 +2,17 @@ direction = point_direction(x,y,mouse_x,mouse_y);
 
 var _dist = floor(distance_to_point(mouse_x,mouse_y));
 
+var _energy_redux = energy_rate;
 
 if ( _dist <= max_speed ){
 	speed = 0;
+	_energy_redux = energy_rate * 0.01;
+	
 } else
 {
 	speed = max_speed;
+	_energy_redux = energy_rate * 0.05;
 }
 
 
-
-//var _view_x = camera_get_view_x(global.main_camera);
-//var _view_y = camera_get_view_y(global.main_camera);
-//var _view_w = camera_get_view_width(global.main_camera);
-//var _view_h = camera_get_view_height(global.main_camera);
-
-
+my_energy = my_energy - _energy_redux;

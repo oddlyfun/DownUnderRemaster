@@ -3,6 +3,7 @@
   "resourceVersion": "1.6",
   "name": "DownUnder",
   "resources": [
+    {"id":{"name":"spr_overlay","path":"sprites/spr_overlay/spr_overlay.yy",},"order":6,},
     {"id":{"name":"odell_tile_8","path":"sprites/odell_tile_8/odell_tile_8.yy",},"order":8,},
     {"id":{"name":"o_cam_help","path":"objects/o_cam_help/o_cam_help.yy",},"order":5,},
     {"id":{"name":"odell_tile_1","path":"sprites/odell_tile_1/odell_tile_1.yy",},"order":1,},
@@ -34,6 +35,7 @@
     {"id":{"name":"spr_blank","path":"sprites/spr_blank/spr_blank.yy",},"order":2,},
     {"id":{"name":"spr_popup","path":"sprites/spr_popup/spr_popup.yy",},"order":0,},
     {"id":{"name":"fnt_small","path":"fonts/fnt_small/fnt_small.yy",},"order":1,},
+    {"id":{"name":"o_overlay","path":"objects/o_overlay/o_overlay.yy",},"order":2,},
     {"id":{"name":"odell_tile_6","path":"sprites/odell_tile_6/odell_tile_6.yy",},"order":6,},
     {"id":{"name":"ro_game","path":"rooms/ro_game/ro_game.yy",},"order":0,},
   ],

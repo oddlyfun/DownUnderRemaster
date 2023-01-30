@@ -12,3 +12,10 @@ NUM_OF_BLOCKS = 30;
 // energy green
 // r: 104, g: 247, b: 72
 ENERGY_COLOR = make_color_rgb(104,247,72);
+
+WARN_COLOR = make_color_rgb(255,247,8);
+BAD_COLOR = make_color_rgb(247,40,8);
+
+
+WARNING_THRESH = 45;
+BAD_THRESH = 12;

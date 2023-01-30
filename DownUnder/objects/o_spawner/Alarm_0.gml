@@ -9,16 +9,16 @@ var _cam_h = camera_get_view_height(view_camera[0]);
 
 
 // Normal
-var _center_cam = collision_rectangle(_cam_x, _cam_y, _cam_x + _cam_w, _cam_h + _cam_y, id, false, false);
+var _center_cam = place_meeting(x, y, o_overlay);
 //if the camera is on the left side
-var _left_x = _cam_x - room_width;
-var _left_cam = collision_rectangle(_left_x, _cam_y, _left_x + _cam_w, _cam_h + _cam_y, id, false, false);
+var _left_x = x - room_width;
+var _left_cam = place_meeting(_left_x, y, o_overlay);
+// from the right 
+var _right_x = x + room_width;
+var _right_cam = place_meeting(_right_x, y, o_overlay);
 
-var _right_x = _cam_x + room_width;
-var _right_cam = collision_rectangle(_right_x, _cam_y, _right_x + _cam_w, _cam_h + _cam_y, id, false, false);
 
-
-if ( _center_cam == noone and _left_cam == noone and _right_cam == noone )
+if ( _center_cam == false and _left_cam == false and _right_cam == false )
 {
 	// adds a spawn to its list if it has space
 	if (ds_list_size(spawn_list) < max_spawns)

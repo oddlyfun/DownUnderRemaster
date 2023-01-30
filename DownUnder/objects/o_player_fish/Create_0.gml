@@ -1,11 +1,14 @@
 max_speed = 4;
 
+
 var _fish = variable_struct_get(global.all_life, string(global.player_fish_id) );
 
 fish_id = global.player_fish_id;
 sprite_index = spr_guppy;
 
+HEALTH_RATE_TICK = room_speed * 0.75;
 
+alarm_set(0,HEALTH_RATE_TICK);
 
 fish_name				= _fish.full_name;
 fish_size				= _fish.size;

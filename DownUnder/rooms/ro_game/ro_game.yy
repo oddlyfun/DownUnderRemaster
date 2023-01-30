@@ -18,6 +18,7 @@
   "layers": [
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"UI","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5455416F","properties":[],"isDnd":false,"objectId":{"name":"o_gui","path":"objects/o_gui/o_gui.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":0.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1D72A52A","properties":[],"isDnd":false,"objectId":{"name":"o_overlay","path":"objects/o_overlay/o_overlay.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":32.0,"y":0.0,},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4760D62E","properties":[],"isDnd":false,"objectId":{"name":"o_mouse","path":"objects/o_mouse/o_mouse.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":64.0,"y":64.0,},
@@ -43,6 +44,7 @@
     {"name":"inst_57D63082","path":"rooms/ro_game/ro_game.yy",},
     {"name":"inst_3D9E17E1","path":"rooms/ro_game/ro_game.yy",},
     {"name":"inst_5455416F","path":"rooms/ro_game/ro_game.yy",},
+    {"name":"inst_1D72A52A","path":"rooms/ro_game/ro_game.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

@@ -43,15 +43,70 @@ if ( _player != noone )
 	//draw filled blocks
 	
 	var _energy = _player.my_energy;
+	_stx = _hpbar_start_x;
+	_sty = _start_y + 2;
 	
 	_energy = _energy / 100;
 	var _total_block_size = (EMPTY_BLOCK_W * NUM_OF_BLOCKS);
 	var _block_energy = (_total_block_size) * _energy;
+	var _block_w = EMPTY_BLOCK_W;
 
+	var _c = c_white;
 	
+	draw_text(40,40, string(_block_energy));
+//*********************************************************************************
+//						Draw Energy Bars filled in
+//*********************************************************************************
+	_c = ENERGY_COLOR;
+	if ( _energy * 100 <= WARNING_THRESH ) then _c = WARN_COLOR;
+	if ( _energy * 100 <= BAD_THRESH ) then _c = BAD_COLOR;
 	
+	for ( var i = 0; i < NUM_OF_BLOCKS; i++ )
+	{
+		if ( _block_energy > ((i) * _block_w) )
+		{
+			draw_rectangle_color(_stx, _sty, _stx + EMPTY_BLOCK_W, _sty + EMPTY_BLOCK_H, _c, _c, _c, _c, false );
+			_stx = _stx + EMPTY_BLOCK_W + 2;			
+		}
+	}
+//*********************************************************************************
+//						Draw HP blocks filled in
+//*********************************************************************************
 	
-	
-	
+	_stx = _hpbar_start_x;
+	_sty = _start_y + 4 + EMPTY_BLOCK_H;
+	var _health = _player.my_health;
+	_health = _health / 100;
+	var _block_health = _total_block_size * _health;
+
+
+	_c = ENERGY_COLOR;
+	if ( _health * 100 <= WARNING_THRESH ) then _c = WARN_COLOR;
+	if ( _health * 100 <= BAD_THRESH ) then _c = BAD_COLOR;
+
+	for ( var i = 0; i < NUM_OF_BLOCKS; i++ )
+	{
+		if ( _block_health > ((i) * _block_w) )
+		{
+			draw_rectangle_color(_stx, _sty, _stx + EMPTY_BLOCK_W, _sty + EMPTY_BLOCK_H, _c, _c, _c, _c, false );
+			_stx = _stx + EMPTY_BLOCK_W + 2;			
+		}
+	}
 	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
