@@ -1,6 +1,6 @@
 frame = 0;
 
-cam_speed = 4;
+cam_vel = 0.1;
 view_width = 640; 
 view_height = 360; 
 
