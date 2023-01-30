@@ -6,15 +6,37 @@ var _player = instance_nearest(x,y,o_player_fish);
 // I want it to look like an old school game and have a basic bottom bar
 
 // bottom bar colors from Odell
+// Look at that its freakin grey!
 
 
 draw_rectangle_color(0, _start_y, _width, _height, BAR_BG, BAR_BG, BAR_BG,BAR_BG, false );
 draw_line_color(0, _start_y - 1, _width, _start_y - 1, c_black, c_black);
 
 
+//*********************************************************************************************************
+//
+//						'Info' text based on what you are hoving over. 
+//
+//*********************************************************************************************************
+var _info_message = "";
+var _hover_inst = instance_position( mouse_x, mouse_y, o_sea_life );
+// I don't want to see the player fish included. _player is a child of o_sea_life 
+if ( _hover_id != noone and _hover_id != _player )
+{
+	_info_message = _hover_inst.fish_name;
+
+	draw_set_font(fnt_game);
+	draw_set_color(c_black);
+	draw_text(4, _start_y + 2, _info_message);
+}
+
+//*********************************************************************************************************
+//
+//						Health and Energy bar of the player fish
+//
+//*********************************************************************************************************
 draw_set_font(fnt_small);
 draw_set_color(c_black);
-
 
 var _energy = "ENERGY: "
 var _health = "HEALTH: "
@@ -54,9 +76,10 @@ if ( _player != noone )
 	var _c = c_white;
 	
 	draw_text(40,40, string(_block_energy));
-//*********************************************************************************
-//						Draw Energy Bars filled in
-//*********************************************************************************
+	
+	//*********************************************************************************
+	//						Draw Energy Bars filled in
+	//*********************************************************************************
 	_c = ENERGY_COLOR;
 	if ( _energy * 100 <= WARNING_THRESH ) then _c = WARN_COLOR;
 	if ( _energy * 100 <= BAD_THRESH ) then _c = BAD_COLOR;
@@ -69,9 +92,9 @@ if ( _player != noone )
 			_stx = _stx + EMPTY_BLOCK_W + 2;			
 		}
 	}
-//*********************************************************************************
-//						Draw HP blocks filled in
-//*********************************************************************************
+	//*********************************************************************************
+	//						Draw HP blocks filled in
+	//*********************************************************************************
 	
 	_stx = _hpbar_start_x;
 	_sty = _start_y + 4 + EMPTY_BLOCK_H;
@@ -94,19 +117,3 @@ if ( _player != noone )
 	}
 	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
