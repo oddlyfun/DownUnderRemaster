@@ -8,7 +8,7 @@ x = _x;
 y = _y;
 image_xscale = _w;
 image_yscale = _h;
-image_alpha = 0.25;
+image_alpha = 0.0;
 
 
 draw_self();

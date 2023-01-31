@@ -24,7 +24,10 @@ if ( _inst.x >= _x_ ) {
 
 _x_ = _center_x - pad_x;
 if ( _inst.x <= _x_ ) {
-	_vx = _camx - (_x_ - _inst.x);
+	var _diff = _x_ - lerp(_x_, _inst.x, cam_vel);
+
+	_vx = _vx - _diff; 
+	_moving = true;
 }
 
 var _y_ = _center_y + pad_y;

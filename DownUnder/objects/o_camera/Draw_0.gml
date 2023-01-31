@@ -17,7 +17,7 @@ _x_ = _center_x - pad_x
 draw_line(_x_, 0, _x_, room_height);
 
 var _y_ = _center_y - pad_y
-draw_line(0, _y_, room_width, _y_);
+draw_line(_camx, _y_, _camx + room_width, _y_);
 
 _y_ = _center_y + pad_y
-draw_line(0, _y_, room_width, _y_);
+draw_line(_camx, _y_, _camx + room_width, _y_);

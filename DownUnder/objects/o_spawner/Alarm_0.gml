@@ -6,8 +6,6 @@ var _cam_w = camera_get_view_width(view_camera[0]);
 var _cam_h = camera_get_view_height(view_camera[0]);
 
 // Currently thinking 3 collision checks might be needed just in case of screen wrap and if any are true then don't spawn a fish
-
-
 // Normal
 var _center_cam = place_meeting(x, y, o_overlay);
 //if the camera is on the left side

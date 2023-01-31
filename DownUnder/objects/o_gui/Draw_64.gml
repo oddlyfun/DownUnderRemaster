@@ -19,9 +19,9 @@ draw_line_color(0, _start_y - 1, _width, _start_y - 1, c_black, c_black);
 //
 //*********************************************************************************************************
 var _info_message = "";
-var _hover_inst = instance_position( mouse_x, mouse_y, o_sea_life );
+var _hover_inst = s_instance_position_3wrap( mouse_x, mouse_y, o_sea_life );
 // I don't want to see the player fish included. _player is a child of o_sea_life 
-if ( _hover_id != noone and _hover_id != _player )
+if ( _hover_inst != noone and _hover_inst != _player )
 {
 	_info_message = _hover_inst.fish_name;
 
@@ -74,9 +74,7 @@ if ( _player != noone )
 	var _block_w = EMPTY_BLOCK_W;
 
 	var _c = c_white;
-	
-	draw_text(40,40, string(_block_energy));
-	
+		
 	//*********************************************************************************
 	//						Draw Energy Bars filled in
 	//*********************************************************************************
