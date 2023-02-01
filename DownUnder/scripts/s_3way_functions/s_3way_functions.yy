@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "s_instance_position_3wrap",
+  "name": "s_3way_functions",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {

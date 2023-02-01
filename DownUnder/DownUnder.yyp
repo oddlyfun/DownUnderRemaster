@@ -27,7 +27,7 @@
     {"id":{"name":"Full_Area","path":"sprites/Full_Area/Full_Area.yy",},"order":0,},
     {"id":{"name":"ro_start_screen","path":"rooms/ro_start_screen/ro_start_screen.yy",},"order":2,},
     {"id":{"name":"spr_npc_fish","path":"sprites/spr_npc_fish/spr_npc_fish.yy",},"order":1,},
-    {"id":{"name":"s_instance_position_3wrap","path":"scripts/s_instance_position_3wrap/s_instance_position_3wrap.yy",},"order":2,},
+    {"id":{"name":"s_3way_functions","path":"scripts/s_3way_functions/s_3way_functions.yy",},"order":2,},
     {"id":{"name":"o_sea_life","path":"objects/o_sea_life/o_sea_life.yy",},"order":0,},
     {"id":{"name":"s_messages","path":"scripts/s_messages/s_messages.yy",},"order":0,},
     {"id":{"name":"odell_tile_4","path":"sprites/odell_tile_4/odell_tile_4.yy",},"order":4,},

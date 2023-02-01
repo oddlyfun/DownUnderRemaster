@@ -16,3 +16,20 @@ if ( _dist <= max_speed ){
 
 
 my_energy = my_energy - _energy_redux;
+
+
+
+// clicking on stuff
+
+if ( mouse_check_button_pressed(mb_left) )
+{
+	var _three_way = instance_three_way(mouse_x, mouse_y, o_sea_life);
+	
+	var _id = _three_way[@ 1];
+	var _lor = _three_way[@ 0];
+	
+	if ( _id != id and _id != noone )
+	{
+		
+	}
+}
