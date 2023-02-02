@@ -1,4 +1,5 @@
 var _inst = instance_nearest(0,0,o_cam_help);
+var _player = instance_nearest(0,0,o_player_fish);
 
 var _camx = camera_get_view_x(view_camera[0]);
 var _camy = camera_get_view_y(view_camera[0]);
@@ -52,5 +53,24 @@ if ( _moving == true )
 
 
 _vy = clamp(_vy,0,room_height - view_height);
+//_vx = clamp(_vx,-room_width, room_width * 2);
+
+// I clamp the value of vx in a different var to check to see if I would be passed the edges on this frame then instead I just move 
+// all the relavent instances and camera 
+var _wrap_x = clamp(_vx, -room_width, (room_width * 2) - view_width);
+
+if (_wrap_x == -room_width and _player.is_eating == false)
+{
+	_vx = _vx + room_width;
+	_player.x = _player.x + room_width;
+	_inst.x = _inst.x + room_width;
+}
+
+if ( _wrap_x == (room_width * 2) - view_width and _player.is_eating == false)
+{
+	_vx = _vx - room_width;
+	_player.x = _player.x - room_width;
+	_inst.x = _inst.x - room_width;
+}
 
 camera_set_view_pos(view_camera[0],_vx,_vy);

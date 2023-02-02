@@ -6,7 +6,7 @@ window_set_cursor(cr_none);
 global.all_life = undefined;
 global.all_life_json_filename = "sea_life.json";
 
-global.player_fish_id = 1;
+global.player_fish_id = 5;
 
 if ( file_exists(global.all_life_json_filename))
 {

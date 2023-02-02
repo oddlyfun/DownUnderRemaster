@@ -62,6 +62,12 @@ function s_check_food(_fish, _target)
 		_can_i_eat = true;
 		_eat_message = "Yummy! Food!"
 	} 
+	
+	if ( _is_bad == false and _is_good == false and _is_ok == false )
+	{
+		_can_i_eat = false;
+		_eat_message = "Not on your menu";
+	}
 
 
 // Create a struct that will give me all the information I need to create a message pop up

@@ -21,3 +21,5 @@ draw_line(_camx, _y_, _camx + room_width, _y_);
 
 _y_ = _center_y + pad_y
 draw_line(_camx, _y_, _camx + room_width, _y_);
+
+//draw_text_color(_camx+ 25, _camy+25, string(_camx), c_red, c_red, c_red, c_red, 1);

@@ -38,6 +38,7 @@ if ( is_eating == false )
 				is_eating = true;
 				eating_target = _id;
 				eating_zone = _lor;
+				eating_target.frozen = true;
 			}
 
 		}
@@ -54,13 +55,14 @@ if ( is_eating == true )
 
 	if ( _dist <= max_speed ){
 		speed = 0;
+		eating_target.frozen = false;
 		var _was_eaten = s_check_food(id, eating_target);
 		// done eating
 		if ( _was_eaten.edible == true ) then instance_destroy(eating_target);
 
 		add_message(_was_eaten.msg, "Devour");
 		eating_target = noone;
-		is_eating == false;
+		is_eating = false;
 	} else
 	{
 		speed = max_speed;
