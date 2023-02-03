@@ -74,7 +74,8 @@ function s_check_food(_fish, _target)
 	_eating_report =
 	{
 	    edible : _can_i_eat,
-	    msg : _eat_message
+	    msg : _eat_message,
+		fish_name : _target.fish_name
 	};
 
 	return _eating_report;

@@ -58,9 +58,13 @@ if ( is_eating == true )
 		eating_target.frozen = false;
 		var _was_eaten = s_check_food(id, eating_target);
 		// done eating
-		if ( _was_eaten.edible == true ) then instance_destroy(eating_target);
-
-		add_message(_was_eaten.msg, "Devour");
+		if ( _was_eaten.edible == true )
+		{
+			my_energy = my_energy + energy_recovery;
+			my_energy = clamp(my_energy,0, 100);
+			instance_destroy(eating_target);
+		}
+		add_message(_was_eaten.msg, _was_eaten.fish_name);
 		eating_target = noone;
 		is_eating = false;
 	} else
