@@ -21,3 +21,66 @@ if ( file_exists(global.all_life_json_filename))
 #macro INFO = "info";
 #macro ERROR = "error";
 global.message_q = ds_queue_create();
+
+//
+// Orginize all sea life into different lists based on their attributes
+// These lists will contain structs with added field of the fish ID
+global.playable_fish = ds_list_create();
+global.fish_ES = ds_list_create();
+global.fish_S = ds_list_create();
+global.fish_MS = ds_list_create();
+global.fish_M = ds_list_create();
+global.fish_ML = ds_list_create();
+global.fish_L = ds_list_create();
+global.fish_EL = ds_list_create();
+global.fish_NA = ds_list_create();
+
+// gives me the size of the struct
+// the ids are all numbers 1 - 81 ... easy to loop
+var _life_size = variable_struct_names_count(global.all_life);
+
+for ( var i = 0; i < _life_size; i++ )
+{
+	var _fish = variable_struct_get(global.all_life, string(i) );
+	_fish.fish_id = i;
+
+	// split off the fish based on its attributes
+	if ( _fish.playable == "Y" ) then ds_list_add(global.playable_fish, _fish);
+
+	var _fish_size = _fish.size;
+
+	switch ( _fish_size )
+	{
+		case "ES":
+			ds_list_add(global.fish_ES,_fish);
+		break;
+
+		case "S":
+			ds_list_add(global.fish_S,_fish);
+		break;
+
+		case "MS":
+			ds_list_add(global.fish_MS,_fish);
+		break;
+
+		case "M":
+			ds_list_add(global.fish_M,_fish);
+		break;
+
+		case "ML":
+			ds_list_add(global.fish_ML,_fish);
+		break;
+
+		case "L":
+			ds_list_add(global.fish_L,_fish);
+		break;
+
+		case "EL":
+			ds_list_add(global.fish_EL,_fish);
+		break;
+
+		default:
+			ds_list_add(global.fish_NA,_fish);
+		break;
+	}
+}
