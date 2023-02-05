@@ -12,8 +12,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "o_sea_life",
-    "path": "objects/o_sea_life/o_sea_life.yy",
+    "name": "o_all_life",
+    "path": "objects/o_all_life/o_all_life.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -38,7 +38,7 @@
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Lifeforms",
+    "path": "folders/Objects/Lifeforms.yy",
   },
 }

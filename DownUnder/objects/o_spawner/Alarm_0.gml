@@ -28,13 +28,18 @@ if ( _center_cam == false and _left_cam == false and _right_cam == false )
 		
 		// gets the fish from the all life struct and then sets all the variables for the new fish
 		var _fish = variable_struct_get(global.all_life, string(_r) );
+		var _sprite_name = _fish.sprite_name;
+		_sprite_name = "spr_"+_sprite_name;
+		_sprite_name = asset_get_index(_sprite_name);
+		
+		if ( _sprite_name == -1 ) then _sprite_name = spr_not_applicable;
 		
 		var _rx = irandom_range(x, x + sprite_width);
 		var _ry = irandom_range(y, y + sprite_height);
 		
 		var _inst = instance_create_layer(_rx,_ry,"Instances",o_sea_life,{
-			fish_id : _r,
-			sprite_index : spr_npc_fish,
+			fish_id					: _r,
+			sprite_index			: _sprite_name,
 			fish_name				: _fish.full_name,
 			fish_size				: _fish.size,
 			health_rate				: _fish.health_rate,
