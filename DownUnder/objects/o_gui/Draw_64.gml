@@ -22,7 +22,7 @@ draw_line_color(0, _start_y - 1, _width, _start_y - 1, c_black, c_black);
 var _info_message = "";
 var _hover_inst = _mouse.hover_inst;
 // I don't want to see the player fish included. _player is a child of o_sea_life 
-if ( _hover_inst != noone and _hover_inst != _player )
+if ( _hover_inst != noone and _hover_inst != _player and instance_exists(_hover_inst) )
 {
 	_info_message = _hover_inst.fish_name;
 
@@ -114,5 +114,21 @@ if ( _player != noone )
 			_stx = _stx + EMPTY_BLOCK_W + 2;			
 		}
 	}
+
+
+//*********************************************************************************************************
+//
+//						Score Display * No score should display if its practice mode
+//
+//*********************************************************************************************************
+
 	
+var _score_x = _width - string_length("Score: ######") - 60;
+var _score_y = _height - BAR_SIZE + 4;
+
+var _score_string = "Score: " + string(_player.my_score);
+draw_set_color(c_black);
+draw_set_font(fnt_game);
+draw_text(_score_x, _score_y, _score_string);
+
 }

@@ -7,6 +7,7 @@ global.all_life = undefined;
 global.all_life_json_filename = "sea_life.json";
 
 global.player_fish_id = 5;
+global.player_score = 0;
 
 if ( file_exists(global.all_life_json_filename))
 {
@@ -41,7 +42,8 @@ var _life_size = variable_struct_names_count(global.all_life);
 
 for ( var i = 0; i < _life_size; i++ )
 {
-	var _fish = variable_struct_get(global.all_life, string(i) );
+
+	var _fish = variable_struct_get(global.all_life, string(i+1) );
 	_fish.fish_id = i;
 
 	// split off the fish based on its attributes

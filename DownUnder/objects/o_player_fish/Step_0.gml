@@ -12,6 +12,7 @@ if ( is_eating == false )
 	} else
 	{
 		speed = max_speed;
+		my_score = my_score + 1;
 		_energy_redux = energy_rate * 0.05;
 	}
 

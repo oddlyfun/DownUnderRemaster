@@ -4,6 +4,7 @@ eating_distance = 100;
 eating_target = noone;
 eating_zone = 0;
 energy_recovery = 12;
+my_score = global.player_score;
 
 var _fish = variable_struct_get(global.all_life, string(global.player_fish_id) );
 
