@@ -30,3 +30,10 @@ turn_speed = real(turn_speed);
 the_camera = camera_get_default();
 right_side = x + room_width;
 left_side = x - room_width;
+
+moving_towards_point_x = 0;
+moving_towards_point_y = 0;
+
+is_moving = false;
+target_point_x = 0;
+target_point_y = 0;
