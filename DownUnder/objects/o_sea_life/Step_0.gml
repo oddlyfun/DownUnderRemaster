@@ -7,10 +7,22 @@ left_side = x - room_width;
 // think like a fish that was programmed in 1995
 if ( frozen == false )
 {
-	// State machine goes here!?
-	if ( x - swim_speed <= 0 ) then swim_speed = swim_speed * - 1;
+	// We will just do a random point direction and move towards that point with no further logic
+	if ( is_moving == false )
+	{
+		is_moving = true;
+		target_point_x = irandom_range(0, room_width);
+		target_point_y = irandom_range(0, room_height);
+		direction = point_direction(x,y, target_point_x, target_point_y);
+		speed = 1; // replace with fish speed one day
+	}
 
-	if ( x + swim_speed >= room_width ) then swim_speed = abs(swim_speed);
 
-	x = x - (swim_speed * 0.5);
+	var _dist_from_point = point_distance(x,y, target_point_x, target_point_y);
+
+	if ( _dist_from_point <= 10 )
+	{
+		is_moving == false;
+	}
+
 }
