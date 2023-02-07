@@ -18,4 +18,11 @@ mode_text_array = [
 "Gauntlet",
 "Create-A-Fish",
 "Practice"
-]
+];
+
+mode_text_info = [
+"A random selection of 4 fish to play as. Collect enough points to move on to the next fish. Survive long enough to win!",
+"Survive. Play from smallest to largest.",
+"Create your own fish to see if you can make one best suited for survival.",
+"Choose a fish and test out the waters."
+];
