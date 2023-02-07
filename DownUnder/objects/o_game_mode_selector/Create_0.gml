@@ -1,4 +1,5 @@
-display_level = 1;
+display_level = 0;
+clicked = false;
 
 ui_width = display_get_gui_width();
 ui_height = display_get_gui_height();
@@ -7,7 +8,7 @@ mode_selection_width = ui_width * 0.60;
 mode_selection_height = ui_height * 0.60;
 
 top_margin = 4;
-top_white_space = 20;
+top_white_space = 6;
 right_margin = 8;
 
 mode_select = -1;

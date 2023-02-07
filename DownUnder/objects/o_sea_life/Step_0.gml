@@ -22,7 +22,7 @@ if ( frozen == false )
 
 	if ( _dist_from_point <= 10 )
 	{
-		is_moving == false;
+		is_moving = false;
 	}
 
 }
