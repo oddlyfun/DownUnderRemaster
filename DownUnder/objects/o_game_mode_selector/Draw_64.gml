@@ -51,7 +51,20 @@ if ( display_level == 1 and clicked == false )
 		_radial_y = _radial_y + 32;
 	}
 	
-	
+//*********************************************************************
+//		Radial Selection Game Mode Description
+//*********************************************************************
+
+	var _text_display_x = _window_x + ( mode_selection_width / 2);
+	var _text_display_y = _window_y + ( mode_selection_height * 0.15);
+	var _right_bound = _window_x + mode_selection_width;
+	var _the_words = "";
+	if ( mode_select != -1 )
+	{
+		_the_words = mode_text_info[@ mode_select];
+	}
+	draw_text_wrap(_text_display_x, _text_display_y, 
+		mode_selection_width / 2, mode_selection_height, _the_words);
 	
 //*************************
 //		'X' close Window
@@ -59,14 +72,15 @@ if ( display_level == 1 and clicked == false )
 	var _close_x = _window_x + mode_selection_width - 16;
 	var _close_y = _window_y;
 	
-	draw_set_color(c_red);
-	draw_rectangle(_close_x, _close_y, _close_x + 16, _close_y + 16, false);
+	//draw_set_color(c_red);
+	//draw_rectangle(_close_x, _close_y, _close_x + 16, _close_y + 16, false);
 	
 	if ( mouse_check_button_pressed(mb_left) )
 	{
 		if ( _gui_mx > _close_x and _gui_mx < _close_x + 16 and _gui_my > _close_y and _gui_my < _close_y + 16 )
 		{
 			display_level = 0;
+			mode_select = -1;
 		}
 	}
 	
