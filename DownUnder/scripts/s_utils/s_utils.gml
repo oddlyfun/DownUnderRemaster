@@ -1,5 +1,5 @@
 
-function draw_text_wrap(_x, _y, _width, _height, _words)
+function draw_text_wrap(_x, _y, r_bound, _height, _words)
 {
 	draw_set_color(c_black);
 	draw_set_font(fnt_game);
@@ -10,13 +10,14 @@ function draw_text_wrap(_x, _y, _width, _height, _words)
 	_x = _x + _right_buffer;
 	_y = _y + _top_buffer;
 	//string_split(string, delimiter, [remove_empty], [max_splits]);
-	var _word_array = string_split(_words, " "); // this is new I hope it works in the TTL
-
+	// string split is not in the LTS
+	var _word_array = create_string_array(_words); //string_split(_words, " "); // this is new I hope it works in the TTL
+	
 
 	var _size = array_length(_word_array);
 	var _ini_x = _x;
 	var _ini_y = _y;
-	var _right_bound = _x + _width;
+	var _right_bound = r_bound; //_x + _width;
 
 	for ( var i = 0; i < _size; i++ )
 	{
@@ -27,7 +28,7 @@ function draw_text_wrap(_x, _y, _width, _height, _words)
 		{
 			// the word if written would overflow
 			_ini_x = _x;
-			_ini_y = _ini_y + string_height(_word + _top_buffer);
+			_ini_y = _ini_y + string_height(_word) + _top_buffer;
 		}
 
 		draw_text(_ini_x, _ini_y, _word);
@@ -38,7 +39,7 @@ function draw_text_wrap(_x, _y, _width, _height, _words)
 }
 
 
-/* 
+
 function create_string_array( _words )
 {
 	//string_length(str)
@@ -46,22 +47,34 @@ function create_string_array( _words )
 	//string_copy(str, index, count);
 	var _array = [];
 	var _index = 0;
-
+	
+	var _count = 0;
 	var _sub_string_start = 1;
 	var _length = string_length(_words);
 
 	// String index starts at 1
-	var _word = "";
+	//var _word = "";
 	for ( var i = 1; i <= _length; i++ )
 	{
 		var _char = string_char_at(_words,i);
 		if ( _char == " " )
 		{
-			var _a_word = string_copy(_words, _sub_string_start, i-1);
+			var _a_word = string_copy(_words, _sub_string_start, _count);
 			_array[@ _index] = _a_word;
 			_index = _index + 1;
 			_sub_string_start = i + 1;
+			_count = 0;
+		} else
+		{
+			_count = _count + 1;
 		}
 	}
+	
+	
+	_a_word = string_copy(_words, _sub_string_start, _count);
+	_array[@ _index] = _a_word;
+	
+	
+	return _array;
 }
-*/
+

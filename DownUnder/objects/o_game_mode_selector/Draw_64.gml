@@ -57,14 +57,14 @@ if ( display_level == 1 and clicked == false )
 
 	var _text_display_x = _window_x + ( mode_selection_width / 2);
 	var _text_display_y = _window_y + ( mode_selection_height * 0.15);
-	var _right_bound = _window_x + mode_selection_width;
+	var _right_bound = _window_x + mode_selection_width - 36;
 	var _the_words = "";
 	if ( mode_select != -1 )
 	{
 		_the_words = mode_text_info[@ mode_select];
 	}
 	draw_text_wrap(_text_display_x, _text_display_y, 
-		mode_selection_width / 2, mode_selection_height, _the_words);
+		_right_bound, mode_selection_height, _the_words);
 	
 //*************************
 //		'X' close Window
