@@ -11,7 +11,7 @@ top_margin = 4;
 top_white_space = 6;
 right_margin = 8;
 
-mode_select = -1;
+mode_select = 3; // default selection can be practice
 number_of_modes = 4;
 mode_text_array = [
 "Challenge",
@@ -27,5 +27,7 @@ mode_text_info = [
 "Choose the fish you want to become, explore the reef, and learn how to survive."
 ];
 
-//  sprite_get_nineslice()
-// will let me know the right or left margins of the 9slice which I see as really good info to have
+cancel_button = new basic_button(0, 0, 100, 40, 0, "Cancel");
+start_button = new basic_button(0, 0, 100, 40, 0, "Start");
+
+btn_array = [cancel_button, start_button];
