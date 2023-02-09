@@ -78,3 +78,65 @@ function create_string_array( _words )
 	return _array;
 }
 
+
+function draw_basic_button(_x, _y, b_width, b_height, state, text)
+{
+	//spr_basic_button
+	//sprite_get_nineslice(sprite_index)
+	//	returns a struct
+	//	enabled, left, top, right, bottom, tilemode <array>
+	draw_set_font(fnt_game);
+	draw_set_color(c_black);
+
+	var _spr_info = sprite_get_nineslice(spr_basic_button);
+	var _text_x_off = _x + _spr_info.left;
+	var _text_y_off = _y + _spr_info.top;
+
+	draw_sprite_stretched(spr_basic_button, state, _x, _y, b_width, b_height);
+
+	draw_text(_text_x_off, _text_y_off, text);
+}
+
+
+function basic_button(_gx, _gy, _width, _height, _state, _text) constructor
+{
+    gx = _gx;
+    gy = _gy;
+    width = _width;
+    height = height;
+    state = _state;
+    text = _text;
+    hover = false;
+}
+
+function gui_element_collision(_guix, _guiy, _width, _height)
+{
+	var _cam = view_camera[0];
+
+	var _vw = camera_get_view_width(_cam);
+	var _vx = camera_get_view_x(_cam);
+
+	var _vh = camera_get_view_height(_cam);
+	var _vy = camera_get_view_y(_cam);
+
+	var _gui_w = display_get_gui_width();
+	var _gui_h = display_get_gui_height();
+
+	// normalize where the mouse is within the view
+	var _mx = mouse_x - _vx;
+	var _my = mouse_y - _vy;
+
+	var _mgx = _gui_w * (_mx / _vw);
+	var _mgy = _gui_h * (_my / _vh);
+
+	var _x1 = _guix;
+	var _y1 = _guiy;
+	var _x2 = _guix + _width;
+	var _y2 = _guiy + _height;
+
+	if ( _mgx > _x1 and _mgx < _x2 and _mgy > _y1 and _mgy < _y2)
+	{
+		return true;
+	} 
+	return false;
+}
