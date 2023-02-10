@@ -23,8 +23,8 @@ if ( display_level == 1 and clicked == false )
 	// calculates the x mouse position on the GUI 
 	var _disp_width = camera_get_view_width(view_camera[0]);
 	var _disp_height = camera_get_view_height(view_camera[0]);
-	var _vx = camera_get_view_x(_cam);
-	var _vy = camera_get_view_y(_cam);
+	var _vx = camera_get_view_x(view_camera[0]);
+	var _vy = camera_get_view_y(view_camera[0]);
 	
 	var _gui_mx = floor( ui_width * ((mouse_x - _vx) / _disp_width ) );
 	var _gui_my = floor( ui_height * ((mouse_y - _vy) / _disp_height ) );
@@ -90,7 +90,7 @@ if ( display_level == 1 and clicked == false )
 //***************************************
 	var _quater_width = mode_selection_width / 4;
 	_btn_x = (_quater_width - ( cancel_button.width / 2 )) + _window_x;
-	_btn_y = _window_y - ( mode_selection_height * 0.05);
+	_btn_y = (_window_y + mode_selection_height) - ( mode_selection_height * 0.05) - start_button.height;
 
 	cancel_button.gx = _btn_x;
 	cancel_button.gy = _btn_y;

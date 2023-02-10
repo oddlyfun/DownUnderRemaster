@@ -27,7 +27,7 @@ mode_text_info = [
 "Choose the fish you want to become, explore the reef, and learn how to survive."
 ];
 
-cancel_button = new basic_button(0, 0, 100, 40, 0, "Cancel");
-start_button = new basic_button(0, 0, 100, 40, 0, "Start");
+cancel_button = new basic_button(0, 0, 100, 32, 0, "Cancel");
+start_button = new basic_button(0, 0, 100, 32, 0, "Start");
 
 btn_array = [cancel_button, start_button];

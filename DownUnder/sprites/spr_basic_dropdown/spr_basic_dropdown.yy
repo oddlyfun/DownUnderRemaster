@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_basic_button",
+  "name": "spr_basic_dropdown",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -11,15 +11,15 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 31,
+  "bbox_right": 26,
   "bbox_top": 0,
-  "bbox_bottom": 31,
+  "bbox_bottom": 30,
   "HTile": false,
   "VTile": false,
   "For3D": false,
   "DynamicTexturePage": false,
-  "width": 32,
-  "height": 32,
+  "width": 27,
+  "height": 31,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -29,12 +29,12 @@
   "gridY": 0,
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"58f0aa13-bc97-4ff3-95d9-19d4ac105dc3",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a4772a0f-2bea-44e3-9a26-e9c94aa88a6d",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"cbabaca9-309c-42ad-a56d-e683b582dcef",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "spr_basic_button",
+    "name": "spr_basic_dropdown",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -46,8 +46,8 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"5a2db200-1780-4040-aaf3-3f77ff8c826e","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"58f0aa13-bc97-4ff3-95d9-19d4ac105dc3","path":"sprites/spr_basic_button/spr_basic_button.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"aaa0c806-5b67-4e5b-9098-9cd19f4e0ceb","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a4772a0f-2bea-44e3-9a26-e9c94aa88a6d","path":"sprites/spr_basic_button/spr_basic_button.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"e6d0a849-e313-46c5-be19-4805ca8258af","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"58f0aa13-bc97-4ff3-95d9-19d4ac105dc3","path":"sprites/spr_basic_dropdown/spr_basic_dropdown.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"6b57be67-6881-403b-bbaa-044c8ed3a2d3","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"cbabaca9-309c-42ad-a56d-e683b582dcef","path":"sprites/spr_basic_dropdown/spr_basic_dropdown.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
@@ -66,12 +66,12 @@
     "eventStubScript": null,
   },
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"1526313e-f5cb-4dc8-993f-80fbf3feec00","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"6362c8c9-c14d-4560-aeb7-1664d8ac5836","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1",},
   ],
   "nineSlice": {
-    "left": 7,
+    "left": 6,
     "top": 8,
-    "right": 7,
+    "right": 6,
     "bottom": 6,
     "guideColour": [
       4294902015,
@@ -81,7 +81,7 @@
     ],
     "highlightColour": 1728023040,
     "highlightStyle": 0,
-    "enabled": true,
+    "enabled": false,
     "tileMode": [
       1,
       1,

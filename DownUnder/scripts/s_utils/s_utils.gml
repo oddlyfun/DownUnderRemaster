@@ -91,10 +91,15 @@ function draw_basic_button(_x, _y, b_width, b_height, state, text)
 	var _spr_info = sprite_get_nineslice(spr_basic_button);
 	var _text_x_off = _x + _spr_info.left;
 	var _text_y_off = _y + _spr_info.top;
+	
+	// size of the 'middle' of the box
+	var _height_mid = (((b_height -_spr_info.bottom) - _spr_info.top) / 2) - ( string_height(text) / 2 );
+	var _width_mid = (((b_width -_spr_info.right) - _spr_info.left) / 2) - ( string_width(text) / 2 );
+	
 
 	draw_sprite_stretched(spr_basic_button, state, _x, _y, b_width, b_height);
 
-	draw_text(_text_x_off, _text_y_off, text);
+	draw_text(_text_x_off + _width_mid, _text_y_off + _height_mid, text);
 }
 
 
@@ -103,7 +108,7 @@ function basic_button(_gx, _gy, _width, _height, _state, _text) constructor
     gx = _gx;
     gy = _gy;
     width = _width;
-    height = height;
+    height = _height;
     state = _state;
     text = _text;
     hover = false;
