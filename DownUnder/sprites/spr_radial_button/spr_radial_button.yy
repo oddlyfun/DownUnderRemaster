@@ -11,15 +11,15 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 15,
+  "bbox_right": 13,
   "bbox_top": 0,
-  "bbox_bottom": 15,
+  "bbox_bottom": 13,
   "HTile": false,
   "VTile": false,
   "For3D": false,
   "DynamicTexturePage": false,
-  "width": 16,
-  "height": 16,
+  "width": 14,
+  "height": 14,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -29,7 +29,7 @@
   "gridY": 0,
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"92930ec6-4064-46a0-bdb5-0c1fbe962c9b",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2f919226-1dda-4489-a575-9e30ad203950",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2c831489-7b3e-4d52-b03a-606559e2c218",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
@@ -47,7 +47,7 @@
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"85c2a87a-7a0c-4898-8666-be01b436304c","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"92930ec6-4064-46a0-bdb5-0c1fbe962c9b","path":"sprites/spr_radial_button/spr_radial_button.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"6b3638b3-8afb-4b09-b7ec-0486b5ad876c","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2f919226-1dda-4489-a575-9e30ad203950","path":"sprites/spr_radial_button/spr_radial_button.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"3a0c63e0-016c-4911-ace0-54edfef14a54","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2c831489-7b3e-4d52-b03a-606559e2c218","path":"sprites/spr_radial_button/spr_radial_button.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,

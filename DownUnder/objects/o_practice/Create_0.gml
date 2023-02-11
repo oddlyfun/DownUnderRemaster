@@ -10,7 +10,7 @@ window_y 			= (ui_height / 2) - (window_height / 2);
 window_midpoint 	= window_x + (window_width / 2);
 // adjust for the title bar in the spr_popup_X
 window_y_tb = window_y + window_sprite_info.top;
-window_height_tb = window_h - window_sprite_info.top;
+window_height_tb = window_height - window_sprite_info.top;
 
 panel_left_width 	= (window_width / 2) * 0.90;
 panel_left_height 	= window_height_tb * 0.90;
