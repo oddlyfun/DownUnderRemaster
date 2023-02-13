@@ -22,13 +22,16 @@ panel_right_height 	= panel_left_height;
 panel_right_x 		= window_midpoint + ((window_width / 4 ) - (panel_left_width / 2));
 panel_right_y 		= panel_left_y;
 
-
+scroll_bar_panel_height = floor(string_height("STRING") * items_per_page);
 // using a DS list
 fish_list = global.playable_fish;
 
 items_per_page = 10;
 fish_list_size = ds_list_size(fish_list);
 fish_index = 0;
+fish_selected = 0;
+
+window_title = "Practice";
 
 // Page Elements
 //--Left Side--
