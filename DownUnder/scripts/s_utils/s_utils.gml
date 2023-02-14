@@ -114,6 +114,34 @@ function basic_button(_gx=0, _gy=0, _width=0, _height=0, _state=0, _text="") con
     hover = false;
 }
 
+function anchor_grid(w,h,rows=2,cols=2)
+{
+	var _anchor_array = [][];
+
+	var _block_w = w / rows;
+	var _block_h = h / cols;
+
+	var _ini_x = 0;
+	var _ini_y = 0;
+
+	for ( var i = 0; i <= cols; i++ )
+	{
+		for ( var j = 0; j <= rows; j++ )
+		{
+			var _vec = new vector2(i * _block_w, j * _block_h);
+			_anchor_array[i][j] = _vec;
+		}
+	}
+
+	return _anchor_array;
+}
+
+function vector2(_x, _y) constructor
+{
+	x = _x;
+	y = _y;
+}
+
 function gui_element_collision(_guix, _guiy, _width, _height)
 {
 	var _cam = view_camera[0];
