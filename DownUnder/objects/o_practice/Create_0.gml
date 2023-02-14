@@ -35,12 +35,16 @@ fish_selected = 0;
 
 toggle_struct = new basic_button(0,0,0,0,0,"");
 
-scroll_bar_panel_height = floor(string_height("STRING") * items_per_page);
+window_text_height = string_height("STRING");
+
+scroll_panel_text_margin = 2;
+scroll_bar_panel_height = floor(window_text_height * items_per_page) + (scroll_panel_text_margin * items_per_page);
 scroll_bar_toggle = false;
 
 var _toggle_drop = spr_basic_dropdown;
 var _tog_h = sprite_get_height(_toggle_drop);
 
+sb_bulb_active = false;
 sb_bulb_struct = new basic_button();
 sb_bulb_size = floor( (scroll_bar_panel_height - (_tog_h * 2) ) * (items_per_page/fish_list_size) );
 sb_bulb_scroll_amount = 0;
