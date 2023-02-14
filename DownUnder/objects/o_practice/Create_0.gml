@@ -1,3 +1,5 @@
+draw_set_font(fnt_game);
+
 ui_width = display_get_gui_width();
 ui_height = display_get_gui_height();
 
@@ -22,7 +24,7 @@ panel_right_height 	= panel_left_height;
 panel_right_x 		= window_midpoint + ((window_width / 4 ) - (panel_left_width / 2));
 panel_right_y 		= panel_left_y;
 
-scroll_bar_panel_height = floor(string_height("STRING") * items_per_page);
+
 // using a DS list
 fish_list = global.playable_fish;
 
@@ -30,6 +32,20 @@ items_per_page = 10;
 fish_list_size = ds_list_size(fish_list);
 fish_index = 0;
 fish_selected = 0;
+
+toggle_struct = new basic_button(0,0,0,0,0,"");
+
+scroll_bar_panel_height = floor(string_height("STRING") * items_per_page);
+scroll_bar_toggle = false;
+
+var _toggle_drop = spr_basic_dropdown;
+var _tog_h = sprite_get_height(_toggle_drop);
+
+sb_bulb_struct = new basic_button();
+sb_bulb_size = floor( (scroll_bar_panel_height - (_tog_h * 2) ) * (items_per_page/fish_list_size) );
+sb_bulb_scroll_amount = 0;
+
+prev_mouse_y = mouse_y;
 
 window_title = "Practice";
 

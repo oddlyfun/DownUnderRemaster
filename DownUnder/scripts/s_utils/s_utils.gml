@@ -103,7 +103,7 @@ function draw_basic_button(_x, _y, b_width, b_height, state, text)
 }
 
 
-function basic_button(_gx, _gy, _width, _height, _state, _text) constructor
+function basic_button(_gx=0, _gy=0, _width=0, _height=0, _state=0, _text="") constructor
 {
     gx = _gx;
     gy = _gy;

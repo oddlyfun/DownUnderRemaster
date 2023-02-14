@@ -39,30 +39,92 @@ draw_set_color(c_black);
 draw_text(panel_left_x, panel_left_y, _fname);
 // drop down toggle
 draw_sprite(_toggle_drop, 0, _toggle_x, panel_left_y);
+toggle_struct.gx = _toggle_x;
+toggle_struct.gy = panel_left_y;
+toggle_struct.width = _tog_w;
+toggle_struct.height = _tog_h;
 
 // toggle on
-var _sb_top_y = panel_left_y + _tog_h;
-var _sb_top_x = _toggle_x;
+if ( scroll_bar_toggle == true ) {
+	var _sb_top_y = panel_left_y + _tog_h;
+	var _sb_top_x = _toggle_x;
 
-draw_sprite(spr_basic_dropdown,0,_sb_top_x, _sb_top_y);
+	draw_sprite(spr_basic_dropdown,0,_sb_top_x, _sb_top_y);
 
-// the heigth of the bar should be equal to the text size * items per page
-var _sb_mid_height = _sb_panel_height - (_tog_h * 2);
-var _sb_mid_y = _sb_top_y + _tog_h;
+	// the heigth of the bar should be equal to the text size * items per page
+	var _sb_mid_height = _sb_panel_height - (_tog_h * 2);
+	var _sb_mid_y = _sb_top_y + _tog_h;
 
-draw_sprite_stretched(spr_white_dropdown,1, _sb_top_x, _sb_mid_y, _tog_w, _sb_mid_height);
+	draw_sprite_stretched(spr_white_dropdown,1, _sb_top_x, _sb_mid_y, _tog_w, _sb_mid_height);
 
-var _sb_bot_y = _sb_mid_y + _sb_mid_height;
+	var _sb_bot_y = _sb_mid_y + _sb_mid_height;
 
-draw_sprite(spr_basic_dropdown,1, _sb_top_x, _sb_bot_y);
-
-
-// display dropdown panel
-var _sb_display_y = _sb_top_y;
-var _sb_display_x = panel_left_x;
-var _sb_display_h = _sb_panel_height;
-
-draw_sprite_stretched(spr_white_dropdown, 0, _sb_display_x, _sb_display_y, panel_left_width - _tog_w, _sb_display_h);
+	draw_sprite(spr_basic_dropdown,1, _sb_top_x, _sb_bot_y);
 
 
+	// display dropdown panel
+	var _sb_display_y = _sb_top_y;
+	var _sb_display_x = panel_left_x;
+	var _sb_display_h = _sb_panel_height;
+
+	draw_sprite_stretched(spr_white_dropdown, 0, _sb_display_x, _sb_display_y, panel_left_width - _tog_w, _sb_display_h);
+
+	sb_bulb_struct.gx = _sb_top_x;
+	sb_bulb_scroll_amount = clamp(sb_bulb_scroll_amount,0, _sb_mid_height - sb_bulb_size);
+	sb_bulb_struct.gy = _sb_mid_y + sb_bulb_scroll_amount;
+	
+	sb_bulb_struct.width = _tog_w;
+	sb_bulb_struct.height = sb_bulb_size;
+	
+	draw_sprite_stretched(spr_drop_down_scroll,0, 
+		sb_bulb_struct.gx,
+		sb_bulb_struct.gy,
+		sb_bulb_struct.width,
+		sb_bulb_struct.height );
+		
+		
+	// text list
+	fish_index = floor( fish_list_size * ( (sb_bulb_struct.gy - _sb_mid_y ) / _sb_mid_height ));
+	var _ini_y = _sb_display_y;
+	
+	for ( var i = 0; i < items_per_page; i++ )
+	{
+		var _fishy = fish_list[| fish_index];
+		
+		var _name = _fishy.full_name;
+		draw_set_color(c_black);
+		draw_text(_sb_display_x, _ini_y, _name);
+		_ini_y = _ini_y + string_height(_name);
+		
+		
+		fish_index = fish_index + 1;
+		if (fish_index >= fish_list_size ) then break;
+	}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+	
+}
 /// Toggle Off
