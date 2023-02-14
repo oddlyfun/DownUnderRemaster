@@ -49,7 +49,24 @@ if ( mouse_check_button_released(mb_left) )
 		var _b = btn_array[@ i];
 		if ( _b.hover == true )
 		{
-			// something should happen for sure
+			if (i == 0) then display_level = 0;
+			// Start Button
+			if (i == 1)
+			{
+				switch ( mode_select )
+				{
+					case: 0 // Challenge
+					break;
+					case: 1 // Gauntlet
+					break;
+					case: 2 // Create-a-Fish
+					break;
+					case: 3 // practice
+						instance_create_layer(0,0,"Instances",o_practice);
+						instance_destroy(id);
+					break;
+				}
+			}
 		}
 	}
 }
