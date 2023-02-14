@@ -45,7 +45,8 @@ toggle_struct.width = _tog_w;
 toggle_struct.height = _tog_h;
 
 // toggle on
-if ( scroll_bar_toggle == true ) {
+if ( scroll_bar_toggle == true )
+{
 	var _sb_top_y = panel_left_y + _tog_h;
 	var _sb_top_x = _toggle_x;
 
@@ -85,46 +86,47 @@ if ( scroll_bar_toggle == true ) {
 		
 	// text list
 	fish_index = floor( fish_list_size * ( (sb_bulb_struct.gy - _sb_mid_y ) / _sb_mid_height ));
-	var _ini_y = _sb_display_y;
+	var _ini_y = _sb_display_y + scroll_panel_text_margin;
+	var _ini_x = _sb_display_x + scroll_panel_text_margin;
 	
 	for ( var i = 0; i < items_per_page; i++ )
 	{
 		var _fishy = fish_list[| fish_index];
-		
 		var _name = _fishy.full_name;
 		draw_set_color(c_black);
-		draw_text(_sb_display_x, _ini_y, _name);
-		_ini_y = _ini_y + string_height(_name);
 		
+		// highlight
+		var _hover = gui_element_collision(
+			_ini_x,
+			_ini_y,
+			_ini_x + panel_left_width,
+			_ini_y + window_text_height
+			);
+		if ( _hover == true )
+		{
+			draw_sprite_stretched(spr_blue_highlight,0, 
+				_ini_x, _ini_y, 
+				_ini_x + panel_left_width, _ini_y + window_text_height
+				);
+			draw_set_color(c_white);
+		}
+
+
+		draw_text(_ini_x, _ini_y, _name);
+		_ini_y = _ini_y + string_height(_name) + scroll_panel_text_margin;
 		
+		if ( mouse_check_button_pressed(mb_left) )
+		{
+			if ( _hover == true )
+			{
+				fish_selected = fish_index;
+				scroll_bar_toggle = false;
+				break;
+			}
+		}
+
 		fish_index = fish_index + 1;
 		if (fish_index >= fish_list_size ) then break;
-	}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-	
-	
+	} // end list loop
 }
 /// Toggle Off
