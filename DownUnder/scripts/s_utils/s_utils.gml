@@ -114,21 +114,20 @@ function basic_button(_gx=0, _gy=0, _width=0, _height=0, _state=0, _text="") con
     hover = false;
 }
 
-function anchor_grid(w,h,rows=2,cols=2)
+function anchor_grid(w,h,rows=2,cols=2,xoff=0,yoff=0)
 {
 	var _anchor_array = [][];
 
-	var _block_w = w / rows;
-	var _block_h = h / cols;
-
-	var _ini_x = 0;
-	var _ini_y = 0;
+	var _block_w = w / cols;
+	var _block_h = h / rows;
 
 	for ( var i = 0; i <= cols; i++ )
 	{
 		for ( var j = 0; j <= rows; j++ )
 		{
-			var _vec = new vector2(i * _block_w, j * _block_h);
+			var _x = (i * _block_w) + xoff;
+			var _y = (j * _block_h) + yoff
+			var _vec = new vector2(_x,_y);
 			_anchor_array[i][j] = _vec;
 		}
 	}
