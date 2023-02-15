@@ -67,6 +67,7 @@ if ( scroll_bar_toggle == true )
 	var _sb_display_y = _sb_top_y;
 	var _sb_display_x = panel_left_x;
 	var _sb_display_h = _sb_panel_height;
+	var _sb_display_w = panel_left_width - _tog_w;
 
 	draw_sprite_stretched(spr_white_dropdown, 0, _sb_display_x, _sb_display_y, panel_left_width - _tog_w, _sb_display_h);
 
@@ -99,14 +100,16 @@ if ( scroll_bar_toggle == true )
 		var _hover = gui_element_collision(
 			_ini_x,
 			_ini_y,
-			_ini_x + panel_left_width,
-			_ini_y + window_text_height
+			_sb_display_w - scroll_panel_text_margin,
+			window_text_height
 			);
 		if ( _hover == true )
 		{
 			draw_sprite_stretched(spr_blue_highlight,0, 
-				_ini_x, _ini_y, 
-				_ini_x + panel_left_width, _ini_y + window_text_height
+				_ini_x,
+				_ini_y, 
+				_sb_display_w - scroll_panel_text_margin,
+				window_text_height
 				);
 			draw_set_color(c_white);
 		}
@@ -128,5 +131,6 @@ if ( scroll_bar_toggle == true )
 		fish_index = fish_index + 1;
 		if (fish_index >= fish_list_size ) then break;
 	} // end list loop
+	
 }
 /// Toggle Off

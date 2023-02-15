@@ -55,13 +55,13 @@ if ( mouse_check_button_released(mb_left) )
 			{
 				switch ( mode_select )
 				{
-					case: 0 // Challenge
+					case 0: // Challenge
 					break;
-					case: 1 // Gauntlet
+					case 1: // Gauntlet
 					break;
-					case: 2 // Create-a-Fish
+					case 2: // Create-a-Fish
 					break;
-					case: 3 // practice
+					case 3: // practice
 						instance_create_layer(0,0,"Instances",o_practice);
 						instance_destroy(id);
 					break;
