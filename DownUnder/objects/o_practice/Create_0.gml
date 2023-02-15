@@ -18,11 +18,13 @@ panel_left_width 	= (window_width / 2) * 0.90;
 panel_left_height 	= window_height_tb * 0.90;
 panel_left_x 		= window_x + ((window_width / 4 ) - (panel_left_width / 2));
 panel_left_y 		= window_y_tb + ((window_height_tb / 2 ) - (panel_left_height / 2));
+panel_left_anchors 	= anchor_grid(panel_left_width, panel_left_height, 6, 1,panel_left_x,panel_left_y);
 
 panel_right_width 	= panel_left_width;
 panel_right_height 	= panel_left_height;
 panel_right_x 		= window_midpoint + ((window_width / 4 ) - (panel_left_width / 2));
 panel_right_y 		= panel_left_y;
+panel_right_anchors = anchor_grid(panel_right_width, panel_right_height, 6, 1,panel_right_x,panel_right_y);
 
 
 // using a DS list
