@@ -44,6 +44,30 @@ toggle_struct.gy = panel_left_y;
 toggle_struct.width = _tog_w;
 toggle_struct.height = _tog_h;
 
+var _anchor = panel_left_anchors[0][1]; // this is a vector (x,y)
+var _scientific_name = "Scientific Name: " + _fish_info.scientific_name;
+var _size_cm = "Length: " + _fish_info.avg_size_cm + " cm";
+var _active_time = "Active: " + _fish_info.active;
+
+draw_set_color(c_black);
+
+draw_text(_anchor.x,_anchor.y, _scientific_name);
+
+_anchor = panel_left_anchors[0][2]; // this is a vector (x,y)
+draw_text(_anchor.x,_anchor.y, _size_cm);
+
+_anchor = panel_left_anchors[0][3]; // this is a vector (x,y)
+draw_text(_anchor.x,_anchor.y, _active_time);
+
+_anchor = panel_left_anchors[0][4]; // this is a vector (x,y)
+
+var _sprite = asset_get_index("spr_"+_fish_info.sprite_name);
+
+if ( sprite_exists(_sprite) )
+{
+	draw_sprite(_sprite,0,_anchor.x, _anchor.y);
+}
+
 // toggle on
 if ( scroll_bar_toggle == true )
 {
@@ -134,30 +158,7 @@ if ( scroll_bar_toggle == true )
 	
 }
 /// Toggle Off
-var _anchor = panel_left_anchors[0][2]; // this is a vector (x,y)
 
-var _scientific_name = "Scientific Name: " + _fish_info.scientific_name;
-var _size_cm = "Length: " + _fish_info.avg_size_cm + " cm";
-var _active_time = "Active: " + _fish_info.active;
-
-draw_set_color(c_black);
-
-draw_text(_anchor.x,_anchor.y, _scientific_name);
-
-_anchor = panel_left_anchors[0][3]; // this is a vector (x,y)
-draw_text(_anchor.x,_anchor.y, _size_cm);
-
-_anchor = panel_left_anchors[0][4]; // this is a vector (x,y)
-draw_text(_anchor.x,_anchor.y, _active_time);
-
-_anchor = panel_left_anchors[0][5]; // this is a vector (x,y)
-
-var _sprite = asset_get_index("spr_"+_fish_info.sprite);
-
-if ( sprite_exists(_sprite) )
-{
-	draw_sprite(_sprite,0,_anchor.x, _anchor.y);
-}
 
 
 //******************************************************************

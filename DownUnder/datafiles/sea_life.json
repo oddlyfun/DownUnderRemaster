@@ -10,6 +10,7 @@
     "energy_value": "10",
     "swim_speed": "3",
     "turn_speed": "1",
+    "eats_desc": "Plants and Algae",
     "food_good": [
       "65",
       "77"
@@ -21,7 +22,12 @@
     "playable": "Y",
     "active": "DAY",
     "scientific_name": "Acanthurus achilles",
-    "notes": ""
+    "notes": [
+      "Also known as the Achilles Surgeonfish",
+      "is very dark brown to purple. It has bright highlights of white and orange around the dorsal",
+      "and caudal fins. A white marking is also present on the gill covers and a striking orange teardrop is found near the caudal fin. The juveniles of this species have an orange marking by the tail in the shape of a streak instead of being teardrop in shape."
+    ],
+    "depth_range_meters": "1 - 10"
   },
   "2": {
     "full_name": "Black and White Spinecheek",
@@ -34,6 +40,7 @@
     "energy_value": "10",
     "swim_speed": "3",
     "turn_speed": "1",
+    "eats_desc": "Invertebrates and Plankton",
     "food_good": [
       "69",
       "76"
@@ -43,9 +50,15 @@
     "tags": "",
     "ability": "",
     "playable": "Y",
-    "active": "",
+    "active": "ANYTIME",
     "scientific_name": "Scolopsis lineata",
-    "notes": ""
+    "notes": [
+      "Common on coral reefs usually associated with sandy areas. Adults inhabit outer lagoon reef flats and seaward reefs flats",
+      "often in groups. Juveniles are found singly near the shelter of corals on clear shallow lagoon reefs. Adults form schools or small groups. Feeds on small fishes",
+      "crustaceans and benthic invertebrates",
+      "primarily polychaetes."
+    ],
+    "depth_range_meters": "1 - 20"
   },
   "3": {
     "full_name": "Blackfin Barracuda",
@@ -58,6 +71,7 @@
     "energy_value": "10",
     "swim_speed": "2.8",
     "turn_speed": "1",
+    "eats_desc": "Smaller Fish",
     "food_good": [
       "S",
       "MS",
@@ -68,9 +82,13 @@
     "tags": "",
     "ability": "",
     "playable": "Y",
-    "active": "",
+    "active": "ANYTIME",
     "scientific_name": "Sphyraena qenie",
-    "notes": ""
+    "notes": [
+      "Also known as the Chevron barracuda",
+      "is a species of barracuda that ranges from the Red Sea and East Africa to the Indo and Western Pacific and as far as French Polynesia. They are typically encountered on coral reefs down to 50 m where they form large schools. They are known for their long black lateral bands that go around its body. There are about 18 to 22 bands that are on the fish's body. Usually seen in large semi-stationary schools during the day which have a tendency to occupy the same site for months or even years at a time."
+    ],
+    "depth_range_meters": "1 - 100"
   },
   "4": {
     "full_name": "Blackspotted Puffer",
@@ -83,6 +101,7 @@
     "energy_value": "10",
     "swim_speed": "2.8",
     "turn_speed": "1",
+    "eats_desc": "\"Corals, Crustaceans, Invertabrates, and mollusks\"",
     "food_good": [
       "75",
       "78",
@@ -95,11 +114,18 @@
     "food_ok": "",
     "food_bad": "",
     "tags": "",
-    "ability": "",
+    "ability": "Inflating",
     "playable": "Y",
-    "active": "",
+    "active": "ANYTIME",
     "scientific_name": "Arothron nigropunctatus",
-    "notes": ""
+    "notes": [
+      "A grey to dark brown puffer becoming paler below",
+      "with many dark spots scattered on the head and body",
+      "and usually dark patches around the eyes and snout",
+      "and a white bar across the top of the snout. Individuals may also be partly or overall yellow in colour. They are diurnal",
+      "solitary and territorial. Its snout is short with two pairs of nostrils and its mouth is terminal with four strong teeth. It lives close to external reef slopes and lagoons."
+    ],
+    "depth_range_meters": "3 - 25"
   },
   "5": {
     "full_name": "Blacktip Shark",
@@ -112,6 +138,7 @@
     "energy_value": "10",
     "swim_speed": "2.8",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": [
       "M",
       "ML",
@@ -126,7 +153,17 @@
     "playable": "Y",
     "active": "",
     "scientific_name": "Carcharhinus limbatus",
-    "notes": ""
+    "notes": [
+      "An inshore and offshore shark found on or adjacent to continental and insular shelves. Often off river mouths and estuaries",
+      "muddy bays",
+      "mangrove swamps",
+      "lagoons",
+      "and coral reef drop-offs. Produces litters of one to 10 young. They are generally timid",
+      "but because they forage in shallower waters",
+      "are frequently encountered by humans. This has resulted in a few bites that are cases of mistaken identity where the shark mistakes a swimmer",
+      "or a surfer’s arm or leg for a prey item. Can live up to 12 years."
+    ],
+    "depth_range_meters": "1 - 140"
   },
   "6": {
     "full_name": "Bloodspot Squirrelfish",
@@ -139,6 +176,7 @@
     "energy_value": "10",
     "swim_speed": "3",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": [
       "63",
       "74",
@@ -151,7 +189,15 @@
     "playable": "Y",
     "active": "",
     "scientific_name": "Neoniphon sammara",
-    "notes": ""
+    "notes": [
+      "This schooling species inhabits seagrass beds and hard-bottomed habitats from the reef flat to depths of 46 meters or more on lagoon and seaward reefs.Feeds on small fishes",
+      "small crabs",
+      "and shrimps at night. Venomous spine at the corner of its preopercle. They are most likely to be found in shallow waters and it is often associated with Acropora corals",
+      "which it will use as shelter during the day. They use their red color to help them disappear in the dark depths and caves where they live and hunt. These fish are nocturnal",
+      "meaning they are active mostly at night",
+      "and many live in deeper waters than the sunlight can penetrate. They  have very large eyes which helps them to see prey in their dark environment."
+    ],
+    "depth_range_meters": "1 - 46"
   },
   "7": {
     "full_name": "Bluegill Longfin",
@@ -164,6 +210,7 @@
     "energy_value": "10",
     "swim_speed": "3",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": [
       "74",
       "ES"
@@ -175,7 +222,13 @@
     "playable": "Y",
     "active": "",
     "scientific_name": "Plesiops corallicola",
-    "notes": ""
+    "notes": [
+      "A greyish to dark brown longfin covered in small blue spots",
+      "with a blue stripe on the dorsal fin",
+      "and a blue ocellus on the edge of the gill cover. Some paler individuals have black blotches on the body. Known from the Australian territories of Christmas Island and Cocos (Keeling) Islands in the Indian Ocean. A secretive nocturnal species found in crevices",
+      "holes and under rocks during the day on outer reef areas. Eggs are guarded by the male parent."
+    ],
+    "depth_range_meters": "1 - 23"
   },
   "8": {
     "full_name": "Bluelined Snapper",
@@ -188,6 +241,7 @@
     "energy_value": "10",
     "swim_speed": "2.8",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": [
       "62",
       "67",
@@ -202,7 +256,14 @@
     "playable": "Y",
     "active": "",
     "scientific_name": "Lutjanus kasmira",
-    "notes": ""
+    "notes": [
+      "Adults inhabit coral reefs",
+      "occurring in both shallow lagoons and on outer reef slopes. Frequently found in large aggregations around coral formation",
+      "caves or wrecks during the day. Juveniles inhabit seagrass beds around patch reefs. The color is probably the most dramatic feature. The back and sides of the fish are bright yellow",
+      "with the lower sides and underside of head fading to white. Four bright-blue stripes run longitudinally on the side of the fish",
+      "with several faint greyish stripes on lowermost part of sides. Most fins are yellow."
+    ],
+    "depth_range_meters": "3 - 265"
   },
   "9": {
     "full_name": "Bluespotted Ray",
@@ -215,6 +276,7 @@
     "energy_value": "10",
     "swim_speed": "2.8",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": [
       "74",
       "60",
@@ -229,7 +291,13 @@
     "playable": "Y",
     "active": "",
     "scientific_name": "Neotrygon kuhlii",
-    "notes": ""
+    "notes": [
+      "A solitary species found on sandy bottoms near rocky or coral reefs. Usually found in deeper water but moves onto the reef flat and into shallow lagoons at high tide. Occasionally covers itself with sand",
+      "leaving only its eyes and tail visible. It's bright coloration serves as a warning for its venomous spines. The tail is about twice as long as it's body",
+      "and the barbs or spines are two different sizes",
+      "one being very large and the other a medium-sized barb. The bluespotted stingray has bright yellow eyes that are positioned to allow them a wide angle of view."
+    ],
+    "depth_range_meters": "1 - 170"
   },
   "10": {
     "full_name": "Bronze Sweeper",
@@ -242,6 +310,7 @@
     "energy_value": "10",
     "swim_speed": "3",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": [
       "69",
       "76",
@@ -254,7 +323,13 @@
     "playable": "Y",
     "active": "",
     "scientific_name": "Pempheris oualensis",
-    "notes": ""
+    "notes": [
+      "Normally lives in shallow lagoons and seaward reefs",
+      "quite common along the reef margin. Feeds on benthic and planktonic crustaceans",
+      "other small invertebrates",
+      "and fishes at night."
+    ],
+    "depth_range_meters": "1 - 36"
   },
   "11": {
     "full_name": "Cleaner Mimic Blenny",
@@ -267,6 +342,7 @@
     "energy_value": "10",
     "swim_speed": "1.8",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": [
       "EL",
       "L",
@@ -283,7 +359,14 @@
     "playable": "Y",
     "active": "",
     "scientific_name": "Aspidontus taeniatus",
-    "notes": ""
+    "notes": [
+      "Also known as the false cleanerfish it is a species of combtooth blenny",
+      "a mimic that copies both the dance and appearance of the bluestreak cleaner wrasse",
+      "a similarly colored species of cleaner wrasse. It likely mimics that species to avoid being eaten",
+      "as well to occasionally bite the fins of its victims rather than consume parasites. Most veiled attacks occur on juvenile fish",
+      "as adults that have been attacked in the past may avoid or even attack. It is indigenous to coral reef habitats in the Indo-Pacific."
+    ],
+    "depth_range_meters": "1 - 25"
   },
   "12": {
     "full_name": "Clown Coris",
@@ -296,6 +379,7 @@
     "energy_value": "10",
     "swim_speed": "2.8",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": [
       "68",
       "75",
@@ -310,7 +394,13 @@
     "playable": "Y",
     "active": "",
     "scientific_name": "Coris aygula",
-    "notes": ""
+    "notes": [
+      "Also referred to as the The Twin Spot Wrasse",
+      "or Twinspot Coris. The juvenile is silver with dark spots on the face. The dorsal fin has a pair of dark spots with yellow highlights on the body. The adult becomes blue-green with a white or light green band around the midsection. When courting",
+      "the male will display an increased color intensity. An inhabitant of coral reefs where they prefer areas of sand or rubble. They are generally solitary as adults",
+      "while juveniles can often be found in tide pools."
+    ],
+    "depth_range_meters": "2 - 30"
   },
   "13": {
     "full_name": "Clown Triggerfish",
@@ -323,6 +413,7 @@
     "energy_value": "10",
     "swim_speed": "2.8",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": [
       "S",
       "ES",
@@ -338,7 +429,15 @@
     "playable": "Y",
     "active": "",
     "scientific_name": "Balistoides conspicillum",
-    "notes": ""
+    "notes": [
+      "Lives in clear coastal to outer reef habitats. A solitary species. Uncommon to rare throughout most of its range. Adults usually seen along deep drop-offs",
+      "swimming about openly and may retreat to caves when approached. Juveniles secretive in small caves with rich invertebrate growth. Diet consists of sea urchins",
+      "crabs and other crustaceans",
+      "mollusks",
+      "and tunicates. Among the most highly prized aquarium fishes. This fish can become tame enough to be hand-fed; however",
+      "one should beware of the fish's sharp teeth."
+    ],
+    "depth_range_meters": "1 - 75"
   },
   "14": {
     "full_name": "Coral Grouper",
@@ -351,6 +450,7 @@
     "energy_value": "10",
     "swim_speed": "2.8",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": [
       "S",
       "ES",
@@ -364,7 +464,11 @@
     "playable": "Y",
     "active": "",
     "scientific_name": "Cephalopholis miniata",
-    "notes": ""
+    "notes": [
+      "These brightly colored fish prefer the open waters in and around reefs where they can hunt small fish and crustaceans. They are stout and almond-shaped",
+      "with orange-red to red-brown bodies covered in light blue spots ringed with darker red. Tend to form haremic groups comprising of a dominant male and 2 to 12 females. These groups occupy territories of up to 475 square meters subdivided into secondary territories and defended by a single female."
+    ],
+    "depth_range_meters": "2 - 150"
   },
   "15": {
     "full_name": "Crocodile Needlefish",
@@ -377,6 +481,7 @@
     "energy_value": "10",
     "swim_speed": "2.8",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": [
       "MS",
       "S",
@@ -389,7 +494,12 @@
     "playable": "Y",
     "active": "",
     "scientific_name": "Tylosurus crocodilus",
-    "notes": ""
+    "notes": [
+      "Also known as the houndfish. They have a cylindrical body and a short head",
+      "dark blue backs and silver-white sides and are plain white ventrally. Usally Solitary or in small groups. Feared by fishers because they can cause puncture wounds with their sharp snouts when jumping out of the water",
+      "when alarmed or attracted to lights at night."
+    ],
+    "depth_range_meters": "1 -13"
   },
   "16": {
     "full_name": "Broadclub Cuttlefish",
@@ -402,6 +512,7 @@
     "energy_value": "10",
     "swim_speed": "2.8",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": [
       "MS",
       "S",
@@ -414,7 +525,16 @@
     "playable": "Y",
     "active": "",
     "scientific_name": "Sepia Latimanus",
-    "notes": ""
+    "notes": [
+      "Broadclub cuttlefish have an oval-shaped mantle and narrow fins extending along the sides. This species of cuttlefish gets its name from the crescent shaped",
+      "club-like limbs located on either side of their mantle",
+      "between their fins and tentacles. Cuttlefish have the ability to change their appearance in order to blend in with their surroundings",
+      "to frighten predators or prey",
+      "and to attract mates. Broadclub cuttlefish display 13 body patterns. Young cuttlefish can display almost the full array of patterns that adult cuttlefish can. Their skin is covered with papillae",
+      "which can be altered in size and shape with changing body patterns. One of their most distinguishing features is their cuttlebones",
+      "which is more of an internal shell than a bone. It is broad and flat and gives cuttlefish heads their characteristic shape."
+    ],
+    "depth_range_meters": "10 -30"
   },
   "17": {
     "full_name": "Dash and Dot Goatfish",
@@ -427,6 +547,7 @@
     "energy_value": "10",
     "swim_speed": "2.8",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": [
       "76",
       "74",
@@ -441,7 +562,13 @@
     "playable": "Y",
     "active": "",
     "scientific_name": "Parupeneus barberinus",
-    "notes": ""
+    "notes": [
+      "Juveniles usually in small groups",
+      "often mixed with other species in sparse seagrass habitats. The dash-and-dot goatfish has the twin chin barbels typical of goatfishes. The body color is white with a black to dark brown stripe reaching from the upper lip through the eye and along the body",
+      "followed by a black spot at the base of the caudal fin. Above the stripe",
+      "the body has a yellowish tint. Dash-and-dot goatfish from deeper water will usually have red stripes and spots."
+    ],
+    "depth_range_meters": "1 - 100"
   },
   "18": {
     "full_name": "Devil Scorpionfish",
@@ -454,6 +581,7 @@
     "energy_value": "10",
     "swim_speed": "3",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": [
       "ES",
       "63",
@@ -466,7 +594,13 @@
     "playable": "Y",
     "active": "",
     "scientific_name": "Scorpaenopsis diabolus",
-    "notes": ""
+    "notes": [
+      "Often partly buried this fish will flash its inner pectoral fins when disturbed. Can inflict a painful injury with its venomous dorsal sting. It is a bottom-dwelling predator that relies on its camouflage to catch passing prey. Exhibits biofluorescence",
+      "when illuminated by blue or ultraviolet light",
+      "it re-emits it as red",
+      "and appears differently than under white light illumination. Biofluorescence may assist in intraspecific communication and camouflage."
+    ],
+    "depth_range_meters": "1 - 70"
   },
   "19": {
     "full_name": "Double-lined Mackerel",
@@ -479,6 +613,7 @@
     "energy_value": "10",
     "swim_speed": "2.8",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": [
       "MS",
       "S",
@@ -491,7 +626,12 @@
     "playable": "Y",
     "active": "",
     "scientific_name": "Grammatorcynus bilineatus",
-    "notes": ""
+    "notes": [
+      "Inhabits open water but often seen swimming near outer reef walls or deep clear-water slopes. Found mostly in shallow reef waters where it forms large schools. The double-lined mackerel has an elongated and slightly compressed body covered with small flakes with a relatively small mouth and large eyes. The body color is dark blue on the back",
+      "silvery on the sides",
+      "silvery white on the belly."
+    ],
+    "depth_range_meters": "15 - 50"
   },
   "20": {
     "full_name": "Splitfin Flashlightfish",
@@ -504,6 +644,7 @@
     "energy_value": "10",
     "swim_speed": "1.8",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": "69",
     "food_ok": "",
     "food_bad": "",
@@ -512,7 +653,15 @@
     "playable": "Y",
     "active": "NIGHT",
     "scientific_name": "Anomalops katoptron",
-    "notes": ""
+    "notes": [
+      "Hides during the day and venture out at night to feed",
+      "tending to occur along steep drop-offs near caves on dark",
+      "moonless nights. Feeds on zooplankton. The splitfin flashlightfish is characterized by two bean shaped torch-like organs under its eyes containing bioluminescent bacteria",
+      "which the fish can turn on and off by blinking. Will move into shallower waters during the winter months. The flashlight fish blinks up to 90 blinks per minute",
+      "but when the flashlight fish detects its living planktonic prey",
+      "their light organs open for a longer period of time and blink five times less frequently."
+    ],
+    "depth_range_meters": "2 - 400"
   },
   "21": {
     "full_name": "Football Trout",
@@ -525,6 +674,7 @@
     "energy_value": "10",
     "swim_speed": "2.8",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": [
       "M",
       "MS",
@@ -537,7 +687,12 @@
     "playable": "Y",
     "active": "",
     "scientific_name": "Plectropomus laevis",
-    "notes": ""
+    "notes": [
+      "A voracious piscivore inhabiting coral-rich areas of lagoon and seaward reefs. Encountered most frequently in channels and outer shelf reefs. They migrate over short distances to spawn. They are monandric protogynous hermaphrodites",
+      "in which the males only develop from mature females",
+      "the youngest males found have been 9 years of age and females mature at 2.2 years."
+    ],
+    "depth_range_meters": "4 - 100"
   },
   "22": {
     "full_name": "Giant Grouper",
@@ -550,6 +705,7 @@
     "energy_value": "10",
     "swim_speed": "2.8",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": [
       "ML",
       "M",
@@ -567,7 +723,14 @@
     "playable": "Y",
     "active": "",
     "scientific_name": "Epinephelus lanceolatus",
-    "notes": ""
+    "notes": [
+      "The largest bony fish found in coral reefs. Individuals more than a meter long have been caught from shore and in harbors. Common in shallow waters. Found in caves or wrecks; also in estuaries. Juveniles secretive in reefs and rarely seen. The adults are grayish-brown in colour overlain with a mottled pattern and with darker fins. The small juveniles are yellow with wide",
+      "dark irregular bars and irregular dark spots on their fins. It is the most widely distributed species of grouper in the world. The giant grouper is an opportunistic ambush predator which feeds on a variety of fishes",
+      "as well as small sharks",
+      "juvenile sea turtles",
+      "crustaceans and molluscs which are all swallowed whole."
+    ],
+    "depth_range_meters": "1- 200"
   },
   "23": {
     "full_name": "Great White Shark",
@@ -580,6 +743,7 @@
     "energy_value": "10",
     "swim_speed": "3.2",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": [
       "M",
       "ML",
@@ -597,7 +761,24 @@
     "playable": "Y",
     "active": "ANYTIME",
     "scientific_name": "Carcharodon carcharias",
-    "notes": ""
+    "notes": [
+      "Primarily a coastal and offshore inhabitant of continental and insular shelves",
+      "but may also occur off oceanic islands far from land. Often close inshore to the surf line and even penetrates shallow bays. Capable of migration across oceanic regions. Usually solitary or in pairs but can be found in feeding aggregations of 10 or more; does not form schools. Feeds on bony fishes",
+      "sharks",
+      "rays",
+      "seals",
+      "dolphins and porpoises",
+      "sea birds",
+      "carrion",
+      "squid",
+      "octopi",
+      "crabs",
+      "and whales. The great white shark is an apex predator",
+      "as it has no known natural predators other than",
+      "on very rare occasions",
+      "the orca."
+    ],
+    "depth_range_meters": "1 - 1200"
   },
   "24": {
     "full_name": "Humphead Wrasse",
@@ -610,6 +791,7 @@
     "energy_value": "10",
     "swim_speed": "2.8",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": [
       "M",
       "MS",
@@ -632,7 +814,16 @@
     "playable": "Y",
     "active": "DAY",
     "scientific_name": "Cheilinus undulatus",
-    "notes": ""
+    "notes": [
+      "Adults inhabit steep outer reef slopes",
+      "channel slopes",
+      "and lagoon reefs. They are usually solitary but may occur in pairs. Juveniles are encountered in coral-rich areas of lagoon reefs",
+      "where staghorn Acropora corals abound and also in algae reefs or seagrasses. Adults rove across the reefs by day and rest in reef caves and under coral ledges at night. This species can be easily identified by its large size",
+      "thick lips",
+      "two black lines behind its eyes",
+      "and the hump on the foreheads of larger adults. Its color can vary between dull blue-green to more vibrant shades of green and purplish-blue."
+    ],
+    "depth_range_meters": "1 - 100"
   },
   "25": {
     "full_name": "Lined Cardinalfish",
@@ -645,6 +836,7 @@
     "energy_value": "10",
     "swim_speed": "3",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": [
       "69",
       "74"
@@ -656,7 +848,11 @@
     "playable": "Y",
     "active": "NIGHT",
     "scientific_name": "Cheilodipterus artus",
-    "notes": ""
+    "notes": [
+      "Forms small",
+      "loose schools in caves or just above coral branches in sheltered bays and lagoon patch reefs. Juveniles have a small black spot surrounded by a large gold blotch on the caudal peduncl characterized further by mauve or pale grey color with eight reddish brown stripes; blackish to brown caudal fin base."
+    ],
+    "depth_range_meters": "3 - 158"
   },
   "26": {
     "full_name": "Red Lionfish",
@@ -669,6 +865,7 @@
     "energy_value": "10",
     "swim_speed": "2.8",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": [
       "S",
       "ES",
@@ -682,7 +879,17 @@
     "playable": "Y",
     "active": "",
     "scientific_name": "Pterois volitans",
-    "notes": ""
+    "notes": [
+      "Often solitary",
+      "they hide in unexposed places at daytime often with head down and practically immobile. They hunt small fishes",
+      "shrimps",
+      "and crabs at night",
+      "using its widespread pectorals trapping prey into a corner",
+      "stunning it and then swallowing it in one sweep. Dorsal spines are venomous. Red lionfish are clad in white stripes alternated with red",
+      "maroon or brown stripes. Adults in this species can grow as large as 47 cm in length",
+      "making it one of the largest species of lionfish in the ocean. The average red lionfish lives around 10 years."
+    ],
+    "depth_range_meters": "2 - 55"
   },
   "27": {
     "full_name": "Long-nosed Butterflyfish",
@@ -695,6 +902,7 @@
     "energy_value": "10",
     "swim_speed": "3",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": [
       "62",
       "74",
@@ -707,7 +915,15 @@
     "playable": "Y",
     "active": "",
     "scientific_name": "Forcipiger flavissimus",
-    "notes": ""
+    "notes": [
+      "Common in exposed seaward reefs but also found in lagoon reefs. Very territorial",
+      "yellow longnose butterflyfish patrol their patches of coral with a monogamous partner. However",
+      "instances of overt aggression have been observed between territory holders and individuals of the same sex. Chasing is rare",
+      "but when it does occur",
+      "males chase males and females chase females. Females defend food resources from other females",
+      "while males defend territories containing a female from other males."
+    ],
+    "depth_range_meters": "2 - 145"
   },
   "28": {
     "full_name": "Longfin Spadefish",
@@ -720,6 +936,7 @@
     "energy_value": "10",
     "swim_speed": "2.8",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": [
       "77",
       "76",
@@ -732,7 +949,14 @@
     "playable": "Y",
     "active": "",
     "scientific_name": "Platax teira",
-    "notes": ""
+    "notes": [
+      "Large adults live in sheltered bays as well as deep offshore. Commonly found around shipwrecks in small groups and occasionally forms large schools. Small juveniles with floating debris and form aggregations as they find each other. Looked at from the side",
+      "it has a roughly circular body with a low hump on the nape. This fish is usually silver",
+      "grey or brownish. It has a blackish band through the eye and another band with the pectoral fin. They will change colour from silvery white with no bands",
+      "to brown with darker banding as you watch",
+      "and then fade back to silver again."
+    ],
+    "depth_range_meters": "3 - 25"
   },
   "29": {
     "full_name": "Longhorn Cowfish",
@@ -745,6 +969,7 @@
     "energy_value": "10",
     "swim_speed": "2.8",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": [
       "79",
       "76"
@@ -756,7 +981,13 @@
     "playable": "Y",
     "active": "",
     "scientific_name": "Lactoria cornuta",
-    "notes": ""
+    "notes": [
+      "Also called the horned boxfish",
+      "recognizable by its long horns that protrude from the front of its head",
+      "rather like those of a cow or bull. They Inhabit inshore on coastal muddy or sandy habitats in still bays",
+      "and commonly found in harbours and estuaries. Small juveniles on protected shallow mudflats. Found in weedy areas near rocks or reefs. Longhorn cowfish protect the coral reefs they live in by being predators of the invertebrates that destroy the reefs. They are also important in the growth and creation of coral reefs for this same reason."
+    ],
+    "depth_range_meters": "1 - 100"
   },
   "30": {
     "full_name": "Longsnout Flathead",
@@ -769,6 +1000,7 @@
     "energy_value": "10",
     "swim_speed": "3",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": [
       "ES",
       "74"
@@ -780,7 +1012,12 @@
     "playable": "Y",
     "active": "",
     "scientific_name": "Thysanophrys chiltonae",
-    "notes": ""
+    "notes": [
+      "Inhabits sand areas adjacent to coral reefs. Seldom noticed for it buries itself in the sand; often partially. Usually found in small groups. Feeds on crustaceans",
+      "crabs and prawns",
+      "and other fish."
+    ],
+    "depth_range_meters": "1 - 100"
   },
   "31": {
     "full_name": "Yellowedged lyretail",
@@ -793,6 +1030,7 @@
     "energy_value": "10",
     "swim_speed": "2.8",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": [
       "63",
       "66",
@@ -807,7 +1045,12 @@
     "playable": "Y",
     "active": "",
     "scientific_name": "Variola louti",
-    "notes": ""
+    "notes": [
+      "Usually seen in clear-water areas at depths below 15 meters",
+      "and prefers islands and offshore reefs rather than continental shores. The yellow-edged lyretail has an oblong-shaped body on which the length of the head is longer than the depth of the body. The overall colour of this grouper is reddish and it is covered in blue spots. They have a reddish colour on the upper body which frequently shades to orangish to white on the lower part of the body. They are marked with many small bluish or pinkish spots on the head",
+      "body and fins. The rear margins of the fins are yellow."
+    ],
+    "depth_range_meters": "3 - 300"
   },
   "32": {
     "full_name": "Marbled Grouper",
@@ -820,6 +1063,7 @@
     "energy_value": "10",
     "swim_speed": "2.8",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": [
       "74",
       "60",
@@ -837,7 +1081,14 @@
     "playable": "Y",
     "active": "",
     "scientific_name": "Epinephelus polyphekadion",
-    "notes": ""
+    "notes": [
+      "A pale brown grouper covered in small dark brown spots",
+      "a whitish upper body with large dark blotches forming oblique bands",
+      "and a dark saddle-like marking on the upper caudal-fin base. Often found in coral-rich areas of lagoon and outer reefs; in caves and large crevices to swim through. Most abundant around islands",
+      "particularly atolls. Usually in small schools but may be solitary. It is of high value to the trade in international live reef fish in southeast Asia",
+      "the western Pacific and in areas of the Indian Ocean."
+    ],
+    "depth_range_meters": "1 - 46"
   },
   "33": {
     "full_name": "Moorish Idol",
@@ -850,6 +1101,7 @@
     "energy_value": "10",
     "swim_speed": "3",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": [
       "79",
       "77"
@@ -861,7 +1113,14 @@
     "playable": "Y",
     "active": "",
     "scientific_name": "Zanclus cornutus",
-    "notes": ""
+    "notes": [
+      "The Moorish idol got its name from the \\ Moors\\  of Africa",
+      "who purportedly believed the fish to be a bringer of happiness. Moorish idols are also a coveted aquarium fish but",
+      "despite their abundance and wide array of habitats",
+      "they are notoriously finicky and hard to adjust to captivity. Their omnivorous diet can be extremely difficult to replicate in aquaria. Generally encountered in small groups of 2 or 3 individuals. Adults occur singly",
+      "in pairs and occasionally are seen in large schools"
+    ],
+    "depth_range_meters": "3 - 182"
   },
   "34": {
     "full_name": "Neon Damselfish",
@@ -874,6 +1133,7 @@
     "energy_value": "10",
     "swim_speed": "1.8",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": [
       "69",
       "77"
@@ -885,7 +1145,11 @@
     "playable": "Y",
     "active": "",
     "scientific_name": "Pomacentrus coelestis",
-    "notes": ""
+    "notes": [
+      "The Damselfish is two-tone in color with electric blue primarily on the top portion and bright yellow on the bottom and posterior portion. There is a considerable species variation in the amount of yellow on the body of the fish. A favorite of reef hobbyists",
+      "the Damsel requires a 30 gallon or larger aquarium with numerous hiding places. It can be confrontational towards its tank mates."
+    ],
+    "depth_range_meters": "1 - 20"
   },
   "35": {
     "full_name": "Oriental Sweetlip",
@@ -898,6 +1162,7 @@
     "energy_value": "10",
     "swim_speed": "2.8",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": [
       "70",
       "76",
@@ -914,7 +1179,14 @@
     "playable": "Y",
     "active": "",
     "scientific_name": "Plectorhinchus vittatus",
-    "notes": ""
+    "notes": [
+      "The Indian Ocean oriental sweetlips has fleshy lips which become greatly swollen as the fish ages. There are 6 pores on its chin but there is no median pit.The dorsal fin contains 12–14 spines and 16–20 soft rays. The adults of this species have a basic light greyish colour of which fades to white on the abdomen. It has alternating black and white stripes. the black stripes normally broader on the upper body",
+      "the fins are yellow",
+      "as are the snout and forehead. The dorsal and caudal fins are marked with blackish spots. It is found singly or in small aggregations and is tends to be nocturnal. It forages at night feeding on small invertebrates such crustaceans",
+      "gastropods or annelids",
+      "as well as smaller fishes."
+    ],
+    "depth_range_meters": "2 - 25"
   },
   "36": {
     "full_name": "Painted Flutemouth",
@@ -927,6 +1199,7 @@
     "energy_value": "10",
     "swim_speed": "2.8",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": [
       "MS",
       "S",
@@ -941,7 +1214,19 @@
     "playable": "Y",
     "active": "",
     "scientific_name": "Aulostomus chinensis",
-    "notes": ""
+    "notes": [
+      "Its body is elongated and compressed laterally",
+      "with a long",
+      "tubular snout which has a small barbel at its inferior extremity. The protusible mouth can be extended forward to catch prey. It is a clever stealth hunter with two techniques to catch its prey. The first is the ambush",
+      "consisting of lying in wait for a potential prey close to hard coral",
+      "black coral bush",
+      "or gorgonian. The second is the discrete tracking",
+      "where the trumpetfish stays close to some big fishes (groupers",
+      "carangids) or even hawksbill sea turtles until it has the opportunity to approach unsuspecting prey. The body coloration can be uniform or mottled in a range of grey",
+      "brown",
+      "or dark green. Some fish are uniformly bright yellow. The rear part of the body is normally black with white dots."
+    ],
+    "depth_range_meters": "3 - 122"
   },
   "37": {
     "full_name": "Painted Frogfish",
@@ -954,6 +1239,7 @@
     "energy_value": "10",
     "swim_speed": "3",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": "ES",
     "food_ok": "76",
     "food_bad": "",
@@ -962,7 +1248,17 @@
     "playable": "Y",
     "active": "",
     "scientific_name": "Antennarius pictus",
-    "notes": ""
+    "notes": [
+      "Inhabits shallow sheltered reefs. Adults usually with sponges; juveniles openly on sand or reef",
+      "mimicking small sponges. It has a globulous",
+      "extensible body",
+      "with soft skin is covered with small dermal spinules. Its skin is covered partially with few",
+      "small",
+      "wart-like protuberances",
+      "some variably shaped",
+      "scab-like blotches and many small eye spots (ocelli) which look like sponges holes. Its large prognathous mouth allows it to consume prey up to its own size."
+    ],
+    "depth_range_meters": "1 - 75"
   },
   "38": {
     "full_name": "Palette Surgeonfish",
@@ -975,6 +1271,7 @@
     "energy_value": "10",
     "swim_speed": "3",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": "69",
     "food_ok": "",
     "food_bad": "",
@@ -983,7 +1280,21 @@
     "playable": "Y",
     "active": "",
     "scientific_name": "Paracanthurus hepatus",
-    "notes": ""
+    "notes": [
+      "A large number of common names are attributed to the species",
+      "including regal tang",
+      "palette surgeonfish",
+      "blue tang",
+      "royal blue tang",
+      "hippo tang",
+      "blue hippo tang",
+      "flagtail surgeonfish",
+      "Pacific regal blue tang",
+      "and blue surgeonfish. The regal blue tang is one of the most common and most popular marine aquarium fish all over the world. They live in pairs or small groups of 8 to 14 individuals. Handling the tang risks the chances of being badly cut by the caudal spine. These spines",
+      "on both sides of the caudal peduncle",
+      "are extended from the body when the fish is stressed."
+    ],
+    "depth_range_meters": "2 - 40"
   },
   "39": {
     "full_name": "Pencil Streaked Rabbitfish",
@@ -996,6 +1307,7 @@
     "energy_value": "10",
     "swim_speed": "3",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": [
       "77",
       "65"
@@ -1007,7 +1319,14 @@
     "playable": "Y",
     "active": "",
     "scientific_name": "Siganus doliatus",
-    "notes": ""
+    "notes": [
+      "The spines are robust and venomous. This fish is yellow with a network of fine blue lines on the body",
+      "giving it a pattern that resembles a printed circuit board and leads to one of its common names",
+      "scribbled rabbitfish. A pair of scribbled rabbitfish spends about 80% of their time together and are seldom out of visual range. One fish often probes deep into a crevice for food while the other remains alert nearby. Without the presence of the second fish",
+      "the grazer would be at greater risk of attack by an unseen predator",
+      "and would likely not benefit from the feeding opportunities that left it unsighted in this way. The pair bond enables them to harvest food to which they would otherwise not have access."
+    ],
+    "depth_range_meters": "2 - 15"
   },
   "40": {
     "full_name": "Picassofish",
@@ -1020,6 +1339,7 @@
     "energy_value": "10",
     "swim_speed": "3",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": [
       "65",
       "75",
@@ -1034,7 +1354,15 @@
     "playable": "Y",
     "active": "",
     "scientific_name": "Rhinecanthus aculeatus",
-    "notes": ""
+    "notes": [
+      "Also called the The lagoon triggerfish",
+      "they live in the reefs and sandy areas of coral reefs",
+      "where they eat just about anything that comes along",
+      "mostly including invertebrates and reef algae. They are always restlessly swimming around and vigorously protect their territory against intruders",
+      "including divers",
+      "especially when guarding their eggs during reproduction season. Their relatively small size makes them much less dangerous than the larger titan triggerfish of the same family."
+    ],
+    "depth_range_meters": "1 - 50"
   },
   "41": {
     "full_name": "Pygmy Parrotfish",
@@ -1047,6 +1375,7 @@
     "energy_value": "10",
     "swim_speed": "3",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": [
       "77",
       "65",
@@ -1059,7 +1388,11 @@
     "playable": "Y",
     "active": "",
     "scientific_name": "Scarus spinus",
-    "notes": ""
+    "notes": [
+      "Inhabits coral-rich areas of outer lagoon and seaward reefs. Usually solitary. Females usually in small groups with a male nearby; they may mix with females of similar species. This species can change gender from female to male. When a male is needed",
+      "a female changes sex and takes on the role."
+    ],
+    "depth_range_meters": "2 - 25"
   },
   "42": {
     "full_name": "Rainbow Runner",
@@ -1072,6 +1405,7 @@
     "energy_value": "10",
     "swim_speed": "2.8",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": [
       "M",
       "MS",
@@ -1087,7 +1421,13 @@
     "playable": "Y",
     "active": "",
     "scientific_name": "Elagatis bipinnulata",
-    "notes": ""
+    "notes": [
+      "Adults are found in oceanic and coastal waters",
+      "generally near the surface over reefs or sometimes far from the coast often around floating logs or other debris. They may form large schools. The species is widespread throughout the tropical and subtropical waters of the world",
+      "inhabiting both coastal and offshore areas. The rainbow runner is easily distinguished by its body shape",
+      "and the brilliant colouration which gives the fish its name."
+    ],
+    "depth_range_meters": "1 - 150"
   },
   "43": {
     "full_name": "Redtooth Triggerfish",
@@ -1100,6 +1440,7 @@
     "energy_value": "10",
     "swim_speed": "2.8",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": [
       "79",
       "69",
@@ -1112,7 +1453,13 @@
     "playable": "Y",
     "active": "",
     "scientific_name": "Odonus niger",
-    "notes": ""
+    "notes": [
+      "Redtoothed Triggerfish are normally deep purple with bluish-green markings on their heads and glowing light blue margins on the tail lobes and fins. Thier tails are lyre-shaped. The mouth of the triggerfish seems to be grinning and it maintains tiny red teeth that are needle-sharp with two teeth in the upper jaw which can be seen when its mouth is closed. These triggerfish are one of the more peaceful in the family but can become threatening with age and can perform a grunting-type sound. They have the ability to change their color depending on their mood",
+      "food",
+      "feeding",
+      "and water quality from purple to blue and to bluish-green."
+    ],
+    "depth_range_meters": "5 - 40"
   },
   "44": {
     "full_name": "Ringtail Wrasse",
@@ -1125,6 +1472,7 @@
     "energy_value": "10",
     "swim_speed": "2.8",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": [
       "61",
       "67",
@@ -1138,7 +1486,13 @@
     "playable": "Y",
     "active": "",
     "scientific_name": "Oxycheilinus unifasciatus",
-    "notes": ""
+    "notes": [
+      "Most wrasses are brightly colored with complex patterns. Many",
+      "such as the ringtail wrasse",
+      "change color dramatically as they grow from juveniles to adults. Many wrasses also change sex as they grow older. Usally they begin life as females and then change to males",
+      "with much brighter color patterns."
+    ],
+    "depth_range_meters": "1 - 160"
   },
   "45": {
     "full_name": "Semicircle Angelfish",
@@ -1151,6 +1505,7 @@
     "energy_value": "10",
     "swim_speed": "3",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": [
       "79",
       "77"
@@ -1162,7 +1517,13 @@
     "playable": "Y",
     "active": "",
     "scientific_name": "Pomacanthus semicirculatus",
-    "notes": ""
+    "notes": [
+      "The semicircled angelfish has a large contrast of colors between adults and juveniles. The adults are brownish green in colour with the scales edged in blue creating a blue speckling over the body and tail. All of the fins",
+      "apart from the plain yellow pectoral fins",
+      "have blue margins. The juveniles in contrast",
+      "are blue-black marked from top to bottom with narrow white stripes. At the head end the stripes are fairly straight but they become increasingly curved as they approach the base of the tail. The juveniles gradually adopt the adult colouration when they are 8 to 16 centimetres."
+    ],
+    "depth_range_meters": "1 - 40"
   },
   "46": {
     "full_name": "Short-tail Electric Ray",
@@ -1175,6 +1536,7 @@
     "energy_value": "10",
     "swim_speed": "2.8",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": [
       "74",
       "60",
@@ -1188,7 +1550,20 @@
     "playable": "Y",
     "active": "",
     "scientific_name": "Hypnos monopterygius",
-    "notes": ""
+    "notes": [
+      "Hypnos monopterygius",
+      "also known as the coffin ray. It is common in inshore waters shallower than 80 m (260 ft). It is the sole member of its genus Hypnos",
+      "and family Hypnidae. This small species typically reaches 40 cm (16 in) in length. Greatly enlarged pectoral fins and an extremely short tail",
+      "coupled with diminutive dorsal and caudal fins all concentrated towards the rear",
+      "give the coffin ray a distinctive pear-like shape. It is a varying shade of brown in color above",
+      "and has tiny eyes and a large",
+      "highly distensible mouth. When approached",
+      "the coffin ray tends to keep still in its place of concealment on the sea floor. As a result",
+      "many divers",
+      "swimmers",
+      "and bathers have been shocked after accidentally contacting it."
+    ],
+    "depth_range_meters": "1 - 240"
   },
   "47": {
     "full_name": "Silver Sprat",
@@ -1201,6 +1576,7 @@
     "energy_value": "10",
     "swim_speed": "1.8",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": "69",
     "food_ok": "",
     "food_bad": "",
@@ -1209,7 +1585,12 @@
     "playable": "Y",
     "active": "",
     "scientific_name": "Spratelloides gracilis",
-    "notes": ""
+    "notes": [
+      "Sprats and their relatives",
+      "herrings and sardines",
+      "are always found in large schools. They like the shallow water around reef edges. These small fish are a main food source for larger fish as well as for people. Over half of the world's fish catch contains sardines and herring."
+    ],
+    "depth_range_meters": "1 - 40"
   },
   "48": {
     "full_name": "Small Spotted Pompano",
@@ -1222,6 +1603,7 @@
     "energy_value": "10",
     "swim_speed": "2.8",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": [
       "S",
       "ES",
@@ -1234,7 +1616,15 @@
     "playable": "Y",
     "active": "",
     "scientific_name": "Trachinotus baillonii",
-    "notes": ""
+    "notes": [
+      "They always move in schools at the edge of the surf near the reef",
+      "usually in pairs or small groups in surface waters. The body color varies from silvery blue to grey above",
+      "with some small black spots on the flanks. The number of these spots increases with age. This fish is silvery white below. It has large",
+      "strong fins",
+      "a forked tail",
+      "and a narrow base."
+    ],
+    "depth_range_meters": "1 - 3"
   },
   "49": {
     "full_name": "Threadfin Butterflyfish",
@@ -1247,6 +1637,7 @@
     "energy_value": "10",
     "swim_speed": "3",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": [
       "62",
       "78",
@@ -1260,7 +1651,12 @@
     "playable": "Y",
     "active": "",
     "scientific_name": "chaetodon auriga",
-    "notes": ""
+    "notes": [
+      "Generally a hardy species",
+      "in the wild it is found on inner and outer reef slopes. As with many fish",
+      "the Threadfin Butterfly's color and markings can vary with the region of origin. Red Sea specimens tend to lose the eyespot (false eye to confuse predators) on the dorsal fin."
+    ],
+    "depth_range_meters": "1 - 60"
   },
   "50": {
     "full_name": "Whitemargin Unicornfish",
@@ -1273,6 +1669,7 @@
     "energy_value": "10",
     "swim_speed": "3",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": [
       "69",
       "77"
@@ -1284,7 +1681,11 @@
     "playable": "Y",
     "active": "",
     "scientific_name": "naso annulatus",
-    "notes": ""
+    "notes": [
+      "Whitemargin unicorn fish are one of many surgeon fish in the sea. The species normally range from a brownish-white color to grey/olive in color. They can be distinguished by the sharp cone like-shap  nasal  protruding out of their foreahead. The tail is black surrounded by a white margin. It is often found in large schools off tropical reefs",
+      "and it feeds on zooplankton."
+    ],
+    "depth_range_meters": "1 - 60"
   },
   "51": {
     "full_name": "Whitemouth Moray Eel",
@@ -1297,6 +1698,7 @@
     "energy_value": "10",
     "swim_speed": "2.8",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": [
       "M",
       "MS",
@@ -1314,7 +1716,14 @@
     "playable": "Y",
     "active": "",
     "scientific_name": "Gymnothorax meleagris",
-    "notes": ""
+    "notes": [
+      "Moray eels are long snakelike fish that have small",
+      "razor-sharp teeth and large mouths. During the day",
+      "they prefer to hide in holes or under coral boulders. At night",
+      "they cruise the reef searching for food. They have a keen sense of smell and many have electro-receptors. Morays use the electro-receptors to sense the electric pulses that all animals make",
+      "helping them find prey even in total darkness. Morays begin life as males and then change to females as they become larger."
+    ],
+    "depth_range_meters": "1 - 51"
   },
   "52": {
     "full_name": "Whitespot Hawkfish",
@@ -1327,6 +1736,7 @@
     "energy_value": "10",
     "swim_speed": "3",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": [
       "S",
       "ES",
@@ -1339,7 +1749,14 @@
     "playable": "Y",
     "active": "",
     "scientific_name": "Paracirrhites hemistictus",
-    "notes": ""
+    "notes": [
+      "The whitespot hawkfish",
+      "also known as the halfspotted hawkfish",
+      "spends much of its time perchedon a boulder or branch of coral",
+      "waiting for prey to pass. Because it stays completely motionless",
+      "unsuspecting fish sometimes swim a little too close to the hawkfish and quickly become its lunch. The whitespot hawkfish is known for the dramactic color changes it goes through as it grows older."
+    ],
+    "depth_range_meters": "1 - 20"
   },
   "53": {
     "full_name": "Whitespotted Guitarfish",
@@ -1352,6 +1769,7 @@
     "energy_value": "10",
     "swim_speed": "2.8",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": [
       "63",
       "16",
@@ -1366,7 +1784,15 @@
     "playable": "Y",
     "active": "",
     "scientific_name": "Rhynchobatus djiddensis",
-    "notes": ""
+    "notes": [
+      "This member of the ray family has a rather long shark-like body and can grow to quite a large size. Like most rays",
+      "the guitarfish will bury itself in the sand and wait for passing prey. It has rows of flat",
+      "grinding teeth that it uses to crush the shells of its favorite food",
+      "crabs. Guitarfish",
+      "like other member of the ray family",
+      "give birth to fully developed live young."
+    ],
+    "depth_range_meters": "1 - 75"
   },
   "54": {
     "full_name": "Yellowspot Emperor",
@@ -1379,6 +1805,7 @@
     "energy_value": "10",
     "swim_speed": "3",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": [
       "ES",
       "75",
@@ -1391,7 +1818,8 @@
     "playable": "Y",
     "active": "",
     "scientific_name": "Gnathodentex aureolineatus",
-    "notes": ""
+    "notes": "Emperors are fish that rest in large schools. They move over sandy areas in search of sand-dwelling invertebrates. Yellowspot emperors are also knwn as gold-lined sea beams.",
+    "depth_range_meters": "3 - 30"
   },
   "55": {
     "full_name": "Yellow Seahorse",
@@ -1404,6 +1832,7 @@
     "energy_value": "10",
     "swim_speed": "2.8",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": "",
     "food_ok": "",
     "food_bad": "",
@@ -1412,7 +1841,8 @@
     "playable": "",
     "active": "",
     "scientific_name": "Hippocampus kuda",
-    "notes": ""
+    "notes": "",
+    "depth_range_meters": ""
   },
   "56": {
     "full_name": "Bluestreak Cleaner Wrasse",
@@ -1425,6 +1855,7 @@
     "energy_value": "10",
     "swim_speed": "3",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": "",
     "food_ok": "",
     "food_bad": "",
@@ -1433,7 +1864,8 @@
     "playable": "",
     "active": "",
     "scientific_name": "Labroides dimidiatus",
-    "notes": ""
+    "notes": "",
+    "depth_range_meters": ""
   },
   "57": {
     "full_name": "Gorgeous Prawn-goby",
@@ -1446,6 +1878,7 @@
     "energy_value": "10",
     "swim_speed": "3",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": "76",
     "food_ok": "",
     "food_bad": "",
@@ -1454,7 +1887,8 @@
     "playable": "",
     "active": "",
     "scientific_name": "Amblyeleotris wheeleri",
-    "notes": ""
+    "notes": "",
+    "depth_range_meters": ""
   },
   "58": {
     "full_name": "Yellow Coral Goby",
@@ -1467,6 +1901,7 @@
     "energy_value": "10",
     "swim_speed": "1.8",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": "69",
     "food_ok": "",
     "food_bad": "",
@@ -1475,7 +1910,8 @@
     "playable": "",
     "active": "",
     "scientific_name": "Gobiodon okinawae",
-    "notes": ""
+    "notes": "",
+    "depth_range_meters": ""
   },
   "59": {
     "full_name": "Peach Fairy Basslet",
@@ -1488,6 +1924,7 @@
     "energy_value": "10",
     "swim_speed": "1.8",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": "69",
     "food_ok": "",
     "food_bad": "",
@@ -1496,7 +1933,8 @@
     "playable": "",
     "active": "",
     "scientific_name": "Pseudanthias dispar",
-    "notes": ""
+    "notes": "",
+    "depth_range_meters": ""
   },
   "60": {
     "full_name": "Banded Coral Shrimp",
@@ -1509,6 +1947,7 @@
     "energy_value": "10",
     "swim_speed": "1.8",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": "",
     "food_ok": "",
     "food_bad": "",
@@ -1517,7 +1956,8 @@
     "playable": "",
     "active": "NIGHT",
     "scientific_name": "Stenopus hispidus",
-    "notes": ""
+    "notes": "",
+    "depth_range_meters": ""
   },
   "61": {
     "full_name": "Brittle Star",
@@ -1530,6 +1970,7 @@
     "energy_value": "10",
     "swim_speed": "0",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": "",
     "food_ok": "",
     "food_bad": "",
@@ -1538,7 +1979,8 @@
     "playable": "",
     "active": "ANYTIME",
     "scientific_name": "Ophiuroids (class)",
-    "notes": ""
+    "notes": "",
+    "depth_range_meters": ""
   },
   "62": {
     "full_name": "Bubble-tip Anemone",
@@ -1551,6 +1993,7 @@
     "energy_value": "10",
     "swim_speed": "2.8",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": "",
     "food_ok": "",
     "food_bad": "",
@@ -1559,7 +2002,8 @@
     "playable": "",
     "active": "",
     "scientific_name": "Entacmaea quadricolor",
-    "notes": ""
+    "notes": "",
+    "depth_range_meters": ""
   },
   "63": {
     "full_name": "Trapezia Crab",
@@ -1572,6 +2016,7 @@
     "energy_value": "10",
     "swim_speed": "3",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": "",
     "food_ok": "",
     "food_bad": "",
@@ -1580,7 +2025,8 @@
     "playable": "",
     "active": "",
     "scientific_name": "Trapezia cymodoce",
-    "notes": ""
+    "notes": "",
+    "depth_range_meters": ""
   },
   "64": {
     "full_name": "Giant Clam",
@@ -1593,6 +2039,7 @@
     "energy_value": "10",
     "swim_speed": "2.8",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": "",
     "food_ok": "",
     "food_bad": "",
@@ -1601,7 +2048,8 @@
     "playable": "",
     "active": "",
     "scientific_name": "Tridacna gigas",
-    "notes": ""
+    "notes": "",
+    "depth_range_meters": ""
   },
   "65": {
     "full_name": "Sea Grass",
@@ -1614,6 +2062,7 @@
     "energy_value": "10",
     "swim_speed": "0",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": "",
     "food_ok": "",
     "food_bad": "",
@@ -1622,7 +2071,8 @@
     "playable": "",
     "active": "",
     "scientific_name": "Phanerograms (division)",
-    "notes": ""
+    "notes": "",
+    "depth_range_meters": ""
   },
   "66": {
     "full_name": "Reef Lobster",
@@ -1635,6 +2085,7 @@
     "energy_value": "10",
     "swim_speed": "3",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": "",
     "food_ok": "",
     "food_bad": "",
@@ -1643,7 +2094,8 @@
     "playable": "",
     "active": "",
     "scientific_name": "Enoplometopus pictus",
-    "notes": ""
+    "notes": "",
+    "depth_range_meters": ""
   },
   "67": {
     "full_name": "Needle Spined Sea Urchin",
@@ -1656,6 +2108,7 @@
     "energy_value": "10",
     "swim_speed": "0",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": "",
     "food_ok": "",
     "food_bad": "",
@@ -1664,7 +2117,8 @@
     "playable": "",
     "active": "",
     "scientific_name": "Diadema setosum",
-    "notes": ""
+    "notes": "",
+    "depth_range_meters": ""
   },
   "68": {
     "full_name": "Oyster",
@@ -1677,6 +2131,7 @@
     "energy_value": "10",
     "swim_speed": "0",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": "",
     "food_ok": "",
     "food_bad": "",
@@ -1685,7 +2140,8 @@
     "playable": "",
     "active": "",
     "scientific_name": "Ostreidae (Family)",
-    "notes": ""
+    "notes": "",
+    "depth_range_meters": ""
   },
   "69": {
     "full_name": "Plankton",
@@ -1698,6 +2154,7 @@
     "energy_value": "10",
     "swim_speed": "1",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": "",
     "food_ok": "",
     "food_bad": "",
@@ -1706,7 +2163,8 @@
     "playable": "",
     "active": "",
     "scientific_name": "Plankton",
-    "notes": ""
+    "notes": "",
+    "depth_range_meters": ""
   },
   "70": {
     "full_name": "Reef Starfish",
@@ -1719,6 +2177,7 @@
     "energy_value": "10",
     "swim_speed": "0.1",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": "",
     "food_ok": "",
     "food_bad": "",
@@ -1727,7 +2186,8 @@
     "playable": "",
     "active": "",
     "scientific_name": "Pentagonaster duebeni",
-    "notes": ""
+    "notes": "",
+    "depth_range_meters": ""
   },
   "71": {
     "full_name": "Sea Cucumber",
@@ -1740,6 +2200,7 @@
     "energy_value": "10",
     "swim_speed": "0.1",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": "",
     "food_ok": "",
     "food_bad": "",
@@ -1748,7 +2209,8 @@
     "playable": "",
     "active": "",
     "scientific_name": "Holothuroidea (Class)",
-    "notes": ""
+    "notes": "",
+    "depth_range_meters": ""
   },
   "72": {
     "full_name": "Sea Slug",
@@ -1761,6 +2223,7 @@
     "energy_value": "10",
     "swim_speed": "0",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": "",
     "food_ok": "",
     "food_bad": "",
@@ -1769,7 +2232,8 @@
     "playable": "",
     "active": "",
     "scientific_name": "Nudibranch (Class)",
-    "notes": ""
+    "notes": "",
+    "depth_range_meters": ""
   },
   "73": {
     "full_name": "Box Jellyfish",
@@ -1782,6 +2246,7 @@
     "energy_value": "10",
     "swim_speed": "0.5",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": "",
     "food_ok": "",
     "food_bad": "",
@@ -1790,7 +2255,8 @@
     "playable": "",
     "active": "",
     "scientific_name": "Chironex fleckeri",
-    "notes": ""
+    "notes": "",
+    "depth_range_meters": ""
   },
   "74": {
     "full_name": "Shrimp",
@@ -1803,6 +2269,7 @@
     "energy_value": "10",
     "swim_speed": "0.8",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": "",
     "food_ok": "",
     "food_bad": "",
@@ -1811,7 +2278,8 @@
     "playable": "",
     "active": "ANYTIME",
     "scientific_name": "Natantia (Sub-Order)",
-    "notes": ""
+    "notes": "",
+    "depth_range_meters": ""
   },
   "75": {
     "full_name": "Sea Snail",
@@ -1824,6 +2292,7 @@
     "energy_value": "10",
     "swim_speed": "0",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": "",
     "food_ok": "",
     "food_bad": "",
@@ -1832,7 +2301,8 @@
     "playable": "",
     "active": "",
     "scientific_name": "Gastropods (Class)",
-    "notes": ""
+    "notes": "",
+    "depth_range_meters": ""
   },
   "76": {
     "full_name": "Worm",
@@ -1845,6 +2315,7 @@
     "energy_value": "10",
     "swim_speed": "0.3",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": "",
     "food_ok": "",
     "food_bad": "",
@@ -1853,7 +2324,8 @@
     "playable": "",
     "active": "",
     "scientific_name": "Polychaeta (Class)",
-    "notes": ""
+    "notes": "",
+    "depth_range_meters": ""
   },
   "77": {
     "full_name": "Algae",
@@ -1866,6 +2338,7 @@
     "energy_value": "10",
     "swim_speed": "0",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": "",
     "food_ok": "",
     "food_bad": "",
@@ -1874,7 +2347,8 @@
     "playable": "",
     "active": "",
     "scientific_name": "Thallophytes (class)",
-    "notes": ""
+    "notes": "",
+    "depth_range_meters": ""
   },
   "78": {
     "full_name": "Coral",
@@ -1887,6 +2361,7 @@
     "energy_value": "10",
     "swim_speed": "0",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": "",
     "food_ok": "",
     "food_bad": "",
@@ -1895,7 +2370,8 @@
     "playable": "",
     "active": "",
     "scientific_name": "-",
-    "notes": ""
+    "notes": "",
+    "depth_range_meters": ""
   },
   "79": {
     "full_name": "Sea-Sponge",
@@ -1908,6 +2384,7 @@
     "energy_value": "10",
     "swim_speed": "0",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": "",
     "food_ok": "",
     "food_bad": "",
@@ -1916,7 +2393,8 @@
     "playable": "",
     "active": "",
     "scientific_name": "-",
-    "notes": ""
+    "notes": "",
+    "depth_range_meters": ""
   },
   "80": {
     "full_name": "Dusky Anemonefish",
@@ -1929,6 +2407,7 @@
     "energy_value": "10",
     "swim_speed": "3",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": "69",
     "food_ok": "",
     "food_bad": "",
@@ -1937,7 +2416,8 @@
     "playable": "",
     "active": "",
     "scientific_name": "Amphiprion rubrocinctus",
-    "notes": ""
+    "notes": "",
+    "depth_range_meters": ""
   },
   "81": {
     "full_name": "Variegated Lizardfish",
@@ -1950,6 +2430,7 @@
     "energy_value": "10",
     "swim_speed": "3",
     "turn_speed": "1",
+    "eats_desc": "",
     "food_good": "ES",
     "food_ok": "",
     "food_bad": "",
@@ -1958,6 +2439,7 @@
     "playable": "",
     "active": "",
     "scientific_name": "Synodus variegatus",
-    "notes": ""
+    "notes": "",
+    "depth_range_meters": ""
   }
 }
