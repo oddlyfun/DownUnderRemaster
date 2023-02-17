@@ -1,3 +1,30 @@
+//*********************************************************************
+//
+//			Button check for hovers and such
+//
+//*********************************************************************
+
+
+
+for ( var i = 0; i < array_length(btn_array); i++)
+{
+	var _btn = btn_array[@ i];
+	_btn.hover = false;
+	_btn.state = 0;
+	var _hover_chk = gui_element_collision(_btn.gx, _btn.gy, _btn.width, _btn.height);
+	if ( _hover_chk == true )
+	{
+		_btn.hover = true;
+	}
+}
+
+
+
+//*********************************************************************
+//
+//						Mouse Checks
+//
+//*********************************************************************
 
 if ( mouse_check_button_pressed(mb_left) )
 {
@@ -58,13 +85,37 @@ if ( mouse_check_button(mb_left) )
 	if ( _check == true or sb_bulb_active == true )
 	{
 		sb_bulb_scroll_amount = sb_bulb_scroll_amount + (mouse_y - prev_mouse_y);
-		
+	}
+
+	//Buttons
+	for ( var i = 0; i < array_length(btn_array); i++)
+	{
+		var _b = btn_array[@ i];
+		if ( _b.hover == true ) then _b.state = 1;
 	}
 }
 
 if ( mouse_check_button_released(mb_left) )
 {
 	sb_bulb_active = false;
+
+	for ( var i = 0; i < array_length(btn_array); i++)
+	{
+		var _b = btn_array[@ i];
+		if ( _b.hover == true )
+		{
+			if ( i == 0 )
+			{
+				instance_destroy(id);
+				instance_create_layer(0,0,"Instances",o_game_mode_selector);
+			}
+			if ( i == 1 )
+			{
+				// Practice PLAY
+				//room_goto()
+			}
+		}
+	}
 }
 
 
