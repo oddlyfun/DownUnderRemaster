@@ -97,16 +97,13 @@ if ( display_level == 1 and clicked == false )
 	start_button.gx = _btn_x + ( _quater_width * 2 );	
 	start_button.gy = _btn_y;
 
-	_cb = cancel_button;
-	_sb = start_button;
+	var _cb = cancel_button;
+	var _sb = start_button;
 
 	draw_basic_button(_cb.gx, _cb.gy, _cb.width, _cb.height, _cb.state, _cb.text);
 	draw_basic_button(_sb.gx, _sb.gy, _sb.width, _sb.height, _sb.state, _sb.text);
 	
 }
-
-
-
 
 
 // skips the code for a single frame so I don't capture the mouse click on the same frame from the step event
