@@ -1,8 +1,8 @@
 
 function draw_text_wrap(_x, _y, r_bound, _height, _words)
 {
-	draw_set_color(c_black);
-	draw_set_font(fnt_game);
+	//draw_set_color(c_black);
+	//draw_set_font(fnt_game);
 
 	var _top_buffer = 4;
 	var _right_buffer = 4;
@@ -171,4 +171,141 @@ function gui_element_collision(_guix, _guiy, _width, _height)
 		return true;
 	} 
 	return false;
+}
+
+function draw_text_anchor(_anchor, _string)
+{
+	var _x = _anchor.x;
+	var _y = _anchor.y;
+
+	draw_text(_x,_y,_string);
+}
+
+function challenge_list()
+{
+	var _four_fish = [];
+	var _r_list = noone;
+
+//***********************************************************
+//
+//								1
+//
+//***********************************************************
+
+	while ( true )
+	{
+		var _rv = irandom(1);
+
+		if ( _rv == 0 )
+		{
+			_r_list = irandom(ds_list_size(global.fish_ES) - 1);
+			_r_list = ds_list_find_value(_r_list);
+		}
+
+		if ( _rv == 1 )
+		{
+			_r_list = irandom(ds_list_size(global.fish_ES) - 1);
+			_r_list = ds_list_find_value(_r_list);
+		}
+
+
+		if ( _r_list.playable  == "Y" )
+		{
+			_four_fish[0] = _r_list;
+			break;
+		}
+	}
+
+//***********************************************************
+//
+//								2
+//
+//***********************************************************
+	
+	while ( true )
+	{
+		var _rv = irandom(1);
+
+		if ( _rv == 0 )
+		{
+			_r_list = irandom(ds_list_size(global.fish_MS) - 1);
+			_r_list = ds_list_find_value(_r_list);
+		}
+
+		if ( _rv == 1 )
+		{
+			_r_list = irandom(ds_list_size(global.fish_M) - 1);
+			_r_list = ds_list_find_value(_r_list);
+		}
+
+
+		if ( _r_list.playable  == "Y" )
+		{
+			_four_fish[0] = _r_list;
+			break;
+		}
+	}
+
+//***********************************************************
+//
+//								3
+//
+//***********************************************************
+	
+	while ( true )
+	{
+		var _rv = irandom(1);
+
+		if ( _rv == 0 )
+		{
+			_r_list = irandom(ds_list_size(global.fish_M) - 1);
+			_r_list = ds_list_find_value(_r_list);
+		}
+
+		if ( _rv == 1 )
+		{
+			_r_list = irandom(ds_list_size(global.fish_ML) - 1);
+			_r_list = ds_list_find_value(_r_list);
+		}
+
+
+		if ( _r_list.playable  == "Y" )
+		{
+			_four_fish[0] = _r_list;
+			break;
+		}
+	}
+
+//***********************************************************
+//
+//								4
+//
+//***********************************************************
+
+	while ( true )
+	{
+		var _rv = irandom(1);
+
+		if ( _rv == 0 )
+		{
+			_r_list = irandom(ds_list_size(global.fish_L) - 1);
+			_r_list = ds_list_find_value(_r_list);
+		}
+
+		if ( _rv == 1 )
+		{
+			_r_list = irandom(ds_list_size(global.fish_L) - 1);
+			_r_list = ds_list_find_value(_r_list);
+		}
+
+
+		if ( _r_list.playable  == "Y" )
+		{
+			_four_fish[0] = _r_list;
+			break;
+		}
+	}
+
+// end
+	return _four_fish;
 }
