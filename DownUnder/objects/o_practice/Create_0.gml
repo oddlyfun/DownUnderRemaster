@@ -55,6 +55,17 @@ prev_mouse_y = mouse_y;
 
 window_title = "Practice";
 
+
+var btn_w = 100;
+var btn_h = 20;
+play_btn = new basic_button(0,0,btn_w,btn_h,0,"Play");
+cancel_btn = new cancel_button(0,0,btn_w,btn_h,0,"Cancel");
+
+btn_array = [cancel_btn, play_btn];
+btn_gap = 10;
+
+
+
 // Page Elements
 //--Left Side--
 //1. Drop Down fish selection

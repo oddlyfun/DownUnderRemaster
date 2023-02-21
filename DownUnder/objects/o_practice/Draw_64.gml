@@ -167,4 +167,41 @@ if ( scroll_bar_toggle == true )
 //
 //******************************************************************
 
-_anchor = panel_right_anchors[0][0];
+
+
+// eats
+
+var _eat_string = "Eats: " 			+ _fish_info.eats_desc
+var _special_abilty = "Special: " 	+ _fish_info.ability
+var _depth_info = "Depth Range: " 	+ _fish_info.depth_range_meters + " meters"
+var _fun_notes = _fish_info.notes;
+
+draw_set_color(c_black);
+draw_set_font(fnt_game);
+
+
+draw_text_anchor(panel_right_anchors[0][0], _eat_string);
+draw_text_anchor(panel_right_anchors[0][1], _special_abilty);
+draw_text_anchor(panel_right_anchors[0][2], _depth_info);
+
+_anchor = panel_right_anchors[0][3];
+draw_text_anchor(_anchor.x, _anchor.y, _anchor.x + panel_right_width, -1, _fun_notes);
+
+
+// Play and Cancel Buttons !!
+
+_anchor = panel_right_anchors[0][5];
+
+var _button_total_width = (play_btn.width * 2) + btn_gap;
+var _first_button_x = _anchor.x + ((panel_right_width / 2) - (_button_total_width / 2));
+
+cancel_btn.x = _first_button_x;
+cancel_btn.y = _anchor.y;
+play_btn.y = _anchor.y;
+play_btn.x = _first_button_x + btn_gap + cancel_btn.width;
+
+var _cb = cancel_button;
+var _pb = play_btn;
+
+draw_basic_button(_cb.gx, _cb.gy, _cb.width, _cb.height, _cb.state, _cb.text);
+draw_basic_button(_pb.gx, _pb.gy, _pb.width, _pb.height, _pb.state, _pb.text);
