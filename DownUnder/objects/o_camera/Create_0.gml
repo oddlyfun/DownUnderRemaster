@@ -2,7 +2,13 @@ frame = 0;
 
 cam_vel = 0.1;
 view_width = 640; 
-view_height = 360; 
+view_height = 360;
+
+window_width = window_get_width();
+window_height = window_get_height();
+target_width = 640;
+target_height = 360;
+check_again = false;
 
 pad_x = 160;
 pad_y = 120;
@@ -30,7 +36,7 @@ while( room_exists(_i) )
 surface_resize(application_surface,view_width,view_height);
 
 
-window_set_size(view_width*2,view_height*2);
+window_set_size(view_width,view_height);
 
 alarm[0]=1;
 
