@@ -2,7 +2,7 @@
 function draw_text_wrap(_x, _y, r_bound, _height, _words)
 {
 	//draw_set_color(c_black);
-	//draw_set_font(fnt_game);
+	draw_set_font(global.fnt_spr_small);
 
 	var _top_buffer = 4;
 	var _right_buffer = 4;
@@ -81,7 +81,6 @@ function create_string_array( _words )
 
 function anchor_grid(w,h,rows=2,cols=2,xoff=0,yoff=0)
 {
-	
 	var _anchor_array = [0,0];
 
 	var _block_w = w / cols;
@@ -99,7 +98,6 @@ function anchor_grid(w,h,rows=2,cols=2,xoff=0,yoff=0)
 	}
 
 	return _anchor_array;
-	
 }
 
 function vector2(_x, _y) constructor
@@ -146,4 +144,18 @@ function draw_text_anchor(_anchor, _string)
 	var _y = _anchor.y;
 
 	draw_text(_x,_y,_string);
+}
+
+
+function write_text(_x, _y, _color, _string)
+{
+	draw_set_color(_color);
+	draw_set_font(global.fnt_spr_small);
+	draw_text(_x,_y,_string);
+
+}
+
+function write_text_wrap(_x, _y, _color, _right_bound, _bottom_bound, _string)
+{
+	//code here
 }
