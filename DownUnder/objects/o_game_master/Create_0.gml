@@ -23,6 +23,16 @@ if ( file_exists(global.all_life_json_filename))
 #macro ERROR = "error";
 global.message_q = ds_queue_create();
 
+
+
+
+global.font_small_map = "! \"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_abcdefghijklmnopqrstuvwxyz{|}~"
+global.fnt_spr_small = font_add_sprite_ext(spr_font_small,global.font_small_map,false,2);
+
+
+
+
+
 //
 // Orginize all sea life into different lists based on their attributes
 // These lists will contain structs with added field of the fish ID

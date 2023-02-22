@@ -121,3 +121,133 @@ function s_fish_help(_string)
 			return 1;
 	}
 }
+
+
+function challenge_list()
+{
+	var _four_fish = [];
+	var _r_list = noone;
+
+//***********************************************************
+//
+//								1
+//
+//***********************************************************
+
+	while ( true )
+	{
+		var _rv = irandom(1);
+
+		if ( _rv == 0 )
+		{
+			_r_list = irandom(ds_list_size(global.fish_ES) - 1);
+			_r_list = ds_list_find_value(_rv,_r_list);
+		}
+
+		if ( _rv == 1 )
+		{
+			_r_list = irandom(ds_list_size(global.fish_ES) - 1);
+			_r_list = ds_list_find_value(_rv,_r_list);
+		}
+
+
+		if ( _r_list.playable  == "Y" )
+		{
+			_four_fish[0] = _r_list;
+			break;
+		}
+	}
+
+//***********************************************************
+//
+//								2
+//
+//***********************************************************
+	
+	while ( true )
+	{
+		var _rv = irandom(1);
+
+		if ( _rv == 0 )
+		{
+			_r_list = irandom(ds_list_size(global.fish_MS) - 1);
+			_r_list = ds_list_find_value(_rv,_r_list);
+		}
+
+		if ( _rv == 1 )
+		{
+			_r_list = irandom(ds_list_size(global.fish_M) - 1);
+			_r_list = ds_list_find_value(_rv,_r_list);
+		}
+
+
+		if ( _r_list.playable  == "Y" )
+		{
+			_four_fish[0] = _r_list;
+			break;
+		}
+	}
+
+//***********************************************************
+//
+//								3
+//
+//***********************************************************
+	
+	while ( true )
+	{
+		var _rv = irandom(1);
+
+		if ( _rv == 0 )
+		{
+			_r_list = irandom(ds_list_size(global.fish_M) - 1);
+			_r_list = ds_list_find_value(_rv,_r_list);
+		}
+
+		if ( _rv == 1 )
+		{
+			_r_list = irandom(ds_list_size(global.fish_ML) - 1);
+			_r_list = ds_list_find_value(_rv,_r_list);
+		}
+
+
+		if ( _r_list.playable  == "Y" )
+		{
+			_four_fish[0] = _r_list;
+			break;
+		}
+	}
+
+//***********************************************************
+//
+//								4
+//
+//***********************************************************
+
+	while ( true )
+	{
+		var _rv = irandom(1);
+
+		if ( _rv == 0 )
+		{
+			_r_list = irandom(ds_list_size(global.fish_L) - 1);
+			_r_list = ds_list_find_value(_rv,_r_list);
+		}
+
+		if ( _rv == 1 )
+		{
+			_r_list = irandom(ds_list_size(global.fish_L) - 1);
+			_r_list = ds_list_find_value(_rv,_r_list);
+		}
+
+
+		if ( _r_list.playable  == "Y" )
+		{
+			_four_fish[0] = _r_list;
+			break;
+		}
+	}
+
+// end
+	return _four_fish;
+}

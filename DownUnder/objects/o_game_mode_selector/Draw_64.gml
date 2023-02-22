@@ -13,9 +13,9 @@ if ( display_level == 1 and clicked == false )
 
 	draw_sprite_stretched(spr_popup_X, 0, _window_x, _window_y, mode_selection_width, mode_selection_height);
 
-	var _window_title = "Choose a Game Mode";
+	var _window_title = "Choose a game mode";
 
-	draw_set_font(fnt_game);
+	draw_set_font(global.fnt_spr_small);
 	draw_set_color(c_white);
 
 	draw_text(_window_x + right_margin, _window_y + top_white_space, _window_title);
