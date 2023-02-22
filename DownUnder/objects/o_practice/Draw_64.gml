@@ -1,12 +1,12 @@
 //spr_popup_X
 //spr_radial_button
 //draw_sprite_stretched(sprite, subimg, x, y, w, h);
-draw_set_font(fnt_game);
+//draw_set_font(fnt_game);
 
-draw_sprite_stretched(spr_popup_X, 0, window_x, window_y, window_width, window_height);
+//draw_sprite_stretched(spr_popup_X, 0, window_x, window_y, window_width, window_height);
 
-draw_set_color(c_white);
-draw_text(window_x + 6, window_y, window_title);
+//draw_set_color(c_white);
+//draw_text(window_x + 6, window_y, window_title);
 
 // scroll bar parts
 
@@ -15,6 +15,8 @@ draw_text(window_x + 6, window_y, window_title);
 // -- Right Side drop down button
 
 // -- Main Selection dropdown window
+
+window_display.draw_me();
 
 // -- Scroll bar
 // --- Down Button
@@ -167,8 +169,6 @@ if ( scroll_bar_toggle == true )
 //
 //******************************************************************
 
-
-
 // eats
 
 var _eat_string = "Eats: " 			+ _fish_info.eats_desc
@@ -200,8 +200,11 @@ cancel_btn.gy = _anchor.y;
 play_btn.gy = _anchor.y;
 play_btn.gx = _first_button_x + btn_gap + cancel_btn.width;
 
-var _cb = cancel_btn;
-var _pb = play_btn;
+cancel_btn.draw_me();
+play_btn.draw_me();
 
-draw_basic_button(_cb.gx, _cb.gy, _cb.width, _cb.height, _cb.state, _cb.text);
-draw_basic_button(_pb.gx, _pb.gy, _pb.width, _pb.height, _pb.state, _pb.text);
+//var _cb = cancel_btn;
+//var _pb = play_btn;
+
+//draw_basic_button(_cb.gx, _cb.gy, _cb.width, _cb.height, _cb.state, _cb.text);
+//draw_basic_button(_pb.gx, _pb.gy, _pb.width, _pb.height, _pb.state, _pb.text);
