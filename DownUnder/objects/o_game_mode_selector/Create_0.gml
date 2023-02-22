@@ -27,6 +27,8 @@ mode_text_info = [
 "Choose the fish you want to become, explore the reef, and learn how to survive."
 ];
 
+mode_window = new window_popup(mode_selection_width, mode_selection_height,"Choose a game mode",8,true);
+
 cancel_button = new basic_button(0, 0, 100, 32, 0, "Cancel");
 start_button = new basic_button(0, 0, 100, 32, 0, "Start");
 
