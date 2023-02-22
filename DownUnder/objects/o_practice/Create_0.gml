@@ -1,23 +1,28 @@
-draw_set_font(fnt_game);
+draw_set_font(global.fnt_spr_small);
 
-ui_width = display_get_gui_width();
-ui_height = display_get_gui_height();
+//ui_width = display_get_gui_width();
+//ui_height = display_get_gui_height();
 
-window_sprite_info = sprite_get_nineslice(spr_popup_X);
+//window_sprite_info = sprite_get_nineslice(spr_popup_X);
 
-window_width 		= floor(ui_width * 0.85);
-window_height 		= floor(ui_height * 0.85);
-window_x 			= (ui_width / 2) - (window_width / 2);
-window_y 			= (ui_height / 2) - (window_height / 2);
-window_midpoint 	= window_x + (window_width / 2);
+var window_width 	= floor(ui_width * 0.85);
+var window_height 	= floor(ui_height * 0.85);
+//window_x 			= (ui_width / 2) - (window_width / 2);
+//window_y 			= (ui_height / 2) - (window_height / 2);
+
+window_display 		= new window_popup(window_width, window_height,"Practice");
+
+
+window_midpoint 	= window_display.x + (window_display.width / 2);
+
 // adjust for the title bar in the spr_popup_X
-window_y_tb = window_y + window_sprite_info.top;
-window_height_tb = window_height - window_sprite_info.top;
+//window_y_tb = window_y + window_sprite_info.top;
+//window_height_tb = window_height - window_sprite_info.top;
 
-panel_left_width 	= (window_width / 2) * 0.90;
-panel_left_height 	= window_height_tb * 0.90;
-panel_left_x 		= window_x + ((window_width / 4 ) - (panel_left_width / 2));
-panel_left_y 		= window_y_tb + ((window_height_tb / 2 ) - (panel_left_height / 2));
+panel_left_width 	= (window_display.width / 2) * 0.90;
+panel_left_height 	= window_display.height * 0.90;
+panel_left_x 		= window_display.x + ((window_display.width / 4 ) - (panel_left_width / 2));
+panel_left_y 		= ((window_display.height / 2 ) - (panel_left_height / 2));
 panel_left_anchors 	= anchor_grid(panel_left_width, panel_left_height, 6, 1,panel_left_x,panel_left_y);
 
 panel_right_width 	= panel_left_width;
@@ -53,8 +58,7 @@ sb_bulb_scroll_amount = 0;
 
 prev_mouse_y = mouse_y;
 
-window_title = "Practice";
-
+//window_title = "Practice";
 
 var btn_w = 100;
 var btn_h = 20;
