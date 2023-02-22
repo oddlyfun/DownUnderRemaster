@@ -18,6 +18,8 @@ for ( var i = 0; i < array_length(btn_array); i++)
 	}
 }
 
+window_display.check_close_hover();
+
 
 
 //*********************************************************************
@@ -41,12 +43,12 @@ if ( mouse_check_button_pressed(mb_left) )
 		sb_bulb_struct.width,
 		sb_bulb_struct.height
 		);
-	var _check_x_close = gui_element_collision(
-		window_x + window_width - window_sprite_info.right,
-		window_y,
-		window_sprite_info.right,
-		window_sprite_info.top
-		);
+//	var _check_x_close = gui_element_collision(
+//		window_x + window_width - window_sprite_info.right,
+//		window_y,
+//		window_sprite_info.right,
+//		window_sprite_info.top
+//		);
 		
 		
 	if ( _check_toggle == true )
@@ -64,7 +66,7 @@ if ( mouse_check_button_pressed(mb_left) )
 
 	if ( _check_sb == true ) then sb_bulb_active = true;
 
-	if ( _check_x_close == true )
+	if ( window_display.hover_close == true )
 	{
 		instance_create_layer(0,0,"Instances",o_game_mode_selector);
 		instance_destroy(id);
