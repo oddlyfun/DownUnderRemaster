@@ -125,129 +125,54 @@ function s_fish_help(_string)
 
 function challenge_list()
 {
-	var _four_fish = [];
+/*
+	//ES
+		34,47,11,20
+	//S
+		7,33,37,49,18,25,27,1,2,10,30,38,39,40,45,52,54,6,41
+	//MS
+		8,13,4,43,14,26,29,48
+	//M
+		44,9,28,17,31,16,19,32,36,35
+	//ML
+		46,12,21,50,42,3,51,15
+	//L
+		22,5,24,53
+	//EL
+		23
+*/
+	var picked_array = [];
 	var _r_list = noone;
+	var fish_one_options = [34,47,11,20,7,33,37,49,18,25,27,1,2,10,30,38,39,40,45,52,54,6,41];
+	var fish_two_options = [8,13,4,43,14,26,29,48,44,9,28,17,31,16,19,32,36,35];
+	var fish_three_options = [44,9,28,17,31,16,19,32,36,35,46,12,21,50,42,3,51,15];
+	var fish_four_options = [46,12,21,50,42,3,51,15,22,5,24,53]; // going to exclude the great white shark (23)
+	var _select_array = [fish_one_options, fish_two_options, fish_three_options, fish_four_options]
 
-//***********************************************************
-//
-//								1
-//
-//***********************************************************
-
-	while ( true )
+	for ( var i = 0; i < array_length(_select_array); i++ )
 	{
-		var _rv = irandom(1);
+		var choice_array = _select_array[@ i];	
 
-		if ( _rv == 0 )
+		while ( true )
 		{
-			_r_list = irandom(ds_list_size(global.fish_ES) - 1);
-			_r_list = ds_list_find_value(_rv,_r_list);
+			_r_list = irandom(array_length(choice_array) - 1);
+			_r_list = choice_array[@ _r_list];
+
+			var _no_repeats = false;
+			for ( var i = 0; i < array_length(picked_array); i++ )
+			{
+				var _c = picked_array[@ i];
+				if ( _c == _r_list ) then _no_repeats = true;
+			}
+
+			if ( _no_repeats == false )
+			{
+				picked_array[@ i] = _r_list;
+				break;
+			}
 		}
 
-		if ( _rv == 1 )
-		{
-			_r_list = irandom(ds_list_size(global.fish_ES) - 1);
-			_r_list = ds_list_find_value(_rv,_r_list);
-		}
-
-
-		if ( _r_list.playable  == "Y" )
-		{
-			_four_fish[0] = _r_list;
-			break;
-		}
 	}
 
-//***********************************************************
-//
-//								2
-//
-//***********************************************************
-	
-	while ( true )
-	{
-		var _rv = irandom(1);
-
-		if ( _rv == 0 )
-		{
-			_r_list = irandom(ds_list_size(global.fish_MS) - 1);
-			_r_list = ds_list_find_value(_rv,_r_list);
-		}
-
-		if ( _rv == 1 )
-		{
-			_r_list = irandom(ds_list_size(global.fish_M) - 1);
-			_r_list = ds_list_find_value(_rv,_r_list);
-		}
-
-
-		if ( _r_list.playable  == "Y" )
-		{
-			_four_fish[0] = _r_list;
-			break;
-		}
-	}
-
-//***********************************************************
-//
-//								3
-//
-//***********************************************************
-	
-	while ( true )
-	{
-		var _rv = irandom(1);
-
-		if ( _rv == 0 )
-		{
-			_r_list = irandom(ds_list_size(global.fish_M) - 1);
-			_r_list = ds_list_find_value(_rv,_r_list);
-		}
-
-		if ( _rv == 1 )
-		{
-			_r_list = irandom(ds_list_size(global.fish_ML) - 1);
-			_r_list = ds_list_find_value(_rv,_r_list);
-		}
-
-
-		if ( _r_list.playable  == "Y" )
-		{
-			_four_fish[0] = _r_list;
-			break;
-		}
-	}
-
-//***********************************************************
-//
-//								4
-//
-//***********************************************************
-
-	while ( true )
-	{
-		var _rv = irandom(1);
-
-		if ( _rv == 0 )
-		{
-			_r_list = irandom(ds_list_size(global.fish_L) - 1);
-			_r_list = ds_list_find_value(_rv,_r_list);
-		}
-
-		if ( _rv == 1 )
-		{
-			_r_list = irandom(ds_list_size(global.fish_L) - 1);
-			_r_list = ds_list_find_value(_rv,_r_list);
-		}
-
-
-		if ( _r_list.playable  == "Y" )
-		{
-			_four_fish[0] = _r_list;
-			break;
-		}
-	}
-
-// end
-	return _four_fish;
+	return picked_array;
 }
