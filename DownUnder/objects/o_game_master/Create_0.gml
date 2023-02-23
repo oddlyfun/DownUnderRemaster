@@ -18,19 +18,21 @@ if ( file_exists(global.all_life_json_filename))
 }
 
 
-#macro WARN = "warning";
-#macro INFO = "info";
-#macro ERROR = "error";
+
+
 global.message_q = ds_queue_create();
 
 
 
 
 global.font_small_map = "! \"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_abcdefghijklmnopqrstuvwxyz{|}~"
-global.fnt_spr_small = font_add_sprite_ext(spr_font_small,global.font_small_map,false,2);
+global.fnt_spr_small = font_add_sprite_ext(spr_font_small,global.font_small_map,false,0);
 
 
-
+#macro WARN  "warning"
+#macro INFO  "info"
+#macro ERROR  "error"
+#macro FONT  global.fnt_spr_small
 
 
 //

@@ -56,9 +56,9 @@ function window_popup(_width, _height,_title_string="Hello",_vert_anchors_amount
 			draw_sprite_stretched(titlebar_sprite,0,x, y - _tb_y, width,_tb_y);
 		}
 
-		var _xoff = x + nineslice_title_info.left;
-		var _yoff = y + nineslice_title_info.top;
-		write_text(_xoff,_yoff,c_white,my_title);
+		var _xoff = floor(x) + nineslice_title_info.left;
+		var _yoff = floor((y - _tb_y)) + nineslice_title_info.top;
+		write_text(_xoff + 5,_yoff + 2,c_white,my_title);
 
 		// draw the body
 		draw_sprite_stretched(body_sprite,0,x, y,width, height);

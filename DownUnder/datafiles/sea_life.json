@@ -363,10 +363,7 @@
     "playable": "Y",
     "active": "",
     "scientific_name": "Balistoides conspicillum",
-    "notes": [
-      "Lives in clear coastal to outer reef habitats. A solitary species. Uncommon to rare throughout most of its range. Adults usually seen along deep drop-offs, swimming about openly and may retreat to caves when approached. Juveniles secretive in small caves with rich invertebrate growth. Diet consists of sea urchins, crabs and other crustaceans, mollusks, and tunicates. Among the most highly prized aquarium fishes. This fish can become tame enough to be hand-fed",
-      "however, one should beware of the fish's sharp teeth."
-    ],
+    "notes": "Lives in clear coastal to outer reef habitats. A solitary species. Uncommon to rare throughout most of its range. Adults usually seen along deep drop-offs, swimming about openly and may retreat to caves when approached. Juveniles secretive in small caves with rich invertebrate growth. Diet consists of sea urchins, crabs and other crustaceans, mollusks, and tunicates. Among the most highly prized aquarium fishes. This fish can become tame enough to be hand-fed; however, one should beware of the fish's sharp teeth.",
     "depth_range_meters": "1 - 75"
   },
   "14": {
@@ -613,10 +610,7 @@
     "playable": "Y",
     "active": "",
     "scientific_name": "Epinephelus lanceolatus",
-    "notes": [
-      "The largest bony fish found in coral reefs. Individuals more than a meter long have been caught from shore and in harbors. Common in shallow waters. Found in caves or wrecks",
-      "also in estuaries. Juveniles secretive in reefs and rarely seen. The adults are grayish-brown in colour overlain with a mottled pattern and with darker fins. The small juveniles are yellow with wide, dark irregular bars and irregular dark spots on their fins. It is the most widely distributed species of grouper in the world. The giant grouper is an opportunistic ambush predator which feeds on a variety of fishes, as well as small sharks, juvenile sea turtles, crustaceans and molluscs which are all swallowed whole."
-    ],
+    "notes": "The largest bony fish found in coral reefs. Individuals more than a meter long have been caught from shore and in harbors. Common in shallow waters. Found in caves or wrecks; also in estuaries. Juveniles secretive in reefs and rarely seen. The adults are grayish-brown in colour overlain with a mottled pattern and with darker fins. The small juveniles are yellow with wide, dark irregular bars and irregular dark spots on their fins. It is the most widely distributed species of grouper in the world. The giant grouper is an opportunistic ambush predator which feeds on a variety of fishes, as well as small sharks, juvenile sea turtles, crustaceans and molluscs which are all swallowed whole.",
     "depth_range_meters": "1- 200"
   },
   "23": {
@@ -637,17 +631,18 @@
       "L",
       "EL"
     ],
-    "food_ok": "MS,S,ES",
+    "food_ok": [
+      "MS",
+      "S",
+      "ES"
+    ],
     "food_bad": "26",
     "tags": "",
     "ability": "",
     "playable": "Y",
     "active": "ANYTIME",
     "scientific_name": "Carcharodon carcharias",
-    "notes": [
-      "Primarily a coastal and offshore inhabitant of continental and insular shelves, but may also occur off oceanic islands far from land. Often close inshore to the surf line and even penetrates shallow bays. Capable of migration across oceanic regions. Usually solitary or in pairs but can be found in feeding aggregations of 10 or more",
-      "does not form schools. Feeds on bony fishes, sharks, rays, seals, dolphins and porpoises, sea birds, carrion, squid, octopi, crabs, and whales. The great white shark is an apex predator, as it has no known natural predators other than, on very rare occasions, the orca."
-    ],
+    "notes": "Primarily a coastal and offshore inhabitant of continental and insular shelves, but may also occur off oceanic islands far from land. Often close inshore to the surf line and even penetrates shallow bays. Capable of migration across oceanic regions. Usually solitary or in pairs but can be found in feeding aggregations of 10 or more; does not form schools. Feeds on bony fishes, sharks, rays, seals, dolphins and porpoises, sea birds, carrion, squid, octopi, crabs, and whales. The great white shark is an apex predator, as it has no known natural predators other than, on very rare occasions, the orca.",
     "depth_range_meters": "1 - 1200"
   },
   "24": {
@@ -710,10 +705,7 @@
     "playable": "Y",
     "active": "NIGHT",
     "scientific_name": "Cheilodipterus artus",
-    "notes": [
-      "Forms small, loose schools in caves or just above coral branches in sheltered bays and lagoon patch reefs. Juveniles have a small black spot surrounded by a large gold blotch on the caudal peduncl characterized further by mauve or pale grey color with eight reddish brown stripes",
-      "blackish to brown caudal fin base."
-    ],
+    "notes": "Forms small, loose schools in caves or just above coral branches in sheltered bays and lagoon patch reefs. Juveniles have a small black spot surrounded by a large gold blotch on the caudal peduncl characterized further by mauve or pale grey color with eight reddish brown stripes; blackish to brown caudal fin base.",
     "depth_range_meters": "3 - 158"
   },
   "26": {
@@ -847,10 +839,7 @@
     "playable": "Y",
     "active": "",
     "scientific_name": "Thysanophrys chiltonae",
-    "notes": [
-      "Inhabits sand areas adjacent to coral reefs. Seldom noticed for it buries itself in the sand",
-      "often partially. Usually found in small groups. Feeds on crustaceans, crabs and prawns, and other fish."
-    ],
+    "notes": "Inhabits sand areas adjacent to coral reefs. Seldom noticed for it buries itself in the sand; often partially. Usually found in small groups. Feeds on crustaceans, crabs and prawns, and other fish.",
     "depth_range_meters": "1 - 100"
   },
   "31": {
@@ -911,10 +900,7 @@
     "playable": "Y",
     "active": "",
     "scientific_name": "Epinephelus polyphekadion",
-    "notes": [
-      "A pale brown grouper covered in small dark brown spots, a whitish upper body with large dark blotches forming oblique bands, and a dark saddle-like marking on the upper caudal-fin base. Often found in coral-rich areas of lagoon and outer reefs",
-      "in caves and large crevices to swim through. Most abundant around islands, particularly atolls. Usually in small schools but may be solitary. It is of high value to the trade in international live reef fish in southeast Asia, the western Pacific and in areas of the Indian Ocean."
-    ],
+    "notes": "A pale brown grouper covered in small dark brown spots, a whitish upper body with large dark blotches forming oblique bands, and a dark saddle-like marking on the upper caudal-fin base. Often found in coral-rich areas of lagoon and outer reefs; in caves and large crevices to swim through. Most abundant around islands, particularly atolls. Usually in small schools but may be solitary. It is of high value to the trade in international live reef fish in southeast Asia, the western Pacific and in areas of the Indian Ocean.",
     "depth_range_meters": "1 - 46"
   },
   "33": {
@@ -1049,10 +1035,7 @@
     "playable": "Y",
     "active": "",
     "scientific_name": "Antennarius pictus",
-    "notes": [
-      "Inhabits shallow sheltered reefs. Adults usually with sponges",
-      "juveniles openly on sand or reef, mimicking small sponges. It has a globulous, extensible body, with soft skin is covered with small dermal spinules. Its skin is covered partially with few, small, wart-like protuberances, some variably shaped, scab-like blotches and many small eye spots (ocelli) which look like sponges holes. Its large prognathous mouth allows it to consume prey up to its own size."
-    ],
+    "notes": "Inhabits shallow sheltered reefs. Adults usually with sponges; juveniles openly on sand or reef, mimicking small sponges. It has a globulous, extensible body, with soft skin is covered with small dermal spinules. Its skin is covered partially with few, small, wart-like protuberances, some variably shaped, scab-like blotches and many small eye spots (ocelli) which look like sponges holes. Its large prognathous mouth allows it to consume prey up to its own size.",
     "depth_range_meters": "1 - 75"
   },
   "38": {
@@ -1157,10 +1140,7 @@
     "playable": "Y",
     "active": "",
     "scientific_name": "Scarus spinus",
-    "notes": [
-      "Inhabits coral-rich areas of outer lagoon and seaward reefs. Usually solitary. Females usually in small groups with a male nearby",
-      "they may mix with females of similar species. This species can change gender from female to male. When a male is needed, a female changes sex and takes on the role."
-    ],
+    "notes": "Inhabits coral-rich areas of outer lagoon and seaward reefs. Usually solitary. Females usually in small groups with a male nearby; they may mix with females of similar species. This species can change gender from female to male. When a male is needed, a female changes sex and takes on the role.",
     "depth_range_meters": "2 - 25"
   },
   "42": {

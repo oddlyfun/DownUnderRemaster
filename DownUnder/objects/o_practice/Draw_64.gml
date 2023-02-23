@@ -38,7 +38,7 @@ draw_sprite_stretched(spr_white_dropdown, 0, panel_left_x, panel_left_y, panel_l
 var _fish_info = fish_list[| fish_selected];
 var _fname = _fish_info.full_name;
 draw_set_color(c_black);
-draw_text(panel_left_x, panel_left_y, _fname);
+draw_text(panel_left_x + 5, panel_left_y + 3, _fname);
 // drop down toggle
 draw_sprite(_toggle_drop, 0, _toggle_x, panel_left_y);
 toggle_struct.gx = _toggle_x;
@@ -47,7 +47,7 @@ toggle_struct.width = _tog_w;
 toggle_struct.height = _tog_h;
 
 var _anchor = panel_left_anchors[0][1]; // this is a vector (x,y)
-var _scientific_name = "Scientific Name: " + _fish_info.scientific_name;
+var _scientific_name = "Scientific Name: \n" + _fish_info.scientific_name;
 var _size_cm = "Length: " + _fish_info.avg_size_cm + " cm";
 var _active_time = "Active: " + _fish_info.active;
 
@@ -177,7 +177,7 @@ var _depth_info = "Depth Range: " 	+ _fish_info.depth_range_meters + " meters"
 var _fun_notes = _fish_info.notes;
 
 draw_set_color(c_black);
-draw_set_font(fnt_game);
+draw_set_font(FONT);
 
 
 draw_text_anchor(panel_right_anchors[0][0], _eat_string);
@@ -190,7 +190,7 @@ draw_text_wrap(_anchor.x, _anchor.y, _anchor.x + panel_right_width, -1, _fun_not
 
 // Play and Cancel Buttons !!
 
-_anchor = panel_right_anchors[0][5];
+_anchor = panel_right_anchors[0][9];
 
 var _button_total_width = (play_btn.width * 2) + btn_gap;
 var _first_button_x = _anchor.x + ((panel_right_width / 2) - (_button_total_width / 2));
@@ -208,3 +208,7 @@ play_btn.draw_me();
 
 //draw_basic_button(_cb.gx, _cb.gy, _cb.width, _cb.height, _cb.state, _cb.text);
 //draw_basic_button(_pb.gx, _pb.gy, _pb.width, _pb.height, _pb.state, _pb.text);
+
+//draw_set_color(c_red);
+//draw_rectangle(panel_right_x, panel_right_y, panel_right_x + panel_right_width, panel_right_y + panel_right_height, false );
+//draw_rectangle(panel_left_x, panel_left_y, panel_left_x + panel_left_width, panel_left_y + panel_left_height, false );

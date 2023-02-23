@@ -1,7 +1,7 @@
 draw_set_font(global.fnt_spr_small);
 
-//ui_width = display_get_gui_width();
-//ui_height = display_get_gui_height();
+ui_width = display_get_gui_width();
+ui_height = display_get_gui_height();
 
 //window_sprite_info = sprite_get_nineslice(spr_popup_X);
 
@@ -22,14 +22,14 @@ window_midpoint 	= window_display.x + (window_display.width / 2);
 panel_left_width 	= (window_display.width / 2) * 0.90;
 panel_left_height 	= window_display.height * 0.90;
 panel_left_x 		= window_display.x + ((window_display.width / 4 ) - (panel_left_width / 2));
-panel_left_y 		= ((window_display.height / 2 ) - (panel_left_height / 2));
+panel_left_y 		= window_display.y + ((window_display.height / 2 ) - (panel_left_height / 2));
 panel_left_anchors 	= anchor_grid(panel_left_width, panel_left_height, 6, 1,panel_left_x,panel_left_y);
 
 panel_right_width 	= panel_left_width;
 panel_right_height 	= panel_left_height;
 panel_right_x 		= window_midpoint + ((window_width / 4 ) - (panel_left_width / 2));
 panel_right_y 		= panel_left_y;
-panel_right_anchors = anchor_grid(panel_right_width, panel_right_height, 6, 1,panel_right_x,panel_right_y);
+panel_right_anchors = anchor_grid(panel_right_width, panel_right_height, 10, 1,panel_right_x,panel_right_y);
 
 
 // using a DS list
@@ -61,7 +61,7 @@ prev_mouse_y = mouse_y;
 //window_title = "Practice";
 
 var btn_w = 100;
-var btn_h = 20;
+var btn_h = 25;
 play_btn = new basic_button(0,0,btn_w,btn_h,0,"Play");
 cancel_btn = new basic_button(0,0,btn_w,btn_h,0,"Cancel");
 

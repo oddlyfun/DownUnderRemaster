@@ -29,8 +29,8 @@ if ( display_level == 1 and clicked == false )
 	var _gui_my = floor( ui_height * ((mouse_y - _vy) / _disp_height ) );
 
 	//radial buttons start point
-	var _radial_x = _anchor_points[@ 0][@ 3].x + right_margin;
-	var _radial_y = _anchor_points[@ 0][@ 3].y + 32;
+	var _radial_x = mode_window.x + _anchor_points[@ 0][@ 1].x + right_margin;
+	var _radial_y = mode_window.y + _anchor_points[@ 0][@ 1].y;
 
 	
 	for ( var i = 0; i < number_of_modes; i++ )
@@ -50,7 +50,7 @@ if ( display_level == 1 and clicked == false )
 		draw_sprite(spr_radial_button, _image_index, _radial_x, _radial_y);
 		//draw_set_color(c_black);
 		//draw_text(_radial_x + 32, _radial_y, _button_text);
-		write_text(_radial_x + 32, _radial_y, c_black _button_text)
+		write_text(_radial_x + 32, _radial_y, c_black, _button_text);
 		_radial_y = _radial_y + 32;
 	}
 	

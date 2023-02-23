@@ -23,7 +23,7 @@ if ( window_width != window_get_width() or window_height != window_get_height() 
 
 if ( keyboard_check_pressed(vk_up) )
 {
-	window_set_size(1480,620);
+	window_set_size(640*2,360*2);
 }
 
 if ( keyboard_check_pressed(vk_right) )

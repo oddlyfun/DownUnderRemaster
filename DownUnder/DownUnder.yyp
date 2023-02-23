@@ -106,9 +106,9 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"background","folderPath":"folders/Sprites/background.yy","order":3,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Fish","folderPath":"folders/Sprites/Fish.yy","order":1,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Achilles Tang","folderPath":"folders/Sprites/Fish/Achilles Tang.yy","order":10,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"pixel fonts","folderPath":"folders/Sprites/pixel fonts.yy","order":13,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"UI Elements","folderPath":"folders/Sprites/UI Elements.yy","order":9,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"dropdown","folderPath":"folders/Sprites/UI Elements/dropdown.yy","order":4,},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"pixel fonts","folderPath":"folders/Sprites/pixel fonts.yy","order":13,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Window","folderPath":"folders/Sprites/UI Elements/Window.yy","order":5,},
   ],
   "AudioGroups": [
