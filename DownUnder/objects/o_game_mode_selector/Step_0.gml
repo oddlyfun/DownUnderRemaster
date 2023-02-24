@@ -58,12 +58,21 @@ if ( display_level == 1 and clicked == false )
 					switch ( mode_select )
 					{
 						case 0: // Challenge
+							global.GAME_MODE = CHALLENGE;
+							instance_create_layer(0,0,"Instances",o_practice);
+							instance_destroy(id);
 						break;
 						case 1: // Gauntlet
+							global.GAME_MODE = GAUNTLET;
+							instance_create_layer(0,0,"Instances",o_practice);
+							instance_destroy(id);
 						break;
 						case 2: // Create-a-Fish
+							global.GAME_MODE = CREATE_A_FISH;
+							// Create GUI here... well over there
 						break;
 						case 3: // practice
+							global.GAME_MODE = PRACTICE;
 							instance_create_layer(0,0,"Instances",o_practice);
 							instance_destroy(id);
 						break;
