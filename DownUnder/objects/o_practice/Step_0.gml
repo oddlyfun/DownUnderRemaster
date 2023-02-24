@@ -4,8 +4,6 @@
 //
 //*********************************************************************
 
-
-
 for ( var i = 0; i < array_length(btn_array); i++)
 {
 	var _btn = btn_array[@ i];
@@ -19,8 +17,6 @@ for ( var i = 0; i < array_length(btn_array); i++)
 }
 
 window_display.check_close_hover();
-
-
 
 //*********************************************************************
 //
