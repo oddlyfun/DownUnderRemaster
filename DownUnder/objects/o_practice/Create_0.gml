@@ -1,4 +1,32 @@
-draw_set_font(global.fnt_spr_small);
+draw_set_font(FONT);
+fishy_list = [];
+window_title = "";
+drop_disabled = true;
+
+switch ( global.GAME_MODE )
+{
+	case CHALLENGE:
+		fishy_list = challenge_list();
+		window_title = "Challenge";
+	break;
+
+	case GAUNTLET:
+		fishy_list = fishy_gauntlet();
+		window_title = "Gauntlet";
+	break;
+
+	case PRACTICE:
+		fishy_list = fishy_practice();
+		drop_disabled = false;
+		window_title = "Practice";
+	break;
+
+	default:
+		fishy_list = fishy_practice();
+		window_title = "Default Value -- Something Went Wrong!?";
+	break;
+}
+
 
 ui_width = display_get_gui_width();
 ui_height = display_get_gui_height();
@@ -10,14 +38,9 @@ var window_height 	= floor(ui_height * 0.85);
 //window_x 			= (ui_width / 2) - (window_width / 2);
 //window_y 			= (ui_height / 2) - (window_height / 2);
 
-window_display 		= new window_popup(window_width, window_height,"Practice");
-
+window_display 		= new window_popup(window_width, window_height, window_title);
 
 window_midpoint 	= window_display.x + (window_display.width / 2);
-
-// adjust for the title bar in the spr_popup_X
-//window_y_tb = window_y + window_sprite_info.top;
-//window_height_tb = window_height - window_sprite_info.top;
 
 panel_left_width 	= (window_display.width / 2) * 0.90;
 panel_left_height 	= window_display.height * 0.90;
@@ -33,10 +56,12 @@ panel_right_anchors = anchor_grid(panel_right_width, panel_right_height, 10, 1,p
 
 
 // using a DS list
-fish_list = global.playable_fish;
+//fish_list = global.playable_fish;
 
 items_per_page = 10;
-fish_list_size = ds_list_size(fish_list);
+if ( global.game_mode == CHALLENGE ) then items_per_page = 4;
+
+fish_list_size = array_length(fishy_list);
 fish_index = 0;
 fish_selected = 0;
 
