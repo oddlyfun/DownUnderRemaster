@@ -25,11 +25,13 @@ global.font_small_map = "! \"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTU
 global.fnt_spr_small = font_add_sprite_ext(spr_font_small,global.font_small_map,false,0);
 
 
-#macro WARN  "warning"
-#macro INFO  "info"
-#macro ERROR  "error"
+#macro PRACTICE  "P"
+#macro GAUNTLET  "G"
+#macro CHALLENGE  "C"
+#macro CREATE_A_FISH "CAF"
 #macro FONT  global.fnt_spr_small
 
+global.GAME_MODE = PRACTICE;
 
 //
 // Orginize all sea life into different lists based on their attributes
