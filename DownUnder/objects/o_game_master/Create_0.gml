@@ -18,11 +18,7 @@ if ( file_exists(global.all_life_json_filename))
 }
 
 
-
-
 global.message_q = ds_queue_create();
-
-
 
 
 global.font_small_map = "! \"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_abcdefghijklmnopqrstuvwxyz{|}~"
