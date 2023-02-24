@@ -35,7 +35,7 @@ draw_sprite_stretched(spr_white_dropdown, 0, panel_left_x, panel_left_y, panel_l
 // blue highlight * some work should be done before I want to use the highlight
 //draw_sprite_stretched(spr_blue_highlight, 0, panel_left_x + 2, panel_left_y + 2, panel_left_width - _tog_w - 4, _tog_h - 4 );
 // Text
-var _fish_info = fish_list[| fish_selected];
+var _fish_info = fishy_list[@ fish_selected];
 var _fname = _fish_info.full_name;
 draw_set_color(c_black);
 draw_text(panel_left_x + 5, panel_left_y + 3, _fname);
@@ -120,7 +120,7 @@ if ( scroll_bar_toggle == true )
 	{
 		var _fishy = fish_list[| fish_index];
 		var _name = _fishy.full_name;
-		draw_set_color(c_black);
+		
 		
 		// highlight
 		var _hover = gui_element_collision(
@@ -140,15 +140,25 @@ if ( scroll_bar_toggle == true )
 			draw_set_color(c_white);
 		}
 
+		if ( drop_disabled == true )
+		{
+			draw_set_color(c_gray);
+		} else {
+			draw_set_color(c_black);
+		}
 
 		draw_text(_ini_x, _ini_y, _name);
 		_ini_y = _ini_y + string_height(_name) + scroll_panel_text_margin;
 		
 		if ( mouse_check_button_pressed(mb_left) )
 		{
-			if ( _hover == true )
+			if ( _hover == true and drop_disabled == false )
 			{
 				fish_selected = fish_index;
+				scroll_bar_toggle = false;
+				break;
+			} else
+			{
 				scroll_bar_toggle = false;
 				break;
 			}
@@ -202,13 +212,3 @@ play_btn.gx = _first_button_x + btn_gap + cancel_btn.width;
 
 cancel_btn.draw_me();
 play_btn.draw_me();
-
-//var _cb = cancel_btn;
-//var _pb = play_btn;
-
-//draw_basic_button(_cb.gx, _cb.gy, _cb.width, _cb.height, _cb.state, _cb.text);
-//draw_basic_button(_pb.gx, _pb.gy, _pb.width, _pb.height, _pb.state, _pb.text);
-
-//draw_set_color(c_red);
-//draw_rectangle(panel_right_x, panel_right_y, panel_right_x + panel_right_width, panel_right_y + panel_right_height, false );
-//draw_rectangle(panel_left_x, panel_left_y, panel_left_x + panel_left_width, panel_left_y + panel_left_height, false );
