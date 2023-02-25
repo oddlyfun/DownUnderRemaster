@@ -118,7 +118,7 @@ if ( scroll_bar_toggle == true )
 	
 	for ( var i = 0; i < items_per_page; i++ )
 	{
-		var _fishy = fish_list[| fish_index];
+		var _fishy = fishy_list[@ fish_index];
 		var _name = _fishy.full_name;
 		
 		
@@ -143,7 +143,10 @@ if ( scroll_bar_toggle == true )
 		if ( drop_disabled == true )
 		{
 			draw_set_color(c_gray);
-		} else {
+		} else if ( _hover == true ) {
+			draw_set_color(c_white);
+		} else
+		{
 			draw_set_color(c_black);
 		}
 
@@ -157,10 +160,10 @@ if ( scroll_bar_toggle == true )
 				fish_selected = fish_index;
 				scroll_bar_toggle = false;
 				break;
-			} else
+			} else if ( _hover == false )
 			{
-				scroll_bar_toggle = false;
-				break;
+				//scroll_bar_toggle = false;
+				//break;
 			}
 		}
 

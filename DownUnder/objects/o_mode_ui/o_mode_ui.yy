@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "o_practice",
+  "name": "o_mode_ui",
   "spriteId": null,
   "solid": false,
   "visible": true,

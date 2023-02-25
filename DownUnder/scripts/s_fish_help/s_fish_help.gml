@@ -180,7 +180,7 @@ function challenge_list()
 		var _fish_index = picked_array[@ i];
 		var _fishy_struct = variable_struct_get(global.all_life, string(_fish_index) );
 		_fishy_struct.fish_id = _fish_index;
-		fishy_list[@ i] = _fishy_struct;
+		_fishy_list[@ i] = _fishy_struct;
 	}
 
 	return _fishy_list;
@@ -188,7 +188,7 @@ function challenge_list()
 
 function fishy_practice()
 {
-	_flist = [];
+	var _flist = [];
 
 	for ( var i = 0; i < ds_list_size(global.playable_fish); i++)
 	{
@@ -202,15 +202,15 @@ function fishy_gauntlet()
 {
 	var fish_smallest_to_largest = [34,47,11,20,7,33,37,49,18,25,27,1,2,10,30,38,39,40,45,52,54,6,41,8,13,4,43,14,26,29,48,44,9,28,17,31,16,19,32,36,35,46,12,21,50,42,3,51,15,22,5,24,53,23];
 
-	var fishy_list = [];
+	var _fishy_list = [];
 
 	for ( var i = 0; i < array_length(fish_smallest_to_largest); i++ )
 	{
 		var _fish_index = fish_smallest_to_largest[@ i];
 		var _fishy_struct = variable_struct_get(global.all_life, string(_fish_index) );
 		_fishy_struct.fish_id = _fish_index;
-		fishy_list[@ i] = _fishy_struct;
+		_fishy_list[@ i] = _fishy_struct;
 	}
 
-	return fishy_list;
+	return _fishy_list;
 }

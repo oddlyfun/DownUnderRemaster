@@ -32,7 +32,7 @@
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "UI",
-    "path": "folders/Objects/UI.yy",
+    "name": "Modes",
+    "path": "folders/Objects/UI/Modes.yy",
   },
 }

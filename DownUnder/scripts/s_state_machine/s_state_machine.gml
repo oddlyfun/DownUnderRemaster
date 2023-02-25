@@ -33,12 +33,12 @@ function s_state_machine()
 
 	var _food_radius = 200; // I'd rather this be proportional to it's size somehow
 	var _life_check = ds_list_create();
-	collision_circle_list(x,y, _food_radius, o_all_life, true, _life_check, false );
+	collision_circle_list(x,y, _food_radius, o_all_life,false,true,_life_check,false);
 
 
 // Food Needs
 	// Val 1 current energy
-	var _curent_energy = 1 - (my_energy / 100 ) // Inverse relationship the less energy the higher the score
+	var _curent_energy = 1 - (my_energy / 100 ); // Inverse relationship the less energy the higher the score
 
 	//collision_circle_list(x1, y1, rad, obj, prec, notme, list, ordered);
 
@@ -49,7 +49,7 @@ function s_state_machine()
 	var _valid_cleaner = [];
 	var _index_clean = 0;
 
-	for (var i = 0;, i < ds_list_size(_life_check); i--)
+	for (var i = 0; i < ds_list_size(_life_check); i++)
 	{
 		var _fish = _life_check[| i];
 		var _tasty = s_check_food(id, _fish);
@@ -62,7 +62,7 @@ function s_state_machine()
 
 		if ( _fish.fish_id == 56 or _fish.fish_id == 60 )
 		{
-			_valid_clearner[@ _index_clean] = _fish;
+			_valid_cleaner[@ _index_clean] = _fish;
 			_index_clean = _index_clean + 1;
 		}
 
@@ -72,10 +72,10 @@ function s_state_machine()
 
 	// val 2 amount of food around
 	var _amount_of_prey = array_length(_valid_to_eat);
-	if ( _size > 0 ) then _amount_of_prey = 1 / _size;
+	if ( _amount_of_prey > 0 ) then _amount_of_prey = 1 / _amount_of_prey;
 
 
-	var _EAT_ = ( _current_energy + _amount_of_prey ) / 2;
+	var _EAT_ = ( _curent_energy + _amount_of_prey ) / 2;
 
 
 
@@ -83,7 +83,7 @@ function s_state_machine()
 // Health checkup
 
 	var _current_health = 1 - (my_health / 100); // inverse relation
-	var _cleaner_nearby = array_length(_valid_clearner);
+	var _cleaner_nearby = array_length(_valid_cleaner);
 	if ( _cleaner_nearby > 0 ) then _cleaner_nearby = 1;
 
 

@@ -59,7 +59,7 @@ panel_right_anchors = anchor_grid(panel_right_width, panel_right_height, 10, 1,p
 //fish_list = global.playable_fish;
 
 items_per_page = 10;
-if ( global.game_mode == CHALLENGE ) then items_per_page = 4;
+if ( global.GAME_MODE == CHALLENGE ) then items_per_page = 4;
 
 fish_list_size = array_length(fishy_list);
 fish_index = 0;

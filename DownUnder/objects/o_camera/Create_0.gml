@@ -4,11 +4,11 @@ cam_vel = 0.1;
 view_width = 640; 
 view_height = 360;
 
-window_width = window_get_width();
-window_height = window_get_height();
-target_width = 640;
-target_height = 360;
-check_again = false;
+window_width = 640*2;
+window_height = 360*2;
+//target_width = 640;
+//target_height = 360;
+//check_again = false;
 
 pad_x = 160;
 pad_y = 120;
