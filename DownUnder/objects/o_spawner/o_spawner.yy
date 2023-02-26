@@ -32,7 +32,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Controllers",
-    "path": "folders/Objects/Controllers.yy",
+    "name": "Lifeforms",
+    "path": "folders/Objects/Lifeforms.yy",
   },
 }

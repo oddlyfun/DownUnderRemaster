@@ -71,7 +71,7 @@ function s_check_food(_fish, _target)
 
 
 // Create a struct that will give me all the information I need to create a message pop up
-	_eating_report =
+	var _eating_report =
 	{
 	    edible : _can_i_eat,
 	    msg : _eat_message,
@@ -82,6 +82,21 @@ function s_check_food(_fish, _target)
 }
 
 
+function s_check_for_enemies(_self, _target)
+{
+	var _enemies_list = _self.enemies;
+	var _target_size = _target.size;
+	var _target_id = _target.fish_id;
+	
+	for ( var i = 0; i < array_length(_enemies_list); i++ )
+	{
+		var _item = _enemies_list[@ i];
+		
+		if ( _item == _target_size or _item == _target_id ) then return true;
+	}
+	
+	return false;
+}
 
 
 function s_fish_help(_string)

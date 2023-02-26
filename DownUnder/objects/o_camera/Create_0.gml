@@ -6,9 +6,6 @@ view_height = 360;
 
 window_width = 640*2;
 window_height = 360*2;
-//target_width = 640;
-//target_height = 360;
-//check_again = false;
 
 pad_x = 160;
 pad_y = 120;

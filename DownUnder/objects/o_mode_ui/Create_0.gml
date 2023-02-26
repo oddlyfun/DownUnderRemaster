@@ -3,6 +3,7 @@ fishy_list = [];
 window_title = "";
 drop_disabled = true;
 
+
 switch ( global.GAME_MODE )
 {
 	case CHALLENGE:
@@ -53,6 +54,11 @@ panel_right_height 	= panel_left_height;
 panel_right_x 		= window_midpoint + ((window_width / 4 ) - (panel_left_width / 2));
 panel_right_y 		= panel_left_y;
 panel_right_anchors = anchor_grid(panel_right_width, panel_right_height, 10, 1,panel_right_x,panel_right_y);
+panel_right_note_anchor = 4;
+panel_right_note_bottom_anchor = 8;
+panel_right_note_height = panel_right_anchors[0][6].y - panel_right_anchors[0][4].y
+
+
 
 
 // using a DS list
@@ -64,6 +70,10 @@ if ( global.GAME_MODE == CHALLENGE ) then items_per_page = 4;
 fish_list_size = array_length(fishy_list);
 fish_index = 0;
 fish_selected = 0;
+
+var _fish_info = fishy_list[@ fish_selected];
+panel_right_note_text = new text_wrap(panel_right_width,panel_right_note_height,_fish_info.notes);
+panel_right_note_text.create_pages();
 
 toggle_struct = new basic_button(0,0,0,0,0,"");
 

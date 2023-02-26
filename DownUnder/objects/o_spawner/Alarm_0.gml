@@ -55,7 +55,8 @@ if ( _center_cam == false and _left_cam == false and _right_cam == false )
 			playable				: _fish.playable,
 			when_active				: _fish.active,
 			my_notes				: _fish.notes,
-			my_scientific_name		: _fish.scientific_name
+			my_scientific_name		: _fish.scientific_name,
+			enemies					: _fish.enemies
 			
 		});
 		

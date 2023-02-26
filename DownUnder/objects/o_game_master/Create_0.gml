@@ -13,7 +13,6 @@ if ( file_exists(global.all_life_json_filename))
 {
 	var _buffer = buffer_load(global.all_life_json_filename);
 	var _string = buffer_read(_buffer, buffer_string);
-	
 	global.all_life = json_parse(_string);
 }
 
@@ -57,7 +56,11 @@ for ( var i = 0; i < _life_size; i++ )
 	_fish.fish_id = i;
 
 	// split off the fish based on its attributes
-	if ( _fish.playable == "Y" ) then ds_list_add(global.playable_fish, _fish);
+	if ( _fish.playable == "Y" )
+	{
+		//_fish.notes = new 
+		ds_list_add(global.playable_fish, _fish);
+	}
 
 	var _fish_size = _fish.size;
 

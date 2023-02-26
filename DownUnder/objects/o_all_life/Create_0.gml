@@ -15,6 +15,9 @@ if val == "string" then my_abilities = [my_abilities];
 val = typeof(my_tags);
 if val == "string" then my_tags = [my_tags];
 
+val = typeof(enemies);
+if val == "string" then enemies = [enemies];
+
 // converting string to what they should be... I know I am trying to avoid some sort
 // of import export error in my json. Oh its because other parts of the json could be 
 // single digits but I really want those values to be strings for food reasons

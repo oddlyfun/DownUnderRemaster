@@ -158,6 +158,8 @@ if ( scroll_bar_toggle == true )
 			if ( _hover == true and drop_disabled == false )
 			{
 				fish_selected = fish_index;
+				_fish_info = fishy_list[@ fish_selected];
+				panel_right_note_text.set_text(_fish_info.notes);
 				scroll_bar_toggle = false;
 				break;
 			} else if ( _hover == false )
@@ -192,13 +194,19 @@ var _fun_notes = _fish_info.notes;
 draw_set_color(c_black);
 draw_set_font(FONT);
 
+_anchor = panel_right_anchors[0][0];
+draw_text_wrap(_anchor.x, _anchor.y, _anchor.x + panel_right_width, -1, _eat_string);
+//draw_text_anchor(panel_right_anchors[0][0], _eat_string);
+draw_text_anchor(panel_right_anchors[0][2], _special_abilty);
+draw_text_anchor(panel_right_anchors[0][3], _depth_info);
 
-draw_text_anchor(panel_right_anchors[0][0], _eat_string);
-draw_text_anchor(panel_right_anchors[0][1], _special_abilty);
-draw_text_anchor(panel_right_anchors[0][2], _depth_info);
+_anchor = panel_right_anchors[0][4];
+//draw_text_wrap(_anchor.x, _anchor.y, _anchor.x + panel_right_width, -1, _fun_notes);
 
-_anchor = panel_right_anchors[0][3];
-draw_text_wrap(_anchor.x, _anchor.y, _anchor.x + panel_right_width, -1, _fun_notes);
+panel_right_note_text.x = _anchor.x;
+panel_right_note_text.y = _anchor.y;
+panel_right_note_text.write_out_pages();
+
 
 
 // Play and Cancel Buttons !!
