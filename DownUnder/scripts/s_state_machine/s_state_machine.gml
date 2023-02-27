@@ -1,7 +1,4 @@
 /*
-
-
-
 Attributes -
 	Health
 	Energy
@@ -19,27 +16,15 @@ Needs -
 Seeking Player -
 	Hunger and no other predators around try to eat the player
 	If the player runs away and gets too far give up
-
-
-
-
-
 */
 
-
-
-function s_state_machine()
+function state_machine(fish_brain)
 {
 
 	var _food_radius = 200; // I'd rather this be proportional to it's size somehow
 	var _life_check = ds_list_create();
 	collision_circle_list(x,y, _food_radius, o_all_life,false,true,_life_check,false);
 
-
-	var _EAT_ = 0;
-	var _HEALTH_ = 0;
-	var _RUNAWAY = 0;
-	var _SWIM_ = 0;
 	
 //****************************************************************************
 //
@@ -51,7 +36,7 @@ function s_state_machine()
 
 	var _valid_to_eat = [];
 	var _index_eat = 0;
-// cleaners id : 56 (fish) , 60 (shrip)
+// cleaners id : 56 (fish) , 60 (shrimp)
 	var _valid_cleaner = [];
 	var _index_clean = 0;
 	
@@ -96,7 +81,7 @@ function s_state_machine()
 	var _amount_of_prey = array_length(_valid_to_eat);
 	if ( _amount_of_prey > 0 ) then _amount_of_prey = 1 / _amount_of_prey;
 
-	_EAT_ = ( _curent_energy + _amount_of_prey ) / 2;
+	fish_brain._EAT_ = ( _curent_energy + _amount_of_prey ) / 2;
 
 //****************************************************************************
 //
@@ -113,7 +98,7 @@ function s_state_machine()
 	}
 
 
-	_HEALTH_ = ( _current_health + _cleaner_nearby) / 2;
+	fish_brain._HEALTH_ = ( _current_health + _cleaner_nearby) / 2;
 
 //****************************************************************************
 //
@@ -121,8 +106,47 @@ function s_state_machine()
 //
 //****************************************************************************
 
+	
 	//_valid_enemy
+	var _threat_amount = 0;
+	var _avg_threat_dist = 0;
+	//var _THREAT_ = 0;
 
+
+	var _amount_of_enemies = array_length(_valid_enemy);
+
+	if ( _amount_of_enemies > 0 )
+	{
+		var _sorting_grid = ds_grid_create(2,_amount_of_enemies);
+		// Sort in the worst way
+		for ( var i = 0; i < _amount_of_enemies; i++ )
+		{
+			_sorting_grid[# 0,i ] = _valid_enemy;
+			_sorting_grid[# 1,i ] = point_distance(x,y,_valid_enemy.x,_valid_enemy.y);
+		}
+
+		//ds_grid_sort(index, column, ascending);
+		ds_grid_sort(_sorting_grid, 1, true );
+
+		for ( var i = 0; i < _amount_of_enemies; i++ )
+		{
+			_valid_enemy[@ i] = _sorting_grid[# 0,i ];
+		}
+		// End sorting in the worst way 
+		
+
+		var _max_dist = 200;
+		_threat_amount = 1;
+		var _threat_dist = _sorting_grid[# 1, 0];
+		_threat_dist = 1 - (clamp(_threat_dist,0,_max_dist) / _max_dist);
+		// quad ease out
+		_threat_dist = 1 - (1 - _threat_dist) * (1 - _threat_dist);
+		
+		ds_grid_destroy(_sorting_grid);
+
+		fish_brain._THREAT_ = (_threat_amount + _threat_dist) / 2;
+
+	}
 
 
 
@@ -131,10 +155,8 @@ function s_state_machine()
 //				Base line action to swim				
 //
 //****************************************************************************
-	_SWIM_ = 0.85 //Base line activity of just swiming around [?wont interrupt if already moving?]
-
-
-
+	fish_brain._SWIM_ = 0.85 //Base line activity of just swiming around [?wont interrupt if already moving?]
 
 	ds_list_destroy(_life_check);
+
 }
