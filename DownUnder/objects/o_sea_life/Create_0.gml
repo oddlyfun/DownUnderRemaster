@@ -40,3 +40,12 @@ moving_towards_point_y = 0;
 is_moving = false;
 target_point_x = 0;
 target_point_y = 0;
+
+
+// State Machine Brain
+state_ai = {
+	_EAT_ 		: 0
+	_SWIM_ 		: 0
+	_THREAT_ 	: 0
+	_HEALTH_ 	: 0
+};
