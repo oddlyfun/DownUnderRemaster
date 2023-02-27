@@ -109,7 +109,8 @@ if ( mouse_check_button_released(mb_left) )
 			}
 			if ( i == 1 )
 			{
-				// Practice PLAY
+				global.LOAD_GAME_LIST = fishy_list;
+				save_my_game();
 				//room_goto()
 			}
 		}

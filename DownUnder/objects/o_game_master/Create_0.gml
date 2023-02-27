@@ -31,7 +31,9 @@ global.fnt_spr_small = font_add_sprite_ext(spr_font_small,global.font_small_map,
 #macro FONT  global.fnt_spr_small
 
 global.GAME_MODE = PRACTICE;
-
+global.LOAD_GAME_LIST = noone;
+global.GAME_FILENAME = "DownUnder.save";
+global.REEF_RULER_FILENAME = "ReefRulers.save";
 //
 // Orginize all sea life into different lists based on their attributes
 // These lists will contain structs with added field of the fish ID

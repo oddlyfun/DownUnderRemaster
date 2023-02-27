@@ -200,12 +200,13 @@ draw_text_wrap(_anchor.x, _anchor.y, _anchor.x + panel_right_width, -1, _eat_str
 draw_text_anchor(panel_right_anchors[0][2], _special_abilty);
 draw_text_anchor(panel_right_anchors[0][3], _depth_info);
 
-_anchor = panel_right_anchors[0][4];
+_anchor = panel_right_anchors[0][5];
 //draw_text_wrap(_anchor.x, _anchor.y, _anchor.x + panel_right_width, -1, _fun_notes);
 
 panel_right_note_text.x = _anchor.x;
 panel_right_note_text.y = _anchor.y;
 panel_right_note_text.write_out_pages();
+panel_right_note_text.draw_page_buttons();
 
 
 

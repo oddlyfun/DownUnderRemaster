@@ -56,7 +56,7 @@ panel_right_y 		= panel_left_y;
 panel_right_anchors = anchor_grid(panel_right_width, panel_right_height, 10, 1,panel_right_x,panel_right_y);
 panel_right_note_anchor = 4;
 panel_right_note_bottom_anchor = 8;
-panel_right_note_height = panel_right_anchors[0][6].y - panel_right_anchors[0][4].y
+panel_right_note_height = panel_right_anchors[0][8].y - panel_right_anchors[0][5].y
 
 
 

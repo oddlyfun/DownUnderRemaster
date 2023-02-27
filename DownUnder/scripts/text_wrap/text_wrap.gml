@@ -14,7 +14,8 @@ function text_wrap(_width, _height, _text) constructor
 	
 	width = _width;
 	height = _height;
-	font = global.fnt_spr_small;
+	//font = global.fnt_spr_small;
+	//page_button_sprite = spr_page_button;
 	x = 0;
 	y = 0;
 	pages = [];//create_pages();
@@ -57,6 +58,7 @@ function text_wrap(_width, _height, _text) constructor
 					_page_index = _page_index + 1;
 					_line_index = 0;
 					_line_array = [];
+					_ini_y = 0;
 				}
 			}
 			
@@ -101,5 +103,50 @@ function text_wrap(_width, _height, _text) constructor
 		create_pages();
 	}
 	
+	static draw_page_buttons = function()
+	{
+		if ( array_length(pages) > 1 ) 
+		{
+			var _btn_height = sprite_get_height(spr_page_button);
+			var _btn_width = sprite_get_width(spr_page_button);
+			var _x = x;
+			var _y = y - _btn_height;
+			
+			var _hover_left = gui_element_collision(_x, _y, _btn_width, _btn_height);
+			
+
+			// < 
+			if ( _hover_left == false )
+			{
+				draw_sprite(spr_page_button,0,_x,_y);
+			} else
+			{
+				draw_sprite(spr_page_button,1,_x,_y);
+			}
+			// Page Number
+			_x = _x + _btn_width + 2;
+			write_text(_x + 2, _y + 2, c_black, string(page_number + 1));
+			_x = _x + _btn_width + 2;
+			// >
+			var _hover_right = gui_element_collision(_x, _y, _btn_width, _btn_height);
+			if ( _hover_right == false )
+			{
+				draw_sprite(spr_page_button,2,_x,_y);
+			} else
+			{
+				draw_sprite(spr_page_button,3,_x,_y);
+			}
+			
+			if ( mouse_check_button_released(mb_left) ) 
+			{
+				if ( _hover_right == true ) then page_number = page_number + 1;
+				if ( _hover_left == true ) then	page_number = page_number - 1;
+				page_number = clamp(page_number, 0, array_length(pages)-1);
+			}
+			
+			
+			
+		}
+	}
 	
 }

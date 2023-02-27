@@ -9,12 +9,14 @@ if ( keyboard_check_released(ord("P") ) )
 
 
 
+
 if ( window_width != window_get_width() or window_height != window_get_height() )
 {
+	
 	window_width = window_get_width();
 	window_height = window_get_height();
 	
-	show_debug_message( string(window_width) + " x " + string(window_height)  );
+	//show_debug_message( string(window_width) + " x " + string(window_height)  );
 	alarm_set(1,1);
 	
 }
