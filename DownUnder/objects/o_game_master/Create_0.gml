@@ -6,9 +6,6 @@ window_set_cursor(cr_none);
 global.all_life = undefined;
 global.all_life_json_filename = "sea_life.json";
 
-global.player_fish_id = 5;
-global.player_score = 0;
-
 if ( file_exists(global.all_life_json_filename))
 {
 	var _buffer = buffer_load(global.all_life_json_filename);
@@ -30,10 +27,14 @@ global.fnt_spr_small = font_add_sprite_ext(spr_font_small,global.font_small_map,
 #macro CREATE_A_FISH "CAF"
 #macro FONT  global.fnt_spr_small
 
+// Save File info
 global.GAME_MODE = PRACTICE;
 global.LOAD_GAME_LIST = noone;
 global.GAME_FILENAME = "DownUnder.save";
 global.REEF_RULER_FILENAME = "ReefRulers.save";
+global.player_fish_id = 5;
+global.player_score = 0;
+global.reef_rulers = load_reef_rulers();
 //
 // Orginize all sea life into different lists based on their attributes
 // These lists will contain structs with added field of the fish ID
