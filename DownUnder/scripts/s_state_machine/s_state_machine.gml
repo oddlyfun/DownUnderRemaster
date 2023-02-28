@@ -20,10 +20,11 @@ Seeking Player -
 
 function state_machine(fish_brain)
 {
+	fish_brain = fish_brain._BRAIN_;
 
 	var _food_radius = 200; // I'd rather this be proportional to it's size somehow
 	var _life_check = ds_list_create();
-	collision_circle_list(x,y, _food_radius, o_all_life,false,true,_life_check,false);
+	collision_circle_list(x,y, _food_radius, o_sea_life,false,true,_life_check,false);
 
 	
 //****************************************************************************
@@ -81,7 +82,7 @@ function state_machine(fish_brain)
 	var _amount_of_prey = array_length(_valid_to_eat);
 	if ( _amount_of_prey > 0 ) then _amount_of_prey = 1 / _amount_of_prey;
 
-	fish_brain._EAT_ = ( _curent_energy + _amount_of_prey ) / 2;
+	fish_brain[@ ENERGY] = ( _curent_energy + _amount_of_prey ) / 2;
 
 //****************************************************************************
 //
@@ -98,7 +99,7 @@ function state_machine(fish_brain)
 	}
 
 
-	fish_brain._HEALTH_ = ( _current_health + _cleaner_nearby) / 2;
+	fish_brain[@ HEALTH] = ( _current_health + _cleaner_nearby) / 2;
 
 //****************************************************************************
 //
@@ -145,10 +146,41 @@ function state_machine(fish_brain)
 		
 		ds_grid_destroy(_sorting_grid);
 
-		fish_brain._THREAT_ = (_threat_amount + _threat_dist) / 2;
+		fish_brain.[@ THREAT] = (_threat_amount + _threat_dist) / 2;
 
 	}
 
+//********************************************************************************************
+//
+//	 Check for the player -- even if 'offscreen'
+//
+//********************************************************************************************
+	var _hunt_player = 0;
+	var _player = instance_nearest(o_player_fish);
+	if ( instance_exists(_player))
+	{
+
+		var _eat_check = s_check_food(id,_player);
+		if ( _eat_check.edible == true )
+		{
+			var _center = point_distance(x,y,_player.x,_player.y);
+			var _right = point_distance(x + room_width, y, _player.x, _player.y);
+			var _left = point_distance(x - room_width, y, _player.x, _player.y);
+			var _arr = [_center, _right, _left];
+			for ( var i = 0; i < array_length(_arr); i++ )
+			{
+				var _dist = _arr[@ i];
+				if ( _dist <= 200 )
+				{
+					_hunt_player = 1;
+					break;
+				}
+			}
+		}
+	}
+
+
+	fish_brain[@ PLAYER] = _hunt_player;
 
 
 //****************************************************************************
@@ -156,7 +188,7 @@ function state_machine(fish_brain)
 //				Base line action to swim				
 //
 //****************************************************************************
-	fish_brain._SWIM_ = 0.85 //Base line activity of just swiming around [?wont interrupt if already moving?]
+	fish_brain[@ SWIM] = 0.85 //Base line activity of just swiming around [?wont interrupt if already moving?]
 
 	ds_list_destroy(_life_check);
 
