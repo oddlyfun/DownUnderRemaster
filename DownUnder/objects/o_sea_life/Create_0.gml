@@ -27,6 +27,16 @@ energy_rate = real(energy_rate);
 energy_value = real(energy_value);
 turn_speed = real(turn_speed);
 
+// ******
+//
+//  Health and Energy reduction rates could be based on time to live 
+//  (Need to update data file I changed all energy_rate health_rate to 60)
+//
+// ******
+
+health_decline = (room_speed) / (room_speed * health_rate);
+energy_decline = (room_speed) / (room_speed * energy_rate);
+
 
 // camera wraping vars
 //the_camera = camera_get_active();
@@ -43,11 +53,21 @@ target_point_y = 0;
 
 
 // State Machine Brain
+#macro ENERGY 0
+#macro SWIM 1
+#macro THREAT 2
+#macro HEALTH 3
+#macro PLAYER 4
+
+brain_array[@ ENERGY] = 0;
+brain_array[@ SWIM] = 0;
+brain_array[@ THREAT] = 0;
+brain_array[@ HEALTH] = 0;
+brain_array[@ PLAYER] = 0;
+
+
 state_ai = {
-	_EAT_ 		: 0,
-	_SWIM_ 		: 0,
-	_THREAT_ 	: 0,
-	_HEALTH_ 	: 0
+	_BRAIN_ : brain_array,
 };
 
 alarm_set(0,1);
