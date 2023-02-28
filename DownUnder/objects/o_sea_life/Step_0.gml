@@ -3,8 +3,6 @@ right_side = x + room_width;
 left_side = x - room_width;
 
 
-// fish logic goes here
-// think like a fish that was programmed in 1995
 if ( frozen == false )
 {
 	// We will just do a random point direction and move towards that point with no further logic
@@ -25,4 +23,6 @@ if ( frozen == false )
 		is_moving = false;
 	}
 
+	my_energy = my_energy - energy_decline;
+	my_health = my_health - health_decline;
 }
