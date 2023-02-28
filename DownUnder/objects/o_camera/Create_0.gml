@@ -35,4 +35,4 @@ window_set_size(window_width,window_height);
 
 alarm[0]=1;
 
-room_goto(ro_start_screen);
+room_goto(ro_game);

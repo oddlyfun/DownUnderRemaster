@@ -109,7 +109,7 @@ function state_machine(fish_brain)
 	
 	//_valid_enemy
 	var _threat_amount = 0;
-	var _avg_threat_dist = 0;
+	//var _avg_threat_dist = 0;
 	//var _THREAT_ = 0;
 
 
@@ -121,8 +121,9 @@ function state_machine(fish_brain)
 		// Sort in the worst way
 		for ( var i = 0; i < _amount_of_enemies; i++ )
 		{
-			_sorting_grid[# 0,i ] = _valid_enemy;
-			_sorting_grid[# 1,i ] = point_distance(x,y,_valid_enemy.x,_valid_enemy.y);
+			var _ve = _valid_enemy[@ i];
+			_sorting_grid[# 0,i ] = _ve;
+			_sorting_grid[# 1,i ] = point_distance(x,y,_ve.x,_ve.y);
 		}
 
 		//ds_grid_sort(index, column, ascending);

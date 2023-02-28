@@ -85,7 +85,7 @@ function s_check_food(_fish, _target)
 function s_check_for_enemies(_self, _target)
 {
 	var _enemies_list = _self.enemies;
-	var _target_size = _target.size;
+	var _target_size = _target.fish_size;
 	var _target_id = _target.fish_id;
 	
 	for ( var i = 0; i < array_length(_enemies_list); i++ )
