@@ -58,7 +58,7 @@ target_point_y = 0;
 #macro THREAT 2
 #macro HEALTH 3
 #macro PLAYER 4
-
+brain_array = [];
 brain_array[@ ENERGY] = 0;
 brain_array[@ SWIM] = 0;
 brain_array[@ THREAT] = 0;

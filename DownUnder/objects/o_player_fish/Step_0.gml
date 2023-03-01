@@ -3,20 +3,21 @@ if ( is_eating == false )
 	direction = point_direction(x,y,mouse_x,mouse_y);
 	var _dist = floor(distance_to_point(mouse_x,mouse_y));
 
-	var _energy_redux = energy_rate;
+	var _energy_redux = 0;
 
 	if ( _dist <= max_speed ){
 		speed = 0;
-		_energy_redux = energy_rate * 0.01;
+		_energy_redux = energy_decline * 0.95;
 		
 	} else
 	{
 		speed = max_speed;
 		my_score = my_score + 1;
-		_energy_redux = energy_rate * 0.05;
+		_energy_redux = energy_decline * 1.05;
 	}
 
 	my_energy = my_energy - _energy_redux;
+	my_health = my_health - health_decline;
 
 //******************************************************************
 //			Clicking on some sea life (when not eating)

@@ -146,7 +146,7 @@ function state_machine(fish_brain)
 		
 		ds_grid_destroy(_sorting_grid);
 
-		fish_brain.[@ THREAT] = (_threat_amount + _threat_dist) / 2;
+		fish_brain[@ THREAT] = (_threat_amount + _threat_dist) / 2;
 
 	}
 
@@ -156,7 +156,7 @@ function state_machine(fish_brain)
 //
 //********************************************************************************************
 	var _hunt_player = 0;
-	var _player = instance_nearest(o_player_fish);
+	var _player = instance_nearest(x,y,o_player_fish);
 	if ( instance_exists(_player))
 	{
 

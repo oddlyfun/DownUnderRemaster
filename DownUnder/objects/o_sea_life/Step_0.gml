@@ -25,4 +25,7 @@ if ( frozen == false )
 
 	my_energy = my_energy - energy_decline;
 	my_health = my_health - health_decline;
+	
+	my_energy = clamp(my_energy,0,100);
+	my_health = clamp(my_health,0,100);
 }

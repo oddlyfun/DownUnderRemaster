@@ -11,10 +11,6 @@ var _fish = variable_struct_get(global.all_life, string(global.player_fish_id) )
 fish_id = global.player_fish_id;
 sprite_index = spr_guppy;
 
-HEALTH_RATE_TICK = room_speed * 0.75;
-
-alarm_set(0,HEALTH_RATE_TICK);
-
 fish_name				= _fish.full_name;
 fish_size				= _fish.size;
 health_rate				= _fish.health_rate;
@@ -31,5 +27,16 @@ playable				= _fish.playable;
 when_active				= _fish.active;
 my_notes				= _fish.notes;
 my_scientific_name		= _fish.scientific_name;
+
+swim_speed = real(swim_speed);
+health_rate = real(health_rate);
+energy_rate = real(energy_rate);
+energy_value = real(energy_value);
+turn_speed = real(turn_speed);
+
+
+
+health_decline = room_speed / ( room_speed * health_rate);
+energy_decline = room_speed / ( room_speed * energy_rate);
 
 event_inherited();
