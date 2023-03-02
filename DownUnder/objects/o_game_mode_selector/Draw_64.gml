@@ -91,8 +91,8 @@ if ( display_level == 1 and clicked == false )
 //		draw Start // Cancel buttons
 //***************************************
 	var _quater_width = mode_window.width / 4;
-	_btn_x = (_quater_width - ( cancel_button.width / 2 )) + mode_window.x;
-	_btn_y = (mode_window.y + mode_window.height) - ( mode_window.height * 0.05) - start_button.height;
+	var _btn_x = (_quater_width - ( cancel_button.width / 2 )) + mode_window.x;
+	var _btn_y = (mode_window.y + mode_window.height) - ( mode_window.height * 0.05) - start_button.height;
 
 	cancel_button.gx = _btn_x;
 	cancel_button.gy = _btn_y;

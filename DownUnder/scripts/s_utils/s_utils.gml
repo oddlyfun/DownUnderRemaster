@@ -51,7 +51,7 @@ function create_string_array( _words )
 	var _count = 0;
 	var _sub_string_start = 1;
 	var _length = string_length(_words);
-
+	var _a_word = "";
 	// String index starts at 1
 	//var _word = "";
 	for ( var i = 1; i <= _length; i++ )
@@ -59,7 +59,7 @@ function create_string_array( _words )
 		var _char = string_char_at(_words,i);
 		if ( _char == " " )
 		{
-			var _a_word = string_copy(_words, _sub_string_start, _count);
+			_a_word = string_copy(_words, _sub_string_start, _count);
 			_array[@ _index] = _a_word;
 			_index = _index + 1;
 			_sub_string_start = i + 1;

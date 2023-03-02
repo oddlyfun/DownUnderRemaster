@@ -2,7 +2,7 @@
   "1": {
     "full_name": "Achilles Tang",
     "size": "S",
-    "sprite_name": "small",
+    "sprite_name": "achilles_tang",
     "avg_size_inch": "8",
     "avg_size_cm": "20.32",
     "health_rate": "60",

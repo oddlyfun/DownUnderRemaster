@@ -33,7 +33,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Playable Fish",
-    "path": "folders/Objects/Lifeforms/Playable Fish.yy",
+    "name": "NPC Fish",
+    "path": "folders/Objects/Lifeforms/NPC Fish.yy",
   },
 }

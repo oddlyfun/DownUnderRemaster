@@ -3,6 +3,6 @@ spawn_list = ds_list_create();
 // the list of spawned objects created
 spawn_id_list = ds_list_create();
 
-max_spawns = 10;
+max_spawns = 1;
 
 alarm_set(0,1);

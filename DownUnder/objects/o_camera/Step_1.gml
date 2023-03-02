@@ -74,5 +74,5 @@ if ( instance_exists(_player) ) {
 		_inst.x = _inst.x - room_width;
 	}
 
-	camera_set_view_pos(view_camera[0],_vx,_vy);
+	camera_set_view_pos(view_camera[0],floor(_vx),floor(_vy));
 }

@@ -62,12 +62,15 @@ _anchor = panel_left_anchors[0][3]; // this is a vector (x,y)
 draw_text(_anchor.x,_anchor.y, _active_time);
 
 _anchor = panel_left_anchors[0][4]; // this is a vector (x,y)
+var _anchor_image_bot = panel_left_anchors[0][9];
 
 var _sprite = asset_get_index("spr_"+_fish_info.sprite_name);
 
 if ( sprite_exists(_sprite) )
 {
-	draw_sprite(_sprite,0,_anchor.x, _anchor.y);
+	var _x_center = floor(_anchor.x + (panel_left_width / 2));
+	var _y_center = floor(_anchor.y + ((_anchor_image_bot.y - _anchor.y) / 2));
+	draw_sprite(_sprite,0,_x_center, _y_center);
 }
 
 // toggle on

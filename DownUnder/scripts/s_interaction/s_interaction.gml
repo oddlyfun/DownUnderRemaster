@@ -32,7 +32,7 @@ function basic_button(_gx=0, _gy=0, _width=0, _height=0, _state=0, _text="") con
     text = _text;
     hover = false;
 
-    static draw_me = function ()
+    static draw_me = function()
     {
 		draw_set_font(FONT);
 		var _string_height = sprite_get_height(spr_font_small);
@@ -51,4 +51,9 @@ function basic_button(_gx=0, _gy=0, _width=0, _height=0, _state=0, _text="") con
 		//draw_text(_text_x_off + _width_mid, _text_y_off + _height_mid, text);
 		write_text(_text_x_off + _width_mid, _text_y_off + _height_mid,c_black,text)
     }
+	
+	static check_hover = function()
+	{
+		hover = gui_element_collision(x,y,width,height);
+	}
 }

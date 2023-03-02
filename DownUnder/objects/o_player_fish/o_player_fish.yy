@@ -2,10 +2,7 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "o_player_fish",
-  "spriteId": {
-    "name": "spr_guppy",
-    "path": "sprites/spr_guppy/spr_guppy.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,

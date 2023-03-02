@@ -47,7 +47,7 @@ panel_left_width 	= (window_display.width / 2) * 0.90;
 panel_left_height 	= window_display.height * 0.90;
 panel_left_x 		= window_display.x + ((window_display.width / 4 ) - (panel_left_width / 2));
 panel_left_y 		= window_display.y + ((window_display.height / 2 ) - (panel_left_height / 2));
-panel_left_anchors 	= anchor_grid(panel_left_width, panel_left_height, 6, 1,panel_left_x,panel_left_y);
+panel_left_anchors 	= anchor_grid(panel_left_width, panel_left_height, 10, 1,panel_left_x,panel_left_y);
 
 panel_right_width 	= panel_left_width;
 panel_right_height 	= panel_left_height;

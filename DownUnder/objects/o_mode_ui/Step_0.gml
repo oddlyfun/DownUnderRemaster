@@ -110,8 +110,9 @@ if ( mouse_check_button_released(mb_left) )
 			if ( i == 1 )
 			{
 				global.LOAD_GAME_LIST = fishy_list;
+				global.player_fish_id = fishy_list[@ fish_selected].fish_id;
 				save_my_game();
-				//room_goto()
+				room_goto(ro_game);
 			}
 		}
 	}

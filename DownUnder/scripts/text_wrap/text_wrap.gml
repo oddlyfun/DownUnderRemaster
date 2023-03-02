@@ -84,10 +84,11 @@ function text_wrap(_width, _height, _text) constructor
 		{
 			for ( var i = 0; i < array_length(_lines_array); i++ )
 			{
+				var _word = "";
 				var _lines = _lines_array[@ i]; // finally be the word array for that line
 				for ( var z = 0; z < array_length(_lines); z++ )
 				{
-					var _word = _lines[@ z];
+					_word = _lines[@ z];
 					write_text(_x, _y, c_black, _word);
 					_x = _x + string_width(_word) + string_width(" ");
 				}

@@ -68,7 +68,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "overlay_object_sprites",
+    "path": "folders/Sprites/background/overlay_object_sprites.yy",
   },
 }

@@ -26,7 +26,7 @@ if ( _hover_inst != noone and _hover_inst != _player and instance_exists(_hover_
 {
 	_info_message = _hover_inst.fish_name;
 
-	draw_set_font(fnt_game);
+	draw_set_font(FONT);
 	draw_set_color(c_black);
 	draw_text(4, _start_y + 2, _info_message);
 }
@@ -36,16 +36,16 @@ if ( _hover_inst != noone and _hover_inst != _player and instance_exists(_hover_
 //						Health and Energy bar of the player fish
 //
 //*********************************************************************************************************
-draw_set_font(fnt_small);
+draw_set_font(FONT);
 draw_set_color(c_black);
 
-var _energy = "ENERGY: "
-var _health = "HEALTH: "
+var _energy_txt = "ENERGY: "
+var _health_txt = "HEALTH: "
 
 var _hpbar_start_x = floor(_width * 0.35);
 
-draw_text(_hpbar_start_x - string_width(_energy), _start_y + 1, _energy);
-draw_text(_hpbar_start_x - string_width(_health), _start_y + string_height(_energy) + 1, _health);
+draw_text(_hpbar_start_x - string_width(_energy_txt), _start_y + 1, _energy_txt);
+draw_text(_hpbar_start_x - string_width(_health_txt), _start_y + string_height(_energy_txt) + 1, _health_txt);
 
 if ( _player != noone )
 {
@@ -128,7 +128,7 @@ var _score_y = _height - BAR_SIZE + 4;
 
 var _score_string = "Score: " + string(_player.my_score);
 draw_set_color(c_black);
-draw_set_font(fnt_game);
+draw_set_font(FONT);
 draw_text(_score_x, _score_y, _score_string);
 
 }

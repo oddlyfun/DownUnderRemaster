@@ -11,7 +11,7 @@ function add_message(the_message, the_type)
 
 function draw_a_message(_x, _y, _struct, _alpha, _width, _height)
 {
-	draw_set_font(fnt_game);
+	draw_set_font(FONT);
 	
 	
 	//draw_sprite_ext(spr_popup,0, _x, _y, 1, 1, 0, c_white, _alpha);

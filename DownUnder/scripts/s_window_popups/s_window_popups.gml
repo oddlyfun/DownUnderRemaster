@@ -25,7 +25,11 @@ function window_popup(_width, _height,_title_string="Hello",_vert_anchors_amount
 	nineslice_title_info = sprite_get_nineslice(titlebar_sprite);
 	nineslice_body_info = sprite_get_nineslice(body_sprite);
 
-	update_gui_location();
+	//update_gui_location();
+	var _gui_w=display_get_gui_width();
+	var _gui_h=display_get_gui_height();
+	x = floor((_gui_w / 2) - (width / 2));
+	y = floor((_gui_h / 2) - (height / 2));
 
 	static update_gui_location = function (
 			_gui_w=display_get_gui_width(),
@@ -33,6 +37,17 @@ function window_popup(_width, _height,_title_string="Hello",_vert_anchors_amount
 	{
 		x = floor((_gui_w / 2) - (width / 2));
 		y = floor((_gui_h / 2) - (height / 2));
+	}
+	
+	static update_view_location = function ()
+	{
+		var _vx = camera_get_view_x(view_camera[0]);
+		var _vy = camera_get_view_y(view_camera[0]);
+		var _vw = camera_get_view_width(view_camera[0]);
+		var _vh = camera_get_view_height(view_camera[0]);
+		
+		x = _vx + floor((_vw / 2) - (width / 2));
+		y = _vy + floor((_vh / 2) - (height / 2));
 	}
 
 	static update_title = function(_title_string)
@@ -70,6 +85,20 @@ function window_popup(_width, _height,_title_string="Hello",_vert_anchors_amount
 		var _tb_x = (x + width) - nineslice_title_info.right
 
 		hover_close = gui_element_collision(_tb_x, _tb_y, nineslice_title_info.right, sprite_get_height(titlebar_sprite) );
+	}
+	
+	static draw_ac_points = function ()
+	{
+		for( var i = 0; i < array_length(ac_points); i++ )
+		{
+			var _ypoints = ac_points[@ i];
+			for ( var j = 0; j < array_length(_ypoints); j++ )
+			{
+				var _pos = ac_points[@ i,j];
+				
+				draw_circle_color(x + _pos.x, y + _pos.y, 2, c_green, c_green, false);
+			}
+		}
 	}
 
 }

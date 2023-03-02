@@ -166,17 +166,18 @@ function challenge_list()
 
 	for ( var i = 0; i < array_length(_select_array); i++ )
 	{
-		var choice_array = _select_array[@ i];	
+		var _choice_array = [];
+		_choice_array = _select_array[@ i];	
 
 		while ( true )
 		{
-			_r_list = irandom(array_length(choice_array) - 1);
-			_r_list = choice_array[@ _r_list];
+			_r_list = irandom(array_length(_choice_array) - 1);
+			_r_list = _choice_array[@ _r_list];
 
 			var _no_repeats = false;
-			for ( var i = 0; i < array_length(picked_array); i++ )
+			for ( var j = 0; j < array_length(picked_array); j++ )
 			{
-				var _c = picked_array[@ i];
+				var _c = picked_array[@ j];
 				if ( _c == _r_list ) then _no_repeats = true;
 			}
 
@@ -228,4 +229,29 @@ function fishy_gauntlet()
 	}
 
 	return _fishy_list;
+}
+
+
+function set_static_background_object_vars(_id)
+{
+	var _fish = variable_struct_get(global.all_life, string(_id) );
+
+	fish_id = _id;
+
+	fish_name				= _fish.full_name;
+	fish_size				= _fish.size;
+	health_rate				= _fish.health_rate;
+	energy_rate				= _fish.energy_rate;
+	energy_value			= _fish.energy_value;
+	swim_speed				= _fish.swim_speed;
+	turn_speed				= _fish.turn_speed;
+	food_good				= _fish.food_good;
+	food_ok					= _fish.food_ok;
+	food_bad				= _fish.food_bad;
+	my_tags					= _fish.tags;
+	my_abilities			= _fish.ability;
+	playable				= _fish.playable;
+	when_active				= _fish.active;
+	my_notes				= _fish.notes;
+	my_scientific_name		= _fish.scientific_name;
 }

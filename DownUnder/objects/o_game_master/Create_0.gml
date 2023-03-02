@@ -1,7 +1,9 @@
 randomize();
-game_set_speed(60, gamespeed_fps);
+global.GAME_FPS = 60;
+game_set_speed(global.GAME_FPS, gamespeed_fps);
 
 window_set_cursor(cr_none);
+global.PAUSED = false;
 // loading the sea life json data
 global.all_life = undefined;
 global.all_life_json_filename = "sea_life.json";
@@ -19,6 +21,7 @@ global.message_q = ds_queue_create();
 
 global.font_small_map = "! \"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_abcdefghijklmnopqrstuvwxyz{|}~"
 global.fnt_spr_small = font_add_sprite_ext(spr_font_small,global.font_small_map,false,0);
+
 
 
 #macro PRACTICE  "P"
@@ -56,7 +59,7 @@ for ( var i = 0; i < _life_size; i++ )
 {
 
 	var _fish = variable_struct_get(global.all_life, string(i+1) );
-	_fish.fish_id = i;
+	_fish.fish_id = i+1;
 
 	// split off the fish based on its attributes
 	if ( _fish.playable == "Y" )

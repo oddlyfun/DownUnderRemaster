@@ -27,6 +27,8 @@ energy_rate = real(energy_rate);
 energy_value = real(energy_value);
 turn_speed = real(turn_speed);
 
+facing_dir = 1;
+
 // ******
 //
 //  Health and Energy reduction rates could be based on time to live 
@@ -34,8 +36,8 @@ turn_speed = real(turn_speed);
 //
 // ******
 
-health_decline = (room_speed) / (room_speed * health_rate);
-energy_decline = (room_speed) / (room_speed * energy_rate);
+health_decline = (global.GAME_FPS) / (global.GAME_FPS * health_rate);
+energy_decline = (global.GAME_FPS) / (global.GAME_FPS * energy_rate);
 
 
 // camera wraping vars

@@ -2,14 +2,19 @@ max_speed = 4;
 is_eating = false;
 eating_distance = 100;
 eating_target = noone;
+eating_x = 0;
+eating_y = 0;
 eating_zone = 0;
 energy_recovery = 12;
 my_score = global.player_score;
+facing_dir = 1;
 
 var _fish = variable_struct_get(global.all_life, string(global.player_fish_id) );
 
 fish_id = global.player_fish_id;
-sprite_index = spr_guppy;
+sprite_asset_string = "spr_"+_fish.sprite_name;
+
+sprite_index = asset_get_index(sprite_asset_string);
 
 fish_name				= _fish.full_name;
 fish_size				= _fish.size;
@@ -36,7 +41,7 @@ turn_speed = real(turn_speed);
 
 
 
-health_decline = room_speed / ( room_speed * health_rate);
-energy_decline = room_speed / ( room_speed * energy_rate);
+health_decline = global.GAME_FPS / ( global.GAME_FPS * health_rate);
+energy_decline = global.GAME_FPS / ( global.GAME_FPS * energy_rate);
 
 event_inherited();
