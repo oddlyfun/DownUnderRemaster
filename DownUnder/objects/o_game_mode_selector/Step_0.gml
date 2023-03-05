@@ -1,7 +1,17 @@
-if ( mouse_check_button_pressed(mb_left) )
+if ( mouse_check_button_released(mb_left) )
 {
 	// show the display
-	if ( display_level == 0 )
+	var _cam = view_camera[0];
+	var _vw = camera_get_view_width(_cam);
+	var _vh = camera_get_view_height(_cam);
+	var _ww = _vw * 0.75;
+	var _wh = _vh * 0.70;
+	
+	var _vx = (_vw / 2) - (_ww / 2);
+	var _vy = (_vh / 2) - (_wh / 2);
+	
+	var _rec_point = point_in_rectangle(mouse_x,mouse_y, _vx, _vy, _vx + _ww, _vy + _wh);
+	if ( display_level == 0 and _rec_point == true)
 	{
 		display_level = 1;
 		clicked = true;

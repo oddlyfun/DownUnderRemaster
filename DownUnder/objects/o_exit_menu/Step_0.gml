@@ -18,7 +18,7 @@ if ( show_display == true )
 		if ( exit_btn.hover == true )
 		{
 			global.PAUSED = false;
-			room_goto(rm_start_screen);
+			room_goto(ro_start_screen);
 		}
 	}
 }

@@ -28,7 +28,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "UI",
-    "path": "folders/Objects/UI.yy",
+    "name": "In Game",
+    "path": "folders/Objects/UI/In Game.yy",
   },
 }

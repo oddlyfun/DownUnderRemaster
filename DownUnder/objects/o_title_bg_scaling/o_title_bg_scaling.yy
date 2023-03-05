@@ -30,6 +30,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "BG-Title",
-    "path": "folders/Objects/UI/BG-Title.yy",
+    "path": "folders/Objects/UI/Title Screen/BG-Title.yy",
   },
 }

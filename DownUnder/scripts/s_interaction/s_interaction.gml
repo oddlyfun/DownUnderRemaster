@@ -55,7 +55,7 @@ function basic_button(_gx=0, _gy=0, _width=0, _height=0, _state=0, _text="") con
 	static check_hover = function()
 	{
 		state = 0;
-		hover = gui_element_collision(x,y,width,height);
+		hover = gui_element_collision(gx,gy,width,height);
 		if ( mouse_check_button(mb_left) and hover == true )
 		{
 			state = 1;
@@ -76,7 +76,7 @@ function top_title_menu() constructor
 	sub_items_list = 	[game_items, settings_items, rulers_items, help_items];
 
 	toggle_item = false;
-	toggle_index = -1;
+	toggle_index = 0;
 	BAR_BG = make_color_rgb(167,183,183);
 	top_pick = "";
 	item_pick = "";
@@ -87,9 +87,12 @@ function top_title_menu() constructor
 		//draw_rectangle_colour(x1, y1, x2, y2, col1, col2, col3, col4, outline);
 		var _gui_w = display_get_gui_width();
 		var _gui_h = display_get_gui_height();
-		var _bar_h = 40;
+		var _bar_h = 18;
 		var _string_x = 10;
+		draw_rectangle_color(0,0, _gui_w, _bar_h+1, c_black, c_black, c_black, c_black, false);
 		draw_rectangle_color(0,0, _gui_w, _bar_h, BAR_BG, BAR_BG, BAR_BG, BAR_BG, false);
+		
+		
 
 		// top level text
 		//top_pick = "";
@@ -117,29 +120,39 @@ function top_title_menu() constructor
 			if ( _hover == true )
 			{
 				top_level_hover = true;
+				toggle_index = i;
 			}
 
 
-			if ( _hover == true and toggle_item == true )
-			{
-				var _sub = sub_items_list[@ i];
+			//if ( _hover == true and toggle_item == true )
+			//{
+			if ( toggle_item == true and toggle_index == i ) {
+				var _sub = sub_items_list[@ toggle_index];
 				var _sub_y = _bar_h;
 				var _sub_x = _string_x;
 				var _sub_rect_x = _sub_x;
-				var _sub_rect_y = _sub_y;
-				var _sub_rect_height = (string_height("TEST") * array_length(_sub)) + (array_length(_sub) * 2);
+				var _sub_rect_y = _sub_y + 1;
+				var _sub_rect_height = _sub_rect_y + (string_height("TEST") * array_length(_sub)) + (array_length(_sub) * 2);
 
 				var _blk = c_black;
 				// Black outline?  
-				draw_rectangle_color(_sub_rect_x, 		_sub_rect_y, 100 + 2,	_sub_rect_height + 2, 		_blk, _blk, _blk, _blk, false);
-				draw_rectangle_color(_sub_rect_x + 2, 	_sub_rect_y + 2,	 	98, _sub_rect_height - 2, 	BAR_BG, BAR_BG, BAR_BG, BAR_BG, false);
+				draw_rectangle_color(_sub_rect_x, 		_sub_rect_y, _sub_rect_x + 100 + 1,	_sub_rect_height + 1, 		_blk, _blk, _blk, _blk, false);
+				draw_rectangle_color(_sub_rect_x + 1, 	_sub_rect_y + 1, _sub_rect_x + 100,  _sub_rect_height, 	BAR_BG, BAR_BG, BAR_BG, BAR_BG, false);
 
 				for ( var z = 0; z < array_length(_sub); z++ )
 				{
 					var _sub_text = _sub[@ z];
-
-					write_text(_sub_x, _sub_y, _blk, _sub_text);
-
+					
+					var _sub_hover = gui_element_collision(_sub_x+2,_sub_y+2, 100, string_height("HEIGHT"));
+					
+					if ( _sub_hover == true )
+					{
+						write_text(_sub_x+2, _sub_y+2, c_white, _sub_text);
+					} else {
+						write_text(_sub_x+2, _sub_y+2, _blk, _sub_text);
+					}
+					
+					
 					_sub_y = _sub_y + string_height("HEIGHT") + 2;
 				}
 
