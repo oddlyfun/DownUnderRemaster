@@ -1,3 +1,9 @@
+if ( global.PAUSED == true )
+{
+	var _salt = irandom_range(-5, 10);
+	alarm_set(0,game_get_speed(gamespeed_fps) + _salt);
+	exit;
+} 
 // If the camera is looking at the spawner then don't spawn a fish 
 
 var _cam_x = camera_get_view_x(view_camera[0]);
