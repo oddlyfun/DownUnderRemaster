@@ -49,6 +49,7 @@ function window_popup(_width, _height,_title_string="Hello",_vert_anchors_amount
 		x = _vx + floor((_vw / 2) - (width / 2));
 		y = _vy + floor((_vh / 2) - (height / 2));
 	}
+	
 
 	static update_title = function(_title_string)
 	{
