@@ -1,3 +1,5 @@
+if ( global.PAUSED == true ) then exit;
+
 var _inst = instance_nearest(0,0,o_cam_help);
 var _player = instance_nearest(0,0,o_player_fish);
 
