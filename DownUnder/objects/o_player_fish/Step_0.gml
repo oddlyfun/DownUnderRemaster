@@ -1,3 +1,5 @@
+if ( global.PAUSED == true ) then exit;
+
 var _cursor = instance_nearest(0,0,o_mouse);
 if ( !instance_exists(_cursor) ) then exit;
 
