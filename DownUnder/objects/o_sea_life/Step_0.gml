@@ -1,3 +1,5 @@
+if ( global.PAUSED == true ) then exit;
+
 // wrap
 right_side = x + room_width;
 left_side = x - room_width;
