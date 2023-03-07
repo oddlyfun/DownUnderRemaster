@@ -1,5 +1,6 @@
 if ( global.PAUSED == true ) then exit;
 
+
 var _cursor = instance_nearest(0,0,o_mouse);
 if ( !instance_exists(_cursor) ) then exit;
 
@@ -65,7 +66,14 @@ if ( is_eating == true )
 		{
 			my_energy = my_energy + energy_recovery;
 			my_energy = clamp(my_energy,0, 100);
-			if ( eating_target.destroyed_when_eaten == true )
+
+			var _nibble = false;
+			for ( var n = 0; n < array_length(my_tags); n++)
+			{
+				if ( my_tag[@ n] == "nibble") then _nibble = true;
+			}
+			
+			if ( eating_target.destroyed_when_eaten == true and _nibble == false )
 			{
 				instance_destroy(eating_target);
 			}
