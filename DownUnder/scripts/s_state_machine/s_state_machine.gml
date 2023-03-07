@@ -18,9 +18,9 @@ Seeking Player -
 	If the player runs away and gets too far give up
 */
 
-function state_machine(fish_brain)
+function state_machine(_fish_brain)
 {
-	fish_brain = fish_brain._BRAIN_;
+	fish_brain = _fish_brain._BRAIN_;
 
 	var _food_radius = 200; // I'd rather this be proportional to it's size somehow
 	var _life_check = ds_list_create();
@@ -69,6 +69,12 @@ function state_machine(fish_brain)
 		}
 
 	}
+// check it
+	_fish_brain._HUNGER_ = _valid_to_eat;
+	_fish_brain._RUNAWAY_ = _valid_enemy;
+	_fish_brain._HEALTH_ = _valid_cleaner;
+
+
 
 //****************************************************************************
 //
@@ -190,6 +196,10 @@ function state_machine(fish_brain)
 //****************************************************************************
 	fish_brain[@ SWIM] = 0.85 //Base line activity of just swiming around [?wont interrupt if already moving?]
 
+//****************************************************************************
+//
+//				Clean Up				
+//
+//****************************************************************************
 	ds_list_destroy(_life_check);
-
 }
