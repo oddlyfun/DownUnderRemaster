@@ -22,7 +22,12 @@ global.message_q = ds_queue_create();
 global.font_small_map = "! \"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_abcdefghijklmnopqrstuvwxyz{|}~"
 global.fnt_spr_small = font_add_sprite_ext(spr_font_small,global.font_small_map,false,0);
 
-
+// State Machine Brain
+#macro ENERGY 0
+#macro SWIM 1
+#macro THREAT 2
+#macro HEALTH 3
+#macro PLAYER 4
 
 #macro PRACTICE  "P"
 #macro GAUNTLET  "G"
