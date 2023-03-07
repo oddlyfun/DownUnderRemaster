@@ -5,6 +5,7 @@ function s_check_food(_fish, _target)
 	var _good = _fish.food_good;
 	var _ok = _fish.food_ok;
 	var _bad = _fish.food_bad;
+	var _clean = _fish.my_tags;
 
 	var _tar_id = _target.fish_id;
 	var _tar_size = _target.fish_size;
@@ -40,6 +41,17 @@ function s_check_food(_fish, _target)
 	{
 		var _val = _bad[@ i];
 		if ( _val == _tar_id or _val == _tar_size )
+		{
+			_is_bad = true;
+			break;
+		}
+	}
+
+	// Checking for a cleaner tag so they don't get eaten
+	for ( var i = 0; i < array_length(_clean); i++ )
+	{
+		var _val = _clean[@ i];
+		if ( _val == "cleaner" or _val == "mimic" )
 		{
 			_is_bad = true;
 			break;
