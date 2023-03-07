@@ -46,30 +46,30 @@ the_camera = camera_get_default();
 right_side = x + room_width;
 left_side = x - room_width;
 
-moving_towards_point_x = 0;
-moving_towards_point_y = 0;
-
-is_moving = false;
-target_point_x = 0;
-target_point_y = 0;
-
+swim_target = new vector2(0,0);
+is_swiming = false;
 
 // State Machine Brain
-#macro ENERGY 0
-#macro SWIM 1
-#macro THREAT 2
-#macro HEALTH 3
-#macro PLAYER 4
+//#macro ENERGY 0
+//#macro SWIM 1
+//#macro THREAT 2
+//#macro HEALTH 3
+//#macro PLAYER 4
 brain_array = [];
 brain_array[@ ENERGY] = 0;
-brain_array[@ SWIM] = 0;
+brain_array[@ SWIM] = 0.85;
 brain_array[@ THREAT] = 0;
 brain_array[@ HEALTH] = 0;
 brain_array[@ PLAYER] = 0;
 
 
 state_ai = {
-	_BRAIN_ : brain_array,
+	_BRAIN_ : brain_array, 		// Array
+	_HUNGER_ : [], 			// Array
+	_RUNAWAY_ : [], 			// Array
+	_HEALTH_ : [], 			// Array
+	_HUNT_ : o_player_fish, 	// Object
+	_SWIM_ : swim_target, 		// Vector2
 };
 
 alarm_set(0,1);
