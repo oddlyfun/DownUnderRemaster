@@ -123,12 +123,10 @@ if ( _player != noone )
 //*********************************************************************************************************
 
 	
-var _score_x = _width - string_length("Score: ######") - 60;
-var _score_y = _height - BAR_SIZE + 4;
-
-var _score_string = "Score: " + string(_player.my_score);
-draw_set_color(c_black);
-draw_set_font(FONT);
-draw_text(_score_x, _score_y, _score_string);
-
+	draw_set_color(c_black);
+	draw_set_font(FONT);
+	var _score_x = _width - string_width("Score: ###,###") - 10;
+	var _score_y = _height - BAR_SIZE + 4;
+	var _score_string = "Score: " + string(_player.my_score);
+	draw_text(_score_x, _score_y, _score_string);
 }
