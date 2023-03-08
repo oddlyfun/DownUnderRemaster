@@ -1,4 +1,8 @@
-if ( global.PAUSED == true ) then exit;
+speed = swim_speed * global.PAUSED;
+if ( global.PAUSED == true )
+{
+	exit;
+}
 
 
 var _cursor = instance_nearest(0,0,o_mouse);
@@ -17,7 +21,7 @@ if ( is_eating == false )
 		
 	} else
 	{
-		speed = max_speed;
+		speed = swim_speed;
 		my_score = my_score + 1;
 		_energy_redux = energy_decline * 1.05;
 	}
@@ -83,7 +87,7 @@ if ( is_eating == true )
 		is_eating = false;
 	} else
 	{
-		speed = max_speed;
+		speed = swim_speed;
 	}
 }
 
