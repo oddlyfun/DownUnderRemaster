@@ -47,6 +47,7 @@ right_side = x + room_width;
 left_side = x - room_width;
 
 swim_target = new vector2(0,0);
+meal_target = noone;
 is_swiming = false;
 
 // State Machine Brain
