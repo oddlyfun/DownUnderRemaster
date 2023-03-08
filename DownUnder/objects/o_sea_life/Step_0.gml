@@ -1,3 +1,4 @@
+speed = swim_speed * global.PAUSED
 if ( global.PAUSED == true )
 {
 	exit;
@@ -62,16 +63,62 @@ if ( frozen == false )
 
 	switch _largest_index
 	{
+//******************************************************************************
+//			Eating Some FISHY
+//******************************************************************************
 		case ENERGY:
-		break;
+			var _meals = state_ai._HUNGER_;
+			if ( meal_target == noone )
+			{
+				if ( array_length(_meals) > 0 )
+				{
+					var _rf = irandom( array_length(_meals) - 1 );
+					meal_target = _meals[@ _rf];
+				}
+			} else if ( meal_target != noone )
+			{
+				direction = point_direction(x,y, meal_target.x, meal_target.y);
+				speed = swim_speed;
 
+				var _dist = point_distance(x,y, meal_target.x, meal_target.y);
+
+				if ( _dist <= 10 )
+				{
+					my_energy = my_energy + 40;
+					my_energy = clamp(my_energy,0,100);
+
+					var _nibble = false;
+					var _cleaner = false;
+					for ( var n = 0; n < array_length(my_tags); n++)
+					{
+						if ( my_tags[@ n] == "nibble") then _nibble = true;
+						if ( my_tags[@ n] == "cleaner") then _cleaner = true;
+					}
+
+					if ( _cleaner == true )
+					{
+						meal_target.my_health = meal_target.my_health + 40;
+						meal_target.my_health = clamp(meal_target.my_health,0,100);
+					}
+
+					if ( meal_target.destroyed_when_eaten == true and _nibble == false )
+					{
+						instance_destroy(meal_target);
+					}
+
+				}
+			}
+		break;
+//******************************************************************************
+//							Just Keep Swiming
+//******************************************************************************
 		case SWIM:
 			if ( is_swiming == false )
 			{
 				state_ai._SWIM_.x = irandom_range(0,room_width);
 				state_ai._SWIM_.y = irandom_range(0,room_height);
 				direction = point_direction(x,y, state_ai._SWIM_.x, state_ai._SWIM_.y);
-				speed = 1;
+				speed = swim_speed;
 				is_swiming = true;
 			} else
 			{
@@ -84,13 +131,54 @@ if ( frozen == false )
 				}
 			}
 		break;
-		
+//******************************************************************************
+//							Run Away
+//******************************************************************************
 		case THREAT:
-		break;
+			var _run = state_ai._RUNAWAY_;
+			var _len_run = array_length(_run);
+			var _dist = 999;
+			var _closest = noone;
+			if ( _len_run > 0 )
+			{
+				for ( var i = 0; i < _len_run; i++ )
+				{
+					var _badnews = _run[@ i];
+					var _close = point_distance(x,y, _badnews.x, _badnews.y);
+					if (  _close < _dist )
+					{
+						_dist = _close;
+						_closest = _badnews;
+					}
 
+				}
+
+
+				direction = point_direction(x,y, _closest.x, _closest.y) * -1;
+				speed = swim_speed;
+			}
+		break;
+//******************************************************************************
+//							Find a Cleaner fish
+//******************************************************************************
 		case HEALTH:
-		break;
+			var _clean = state_ai._HEALTH_;
+			if ( array_length(_clean) > 0 )
+			{
+				var _cleaner_fish = _clean[@ 0];
+				direction = point_direction(x,y, _cleaner_fish.x, _cleaner_fish.y);
+				speed = swim_speed;
 
+				if ( point_distance(x,y, _cleaner_fish.x, _cleaner_fish.y) < 10 )
+				{
+					my_health = my_health + 5;
+					my_health = clamp(my_health,0,100);
+				}
+			}
+		break;
+//******************************************************************************
+//							Chase the player
+//******************************************************************************
 		case PLAYER:
 		break;
 		
