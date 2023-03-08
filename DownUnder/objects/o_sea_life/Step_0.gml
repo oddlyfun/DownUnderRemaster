@@ -1,4 +1,7 @@
-if ( global.PAUSED == true ) then exit;
+if ( global.PAUSED == true )
+{
+	exit;
+}
 
 
 if ( frozen == false )
@@ -47,7 +50,7 @@ if ( frozen == false )
 
 	var _largest_index = -1;
 	var _largest_value = 0;
-	for ( var i = 0; i < array_length(state_ai._BRAIN_) )
+	for ( var i = 0; i < array_length(state_ai._BRAIN_); i++ )
 	{
 		var _val = state_ai._BRAIN_[@ i];
 		if ( _val > _largest_value )
@@ -67,12 +70,13 @@ if ( frozen == false )
 			{
 				state_ai._SWIM_.x = irandom_range(0,room_width);
 				state_ai._SWIM_.y = irandom_range(0,room_height);
-				direction = point_direction(x,y, _rx, _ry);
+				direction = point_direction(x,y, state_ai._SWIM_.x, state_ai._SWIM_.y);
 				speed = 1;
 				is_swiming = true;
 			} else
 			{
 				var _dist = point_distance(state_ai._SWIM_.x, state_ai._SWIM_.y, x, y);
+				
 				if ( _dist <= 10 )
 				{
 					is_swiming = false;

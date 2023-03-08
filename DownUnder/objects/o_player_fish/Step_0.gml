@@ -70,7 +70,7 @@ if ( is_eating == true )
 			var _nibble = false;
 			for ( var n = 0; n < array_length(my_tags); n++)
 			{
-				if ( my_tag[@ n] == "nibble") then _nibble = true;
+				if ( my_tags[@ n] == "nibble") then _nibble = true;
 			}
 			
 			if ( eating_target.destroyed_when_eaten == true and _nibble == false )

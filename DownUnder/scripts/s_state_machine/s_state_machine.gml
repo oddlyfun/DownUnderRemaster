@@ -86,9 +86,13 @@ function state_machine(_fish_brain)
 	var _curent_energy = 1 - (my_energy / 100 ); // Inverse relationship the less energy the higher the score
 	// val 2 amount of food around
 	var _amount_of_prey = array_length(_valid_to_eat);
-	if ( _amount_of_prey > 0 ) then _amount_of_prey = 1 / _amount_of_prey;
-
-	fish_brain[@ ENERGY] = ( _curent_energy + _amount_of_prey ) / 2;
+	if ( _amount_of_prey > 0 ) then _amount_of_prey = 1;
+	
+	var _val = ( _curent_energy * _amount_of_prey );
+	
+	
+	
+	fish_brain[@ ENERGY] = sqrt(1 - power(_val - 1, 2));
 
 //****************************************************************************
 //
@@ -103,9 +107,9 @@ function state_machine(_fish_brain)
 	{
 		_cleaner_nearby = 1;
 	}
+	_val = ( _current_health * _cleaner_nearby);
 
-
-	fish_brain[@ HEALTH] = ( _current_health + _cleaner_nearby) / 2;
+	fish_brain[@ HEALTH] = sqrt(1 - power(_val - 1, 2));
 
 //****************************************************************************
 //
@@ -121,6 +125,7 @@ function state_machine(_fish_brain)
 
 
 	var _amount_of_enemies = array_length(_valid_enemy);
+	var _threat_assesment = 0;
 
 	if ( _amount_of_enemies > 0 )
 	{
@@ -152,9 +157,10 @@ function state_machine(_fish_brain)
 		
 		ds_grid_destroy(_sorting_grid);
 
-		fish_brain[@ THREAT] = (_threat_amount + _threat_dist) / 2;
-
+		_threat_assesment = (_threat_amount + _threat_dist) / 2;
 	}
+	
+		fish_brain[@ THREAT] = _threat_assesment
 
 //********************************************************************************************
 //

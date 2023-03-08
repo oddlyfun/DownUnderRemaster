@@ -1,1 +1,1 @@
-ds_list_add(spawn_id_list,1,2,5,10,15,20,25,50,23,12);
+ds_list_add(spawn_id_list,17);
