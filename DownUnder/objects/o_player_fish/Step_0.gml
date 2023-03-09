@@ -1,4 +1,6 @@
-speed = swim_speed * global.PAUSED;
+swim_speed = 6;
+speed = swim_speed * abs(global.PAUSED - 1);
+
 if ( global.PAUSED == true )
 {
 	exit;
@@ -12,10 +14,9 @@ if ( is_eating == false )
 {
 	direction = point_direction(x,y,mouse_x,mouse_y);
 	var _dist = floor(distance_to_point(mouse_x,mouse_y));
-
 	var _energy_redux = 0;
 
-	if ( _dist <= max_speed ){
+	if ( _dist <= 10 ){
 		speed = 0;
 		_energy_redux = energy_decline * 0.95;
 		
@@ -62,7 +63,7 @@ if ( is_eating == true )
 
 	if ( _dist <= max_speed )
 	{
-		speed = 0;
+		//speed = 0;
 		eating_target.frozen = false;
 		var _was_eaten = s_check_food(id, eating_target);
 		// done eating
@@ -91,5 +92,6 @@ if ( is_eating == true )
 	}
 }
 
-x = floor(x);
-y = floor(y);
+// floor causing movement issues
+//x = round(x);
+//y = round(y);

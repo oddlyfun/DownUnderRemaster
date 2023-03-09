@@ -35,7 +35,6 @@ if ( _center_cam == false and _left_cam == false and _right_cam == false )
 		// gets the fish from the all life struct and then sets all the variables for the new fish
 		var _fish = variable_struct_get(global.all_life, string(_r) );
 		var _sprite_name = _fish.sprite_name;
-		_sprite_name = "spr_"+_sprite_name;
 		_sprite_name = asset_get_index(_sprite_name);
 		
 		if ( _sprite_name == -1 ) then _sprite_name = spr_not_applicable;

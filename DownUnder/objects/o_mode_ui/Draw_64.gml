@@ -64,7 +64,7 @@ draw_text(_anchor.x,_anchor.y, _active_time);
 _anchor = panel_left_anchors[0][4]; // this is a vector (x,y)
 var _anchor_image_bot = panel_left_anchors[0][9];
 
-var _sprite = asset_get_index("spr_"+_fish_info.sprite_name);
+var _sprite = asset_get_index(_fish_info.sprite_name);
 
 if ( sprite_exists(_sprite) )
 {

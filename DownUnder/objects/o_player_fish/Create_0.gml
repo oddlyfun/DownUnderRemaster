@@ -12,7 +12,7 @@ facing_dir = 1;
 var _fish = variable_struct_get(global.all_life, string(global.player_fish_id) );
 
 fish_id = global.player_fish_id;
-sprite_asset_string = "spr_"+_fish.sprite_name;
+sprite_asset_string = _fish.sprite_name;
 
 sprite_index = asset_get_index(sprite_asset_string);
 

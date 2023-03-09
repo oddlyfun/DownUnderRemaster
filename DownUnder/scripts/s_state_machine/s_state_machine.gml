@@ -51,7 +51,7 @@ function state_machine(_fish_brain)
 		var _tasty = s_check_food(id, _fish);
 		if (_tasty.edible == true)
 		{
-			_valid_to_eat[@ _index_eat] = _tasty;
+			_valid_to_eat[@ _index_eat] = _fish;
 			_index_eat = _index_eat + 1;
 		}
 
@@ -192,7 +192,7 @@ function state_machine(_fish_brain)
 	}
 
 
-	fish_brain[@ PLAYER] = _hunt_player;
+	fish_brain[@ PLAYER] = 0;//_hunt_player;
 
 
 //****************************************************************************

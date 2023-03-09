@@ -1,4 +1,4 @@
-speed = swim_speed * global.PAUSED
+speed = swim_speed * abs(global.PAUSED - 1);
 if ( global.PAUSED == true )
 {
 	exit;
@@ -117,13 +117,13 @@ if ( frozen == false )
 			{
 				state_ai._SWIM_.x = irandom_range(0,room_width);
 				state_ai._SWIM_.y = irandom_range(0,room_height);
-				direction = point_direction(x,y, state_ai._SWIM_.x, state_ai._SWIM_.y);
+				//direction = point_direction(x,y, state_ai._SWIM_.x, state_ai._SWIM_.y);
 				speed = swim_speed;
 				is_swiming = true;
 			} else
 			{
 				var _dist = point_distance(state_ai._SWIM_.x, state_ai._SWIM_.y, x, y);
-				
+				direction = point_direction(x,y, state_ai._SWIM_.x, state_ai._SWIM_.y);
 				if ( _dist <= 10 )
 				{
 					is_swiming = false;
