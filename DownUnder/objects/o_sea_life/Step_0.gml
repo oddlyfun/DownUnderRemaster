@@ -137,24 +137,19 @@ if ( frozen == false )
 		case THREAT:
 			var _run = state_ai._RUNAWAY_;
 			var _len_run = array_length(_run);
-			var _dist = 999;
-			var _closest = noone;
+			var _avg_dir = 0;
+			var _badnews = noone;
+
 			if ( _len_run > 0 )
 			{
 				for ( var i = 0; i < _len_run; i++ )
 				{
-					var _badnews = _run[@ i];
-					var _close = point_distance(x,y, _badnews.x, _badnews.y);
-					if (  _close < _dist )
-					{
-						_dist = _close;
-						_closest = _badnews;
-					}
-
+					_badnews = _run[@ i];
+					_avg_dir = _avg_dir + point_direction(x,y, _badnews.x, _badnews.y);
+				
 				}
 
-
-				direction = point_direction(x,y, _closest.x, _closest.y) * -1;
+				direction = (_avg_dir / _len_run) - 180;
 				speed = swim_speed;
 			}
 		break;
@@ -183,7 +178,6 @@ if ( frozen == false )
 		break;
 		
 	}
-
 
 
 //**********************************************************************
