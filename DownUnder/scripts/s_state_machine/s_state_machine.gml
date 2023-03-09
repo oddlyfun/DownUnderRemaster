@@ -22,7 +22,7 @@ function state_machine(_fish_brain)
 {
 	fish_brain = _fish_brain._BRAIN_;
 
-	var _food_radius = 200; // I'd rather this be proportional to it's size somehow
+	var _food_radius = 200 + floor(sprite_width(sprite_index));
 	var _life_check = ds_list_create();
 	var _coll_circ = collision_circle_list(x,y, _food_radius, o_sea_life,false,true,_life_check,false);
 
