@@ -103,7 +103,14 @@ if ( frozen == false )
 
 					if ( meal_target.destroyed_when_eaten == true and _nibble == false )
 					{
-						instance_destroy(meal_target);
+						var _player = instance_nearest(o_player_fish);
+						if ( meal_target != _player )
+						{
+							instance_destroy(meal_target);
+						} else
+						{
+							meal_target.is_dead = true;
+						}
 					}
 
 				}
