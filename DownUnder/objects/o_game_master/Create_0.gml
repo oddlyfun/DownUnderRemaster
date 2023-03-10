@@ -4,6 +4,9 @@ game_set_speed(global.GAME_FPS, gamespeed_fps);
 
 window_set_cursor(cr_none);
 global.PAUSED = false;
+global.LEVEL_OVER = false;
+global.WIN_LEVEL = false;
+
 // loading the sea life json data
 global.all_life = undefined;
 global.all_life_json_filename = "sea_life.json";
@@ -15,9 +18,7 @@ if ( file_exists(global.all_life_json_filename))
 	global.all_life = json_parse(_string);
 }
 
-
 global.message_q = ds_queue_create();
-
 
 global.font_small_map = "! \"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_abcdefghijklmnopqrstuvwxyz{|}~"
 global.fnt_spr_small = font_add_sprite_ext(spr_font_small,global.font_small_map,false,0);
