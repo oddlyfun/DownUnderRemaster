@@ -1,4 +1,4 @@
-swim_speed = 6;
+//swim_speed = 6;
 speed = swim_speed * abs(global.PAUSED - 1);
 
 if ( global.PAUSED == true )
@@ -71,6 +71,7 @@ if ( is_eating == true )
 		{
 			my_energy = my_energy + energy_recovery;
 			my_energy = clamp(my_energy,0, 100);
+			my_score = my_score + 500;
 
 			var _nibble = false;
 			for ( var n = 0; n < array_length(my_tags); n++)
@@ -95,3 +96,31 @@ if ( is_eating == true )
 // floor causing movement issues
 //x = round(x);
 //y = round(y);
+
+
+// check for dying 
+if ( my_health <= 0 or my_energy <= 0 or is_dead == true )
+{
+	global.PAUSED = true;
+	global.LEVEL_OVER = true;
+	global.player_score = global.player_score + my_score;
+	// create level over object
+	//instance_destroy(id);
+}
+
+
+
+
+if ( global.GAME_MODE == GAUNTLET or global.GAME_MODE == CHALLENGE)
+{
+	if ( my_score >= 5000 )
+	{
+		global.player_score = 5000 + global.player_score; 
+		global.PAUSED = true;
+		global.LEVEL_OVER = true;
+		global.WIN_LEVEL = true;
+		// create level over object
+		// create level over object
+		//instance_destroy(id);
+	}
+}
