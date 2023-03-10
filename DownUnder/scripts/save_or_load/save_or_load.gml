@@ -44,39 +44,63 @@ function remove_save_file()
 function save_reef_rulers()
 {
 	var _filename = global.REEF_RULER_FILENAME;
-	
-	var _save = {
-		mode : global.GAME_MODE,
-		fish_list : global.LOAD_GAME_LIST,
-		my_score : global.player_score
-	};
-	
-	var _str = json_stringify(_save);
+	var _str = json_stringify(global.reef_rulers);
 	var _buffer = buffer_create(string_byte_length(_str), buffer_fixed,1);
 	buffer_write(_buffer, buffer_text, _str);
 	buffer_save(_buffer, _filename);
 	buffer_delete(_buffer);
 }
 
+function add_reef_ruler(_the_ruler)
+{
+	var _save = {
+		mode : global.GAME_MODE,
+		player_name : _the_ruler,
+		my_score : global.player_score
+	};
+
+
+	var _ruler_struct = global.reef_rulers;
+	var _ruler_array = [];
+
+	if ( global.GAME_MODE == GAUNTLET )
+	{
+		_ruler_array = _ruler_struct[$ GAUNTLET];
+	} 
+	else if ( global.GAME_MODE == CHALLENGE )
+	{
+		_ruler_array = _ruler_struct[$ CHALLENGE];
+	} 
+	else if ( global.GAME_MODE == CREATE_A_FISH )
+	{
+		_ruler_array = _ruler_struct[$ CREATE_A_FISH];
+	}
+
+	var _size = array_length(_ruler_array);
+	_ruler_array[@ _size] = _save;
+}
+
+function empty_reef_ruler()
+{
+	var _top_level;
+	var _gaunt = [];
+	var _chall = [];
+	var _fishy = [];
+
+
+	_top_level = {
+		G 	: _gaunt,
+		C 	: _chall,
+		CAF : _fishy
+	};
+
+	return _top_level;
+}
+
+
 function load_reef_rulers()
 {
 	var _filename = global.REEF_RULER_FILENAME;
-
-	var _empty_ruler = {
-		challenge : {
-			id_0 : {
-				name : noone,
-				my_score : -1
-			},
-		},
-		gauntlet : {
-			id_0 : {
-				name : noone,
-				my_score : -1
-			},
-		},
-	};
-
 
 	if ( file_exists(_filename) )
 	{
@@ -86,8 +110,8 @@ function load_reef_rulers()
 	    buffer_delete(_buffer);
 	    var data = json_parse(_str);
 		return data;
+	} else
+	{
+		return empty_reef_ruler();
 	}
-	
-
-	return _empty_ruler;
 }
