@@ -97,7 +97,7 @@
   "4": {
     "full_name": "Blackspotted Puffer",
     "size": "MS",
-    "sprite_name": "medium_small",
+    "sprite_name": "spr_blackspotted_puffer",
     "avg_size_inch": "11",
     "avg_size_cm": "27.94",
     "health_rate": "60",
@@ -229,7 +229,7 @@
   "8": {
     "full_name": "Bluelined Snapper",
     "size": "MS",
-    "sprite_name": "medium_small",
+    "sprite_name": "spr_bluelined_snapper",
     "avg_size_inch": "10",
     "avg_size_cm": "25.4",
     "health_rate": "60",
@@ -397,7 +397,7 @@
   "13": {
     "full_name": "Clown Triggerfish",
     "size": "MS",
-    "sprite_name": "medium_small",
+    "sprite_name": "spr_clown_triggerfish",
     "avg_size_inch": "10",
     "avg_size_cm": "25.4",
     "health_rate": "60",
@@ -433,7 +433,7 @@
   "14": {
     "full_name": "Coral Grouper",
     "size": "MS",
-    "sprite_name": "medium_small",
+    "sprite_name": "spr_coral_grouper",
     "avg_size_inch": "12",
     "avg_size_cm": "30.48",
     "health_rate": "60",
@@ -529,7 +529,7 @@
   "17": {
     "full_name": "Dash and Dot Goatfish",
     "size": "M",
-    "sprite_name": "medium",
+    "sprite_name": "spr_dash_and_dot_goatfish",
     "avg_size_inch": "20",
     "avg_size_cm": "50.8",
     "health_rate": "60",
@@ -563,7 +563,7 @@
   "18": {
     "full_name": "Devil Scorpionfish",
     "size": "S",
-    "sprite_name": "small",
+    "sprite_name": "spr_devil_scorpionfish",
     "avg_size_inch": "7",
     "avg_size_cm": "17.78",
     "health_rate": "60",
@@ -594,7 +594,7 @@
   "19": {
     "full_name": "Double-lined Mackerel",
     "size": "M",
-    "sprite_name": "medium",
+    "sprite_name": "spr_double_lined_mackerel",
     "avg_size_inch": "24",
     "avg_size_cm": "60.96",
     "health_rate": "60",
@@ -861,7 +861,7 @@
   "27": {
     "full_name": "Long-nosed Butterflyfish",
     "size": "S",
-    "sprite_name": "small",
+    "sprite_name": "spr_long_nosed_butterflyfish",
     "avg_size_inch": "7",
     "avg_size_cm": "17.78",
     "health_rate": "60",
@@ -895,7 +895,7 @@
   "28": {
     "full_name": "Longfin Spadefish",
     "size": "M",
-    "sprite_name": "medium",
+    "sprite_name": "spr_longfin_spadefish",
     "avg_size_inch": "16",
     "avg_size_cm": "40.64",
     "health_rate": "60",
@@ -927,7 +927,7 @@
   "29": {
     "full_name": "Longhorn Cowfish",
     "size": "MS",
-    "sprite_name": "medium_small",
+    "sprite_name": "spr_longhorn_cowfish",
     "avg_size_inch": "12",
     "avg_size_cm": "30.48",
     "health_rate": "60",
@@ -958,7 +958,7 @@
   "30": {
     "full_name": "Longsnout Flathead",
     "size": "S",
-    "sprite_name": "small",
+    "sprite_name": "spr_longsnout_flathead",
     "avg_size_inch": "8",
     "avg_size_cm": "20.32",
     "health_rate": "60",
@@ -989,7 +989,7 @@
   "31": {
     "full_name": "Yellowedged lyretail",
     "size": "M",
-    "sprite_name": "medium",
+    "sprite_name": "spr_yellowedged_lyretail",
     "avg_size_inch": "22",
     "avg_size_cm": "55.88",
     "health_rate": "60",
@@ -1023,7 +1023,7 @@
   "32": {
     "full_name": "Marbled Grouper",
     "size": "M",
-    "sprite_name": "medium",
+    "sprite_name": "spr_marbled_grouper",
     "avg_size_inch": "24",
     "avg_size_cm": "60.96",
     "health_rate": "60",
@@ -1060,7 +1060,7 @@
   "33": {
     "full_name": "Moorish Idol",
     "size": "S",
-    "sprite_name": "small",
+    "sprite_name": "spr_moorish_idol",
     "avg_size_inch": "6",
     "avg_size_cm": "15.24",
     "health_rate": "60",
@@ -1223,7 +1223,7 @@
   "38": {
     "full_name": "Palette Surgeonfish",
     "size": "S",
-    "sprite_name": "small",
+    "sprite_name": "spr_palette_surgeonfish",
     "avg_size_inch": "8",
     "avg_size_cm": "20.32",
     "health_rate": "60",
@@ -1253,7 +1253,7 @@
   "39": {
     "full_name": "Pencil Streaked Rabbitfish",
     "size": "S",
-    "sprite_name": "small",
+    "sprite_name": "spr_pencil_streaked_rabbitfish",
     "avg_size_inch": "8",
     "avg_size_cm": "20.32",
     "health_rate": "60",
@@ -1286,7 +1286,7 @@
   "40": {
     "full_name": "Picassofish",
     "size": "S",
-    "sprite_name": "small",
+    "sprite_name": "spr_picassofish",
     "avg_size_inch": "8",
     "avg_size_cm": "20.32",
     "health_rate": "60",
@@ -1320,7 +1320,7 @@
   "41": {
     "full_name": "Pygmy Parrotfish",
     "size": "S",
-    "sprite_name": "small",
+    "sprite_name": "spr_pygmy_parrotfish",
     "avg_size_inch": "9",
     "avg_size_cm": "22.86",
     "health_rate": "60",
@@ -1387,7 +1387,7 @@
   "43": {
     "full_name": "Redtooth Triggerfish",
     "size": "MS",
-    "sprite_name": "medium_small",
+    "sprite_name": "spr_redtooth_triggerfish",
     "avg_size_inch": "11",
     "avg_size_cm": "27.94",
     "health_rate": "60",
@@ -1453,7 +1453,7 @@
   "45": {
     "full_name": "Semicircle Angelfish",
     "size": "S",
-    "sprite_name": "small",
+    "sprite_name": "spr_semicircle_angelfish",
     "avg_size_inch": "8",
     "avg_size_cm": "20.32",
     "health_rate": "60",
@@ -1547,7 +1547,7 @@
   "48": {
     "full_name": "Small Spotted Pompano",
     "size": "MS",
-    "sprite_name": "medium_small",
+    "sprite_name": "spr_small_spotted_pompano",
     "avg_size_inch": "13",
     "avg_size_cm": "33.02",
     "health_rate": "60",
@@ -1580,7 +1580,7 @@
   "49": {
     "full_name": "Threadfin Butterflyfish",
     "size": "S",
-    "sprite_name": "small",
+    "sprite_name": "spr_threadfin_butterflyfish",
     "avg_size_inch": "6",
     "avg_size_cm": "15.24",
     "health_rate": "60",
@@ -1680,7 +1680,7 @@
   "52": {
     "full_name": "Whitespot Hawkfish",
     "size": "S",
-    "sprite_name": "small",
+    "sprite_name": "spr_whitespot_hawkfish",
     "avg_size_inch": "8",
     "avg_size_cm": "20.32",
     "health_rate": "60",
@@ -1743,7 +1743,7 @@
   "54": {
     "full_name": "Yellowspot Emperor",
     "size": "S",
-    "sprite_name": "small",
+    "sprite_name": "spr_yellowspot_emperor",
     "avg_size_inch": "8",
     "avg_size_cm": "20.32",
     "health_rate": "60",

@@ -1,4 +1,4 @@
-if ( keyboard_check_released(ord("P") ) )
+if ( keyboard_check_released(ord("^") ) )
 {
 	var _filename = string(current_day)+"_"+string(current_hour)+"_"+string(current_minute)+"_"+string(current_second)+".png";
 

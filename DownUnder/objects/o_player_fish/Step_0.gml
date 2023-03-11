@@ -104,8 +104,8 @@ if ( my_health <= 0 or my_energy <= 0 or is_dead == true )
 	global.PAUSED = true;
 	global.LEVEL_OVER = true;
 	global.player_score = global.player_score + my_score;
-	// create level over object
-	//instance_destroy(id);
+	instance_create_layer(0,0,"Exit_Menu",o_game_over);
+	instance_destroy(id);
 }
 
 
@@ -121,6 +121,7 @@ if ( global.GAME_MODE == GAUNTLET or global.GAME_MODE == CHALLENGE)
 		global.WIN_LEVEL = true;
 		// create level over object
 		// create level over object
-		//instance_destroy(id);
+		instance_create_layer(0,0,"Exit_Menu",o_win_level);
+		instance_destroy(id);
 	}
 }

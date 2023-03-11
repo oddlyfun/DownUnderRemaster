@@ -78,6 +78,8 @@ function add_reef_ruler(_the_ruler)
 
 	var _size = array_length(_ruler_array);
 	_ruler_array[@ _size] = _save;
+	
+	save_reef_rulers();
 }
 
 function empty_reef_ruler()
