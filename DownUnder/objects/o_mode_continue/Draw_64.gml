@@ -1,21 +1,3 @@
-//spr_popup_X
-//spr_radial_button
-//draw_sprite_stretched(sprite, subimg, x, y, w, h);
-//draw_set_font(fnt_game);
-
-//draw_sprite_stretched(spr_popup_X, 0, window_x, window_y, window_width, window_height);
-
-//draw_set_color(c_white);
-//draw_text(window_x + 6, window_y, window_title);
-
-// scroll bar parts
-
-// -- Top Bar --
-
-// -- Right Side drop down button
-
-// -- Main Selection dropdown window
-
 window_display.draw_me();
 
 // -- Scroll bar
@@ -70,7 +52,15 @@ if ( sprite_exists(_sprite) )
 {
 	var _x_center = floor(_anchor.x + (panel_left_width / 2));
 	var _y_center = floor(_anchor.y + ((_anchor_image_bot.y - _anchor.y) / 2));
-	draw_sprite(_sprite,0,_x_center, _y_center);
+	draw_sprite(_sprite,floor(fish_image_index),_x_center, _y_center);
+// animate fish
+	fish_image_index = fish_image_index + fish_display_rate
+	var _fish_image_number = sprite_get_number(_sprite);
+	if ( fish_image_index >= (_fish_image_number - 1) )
+	{
+		fish_image_index = 0;
+	}
+}
 }
 
 // toggle on
