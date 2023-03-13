@@ -49,10 +49,11 @@ panel_right_note_anchor = 4;
 panel_right_note_bottom_anchor = 8;
 panel_right_note_height = panel_right_anchors[0][8].y - panel_right_anchors[0][5].y
 
-// using a DS list
-//fish_list = global.playable_fish;
-items_per_page = 10;
+// magic number but all my fish have been set to 5 FPS
+fish_display_rate = 5 / 60;
+fish_image_index = 0;
 
+items_per_page = 10;
 fish_list_size = array_length(fishy_list);
 if ( global.GAME_MODE == CHALLENGE ) then items_per_page = fish_list_size;
 
