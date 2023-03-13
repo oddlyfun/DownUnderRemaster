@@ -15,16 +15,16 @@ click_ok.check_hover();
 
 if ( mouse_check_button_released(mb_left) and click_ok.hover == true )
 {
-	global.GAME_MODE = CHALLENGE;
+	//global.GAME_MODE = CHALLENGE;
 	var _name = keyboard_string;
 	add_reef_ruler(_name);
 	
-	//if ( global.GAME_MODE != PRACTICE )
-	//{
-	//	room_goto(ro_reef_rulers);
-	//} 
-	//else 
-	//{
-	//	room_goto(ro_start_screen);
-	//}
+	if ( global.GAME_MODE != PRACTICE )
+	{
+		room_goto(ro_reef_rulers);
+	} 
+	else 
+	{
+		room_goto(ro_start_screen);
+	}
 }

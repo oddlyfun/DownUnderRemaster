@@ -1,4 +1,4 @@
-//swim_speed = 6;
+swim_speed = 6;
 speed = swim_speed * abs(global.PAUSED - 1);
 
 if ( global.PAUSED == true )
@@ -99,29 +99,34 @@ if ( is_eating == true )
 
 
 // check for dying 
-if ( my_health <= 0 or my_energy <= 0 or is_dead == true )
+
+
+
+
+if ( global.LEVEL_OVER == false ) 
 {
-	global.PAUSED = true;
-	global.LEVEL_OVER = true;
-	global.player_score = global.player_score + my_score;
-	instance_create_layer(0,0,"Exit_Menu",o_game_over);
-	instance_destroy(id);
-}
-
-
-
-
-if ( global.GAME_MODE == GAUNTLET or global.GAME_MODE == CHALLENGE)
-{
-	if ( my_score >= 5000 )
+	if ( my_health <= 0 or my_energy <= 0 or is_dead == true )
 	{
-		global.player_score = 5000 + global.player_score; 
 		global.PAUSED = true;
 		global.LEVEL_OVER = true;
-		global.WIN_LEVEL = true;
-		// create level over object
-		// create level over object
-		instance_create_layer(0,0,"Exit_Menu",o_win_level);
-		instance_destroy(id);
+		global.player_score = global.player_score + my_score;
+		instance_create_layer(0,0,"Exit_Menu",o_game_over);
+		//instance_destroy(id);
+	}
+
+	if ( global.GAME_MODE == GAUNTLET or global.GAME_MODE == CHALLENGE)
+	{
+		if ( my_score >= 5000 )
+		{
+			global.player_score = my_score + global.player_score; 
+			global.PAUSED = true;
+			global.LEVEL_OVER = true;
+			global.WIN_LEVEL = true;
+			array_delete(global.LOAD_GAME_LIST,0,1);
+			save_my_game();
+			// create level over object
+			instance_create_layer(0,0,"Exit_Menu",o_win_level);
+			//instance_destroy(id);
+		}
 	}
 }

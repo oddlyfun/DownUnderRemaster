@@ -114,3 +114,11 @@ if ( clicked == true )
 {
 	clicked = false;
 }
+
+if ( was_created == true )
+{
+	draw_rectangle_color(0,0, display_get_gui_width(), display_get_gui_height(), c_black, c_black, c_black, c_black, false);
+	was_created = false;
+	display_level = 0;
+	//visible = true;
+}

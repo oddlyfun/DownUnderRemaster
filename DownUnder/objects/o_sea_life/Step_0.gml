@@ -107,6 +107,7 @@ if ( frozen == false )
 						if ( meal_target != _player )
 						{
 							instance_destroy(meal_target);
+							state_machine(state_ai);
 						} else
 						{
 							meal_target.is_dead = true;

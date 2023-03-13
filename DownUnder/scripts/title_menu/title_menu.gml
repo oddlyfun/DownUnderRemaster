@@ -3,7 +3,7 @@ function top_title_menu() constructor
 	top_items = 		["Game","Settings",	"Reef Rulers","Help"];
 		game_items = 		["New","Continue","Exit"];
 		settings_items = 	["Sound","Graphics"];
-		rulers_items = 		["Challenge", "Gauntlet"];
+		rulers_items = 		["Challenge", "Gauntlet","Create a Fish"];
 		help_items = 		["How to Play","Info"];
 	sub_items_list = 	[game_items, settings_items, rulers_items, help_items];
 

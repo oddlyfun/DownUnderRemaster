@@ -1,5 +1,5 @@
 draw_set_font(FONT);
-fishy_list = [];
+fishy_list = global.LOAD_GAME_LIST;
 window_title = "";
 drop_disabled = true;
 
@@ -7,23 +7,14 @@ drop_disabled = true;
 switch ( global.GAME_MODE )
 {
 	case CHALLENGE:
-		fishy_list = challenge_list();
 		window_title = "Challenge";
 	break;
 
 	case GAUNTLET:
-		fishy_list = fishy_gauntlet();
 		window_title = "Gauntlet";
 	break;
-
-	case PRACTICE:
-		fishy_list = fishy_practice();
-		drop_disabled = false;
-		window_title = "Practice";
-	break;
-
+	
 	default:
-		fishy_list = fishy_practice();
 		window_title = "Default Value -- Something Went Wrong!?";
 	break;
 }
@@ -58,19 +49,12 @@ panel_right_note_anchor = 4;
 panel_right_note_bottom_anchor = 8;
 panel_right_note_height = panel_right_anchors[0][8].y - panel_right_anchors[0][5].y
 
-
-
-
 // using a DS list
 //fish_list = global.playable_fish;
-
-
+items_per_page = 10;
 
 fish_list_size = array_length(fishy_list);
-
-
-items_per_page = 10;
-if ( global.GAME_MODE == CHALLENGE or fish_list_size < 10 ) then items_per_page = fish_list_size;
+if ( global.GAME_MODE == CHALLENGE ) then items_per_page = fish_list_size;
 
 fish_index = 0;
 fish_selected = 0;
@@ -106,20 +90,3 @@ cancel_btn = new basic_button(0,0,btn_w,btn_h,0,"Cancel");
 
 btn_array = [cancel_btn, play_btn];
 btn_gap = 10;
-
-
-
-// Page Elements
-//--Left Side--
-//1. Drop Down fish selection
-//2. Scientific Name:
-//3. Length
-//4. Active
-//5. Image of the fish swiming back and forth
-//--Right-Side--
-//1. Smaller outline box
-//2. Eats:
-//3. Enemies:
-//4. Special Ability:
-//5. Long Description
-//6. Below the outline box are the cancel and OK buttons

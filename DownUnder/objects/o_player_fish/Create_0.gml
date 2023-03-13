@@ -6,9 +6,11 @@ eating_x = 0;
 eating_y = 0;
 eating_zone = 0;
 energy_recovery = 12;
-my_score = 0;
+my_score = 4800;
 facing_dir = 1;
 is_dead = false;
+
+
 
 var _fish = variable_struct_get(global.all_life, string(global.player_fish_id) );
 
@@ -16,6 +18,11 @@ fish_id = global.player_fish_id;
 sprite_asset_string = _fish.sprite_name;
 
 sprite_index = asset_get_index(sprite_asset_string);
+if ( !sprite_exists(sprite_index) )
+{
+	sprite_index = spr_not_applicable;
+}
+
 
 fish_name				= _fish.full_name;
 fish_size				= _fish.size;
@@ -44,5 +51,8 @@ turn_speed = real(turn_speed);
 
 health_decline = global.GAME_FPS / ( global.GAME_FPS * health_rate);
 energy_decline = global.GAME_FPS / ( global.GAME_FPS * energy_rate);
+
+
+//health_decline = 100;
 
 event_inherited();

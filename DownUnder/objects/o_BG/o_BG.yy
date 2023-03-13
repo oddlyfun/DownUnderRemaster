@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "o_BG",
   "spriteId": {
-    "name": "Full_Area",
-    "path": "sprites/Full_Area/Full_Area.yy",
+    "name": "spr_BG_Game",
+    "path": "sprites/spr_BG_Game/spr_BG_Game.yy",
   },
   "solid": false,
   "visible": true,
@@ -26,6 +26,7 @@
   "physicsShapePoints": [],
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
