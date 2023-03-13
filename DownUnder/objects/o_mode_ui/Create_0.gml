@@ -58,13 +58,9 @@ panel_right_note_anchor = 4;
 panel_right_note_bottom_anchor = 8;
 panel_right_note_height = panel_right_anchors[0][8].y - panel_right_anchors[0][5].y
 
-
-
-
-// using a DS list
-//fish_list = global.playable_fish;
-
-
+// magic number but all my fish have been set to 5 FPS
+fish_display_rate = 5 / 60;
+fish_image_index = 0;
 
 fish_list_size = array_length(fishy_list);
 
@@ -106,20 +102,3 @@ cancel_btn = new basic_button(0,0,btn_w,btn_h,0,"Cancel");
 
 btn_array = [cancel_btn, play_btn];
 btn_gap = 10;
-
-
-
-// Page Elements
-//--Left Side--
-//1. Drop Down fish selection
-//2. Scientific Name:
-//3. Length
-//4. Active
-//5. Image of the fish swiming back and forth
-//--Right-Side--
-//1. Smaller outline box
-//2. Eats:
-//3. Enemies:
-//4. Special Ability:
-//5. Long Description
-//6. Below the outline box are the cancel and OK buttons
