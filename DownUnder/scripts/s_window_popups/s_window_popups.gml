@@ -39,6 +39,12 @@ function window_popup(_width, _height,_title_string="Hello",_vert_anchors_amount
 		y = floor((_gui_h / 2) - (height / 2));
 	}
 	
+	
+	static change_anchor_config = function (_num_x, _num_y)
+	{
+		ac_points = anchor_grid(width,height,_num_x,_num_y,0,0);
+	}
+	
 	static update_view_location = function ()
 	{
 		var _vx = camera_get_view_x(view_camera[0]);

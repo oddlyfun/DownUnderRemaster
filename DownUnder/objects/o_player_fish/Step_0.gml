@@ -122,11 +122,20 @@ if ( global.LEVEL_OVER == false )
 			global.PAUSED = true;
 			global.LEVEL_OVER = true;
 			global.WIN_LEVEL = true;
+			
 			array_delete(global.LOAD_GAME_LIST,0,1);
-			save_my_game();
-			// create level over object
-			instance_create_layer(0,0,"Exit_Menu",o_win_level);
-			//instance_destroy(id);
+			
+			if ( array_length(global.LOAD_GAME_LIST) > 0 )
+			{
+				save_my_game();
+				instance_create_layer(0,0,"Exit_Menu",o_win_level);
+				//instance_destroy(id);
+			} else
+			{
+				// Actually BEAT challenge or gauntlet mode
+				global.player_score = global.player_score + 1000;
+				instance_create_layer(0,0,"Exit_Menu",o_game_over);
+			}
 		}
 	}
 }

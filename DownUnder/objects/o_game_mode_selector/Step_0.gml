@@ -79,7 +79,8 @@ if ( display_level == 1 and clicked == false )
 						break;
 						case 2: // Create-a-Fish
 							global.GAME_MODE = CREATE_A_FISH;
-							// Create GUI here... well over there
+							instance_create_layer(0,0,"Instances",o_create_a_fish);
+							instance_destroy(id);
 						break;
 						case 3: // practice
 							global.GAME_MODE = PRACTICE;

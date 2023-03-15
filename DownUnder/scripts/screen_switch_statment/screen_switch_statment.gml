@@ -34,8 +34,16 @@ function title_menu_choice(_option)
 		//			Reef Rulers
 		//*******************************************************************
 		case "Challenge":
+			global.GAME_MODE = CHALLENGE;
+			room_goto(ro_reef_rulers);
 		break;
 		case "Gauntlet":
+			global.GAME_MODE = GAUNTLET;
+			room_goto(ro_reef_rulers);
+		break;
+		case "Create a Fish":
+			global.GAME_MODE = CREATE_A_FISH;
+			room_goto(ro_reef_rulers);
 		break;
 		//*******************************************************************
 		//			Help

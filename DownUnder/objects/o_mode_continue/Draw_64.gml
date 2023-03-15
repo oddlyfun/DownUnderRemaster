@@ -48,6 +48,10 @@ var _anchor_image_bot = panel_left_anchors[0][9];
 
 var _sprite = asset_get_index(_fish_info.sprite_name);
 
+var _ocean_width = panel_left_width;
+var _ocean_height = _anchor_image_bot.y - _anchor.y; 
+draw_sprite_part(spr_BG_Game,0,0,0,_ocean_width,_ocean_height, _anchor.x, _anchor.y);
+
 if ( sprite_exists(_sprite) )
 {
 	var _x_center = floor(_anchor.x + (panel_left_width / 2));
@@ -61,7 +65,7 @@ if ( sprite_exists(_sprite) )
 		fish_image_index = 0;
 	}
 }
-}
+
 
 // toggle on
 if ( scroll_bar_toggle == true )

@@ -1,13 +1,12 @@
 
 
-var _w = string( window_get_width() );
-var _h = string( window_get_height() );
-
-show_debug_message("Alarm: " + _w + " x " + _h);
+var _w = ( window_get_width() );
+var _h = ( window_get_height() );
 
 window_width = _w;
 window_height = _h;
 
+if ( window_height == 0 or window_width == 0 ) exit;
 
 var _width_scale = floor( window_width / view_width );
 var _height_scale = floor( window_height / view_height);

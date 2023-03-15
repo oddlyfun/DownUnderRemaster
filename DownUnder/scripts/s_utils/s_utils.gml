@@ -147,10 +147,10 @@ function draw_text_anchor(_anchor, _string)
 }
 
 
-function write_text(_x, _y, _color, _string)
+function write_text(_x, _y, _color, _string, _font=global.fnt_spr_small)
 {
 	draw_set_color(_color);
-	draw_set_font(global.fnt_spr_small);
+	draw_set_font(_font);
 	draw_text(_x,_y,_string);
 
 }
