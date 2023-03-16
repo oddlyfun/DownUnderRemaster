@@ -17,11 +17,12 @@
   ],
   "layers": [
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances_1","instances":[
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4D14F366","properties":[],"isDnd":false,"objectId":{"name":"o_player_fish","path":"objects/o_player_fish/o_player_fish.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":736.0,"y":160.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_78D8606C","properties":[],"isDnd":false,"objectId":{"name":"o_cam_help","path":"objects/o_cam_help/o_cam_help.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":736.0,"y":192.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4D14F366","properties":[],"isDnd":false,"objectId":{"name":"o_player_fish","path":"objects/o_player_fish/o_player_fish.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":true,"inheritItemSettings":false,"x":736.0,"y":160.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_78D8606C","properties":[],"isDnd":false,"objectId":{"name":"o_cam_help","path":"objects/o_cam_help/o_cam_help.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":true,"inheritItemSettings":false,"x":736.0,"y":192.0,},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances_2","instances":[
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_377A22D0","properties":[],"isDnd":false,"objectId":{"name":"o_game_over","path":"objects/o_game_over/o_game_over.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":0.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_33475DDB","properties":[],"isDnd":false,"objectId":{"name":"o_create_a_fish","path":"objects/o_create_a_fish/o_create_a_fish.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":true,"inheritItemSettings":false,"x":0.0,"y":0.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1F368675","properties":[],"isDnd":false,"objectId":{"name":"o_win_game_floaty_text","path":"objects/o_win_game_floaty_text/o_win_game_floaty_text.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":0.0,},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"background_object","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_75022B26_1_1","properties":[],"isDnd":false,"objectId":{"name":"o_mouse","path":"objects/o_mouse/o_mouse.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":160.0,"y":96.0,},
@@ -39,7 +40,8 @@
     {"name":"inst_5C957B92","path":"rooms/ro_test/ro_test.yy",},
     {"name":"inst_4D14F366","path":"rooms/ro_test/ro_test.yy",},
     {"name":"inst_78D8606C","path":"rooms/ro_test/ro_test.yy",},
-    {"name":"inst_377A22D0","path":"rooms/ro_test/ro_test.yy",},
+    {"name":"inst_33475DDB","path":"rooms/ro_test/ro_test.yy",},
+    {"name":"inst_1F368675","path":"rooms/ro_test/ro_test.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

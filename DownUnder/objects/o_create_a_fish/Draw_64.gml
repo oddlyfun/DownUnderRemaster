@@ -22,8 +22,8 @@ function write_text(_x, _y, _color, _string, _font=global.fnt_spr_small)
 //
 //***********************************************************************************
 var _apos = _anchors[1,1];
-var _apos_x = _apos.x;
-var _apos_y = _apos.y;
+var _apos_x = my_window.x + _apos.x;
+var _apos_y = my_window.y + _apos.y;
 var _check = false;
 
 for ( var i = 0; i < array_length(attr_list); i++ )
@@ -32,6 +32,21 @@ for ( var i = 0; i < array_length(attr_list); i++ )
 	var _right_just = _apos_x - string_width(_name);
 	write_text(_right_just - 4, _apos_y, c_black, _name);
 	var _b = c_black;
+	// collide
+	
+	var _whole_width = (attr_block_w * attr_max_blocks) + ( 4 * attr_max_blocks);
+	_check = gui_element_collision(_apos_x, _apos_y-4, _whole_width, attr_block_h+8);
+	if ( mouse_check_button_pressed(mb_left) )
+	{
+		if ( _check == true )
+		{
+			var _index = floor( (mouse_x - camera_get_view_x(view_camera[0]) - _apos_x ) / (attr_block_w+4) );
+			//show_debug_message(string(_index) +"," + string(i));
+			attr_index[@ i] = _index;
+		}
+	}
+	
+	
 	// BLOCKS
 	for ( var z = 0; z < attr_max_blocks; z++ )
 	{
@@ -39,31 +54,21 @@ for ( var i = 0; i < array_length(attr_list); i++ )
 		//draw_rectangle_colour(x1, y1, x2, y2, col1, col2, col3, col4, outline);
 		var _x2 = _apos_x + attr_block_w;
 		var _y2 = _apos_y + attr_block_h;
-		draw_rectangle_color(_apos_x-1, _apos_y-1, _x2+1, _y2+1, _b,_b,_b,_b, true);
-
-		if ( attr_index[@ i] <= z )
+		draw_rectangle_color(_apos_x-1, _apos_y-1, _x2+1, _y2+1, _b,_b,_b,_b, false);
+	
+		if ( attr_index[@ i] >= z )
 		{
-			draw_rectangle_color(_apos_x, _apos_y, _x2, _y2, col_block,col_block,col_block,col_block, false);
-		} else
+			draw_rectangle_color(_apos_x, _apos_y, _x2, _y2, col_block,col_block,col_block,col_block, false);	
+		} 
+		else
 		{
 			draw_rectangle_color(_apos_x, _apos_y, _x2, _y2, col_empty,col_empty,col_empty,col_empty, false);
 		}
 
-
-		_check = gui_element_collision(_apos_x, _apos_y, _x2 - _apos_x, _y2 - _apos_y);
-		if ( mouse_check_button_released(mb_left) )
-		{
-			if ( _check == true )
-			{
-				attr_index[@ i] = z;
-			}
-		}
-
-
 		_apos_x = _apos_x + attr_block_w + 4;
 	}
-	_apos_x = _apos.x;
-	_apos_y = _apos_y + attr_block_h + 2;
+	_apos_x = my_window.x + _apos.x;
+	_apos_y = _apos_y + attr_block_h + 8;
 }
 
 
@@ -81,20 +86,21 @@ color_block_size = 12;
 
 
 _apos = _anchors[0,7];
-_apos_x = _apos.x;
+_apos_x = my_window.x + _apos.x + color_block_size;
 _apos_y = _apos.y;
+var _cbb = 2;
 
 
-for ( var i = 0; i < array_length(color_list) )
+for ( var i = 0; i < array_length(color_list); i++ )
 {
 	var _col = color_list[@ i];
 
 	if ( color_index == i )
 	{
-		draw_rectangle_color(_apos_x-3, _apos_y-3, _apos_x + color_block_size + 3, _apos_y + color_block_size + 3, c_black, c_black, c_black, c_black, false);
+		draw_rectangle_color(_apos_x - _cbb, _apos_y - _cbb, _apos_x + color_block_size + _cbb, _apos_y + color_block_size + _cbb, c_black, c_black, c_black, c_black, false);
 	}
 
-	draw_rectangle_color(_apos_x, _apos_y, _apos_x + color_block_size, _apos_y + color_block_size, _col, _col, _col, _col, _col);
+	draw_rectangle_color(_apos_x, _apos_y, _apos_x + color_block_size, _apos_y + color_block_size, _col, _col, _col, _col, false);
 	_check = gui_element_collision(_apos_x, _apos_y, color_block_size, color_block_size);
 
 	if ( mouse_check_button_released(mb_left) )
@@ -104,5 +110,12 @@ for ( var i = 0; i < array_length(color_list) )
 			color_index = i;
 		}
 	}
+	
+	
+	_apos_y = _apos_y + color_block_size + 6;
 
 }
+
+
+
+//draw_circle(mouse_x,mouse_y,1,false);

@@ -14,13 +14,14 @@ max_points = 1500;
 
 // Attribs
 attr_list = ["Agility", "Endurance", "Size"];
-attr_agi_index = 0;
-attr_end_index = 0;
-attr_siz_index = 0;
+attr_index = [0,0,0];
+//attr_agi_index = 0;
+//attr_end_index = 0;
+//attr_siz_index = 0;
 
 attr_max_blocks = 10;
-attr_block_w = 4;
-attr_block_h = 6;
+attr_block_w = 6;
+attr_block_h = 8;
 
 // Color Choice
 color_list = [c_blue, c_green, c_purple, c_red, c_yellow];

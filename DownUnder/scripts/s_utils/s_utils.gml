@@ -131,7 +131,7 @@ function gui_element_collision(_guix, _guiy, _width, _height)
 	var _x2 = _guix + _width;
 	var _y2 = _guiy + _height;
 
-	if ( _mgx > _x1 and _mgx < _x2 and _mgy > _y1 and _mgy < _y2)
+	if ( _mgx >= _x1 and _mgx <= _x2 and _mgy >= _y1 and _mgy <= _y2)
 	{
 		return true;
 	} 
