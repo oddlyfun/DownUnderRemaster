@@ -1,4 +1,4 @@
-swim_speed = 6;
+//swim_speed = 6;
 speed = swim_speed * abs(global.PAUSED - 1);
 
 if ( global.PAUSED == true )
@@ -24,9 +24,12 @@ if ( is_eating == false )
 	{
 		speed = swim_speed;
 		my_score = my_score + 1;
-		_energy_redux = energy_decline * 1.05;
+		_energy_redux = energy_decline * 1.15;
 	}
 
+	//show_debug_message( string( frame ) );
+	//frame = frame + (delta_time/1000000);
+	
 	my_energy = my_energy - _energy_redux;
 	my_health = my_health - health_decline;
 

@@ -50,6 +50,7 @@
     {"id":{"name":"spr_bloodspot_squirrelfish","path":"sprites/spr_bloodspot_squirrelfish/spr_bloodspot_squirrelfish.yy",},"order":2,},
     {"id":{"name":"spr_popup_titlebar_close","path":"sprites/spr_popup_titlebar_close/spr_popup_titlebar_close.yy",},"order":1,},
     {"id":{"name":"spr_achilles_tang","path":"sprites/spr_achilles_tang/spr_achilles_tang.yy",},"order":0,},
+    {"id":{"name":"GrassTest__209x111","path":"sprites/GrassTest__209x111/GrassTest__209x111.yy",},"order":14,},
     {"id":{"name":"o_win_game_floaty_text","path":"objects/o_win_game_floaty_text/o_win_game_floaty_text.yy",},"order":4,},
     {"id":{"name":"ro_ini","path":"rooms/ro_ini/ro_ini.yy",},"order":1,},
     {"id":{"name":"s_window_popups","path":"scripts/s_window_popups/s_window_popups.yy",},"order":5,},

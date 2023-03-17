@@ -127,6 +127,12 @@ if ( _player != noone )
 	draw_set_font(FONT);
 	var _score_x = _width - string_width("Score: ###,###") - 10;
 	var _score_y = _height - BAR_SIZE + 4;
-	var _score_string = "Score: " + string(global.player_score + _player.my_score);
+	var _score_string = "Score: " + string(_player.my_score);
+	
+	if ( global.LEVEL_OVER == true )
+	{
+		_score_string = "Score: " + string(global.player_score);
+	}
+	
 	draw_text(_score_x, _score_y, _score_string);
 }

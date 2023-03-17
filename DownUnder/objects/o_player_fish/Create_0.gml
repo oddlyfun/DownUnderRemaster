@@ -6,10 +6,12 @@ eating_x = 0;
 eating_y = 0;
 eating_zone = 0;
 energy_recovery = 12;
-my_score = 4800;
+my_score = 0;
 facing_dir = 1;
 is_dead = false;
 
+
+frame = 0;
 
 
 var _fish = variable_struct_get(global.all_life, string(global.player_fish_id) );
@@ -49,10 +51,8 @@ turn_speed = real(turn_speed);
 
 
 
-health_decline = global.GAME_FPS / ( global.GAME_FPS * health_rate);
-energy_decline = global.GAME_FPS / ( global.GAME_FPS * energy_rate);
+health_decline = my_health / ( global.GAME_FPS * health_rate);
+energy_decline = my_energy / ( global.GAME_FPS * energy_rate);
 
-
-//health_decline = 100;
 
 event_inherited();

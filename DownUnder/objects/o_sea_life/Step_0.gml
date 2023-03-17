@@ -68,14 +68,14 @@ if ( frozen == false )
 //******************************************************************************
 		case ENERGY:
 			var _meals = state_ai._HUNGER_;
-			if ( meal_target == noone )
+			if ( !instance_exists(meal_target) )
 			{
 				if ( array_length(_meals) > 0 )
 				{
 					var _rf = irandom( array_length(_meals) - 1 );
 					meal_target = _meals[@ _rf];
 				}
-			} else if ( meal_target != noone )
+			} else if ( instance_exists(meal_target) )
 			{
 				direction = point_direction(x,y, meal_target.x, meal_target.y);
 				speed = swim_speed;
