@@ -41,7 +41,8 @@ if ( instance_exists(_player) )
 	if ( _inst.y >= _ypad_pos ) 
 	{
 		_diff_y = _inst.y - _ypad_pos;
-		_vy = _camy + cam_vel_y;;
+		_vy = _camy + cam_vel_y;
+		_moving = true;
 	}
 
 	_ypad_pos = _center_y - pad_y;
@@ -49,6 +50,7 @@ if ( instance_exists(_player) )
 	{
 		_diff_y = _ypad_pos - _inst.y;
 		_vy = _camy - cam_vel_y;
+		_moving = true;
 	}
 
 	// Increase the velocity of the camera so it catches up faster each frame

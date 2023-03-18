@@ -43,7 +43,7 @@ when_active				= _fish.active;
 my_notes				= _fish.notes;
 my_scientific_name		= _fish.scientific_name;
 
-swim_speed = real(swim_speed);
+swim_speed = real(swim_speed) + 2;
 health_rate = real(health_rate);
 energy_rate = real(energy_rate);
 energy_value = real(energy_value);

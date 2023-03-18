@@ -7,7 +7,7 @@
     "path": "sprites/spr_cam_help/spr_cam_help.yy",
   },
   "solid": false,
-  "visible": false,
+  "visible": true,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
