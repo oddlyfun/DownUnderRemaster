@@ -111,13 +111,12 @@ if ( mouse_check_button_released(mb_left) )
 			{
 				global.LOAD_GAME_LIST = fishy_list;
 				global.player_fish_id = fishy_list[@ fish_selected].fish_id;
+				global.TIME_OF_DAY = fishy_list[@ fish_selected].active;
 				save_my_game();
 				room_goto(ro_game);
 			}
 		}
 	}
 }
-
-
 
 prev_mouse_y = mouse_y;
