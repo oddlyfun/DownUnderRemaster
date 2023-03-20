@@ -20,8 +20,23 @@ function title_menu_choice(_option)
 			}
 		break;
 		case "Continue":
+			var _load = load_my_game();
+			if ( _load == false )
+			{
+				show_debug_message("No Save Data Found");
+			} else
+			{
+				if ( array_length(global.LOAD_GAME_LIST) > 0 )
+				{
+					room_goto(ro_continue);
+				} else
+				{
+					show_debug_message("No Save Data Found");
+				}
+			}
 		break;
 		case "Exit":
+			game_end();
 		break;
 		//*******************************************************************
 		//			Settings
