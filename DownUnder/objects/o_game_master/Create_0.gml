@@ -38,9 +38,13 @@ global.fnt_spr_chunky = font_add_sprite_ext(spr_font_chunky, global.font_chunky_
 #macro CHALLENGE  "C"
 #macro CREATE_A_FISH "CAF"
 #macro FONT  global.fnt_spr_small
+#macro ANYTIME "ANYTIME"
+#macro DAY "DAY"
+#macro NIGHT "NIGHT"
 
 // Save File info
 global.GAME_MODE = PRACTICE;
+global.TIME_OF_DAY = ANYTIME;
 global.LOAD_GAME_LIST = noone;
 global.GAME_FILENAME = "DownUnder.save";
 global.REEF_RULER_FILENAME = "ReefRulers.save";
@@ -51,14 +55,10 @@ global.reef_rulers = load_reef_rulers();
 // Orginize all sea life into different lists based on their attributes
 // These lists will contain structs with added field of the fish ID
 global.playable_fish = ds_list_create();
-global.fish_ES = ds_list_create();
-global.fish_S = ds_list_create();
-global.fish_MS = ds_list_create();
-global.fish_M = ds_list_create();
-global.fish_ML = ds_list_create();
-global.fish_L = ds_list_create();
-global.fish_EL = ds_list_create();
-global.fish_NA = ds_list_create();
+global.fish_DAY = ds_list_create();
+global.fish_NIGHT = ds_list_create();
+global.fish_ANYTIME = ds_list_create();
+global.fish_STATIC = ds_list_create();
 
 // gives me the size of the struct
 // the ids are all numbers 1 - 81 ... easy to loop
@@ -77,40 +77,24 @@ for ( var i = 0; i < _life_size; i++ )
 		ds_list_add(global.playable_fish, _fish);
 	}
 
-	var _fish_size = _fish.size;
+	var _fish_active = _fish.active;
 
-	switch ( _fish_size )
+	switch ( _fish_active )
 	{
-		case "ES":
-			ds_list_add(global.fish_ES,_fish);
+		case "DAY":
+			ds_list_add(global.fish_DAY,_fish);
 		break;
 
-		case "S":
-			ds_list_add(global.fish_S,_fish);
+		case "NIGHT":
+			ds_list_add(global.fish_NIGHT,_fish);
 		break;
 
-		case "MS":
-			ds_list_add(global.fish_MS,_fish);
-		break;
-
-		case "M":
-			ds_list_add(global.fish_M,_fish);
-		break;
-
-		case "ML":
-			ds_list_add(global.fish_ML,_fish);
-		break;
-
-		case "L":
-			ds_list_add(global.fish_L,_fish);
-		break;
-
-		case "EL":
-			ds_list_add(global.fish_EL,_fish);
+		case "ANYTIME":
+			ds_list_add(global.fish_ANYTIME,_fish);
 		break;
 
 		default:
-			ds_list_add(global.fish_NA,_fish);
+			ds_list_add(global.fish_STATIC,_fish);
 		break;
 	}
 }
