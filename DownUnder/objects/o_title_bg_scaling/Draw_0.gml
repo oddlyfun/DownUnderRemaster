@@ -24,4 +24,6 @@ var _split_width = _reduce_width_by / 2;
 
 //draw_sprite_part_ext(sprite, subimg, left, top, width, height, x, y, xscale, yscale, colour, alpha);
 
-draw_sprite_part_ext(spr_title_screen_BG, 0, _split_width, 0, _new_width, _new_height, x, y, _scale_w, _scale_h, c_white, 1);
+//draw_sprite_part_ext(spr_title_screen_BG, 0, _split_width, 0, _new_width, _new_height, x, y, _scale_w, _scale_h, c_white, 1);
+draw_sprite_part_ext(spr_title_screen_lay1, 0, _split_width, 0, _new_width, _new_height, x, y, _scale_w, _scale_h, c_white, 1);
+draw_sprite_part_ext(spr_title_screen_lay2, 0, _split_width, 0, _new_width, _new_height, x, y, _scale_w, _scale_h, c_white, 1);

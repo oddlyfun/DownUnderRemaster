@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "o_BG",
   "spriteId": {
-    "name": "Background_total_Removed_elements",
-    "path": "sprites/Background_total_Removed_elements/Background_total_Removed_elements.yy",
+    "name": "spr_BG_Game",
+    "path": "sprites/spr_BG_Game/spr_BG_Game.yy",
   },
   "solid": false,
   "visible": true,

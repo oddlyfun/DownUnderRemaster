@@ -186,7 +186,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "DownUnder",
-    "path": "DownUnder.yyp",
+    "name": "Animated",
+    "path": "folders/Sprites/background/Animated.yy",
   },
 }
