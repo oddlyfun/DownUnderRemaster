@@ -191,8 +191,10 @@ function state_machine(_fish_brain)
 		}
 	}
 
+	if ( _player.ability_active == true ) then _hunt_player = _hunt_player / 2;
 
-	fish_brain[@ PLAYER] = 0;//_hunt_player;
+	// Turned this off for testing
+	fish_brain[@ PLAYER] = 0; //_hunt_player;
 
 
 //****************************************************************************
