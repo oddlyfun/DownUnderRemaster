@@ -1,4 +1,5 @@
 speed = swim_speed * abs(global.PAUSED - 1);
+
 if ( global.PAUSED == true )
 {
 	exit;
@@ -7,26 +8,15 @@ if ( global.PAUSED == true )
 
 if ( frozen == false )
 {
-	/*
-	// We will just do a random point direction and move towards that point with no further logic
-
-	if ( is_moving == false )
+	// speed change based on energy
+	if ( my_energy < 20 )
 	{
-		is_moving = true;
-		target_point_x = irandom_range(0, room_width);
-		target_point_y = irandom_range(0, room_height);
-		direction = point_direction(x,y, target_point_x, target_point_y);
-		speed = 1; // replace with fish speed one day
+		speed = speed * 0.60;
+	} else if ( my_energy < 50 )
+	{
+		speed = speed * 0.85;
 	}
 
-	var _dist_from_point = point_distance(x,y, target_point_x, target_point_y);
-
-	if ( _dist_from_point <= 10 )
-	{
-		is_moving = false;
-	}
-
-	*/
 
 //**********************************************************************
 //
@@ -153,8 +143,10 @@ if ( frozen == false )
 				for ( var i = 0; i < _len_run; i++ )
 				{
 					_badnews = _run[@ i];
-					_avg_dir = _avg_dir + point_direction(x,y, _badnews.x, _badnews.y);
-				
+					if ( instance_exists(_badnews) )
+					{
+						_avg_dir = _avg_dir + point_direction(x,y, _badnews.x, _badnews.y);
+					}
 				}
 
 				direction = (_avg_dir / _len_run) - 180;
@@ -169,13 +161,17 @@ if ( frozen == false )
 			if ( array_length(_clean) > 0 )
 			{
 				var _cleaner_fish = _clean[@ 0];
-				direction = point_direction(x,y, _cleaner_fish.x, _cleaner_fish.y);
-				speed = swim_speed;
 
-				if ( point_distance(x,y, _cleaner_fish.x, _cleaner_fish.y) < 10 )
+				if ( instance_exists(_cleaner_fish) )
 				{
-					my_health = my_health + 5;
-					my_health = clamp(my_health,0,100);
+					direction = point_direction(x,y, _cleaner_fish.x, _cleaner_fish.y);
+					speed = swim_speed;
+
+					if ( point_distance(x,y, _cleaner_fish.x, _cleaner_fish.y) < 10 )
+					{
+						my_health = my_health + 5;
+						my_health = clamp(my_health,0,100);
+					}
 				}
 			}
 		break;
