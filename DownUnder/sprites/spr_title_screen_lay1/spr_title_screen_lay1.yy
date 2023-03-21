@@ -16,7 +16,7 @@
   "bbox_bottom": 2249,
   "HTile": false,
   "VTile": false,
-  "For3D": false,
+  "For3D": true,
   "DynamicTexturePage": false,
   "width": 4000,
   "height": 2250,
@@ -68,7 +68,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "DownUnder",
-    "path": "DownUnder.yyp",
+    "name": "background",
+    "path": "folders/Sprites/background.yy",
   },
 }

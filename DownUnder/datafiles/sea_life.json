@@ -1801,7 +1801,7 @@
   "56": {
     "full_name": "Bluestreak Cleaner Wrasse",
     "size": "S",
-    "sprite_name": "small",
+    "sprite_name": "spr_cleaner_mimic_blenny",
     "avg_size_inch": "4",
     "avg_size_cm": "10.16",
     "health_rate": "60",
@@ -1943,7 +1943,7 @@
     "tags": "",
     "ability": "",
     "playable": "",
-    "active": "ANYTIME",
+    "active": "STATIC",
     "scientific_name": "Ophiuroids (class)",
     "notes": "",
     "depth_range_meters": ""
@@ -1967,7 +1967,7 @@
     "tags": "",
     "ability": "",
     "playable": "",
-    "active": "ANYTIME",
+    "active": "STATIC",
     "scientific_name": "Entacmaea quadricolor",
     "notes": "",
     "depth_range_meters": ""
@@ -2015,7 +2015,7 @@
     "tags": "",
     "ability": "",
     "playable": "",
-    "active": "ANYTIME",
+    "active": "STATIC",
     "scientific_name": "Tridacna gigas",
     "notes": "",
     "depth_range_meters": ""
@@ -2039,7 +2039,7 @@
     "tags": "",
     "ability": "",
     "playable": "",
-    "active": "-",
+    "active": "STATIC",
     "scientific_name": "Phanerograms (division)",
     "notes": "",
     "depth_range_meters": ""
@@ -2087,7 +2087,7 @@
     "tags": "",
     "ability": "",
     "playable": "",
-    "active": "ANYTIME",
+    "active": "STATIC",
     "scientific_name": "Diadema setosum",
     "notes": "",
     "depth_range_meters": ""
@@ -2111,7 +2111,7 @@
     "tags": "",
     "ability": "",
     "playable": "",
-    "active": "ANYTIME",
+    "active": "STATIC",
     "scientific_name": "Ostreidae (Family)",
     "notes": "",
     "depth_range_meters": ""
@@ -2119,7 +2119,7 @@
   "69": {
     "full_name": "Plankton",
     "size": "NA",
-    "sprite_name": "not_applicable",
+    "sprite_name": "spr_plankton_69",
     "avg_size_inch": "",
     "avg_size_cm": "",
     "health_rate": "60",
@@ -2159,7 +2159,7 @@
     "tags": "",
     "ability": "",
     "playable": "",
-    "active": "ANYTIME",
+    "active": "STATIC",
     "scientific_name": "Pentagonaster duebeni",
     "notes": "",
     "depth_range_meters": ""
@@ -2183,7 +2183,7 @@
     "tags": "poison",
     "ability": "",
     "playable": "",
-    "active": "ANYTIME",
+    "active": "STATIC",
     "scientific_name": "Holothuroidea (Class)",
     "notes": "",
     "depth_range_meters": ""
@@ -2207,7 +2207,7 @@
     "tags": "",
     "ability": "Bad Taste",
     "playable": "",
-    "active": "ANYTIME",
+    "active": "STATIC",
     "scientific_name": "Nudibranch (Class)",
     "notes": "",
     "depth_range_meters": ""
@@ -2279,7 +2279,7 @@
     "tags": "",
     "ability": "",
     "playable": "",
-    "active": "ANYTIME",
+    "active": "STATIC",
     "scientific_name": "Gastropods (Class)",
     "notes": "",
     "depth_range_meters": ""
@@ -2303,7 +2303,7 @@
     "tags": "",
     "ability": "",
     "playable": "",
-    "active": "ANYTIME",
+    "active": "STATIC",
     "scientific_name": "Polychaeta (Class)",
     "notes": "",
     "depth_range_meters": ""
@@ -2327,7 +2327,7 @@
     "tags": "",
     "ability": "",
     "playable": "",
-    "active": "-",
+    "active": "STATIC",
     "scientific_name": "Thallophytes (class)",
     "notes": "",
     "depth_range_meters": ""
@@ -2351,7 +2351,7 @@
     "tags": "",
     "ability": "",
     "playable": "",
-    "active": "-",
+    "active": "STATIC",
     "scientific_name": "-",
     "notes": "",
     "depth_range_meters": ""
@@ -2375,7 +2375,7 @@
     "tags": "",
     "ability": "",
     "playable": "",
-    "active": "-",
+    "active": "STATIC",
     "scientific_name": "-",
     "notes": "",
     "depth_range_meters": ""
