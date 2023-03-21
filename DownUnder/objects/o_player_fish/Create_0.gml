@@ -9,6 +9,7 @@ energy_recovery = 12;
 my_score = 0;
 facing_dir = 1;
 is_dead = false;
+ability_active = false;
 
 
 frame = 0;
