@@ -55,6 +55,24 @@ if ( is_eating == false )
 			}
 		}
 	}
+
+//******************************************************************
+//				Using your ability
+//******************************************************************
+
+	if ( string_length(my_abilities > 1) )
+	{
+		// >1 I have an ability to even use
+		ability_active = false;
+		if ( keyboard_check(vk_space) )
+		{
+			ability_active = true;
+			// only a few abilities something extra happens
+			// ink & puffer fish
+			my_energy = my_energy - (_energy_redux * 0.10)
+		}
+	}
+
 }
 
 
