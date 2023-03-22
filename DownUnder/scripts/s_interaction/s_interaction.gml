@@ -88,8 +88,8 @@ function scroll_bar(_x, _y, _item_list, _items_per_page) constructor
 	show_drop = false;
 
 
-
-	init();
+	//call init when making this struct I guess
+	//init();
 
 
 	static draw_me = function()
@@ -136,7 +136,6 @@ function scroll_bar(_x, _y, _item_list, _items_per_page) constructor
 		height = _items_per_page * ( string_height("STRING") + (text_margin *_arl ) );
 		toggle_data.tx = x + width;
 		toggle_data.ty = y;
-
 	}
 
 }

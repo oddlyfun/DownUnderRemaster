@@ -66,7 +66,7 @@
   "3": {
     "full_name": "Blackfin Barracuda",
     "size": "ML",
-    "sprite_name": "medium_large",
+    "sprite_name": "spr_blackfin_barracuda",
     "avg_size_inch": "48",
     "avg_size_cm": "121.92",
     "health_rate": "60",
@@ -132,7 +132,7 @@
   "5": {
     "full_name": "Blacktip Shark",
     "size": "L",
-    "sprite_name": "large",
+    "sprite_name": "spr_blacktip_shark",
     "avg_size_inch": "72",
     "avg_size_cm": "182.88",
     "health_rate": "60",
@@ -230,8 +230,8 @@
     "full_name": "Bluelined Snapper",
     "size": "MS",
     "sprite_name": "spr_bluelined_snapper",
-    "avg_size_inch": "10",
-    "avg_size_cm": "25.4",
+    "avg_size_inch": "5",
+    "avg_size_cm": "12.7",
     "health_rate": "60",
     "energy_rate": "60",
     "energy_value": "10",
@@ -263,7 +263,7 @@
   "9": {
     "full_name": "Bluespotted Ray",
     "size": "M",
-    "sprite_name": "medium",
+    "sprite_name": "spr_bluespotted_ray",
     "avg_size_inch": "16",
     "avg_size_cm": "40.64",
     "health_rate": "60",
@@ -364,7 +364,7 @@
   "12": {
     "full_name": "Clown Coris",
     "size": "ML",
-    "sprite_name": "medium_large",
+    "sprite_name": "spr_clown_coris",
     "avg_size_inch": "40",
     "avg_size_cm": "101.6",
     "health_rate": "60",
@@ -467,7 +467,7 @@
   "15": {
     "full_name": "Crocodile Needlefish",
     "size": "ML",
-    "sprite_name": "medium_large",
+    "sprite_name": "spr_crocodile_needlefish",
     "avg_size_inch": "52",
     "avg_size_cm": "132.08",
     "health_rate": "60",
@@ -498,7 +498,7 @@
   "16": {
     "full_name": "Broadclub Cuttlefish",
     "size": "M",
-    "sprite_name": "medium",
+    "sprite_name": "spr_broadclub_cuttlefish",
     "avg_size_inch": "24",
     "avg_size_cm": "60.96",
     "health_rate": "60",
@@ -656,7 +656,7 @@
   "21": {
     "full_name": "Football Trout",
     "size": "ML",
-    "sprite_name": "medium_large",
+    "sprite_name": "spr_football_trout",
     "avg_size_inch": "40",
     "avg_size_cm": "101.6",
     "health_rate": "60",
@@ -687,7 +687,7 @@
   "22": {
     "full_name": "Giant Grouper",
     "size": "L",
-    "sprite_name": "large",
+    "sprite_name": "spr_giant_grouper",
     "avg_size_inch": "70",
     "avg_size_cm": "177.8",
     "health_rate": "60",
@@ -723,7 +723,7 @@
   "23": {
     "full_name": "Great White Shark",
     "size": "EL",
-    "sprite_name": "spr_extra_large",
+    "sprite_name": "spr_great_white_shark",
     "avg_size_inch": "420",
     "avg_size_cm": "1066.8",
     "health_rate": "60",
@@ -756,7 +756,7 @@
   "24": {
     "full_name": "Humphead Wrasse",
     "size": "L",
-    "sprite_name": "large",
+    "sprite_name": "spr_humphead_wrasse",
     "avg_size_inch": "72",
     "avg_size_cm": "182.88",
     "health_rate": "60",
@@ -828,7 +828,7 @@
   "26": {
     "full_name": "Red Lionfish",
     "size": "MS",
-    "sprite_name": "medium_small",
+    "sprite_name": "spr_red_lionfish",
     "avg_size_inch": "12",
     "avg_size_cm": "30.48",
     "health_rate": "60",
@@ -1125,7 +1125,7 @@
   "35": {
     "full_name": "Oriental Sweetlip",
     "size": "M",
-    "sprite_name": "medium",
+    "sprite_name": "spr_oriental_sweetlip",
     "avg_size_inch": "28",
     "avg_size_cm": "71.12",
     "health_rate": "60",
@@ -1161,7 +1161,7 @@
   "36": {
     "full_name": "Painted Flutemouth",
     "size": "M",
-    "sprite_name": "medium",
+    "sprite_name": "spr_painted_flutemouth",
     "avg_size_inch": "25",
     "avg_size_cm": "63.5",
     "health_rate": "60",
@@ -1353,7 +1353,7 @@
   "42": {
     "full_name": "Rainbow Runner",
     "size": "ML",
-    "sprite_name": "medium_large",
+    "sprite_name": "spr_rainbow_runner",
     "avg_size_inch": "46",
     "avg_size_cm": "116.84",
     "health_rate": "60",
@@ -1420,7 +1420,7 @@
   "44": {
     "full_name": "Ringtail Wrasse",
     "size": "M",
-    "sprite_name": "medium",
+    "sprite_name": "spr_ringtail_wrasse",
     "avg_size_inch": "15",
     "avg_size_cm": "38.1",
     "health_rate": "60",
@@ -1484,7 +1484,7 @@
   "46": {
     "full_name": "Short-tail Electric Ray",
     "size": "ML",
-    "sprite_name": "medium_large",
+    "sprite_name": "spr_shorttail_electric_ray",
     "avg_size_inch": "36",
     "avg_size_cm": "91.44",
     "health_rate": "60",
@@ -1614,7 +1614,7 @@
   "50": {
     "full_name": "Whitemargin Unicornfish",
     "size": "ML",
-    "sprite_name": "medium_large",
+    "sprite_name": "spr_whitemargin_unicornfish",
     "avg_size_inch": "40",
     "avg_size_cm": "101.6",
     "health_rate": "60",
@@ -1644,7 +1644,7 @@
   "51": {
     "full_name": "Whitemouth Moray Eel",
     "size": "ML",
-    "sprite_name": "medium_large",
+    "sprite_name": "spr_whitemouth_moray_eel",
     "avg_size_inch": "48",
     "avg_size_cm": "121.92",
     "health_rate": "60",
@@ -1713,7 +1713,7 @@
   "53": {
     "full_name": "Whitespotted Guitarfish",
     "size": "L",
-    "sprite_name": "large",
+    "sprite_name": "spr_whitespotted_guitarfish",
     "avg_size_inch": "120",
     "avg_size_cm": "304.8",
     "health_rate": "60",
@@ -1826,9 +1826,9 @@
     "depth_range_meters": ""
   },
   "57": {
-    "full_name": "Gorgeous Prawn-goby",
+    "full_name": "Purple Queen",
     "size": "S",
-    "sprite_name": "small",
+    "sprite_name": "spr_purple_queen",
     "avg_size_inch": "5",
     "avg_size_cm": "12.7",
     "health_rate": "60",
@@ -1852,7 +1852,7 @@
   "58": {
     "full_name": "Yellow Coral Goby",
     "size": "ES",
-    "sprite_name": "extra_small",
+    "sprite_name": "yellow_coral_goby",
     "avg_size_inch": "1",
     "avg_size_cm": "2.54",
     "health_rate": "60",
@@ -1876,7 +1876,7 @@
   "59": {
     "full_name": "Peach Fairy Basslet",
     "size": "ES",
-    "sprite_name": "extra_small",
+    "sprite_name": "spr_peach_fairy_basslet",
     "avg_size_inch": "3",
     "avg_size_cm": "7.62",
     "health_rate": "60",
@@ -1900,7 +1900,7 @@
   "60": {
     "full_name": "Banded Coral Shrimp",
     "size": "ES",
-    "sprite_name": "extra_small",
+    "sprite_name": "spr_banded_coral_shrimp",
     "avg_size_inch": "3",
     "avg_size_cm": "7.62",
     "health_rate": "60",
@@ -1975,7 +1975,7 @@
   "63": {
     "full_name": "Trapezia Crab",
     "size": "S",
-    "sprite_name": "small",
+    "sprite_name": "spr_crab",
     "avg_size_inch": "8",
     "avg_size_cm": "20.32",
     "health_rate": "60",
@@ -2047,7 +2047,7 @@
   "66": {
     "full_name": "Reef Lobster",
     "size": "S",
-    "sprite_name": "small",
+    "sprite_name": "spr_lobster",
     "avg_size_inch": "8",
     "avg_size_cm": "20.32",
     "health_rate": "60",
@@ -2071,7 +2071,7 @@
   "67": {
     "full_name": "Needle Spined Sea Urchin",
     "size": "NA",
-    "sprite_name": "not_applicable",
+    "sprite_name": "spr_sea_urchin",
     "avg_size_inch": "",
     "avg_size_cm": "",
     "health_rate": "60",
@@ -2095,7 +2095,7 @@
   "68": {
     "full_name": "Oyster",
     "size": "NA",
-    "sprite_name": "not_applicable",
+    "sprite_name": "spr_oyster",
     "avg_size_inch": "",
     "avg_size_cm": "",
     "health_rate": "60",
@@ -2143,7 +2143,7 @@
   "70": {
     "full_name": "Reef Starfish",
     "size": "NA",
-    "sprite_name": "not_applicable",
+    "sprite_name": "spr_starfish",
     "avg_size_inch": "",
     "avg_size_cm": "",
     "health_rate": "60",
@@ -2191,7 +2191,7 @@
   "72": {
     "full_name": "Sea Slug",
     "size": "NA",
-    "sprite_name": "not_applicable",
+    "sprite_name": "spr_sea_slug",
     "avg_size_inch": "",
     "avg_size_cm": "",
     "health_rate": "60",
@@ -2239,7 +2239,7 @@
   "74": {
     "full_name": "Shrimp",
     "size": "NA",
-    "sprite_name": "not_applicable",
+    "sprite_name": "spr_shrimp",
     "avg_size_inch": "",
     "avg_size_cm": "",
     "health_rate": "60",
@@ -2287,7 +2287,7 @@
   "76": {
     "full_name": "Worm",
     "size": "ES",
-    "sprite_name": "extra_small",
+    "sprite_name": "spr_worm",
     "avg_size_inch": "",
     "avg_size_cm": "",
     "health_rate": "60",
@@ -2383,7 +2383,7 @@
   "80": {
     "full_name": "Dusky Anemonefish",
     "size": "S",
-    "sprite_name": "small",
+    "sprite_name": "spr_dusky_anemonefish",
     "avg_size_inch": "4",
     "avg_size_cm": "10.16",
     "health_rate": "60",
@@ -2401,30 +2401,6 @@
     "playable": "",
     "active": "ANYTIME",
     "scientific_name": "Amphiprion rubrocinctus",
-    "notes": "",
-    "depth_range_meters": ""
-  },
-  "81": {
-    "full_name": "Variegated Lizardfish",
-    "size": "S",
-    "sprite_name": "small",
-    "avg_size_inch": "8",
-    "avg_size_cm": "20.32",
-    "health_rate": "60",
-    "energy_rate": "60",
-    "energy_value": "10",
-    "swim_speed": "2",
-    "turn_speed": "1",
-    "eats_desc": "",
-    "enemies": "",
-    "food_good": "ES",
-    "food_ok": "",
-    "food_bad": "",
-    "tags": "sea_floor",
-    "ability": "",
-    "playable": "",
-    "active": "ANYTIME",
-    "scientific_name": "Synodus variegatus",
     "notes": "",
     "depth_range_meters": ""
   }
