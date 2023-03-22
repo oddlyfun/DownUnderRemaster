@@ -68,74 +68,138 @@ function scroll_bar(_x, _y, _item_list, _items_per_page) constructor
 {
 	x = _x;
 	y = _y;
-	width = 10;
-	height = 10;
+	width = 50;
+	height = sprite_get_height(spr_basic_dropdown);
 	item_list = _item_list;
+	max_items = array_length(_item_list);
 	item_per_page = _items_per_page;
-	item_index = 0;
+
 	selected_index = 0;
 	text_margin = 2;
+	text_height = string_height("Height");
 
-	toggle_sprite = spr_basic_dropdown;
-	toggle_data = {
-		tx : 0,
-		ty : 0,
-		tw : sprite_get_height(spr_basic_dropdown),
-		th : sprite_get_width(spr_basic_dropdown),
-		tspr : spr_basic_dropdown
+//***********************************
+// 		Struct Parts
+//***********************************
+	toggle = {
+		x : 0,
+		y : 0,
+		width : sprite_get_height(spr_basic_dropdown),
+		height : sprite_get_width(spr_basic_dropdown),
+		my_sprite : spr_basic_dropdown,
+		state : false,
+		hover : false
 	};
-	bulb_sprite = spr_drop_down_scroll;
-	show_drop = false;
+
+	drop_panel = {
+		x : 0,
+		y : 0,
+		height : 0,
+		hover : false
+	}
+
+	bulb = {
+		x : 0,
+		y : 0,
+		my_sprite : spr_drop_down_scroll,
+		width : sprite_get_width(spr_drop_down_scroll),
+		height : 10,
+		index : 0,
+		state : false,
+		hover : false,
+		clicked : false
+	};
 
 
-	//call init when making this struct I guess
-	//init();
+//***********************************
+// 		Initzialize Information
+//***********************************
+	var _w = 0;
+	var _arl = array_length(item_list);
+	// Setting the width
+	for ( var i = 0; i < array_length(item_list); i++ )
+	{
+		var _string = item_list[@ i];
+		var _len = string_width(_string);
 
+		if ( _len > _w )
+		{
+			_w = _len;
+		}
+	}
 
+	width = _w + ( text_margin * 2);
+
+	drop_panel.y = y + height;
+	drop_panel.x = x;
+	drop_panel.height = _items_per_page * ( string_height("STRING") + (text_margin *_arl ) );
+
+	toggle.x = x + width;
+	toggle.y = y;
+
+	bulb.x = toggle.x;
+	bulb.y = drop_panel.y;
+	bulb.height = floor( drop_panel.height / item_per_page);
+
+	var _size = array_length(item_list);
+	if ( _size > item_per_page ) then bulb.state = true;
+
+//*******************************
+// 		Static Functions
+//*******************************
 	static draw_me = function()
 	{
 		draw_display();
-		var _size = array_length(item_list);
 
-		if ( show_drop == true and _size > item_per_page )
+		if ( toggle.state == true )
 		{
-			draw_display();
+			draw_drop();
+			if ( bulb.state == true )
+			{
+				draw_drop();
+			}	
 		}
 	}
 
 	static draw_display = function()
 	{
-		draw_sprite_stretched(spr_white_dropdown, 0, x, y, width, toggle_data.th);
-		draw_sprite(toggle_data.tspr,0, toggle_data.tx, toggle_data.ty);
+		draw_sprite_stretched(spr_white_dropdown, 0, x, y, width, height);
+		draw_sprite(toggle.my_sprite,0, toggle.x, toggle.y);
 		var _fish = item_list[@ selected_index];
-		write_text(x,y, c_black, _fish.full_name);
+		write_text(x,y + 2, c_black, _fish.full_name);
+	}
+
+	static draw_list = function()
+	{
+		var _start_x = drop_panel.x + text_margin;
+		var _start_y = drop_panel.y + text_margin;
+		var _start_index = bulb.index;
+
+		draw_sprite_stretched(spr_white_dropdown, 0, drop_panel.x, drop_panel.y, width, drop_panel.height);
+
+		for ( var i = 0; i < item_per_page; i++ )
+		{
+			var _fish = item_list[@ _start_index];
+			// code for hovering
+			write_text(_start_x, _start_y, c_black, _fish.full_name);
+			_start_y = _start_y + text_height + text_margin;
+
+			_start_index = _start_index + 1;
+			if ( _start_index >= max_items ) then break;
+		}
 	}
 
 	static draw_drop = function ()
 	{
-
+		draw_sprite_stretched(bulb.my_sprite,0, bulb.x, bulb.y, bulb.width, bulb.height);
 	}
 
-	static init = function()
+	static move_bulb = function (amount)
 	{
-		var _w = 0;
-		var _arl = array_length(item_list);
-
-		for ( var i = 0; i < array_length(item_list); i++ )
+		if ( bulb.clicked == true )
 		{
-			var _string = item_list[@ i];
-			var _len = string_width(_string);
-
-			if ( _len > _w )
-			{
-				_w = _len;
-			}
+			bulb.y = bulb.y + amount;
+			bulb.y = clamp(bulb.y, drop_panel.y, (drop_panel.y + drop_panel.height) - bulb.height);
 		}
-
-		width = _w + ( text_margin * 2);
-		height = _items_per_page * ( string_height("STRING") + (text_margin *_arl ) );
-		toggle_data.tx = x + width;
-		toggle_data.ty = y;
 	}
-
 }
