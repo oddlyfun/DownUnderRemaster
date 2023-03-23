@@ -24,21 +24,25 @@ window_display.check_close_hover();
 //
 //*********************************************************************
 
+drop_fishy.toggle_click_check();
+drop_fishy.bulb_click_checks();
+drop_fishy.move_bulb(mouse_y - prev_mouse_y);
+
 if ( mouse_check_button_pressed(mb_left) )
 {
 
-	var _check_toggle = gui_element_collision(
-		toggle_struct.gx, 
-		toggle_struct.gy,
-		toggle_struct.width,
-		toggle_struct.height
-		);
-	var _check_sb = gui_element_collision(
-		sb_bulb_struct.gx, 
-		sb_bulb_struct.gy,
-		sb_bulb_struct.width,
-		sb_bulb_struct.height
-		);
+	//var _check_toggle = gui_element_collision(
+	//	toggle_struct.gx, 
+	//	toggle_struct.gy,
+	//	toggle_struct.width,
+	//	toggle_struct.height
+	//	);
+	//var _check_sb = gui_element_collision(
+	//	sb_bulb_struct.gx, 
+//		sb_bulb_struct.gy,
+//		sb_bulb_struct.width,
+//		sb_bulb_struct.height
+//		);
 //	var _check_x_close = gui_element_collision(
 //		window_x + window_width - window_sprite_info.right,
 //		window_y,
@@ -47,20 +51,20 @@ if ( mouse_check_button_pressed(mb_left) )
 //		);
 		
 		
-	if ( _check_toggle == true )
-	{
-		if ( scroll_bar_toggle == false )
-		{
-			scroll_bar_toggle = true;
-		} else
-		{
-			scroll_bar_toggle = false;
-			sb_bulb_active = false;
-			sb_bulb_scroll_amount = 0;
-		}
-	}
+//	if ( _check_toggle == true )
+//	{
+	//	if ( scroll_bar_toggle == false )
+	//	{
+	//		scroll_bar_toggle = true;
+	//	} else
+	//	{
+	//		scroll_bar_toggle = false;
+	//		sb_bulb_active = false;
+	//		sb_bulb_scroll_amount = 0;
+	//	}
+//	}
 
-	if ( _check_sb == true ) then sb_bulb_active = true;
+	//if ( _check_sb == true ) then sb_bulb_active = true;
 
 	if ( window_display.hover_close == true )
 	{
@@ -73,17 +77,17 @@ if ( mouse_check_button_pressed(mb_left) )
 // held down mouse button
 if ( mouse_check_button(mb_left) )
 {
-	var _check = gui_element_collision(
-		sb_bulb_struct.gx, 
-		sb_bulb_struct.gy,
-		sb_bulb_struct.width,
-		sb_bulb_struct.height
-		);
+//	var _check = gui_element_collision(
+	//	sb_bulb_struct.gx, 
+	//	sb_bulb_struct.gy,
+	//	sb_bulb_struct.width,
+	//	sb_bulb_struct.height
+	//	);
 		
-	if ( _check == true or sb_bulb_active == true )
-	{
-		sb_bulb_scroll_amount = sb_bulb_scroll_amount + (mouse_y - prev_mouse_y);
-	}
+//	if ( _check == true or sb_bulb_active == true )
+//	{
+	//	sb_bulb_scroll_amount = sb_bulb_scroll_amount + (mouse_y - prev_mouse_y);
+//	}
 
 	//Buttons
 	for ( var i = 0; i < array_length(btn_array); i++)
@@ -95,7 +99,7 @@ if ( mouse_check_button(mb_left) )
 
 if ( mouse_check_button_released(mb_left) )
 {
-	sb_bulb_active = false;
+	//sb_bulb_active = false;
 
 	for ( var i = 0; i < array_length(btn_array); i++)
 	{
@@ -110,8 +114,8 @@ if ( mouse_check_button_released(mb_left) )
 			if ( i == 1 )
 			{
 				global.LOAD_GAME_LIST = fishy_list;
-				global.player_fish_id = fishy_list[@ fish_selected].fish_id;
-				global.TIME_OF_DAY = fishy_list[@ fish_selected].active;
+				global.player_fish_id = fishy_list[@ drop_fishy.selected_index].fish_id;
+				global.TIME_OF_DAY = fishy_list[@ drop_fishy.selected_index].active;
 				save_my_game();
 				room_goto(ro_game);
 			}
