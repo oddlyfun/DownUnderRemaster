@@ -1,4 +1,3 @@
-
 function draw_text_wrap(_x, _y, r_bound, _height, _words)
 {
 	//draw_set_color(c_black);
@@ -175,10 +174,20 @@ function create_array_from_struct_element(_list, _element_name)
 
 
 
+function fish_name_from_number_list(_list)
+{
+	var _new_list = [];
+	
+	for ( var i = 0; i < array_length(_list); i++)
+	{
+		var _id = string(_list[@ i]);
 
-
-
-
-
-
-
+		if ( variable_struct_exists(global.all_life, _id) )
+		{
+			var _elem = variable_struct_get(global.all_life, _id);
+			array_push(_new_list, _elem.full_name);
+		}
+	}
+	
+	return _new_list;
+}
