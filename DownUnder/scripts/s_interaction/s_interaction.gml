@@ -66,6 +66,7 @@ function basic_button(_gx=0, _gy=0, _width=0, _height=0, _state=0, _text="") con
 
 function scroll_bar(_x, _y, _item_list, _items_per_page) constructor
 {
+	draw_set_font(global.fnt_spr_small);
 	x = _x;
 	y = _y;
 	width = 50;
@@ -77,6 +78,7 @@ function scroll_bar(_x, _y, _item_list, _items_per_page) constructor
 	selected_index = 0;
 	text_margin = 2;
 	text_height = string_height("Height");
+	mouse_hover_index = 0;
 
 //***********************************
 // 		Struct Parts
@@ -128,11 +130,12 @@ function scroll_bar(_x, _y, _item_list, _items_per_page) constructor
 		}
 	}
 
-	width = _w + ( text_margin * 2);
+	width = _w + ( text_margin * 4);
 
 	drop_panel.y = y + height;
 	drop_panel.x = x;
-	drop_panel.height = _items_per_page * ( string_height("STRING") + (text_margin *_arl ) );
+	drop_panel.height = (_items_per_page *  text_height) + (text_margin * (_items_per_page + 1) );
+	
 
 	toggle.x = x + width;
 	toggle.y = y;
@@ -153,7 +156,7 @@ function scroll_bar(_x, _y, _item_list, _items_per_page) constructor
 
 		if ( toggle.state == true )
 		{
-			draw_drop();
+			draw_list();
 			if ( bulb.state == true )
 			{
 				draw_drop();
@@ -165,8 +168,8 @@ function scroll_bar(_x, _y, _item_list, _items_per_page) constructor
 	{
 		draw_sprite_stretched(spr_white_dropdown, 0, x, y, width, height);
 		draw_sprite(toggle.my_sprite,0, toggle.x, toggle.y);
-		var _fish = item_list[@ selected_index];
-		write_text(x,y + 2, c_black, _fish.full_name);
+		var _item = item_list[@ selected_index];
+		write_text(x + text_margin,y + text_margin, c_black, _item);
 	}
 
 	static draw_list = function()
@@ -179,11 +182,28 @@ function scroll_bar(_x, _y, _item_list, _items_per_page) constructor
 
 		for ( var i = 0; i < item_per_page; i++ )
 		{
-			var _fish = item_list[@ _start_index];
-			// code for hovering
-			write_text(_start_x, _start_y, c_black, _fish.full_name);
+			var _item = item_list[@ _start_index];
+			
+			
+			var _hover = gui_element_collision(_start_x, _start_y, width, text_height);
+			if ( _hover == true and bulb.clicked == false)
+			{
+				draw_sprite_stretched(spr_blue_highlight,0, _start_x, _start_y, width - text_margin, text_height);
+				write_text(_start_x, _start_y, c_white, _item);
+				
+				if ( mouse_check_button_released(mb_left) )
+				{
+					selected_index = _start_index;
+				}
+				
+				
+			} else
+			{
+				write_text(_start_x, _start_y, c_black, _item);
+			}
+			
+			
 			_start_y = _start_y + text_height + text_margin;
-
 			_start_index = _start_index + 1;
 			if ( _start_index >= max_items ) then break;
 		}
@@ -191,7 +211,8 @@ function scroll_bar(_x, _y, _item_list, _items_per_page) constructor
 
 	static draw_drop = function ()
 	{
-		draw_sprite_stretched(bulb.my_sprite,0, bulb.x, bulb.y, bulb.width, bulb.height);
+		draw_sprite_stretched(spr_white_dropdown,1, bulb.x, drop_panel.y, bulb.width, drop_panel.height);
+		draw_sprite_stretched(bulb.my_sprite,0, bulb.x, bulb.y, bulb.width, bulb.height);	
 	}
 
 	static move_bulb = function (amount)
@@ -199,7 +220,69 @@ function scroll_bar(_x, _y, _item_list, _items_per_page) constructor
 		if ( bulb.clicked == true )
 		{
 			bulb.y = bulb.y + amount;
-			bulb.y = clamp(bulb.y, drop_panel.y, (drop_panel.y + drop_panel.height) - bulb.height);
+		}
+		
+		if ( bulb.state == true ) 
+		{
+			if ( mouse_wheel_up() )
+			{
+				bulb.y = bulb.y - 1;
+			}
+		
+			if ( mouse_wheel_down() )
+			{
+				bulb.y = bulb.y + 1;
+			}
+		}
+		
+		bulb.y = clamp(bulb.y, drop_panel.y, (drop_panel.y + drop_panel.height) - bulb.height);
+		bulb.index =  floor( max_items * ( (bulb.y - drop_panel.y ) / drop_panel.height ));
+	}
+	
+
+	
+	
+	static toggle_click_check = function()
+	{
+		if ( mouse_check_button_released(mb_left) )
+		{
+			var _hover = gui_element_collision(toggle.x, toggle.y, toggle.width, toggle.height);
+			if ( _hover == true )
+			{
+				if ( toggle.state == true ) 
+				{
+					toggle.state = false;
+					bulb.state = false
+				} else
+				{
+					toggle.state = true;
+					var _size = array_length(item_list);
+					if ( _size > item_per_page ) then bulb.state = true;
+				}
+			}
 		}
 	}
+	
+	static bulb_click_checks = function()
+	{
+		if ( bulb.state == true )
+		{
+			if ( mouse_check_button_pressed(mb_left) )
+			{
+				var _hover = gui_element_collision(bulb.x, bulb.y, bulb.width, bulb.height);
+				if ( _hover == true ) then bulb.clicked = true;
+			}
+		
+			if ( mouse_check_button_released(mb_left) and bulb.clicked == true )
+			{
+				bulb.clicked = false;
+			}
+		}
+	}
+
+	
+	
+	
+	
+	
 }

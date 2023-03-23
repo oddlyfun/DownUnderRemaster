@@ -1,11 +1,8 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "o_CAF_test",
-  "spriteId": {
-    "name": "spr_CAF_01",
-    "path": "sprites/spr_CAF_01/spr_CAF_01.yy",
-  },
+  "name": "o_brainless_fish",
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,
@@ -25,15 +22,14 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":64,"eventType":8,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "CAF",
-    "path": "folders/Objects/Lifeforms/CAF.yy",
+    "name": "Title Screen Brainless FIsh",
+    "path": "folders/Objects/Lifeforms/Static Background Edibles/Title Screen Brainless FIsh.yy",
   },
 }

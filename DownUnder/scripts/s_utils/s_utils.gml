@@ -155,7 +155,30 @@ function write_text(_x, _y, _color, _string, _font=global.fnt_spr_small)
 
 }
 
-function write_text_wrap(_x, _y, _color, _right_bound, _bottom_bound, _string)
+function create_array_from_struct_element(_list, _element_name)
 {
-	//code here
+	var _new_list = [];
+	
+	for ( var i = 0; i < array_length(_list); i++)
+	{
+		var _struct = _list[@ i];
+		if ( variable_struct_exists(_struct, _element_name) )
+		{
+			var _elem = variable_struct_get(_struct, _element_name);
+			array_push(_new_list, _elem);
+		}
+	}
+	
+	return _new_list;
 }
+
+
+
+
+
+
+
+
+
+
+
