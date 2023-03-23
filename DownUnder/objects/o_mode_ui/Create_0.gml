@@ -1,5 +1,6 @@
 draw_set_font(FONT);
 fishy_list = [];
+drop_list = [];
 window_title = "";
 drop_disabled = true;
 
@@ -28,6 +29,7 @@ switch ( global.GAME_MODE )
 	break;
 }
 
+drop_list = fish_name_from_number_list(fishy_list);
 
 ui_width = display_get_gui_width();
 ui_height = display_get_gui_height();
@@ -75,25 +77,9 @@ var _fish_info = fishy_list[@ fish_selected];
 panel_right_note_text = new text_wrap(panel_right_width,panel_right_note_height,_fish_info.notes);
 panel_right_note_text.create_pages();
 
-toggle_struct = new basic_button(0,0,0,0,0,"");
-
 window_text_height = string_height("STRING");
 
-scroll_panel_text_margin = 2;
-scroll_bar_panel_height = floor(window_text_height * items_per_page) + (scroll_panel_text_margin * items_per_page);
-scroll_bar_toggle = false;
-
-var _toggle_drop = spr_basic_dropdown;
-var _tog_h = sprite_get_height(_toggle_drop);
-
-sb_bulb_active = false;
-sb_bulb_struct = new basic_button();
-sb_bulb_size = floor( (scroll_bar_panel_height - (_tog_h * 2) ) * (items_per_page/fish_list_size) );
-sb_bulb_scroll_amount = 0;
-
 prev_mouse_y = mouse_y;
-
-//window_title = "Practice";
 
 var btn_w = 100;
 var btn_h = 25;
@@ -102,3 +88,10 @@ cancel_btn = new basic_button(0,0,btn_w,btn_h,0,"Cancel");
 
 btn_array = [cancel_btn, play_btn];
 btn_gap = 10;
+
+
+
+// Adding new scroll bar * drop down menu
+var _pos = panel_left_anchors[0][1];
+drop_fishy = new scroll_bar(_pos.x, _pos.y, drop_list, items_per_page);
+drop_fishy.width = panel_left_width - 20;
