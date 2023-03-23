@@ -142,7 +142,7 @@ function scroll_bar(_x, _y, _item_list, _items_per_page) constructor
 
 	bulb.x = toggle.x;
 	bulb.y = drop_panel.y;
-	bulb.height = floor( drop_panel.height / item_per_page);
+	bulb.height = floor( (drop_panel.height / max_items) * item_per_page);
 
 	var _size = array_length(item_list);
 	if ( _size > item_per_page ) then bulb.state = true;
@@ -280,9 +280,11 @@ function scroll_bar(_x, _y, _item_list, _items_per_page) constructor
 		}
 	}
 
-	
-	
-	
-	
-	
+
+	static set_width = function(_amount)
+	{
+		width = _amount;
+		toggle.x = x + width;
+		bulb.x = toggle.x;
+	}		
 }
