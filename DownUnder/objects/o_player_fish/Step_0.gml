@@ -16,7 +16,8 @@ if ( is_eating == false )
 	var _dist = floor(distance_to_point(mouse_x,mouse_y));
 	var _energy_redux = 0;
 
-	if ( _dist <= 10 ){
+	if ( _dist <= floor(sprite_width / 2) )
+	{
 		speed = 0;
 		_energy_redux = energy_decline * 0.95;
 		
