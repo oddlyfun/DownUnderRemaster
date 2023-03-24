@@ -1,2 +1,2 @@
-speed = 3;
-direction = 0;
+//speed = 3;
+//direction = 0;
