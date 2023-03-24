@@ -30,13 +30,29 @@ if (ds_list_size(spawn_list) < max_spawns)
 		
 	if ( _sprite_name != -1 )
 	{
-		
-		var _rx = irandom_range(-10,0);
+		var _dir = 0;
+		var _rx = 0;
+
+		if ( irandom_range(0,1) == 0 )
+		{
+			_rx = irandom_range(-40,-20);
+			_dir = 0;
+		} else
+		{
+			_rx = _cam_w + 100;
+			_dir = 180;
+		}
+
 		var _ry = irandom_range(0, _cam_h);
+
+		var _spd =  irandom_range(1,3);
+
 		
 		var _inst = instance_create_layer(_rx,_ry,"Instances",o_brainless_fish,{
 			fish_id					: _r,
-			sprite_index			: _sprite_name,			
+			sprite_index			: _sprite_name,
+			speed 					: _spd,		
+			direction 				: _dir	
 		});
 		
 		
