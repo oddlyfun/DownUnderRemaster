@@ -87,5 +87,13 @@ if ( instance_exists(_player) )
 	}
 
 
-	camera_set_view_pos(view_camera[0],floor(_vx),floor(_vy));
+
+	if ( _moving == false )
+	{
+		_vx = floor(_vx);
+		_vy = floor(_vy);
+	}
+
+	camera_set_view_pos(view_camera[0], _vx , _vy );
+	//camera_set_view_pos(view_camera[0],floor(_vx),floor(_vy));
 }
