@@ -194,6 +194,8 @@ function scroll_bar(_x, _y, _item_list, _items_per_page) constructor
 				if ( mouse_check_button_released(mb_left) )
 				{
 					selected_index = _start_index;
+					toggle.state = false;
+					bulb.state = false;
 				}
 				
 				
@@ -252,7 +254,7 @@ function scroll_bar(_x, _y, _item_list, _items_per_page) constructor
 				if ( toggle.state == true ) 
 				{
 					toggle.state = false;
-					bulb.state = false
+					bulb.state = false;
 				} else
 				{
 					toggle.state = true;

@@ -9,8 +9,8 @@ if val == "string" then food_good = [food_good];
 val = typeof(food_ok);
 if val == "string" then food_ok = [food_ok];
 
-val = typeof(my_abilities);
-if val == "string" then my_abilities = [my_abilities];
+//val = typeof(my_abilities);
+//if val == "string" then my_abilities = [my_abilities];
 
 val = typeof(my_tags);
 if val == "string" then my_tags = [my_tags];

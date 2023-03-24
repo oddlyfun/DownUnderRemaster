@@ -21,8 +21,8 @@
   "width": 40,
   "height": 25,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "texture_fish",
+    "path": "texturegroups/texture_fish",
   },
   "swatchColours": null,
   "gridX": 0,

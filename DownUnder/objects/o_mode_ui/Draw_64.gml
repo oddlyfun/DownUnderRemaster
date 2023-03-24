@@ -1,8 +1,5 @@
 window_display.draw_me();
 
-
-var _sb_panel_height = scroll_bar_panel_height;
-
 var _fish_info = fishy_list[@ drop_fishy.selected_index];
 
 draw_set_color(c_black);
@@ -69,12 +66,10 @@ draw_set_font(FONT);
 
 _anchor = panel_right_anchors[0][0];
 draw_text_wrap(_anchor.x, _anchor.y, _anchor.x + panel_right_width, -1, _eat_string);
-//draw_text_anchor(panel_right_anchors[0][0], _eat_string);
 draw_text_anchor(panel_right_anchors[0][2], _special_abilty);
 draw_text_anchor(panel_right_anchors[0][3], _depth_info);
 
 _anchor = panel_right_anchors[0][5];
-//draw_text_wrap(_anchor.x, _anchor.y, _anchor.x + panel_right_width, -1, _fun_notes);
 
 panel_right_note_text.x = _anchor.x;
 panel_right_note_text.y = _anchor.y;

@@ -29,7 +29,7 @@ switch ( global.GAME_MODE )
 	break;
 }
 
-drop_list = fish_name_from_number_list(fishy_list);
+drop_list = create_array_from_struct_element(fishy_list,"full_name");
 
 ui_width = display_get_gui_width();
 ui_height = display_get_gui_height();
@@ -92,6 +92,6 @@ btn_gap = 10;
 
 
 // Adding new scroll bar * drop down menu
-var _pos = panel_left_anchors[0][1];
+var _pos = panel_left_anchors[0][0];
 drop_fishy = new scroll_bar(_pos.x, _pos.y, drop_list, items_per_page);
-drop_fishy.width = panel_left_width - 20;
+drop_fishy.set_width(panel_left_width - 20);
