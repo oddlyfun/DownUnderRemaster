@@ -10,7 +10,7 @@ window_width = 640*2;
 window_height = 360*2;
 
 pad_x = 160;
-pad_y = 120;
+pad_y = 60;
 
 display_set_gui_size(640,360);  
 

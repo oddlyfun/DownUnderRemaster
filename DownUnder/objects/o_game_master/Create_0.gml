@@ -98,3 +98,5 @@ for ( var i = 0; i < _life_size; i++ )
 		break;
 	}
 }
+
+event_user(0);

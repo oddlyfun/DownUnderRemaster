@@ -1,5 +1,5 @@
-display_level = 1;
-was_created = true;
+display_level = 0;
+//was_created = true;
 clicked = false;
 
 ui_width = display_get_gui_width();

@@ -12,11 +12,14 @@ if ( !instance_exists(_cursor) ) then exit;
 
 if ( is_eating == false )
 {
+	var _mouth_x = (x - sprite_get_xoffset(sprite_index) ) + sprite_width;
 	direction = point_direction(x,y,mouse_x,mouse_y);
-	var _dist = floor(distance_to_point(mouse_x,mouse_y));
+	//var _dist = floor(distance_to_point(mouse_x,mouse_y));
+	var _dist = floor( _distance_between_two_points(_mouth_x, y, mouse_x, mouse_y));
+	show_debug_message(_dist);
 	var _energy_redux = 0;
 
-	if ( _dist <= floor(sprite_width / 2) )
+	if ( _dist <= 10 )
 	{
 		speed = 0;
 		_energy_redux = energy_decline * 0.95;
