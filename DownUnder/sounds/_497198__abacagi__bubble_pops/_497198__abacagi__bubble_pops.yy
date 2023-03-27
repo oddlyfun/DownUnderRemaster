@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "sfx_bubble_single",
+  "name": "_497198__abacagi__bubble_pops",
   "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
@@ -14,10 +14,10 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "sfx_bubble_single.wav",
-  "duration": 0.128,
+  "soundFile": "_497198__abacagi__bubble_pops.wav",
+  "duration": 6.1,
   "parent": {
-    "name": "Bubbles",
-    "path": "folders/Sounds/Bubbles.yy",
+    "name": "DownUnder",
+    "path": "DownUnder.yyp",
   },
 }

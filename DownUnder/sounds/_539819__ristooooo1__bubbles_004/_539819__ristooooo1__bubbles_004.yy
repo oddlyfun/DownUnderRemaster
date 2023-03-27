@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "sfx_bubble_single",
+  "name": "_539819__ristooooo1__bubbles_004",
   "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
@@ -14,10 +14,10 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "sfx_bubble_single.wav",
-  "duration": 0.128,
+  "soundFile": "_539819__ristooooo1__bubbles_004.wav",
+  "duration": 3.339167,
   "parent": {
-    "name": "Bubbles",
-    "path": "folders/Sounds/Bubbles.yy",
+    "name": "DownUnder",
+    "path": "DownUnder.yyp",
   },
 }

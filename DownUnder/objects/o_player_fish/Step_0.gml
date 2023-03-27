@@ -12,11 +12,22 @@ if ( !instance_exists(_cursor) ) then exit;
 
 if ( is_eating == false )
 {
-	var _mouth_x = (x - sprite_get_xoffset(sprite_index) ) + sprite_width;
+	
 	direction = point_direction(x,y,mouse_x,mouse_y);
+	//var _mouth_x = (x - sprite_get_xoffset(sprite_index) ) + sprite_width;
+	
+	
+	var _half_sprite = sprite_width / 2;
+	var _mouth_x = x + lengthdir_x(_half_sprite,direction);
+	var _mouth_y = y + lengthdir_y(_half_sprite,direction);
+	
+	
+	
 	//var _dist = floor(distance_to_point(mouse_x,mouse_y));
-	var _dist = floor( _distance_between_two_points(_mouth_x, y, mouse_x, mouse_y));
-	show_debug_message(_dist);
+	var _dist = floor( _distance_between_two_points(_mouth_x, _mouth_y, mouse_x, mouse_y));
+	var _full_dist = floor( _distance_between_two_points(x,y,mouse_x, mouse_y) );
+	
+	show_debug_message(_full_dist);
 	var _energy_redux = 0;
 
 	if ( _dist <= 10 )
@@ -24,11 +35,16 @@ if ( is_eating == false )
 		speed = 0;
 		_energy_redux = energy_decline * 0.95;
 		
-	} else
+	} 
+	
+	if ( _full_dist >= _half_sprite )
 	{
 		speed = swim_speed;
 		my_score = my_score + 1;
 		_energy_redux = energy_decline * 1.15;
+	} else
+	{
+		speed = 0;
 	}
 
 	//show_debug_message( string( frame ) );
