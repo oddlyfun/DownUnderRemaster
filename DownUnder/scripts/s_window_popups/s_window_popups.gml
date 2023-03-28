@@ -40,9 +40,9 @@ function window_popup(_width, _height,_title_string="Hello",_vert_anchors_amount
 	}
 	
 	
-	static change_anchor_config = function (_num_x, _num_y)
+	static change_anchor_config = function (_num_x, _num_y, _xoff=0, _yoff=0)
 	{
-		ac_points = anchor_grid(width,height,_num_x,_num_y,0,0);
+		ac_points = anchor_grid(width,height,_num_x,_num_y, _xoff, _yoff);
 	}
 	
 	static update_view_location = function ()
