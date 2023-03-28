@@ -1,23 +1,16 @@
 function draw_basic_button(_x, _y, b_width, b_height, state, text)
 {
-	//spr_basic_button
-	//sprite_get_nineslice(sprite_index)
-	//	returns a struct
-	//	enabled, left, top, right, bottom, tilemode <array>
 	draw_set_font(fnt_game);
-	//draw_set_color(c_black);
 
 	var _spr_info = sprite_get_nineslice(spr_basic_button);
 	var _text_x_off = _x + _spr_info.left;
 	var _text_y_off = _y + _spr_info.top;
 	
-	// size of the 'middle' of the box
 	var _height_mid = (((b_height -_spr_info.bottom) - _spr_info.top) / 2) - ( string_height(text) / 2 );
 	var _width_mid = (((b_width -_spr_info.right) - _spr_info.left) / 2) - ( string_width(text) / 2 );
 	
 	draw_sprite_stretched(spr_basic_button, state, _x, _y, b_width, b_height);
 
-	//draw_text(_text_x_off + _width_mid, _text_y_off + _height_mid, text);
 	write_text(_text_x_off + _width_mid, _text_y_off + _height_mid,c_black,text)
 }
 
@@ -62,6 +55,58 @@ function basic_button(_gx=0, _gy=0, _width=0, _height=0, _state=0, _text="") con
 		}
 	}
 }
+
+
+function input_bar(_x=0,_y=0,_start_string="") constructor
+{
+	x = _x;
+	y = _y;
+	string_value = _start_string;
+	has_focus = false;
+	width = 60;
+	height = 10;
+
+	static draw_me = function()
+	{
+		var w = c_white;
+		if ( has_focus == true ) then w = c_gray;
+		draw_rectangle(x, y, x + width, y + height, w,w,w,w, false);
+		write_text(x, y, c_black, string_value);
+	}
+
+	static clicked_on = function()
+	{
+		if ( mouse_check_button_pressed(mb_left) )
+		{
+			var _check = gui_element_collision(x,y,width,height);
+			if (_check == true)
+			{
+				has_focus = true;
+				keyboard_string = string_value;
+			} else
+			{
+				has_focus = false;
+			}
+		}
+	}
+
+	static typing_on_me = function()
+	{
+		if ( has_focus == true )
+		{
+			if ( string_length(keyboard_string) <= 16 )
+			{
+				string_value = keyboard_string;
+			} else
+			{
+				keyboard_string = string_value;
+			}
+		}
+	}
+
+}
+
+
 
 
 function scroll_bar(_x, _y, _item_list, _items_per_page) constructor
