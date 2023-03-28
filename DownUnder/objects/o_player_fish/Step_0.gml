@@ -54,6 +54,24 @@ if ( is_eating == false )
 	my_health = my_health - health_decline;
 
 //******************************************************************
+//			Checking for a cleaner fish
+//			instance_place_list(x, y, obj, list, ordered);
+//******************************************************************
+	var _ds_cleaner = ds_list_create();
+	instance_place_list(x, y, o_sea_life, _ds_cleaner, false);
+
+	for ( var i = 0; i < ds_list_size(_ds_cleaner); i++ )
+	{
+		var _sea_life = _ds_cleaner[| i];
+		if ( _sea_life.my_abilities == "Cleaner")
+		{
+			my_health = my_health + 1;
+		}
+	}
+
+	ds_list_destroy(_ds_cleaner);
+
+//******************************************************************
 //			Clicking on some sea life (when not eating)
 //******************************************************************
 
@@ -65,7 +83,7 @@ if ( is_eating == false )
 		{
 			eating_x = _cursor.x;
 			eating_y = _cursor.y;
-			_dist = point_distance(x,y, eating_x, eating_y);
+			_dist = point_distance(_mouth_x, _mouth_y, eating_x, eating_y);
 		
 			if ( _dist < eating_distance )
 			{
