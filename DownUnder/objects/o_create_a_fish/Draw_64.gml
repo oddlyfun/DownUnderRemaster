@@ -22,8 +22,8 @@ function write_text(_x, _y, _color, _string, _font=global.fnt_spr_small)
 //
 //***********************************************************************************
 var _apos = _anchors[1,1];
-var _apos_x = my_window.x + _apos.x;
-var _apos_y = my_window.y + _apos.y;
+var _apos_x = _apos.x;
+var _apos_y = _apos.y;
 var _check = false;
 
 for ( var i = 0; i < array_length(attr_list); i++ )
@@ -67,7 +67,7 @@ for ( var i = 0; i < array_length(attr_list); i++ )
 
 		_apos_x = _apos_x + attr_block_w + 4;
 	}
-	_apos_x = my_window.x + _apos.x;
+	_apos_x = _apos.x;
 	_apos_y = _apos_y + attr_block_h + 8;
 }
 
@@ -86,7 +86,7 @@ color_block_size = 12;
 
 
 _apos = _anchors[0,7];
-_apos_x = my_window.x + _apos.x + color_block_size;
+_apos_x = _apos.x + color_block_size;
 _apos_y = _apos.y;
 var _cbb = 2;
 
@@ -116,6 +116,61 @@ for ( var i = 0; i < array_length(color_list); i++ )
 
 }
 
+/*
+color_list = [c_blue, c_green, c_purple, c_red, c_yellow];
+color_index = 0;
+*/
+switch color_index 
+{
+	case 0:
+		COLOR_PICK = BLUE;
+	break;
+	case 1:
+		COLOR_PICK = GREEN;
+	break;
+	case 2:
+		COLOR_PICK = PURPLE;
+	break;
+	case 3:
+		COLOR_PICK = RED;
+	break;
+	case 4:
+		COLOR_PICK = YELLOW;
+	break;
+}
 
 
-//draw_circle(mouse_x,mouse_y,1,false);
+//***********************************************************************************
+//
+// Draw Fish Image
+//
+//***********************************************************************************
+
+
+_apos = _anchors[1,7];
+_apos_x = _apos.x;
+_apos_y = _apos.y;
+
+var _ocean_width = 100;
+var _ocean_height = 100; 
+
+
+draw_sprite_part(spr_BG_Game,0,0,0,_ocean_width,_ocean_height, _apos_x, _apos_y);
+
+shader_set(shd_color_caf);
+	shaer_set_uniform_f_array(uni_color,COLOR_PICK);
+	draw_sprite(spr_CAF_01, 0, _apox_x, _apos_y);
+shader_reset();
+
+
+
+//***********************************************************************************
+//
+//  		Name That Fish!
+//
+//***********************************************************************************
+
+
+play_btn.draw_me();
+close_btn.draw_me();
+input_fish_name.draw_me();
