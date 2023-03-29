@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "o_graphics_settings",
+  "name": "o_how_to_play",
   "spriteId": null,
   "solid": false,
   "visible": true,
@@ -29,7 +29,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Controllers",
-    "path": "folders/Objects/Controllers.yy",
+    "name": "In Game",
+    "path": "folders/Objects/UI/In Game.yy",
   },
 }

@@ -2,7 +2,7 @@ var _cam = view_camera[0];
 var _vw = display_get_gui_width();
 var _vh = display_get_gui_height();
 
-my_win_w = floor(_vw * 0.85);
+my_win_w = floor(_vw * 0.70);
 my_win_h = floor(_vh * 0.85);
 
 CAF_ID = 81;
@@ -40,6 +40,8 @@ color_index = 0;
 color_block_size = 12;
 
 CAF_sprite = spr_CAF_01;
+CAF_image_index = 0;
+CAF_animation_speed = 5 / 60;
 
 // Ability Drop Down
 ability_list = [
@@ -59,15 +61,17 @@ ability_cost = [
 fishy_name = "Bobby B";
 
 var _anchors = my_window.ac_points;
-_apos = _anchors[8,4];
-
-
-var _bw = 60;
-var _bh = 40;
-
-play_btn = new basic_button(_apos.x, _apos.y, _bw, _bh, 0, "Play");
-close_btn = new basic_button(_apos.x + play_btn.width, _apos.y, _bw, _bh, 0, "Close");
-
 
 _apos = _anchors[4,1];
 input_fish_name = new input_bar(_apos.x,_apos.y,fishy_name);
+
+_apos = _anchors[4,2];
+
+ability_drop = new scroll_bar(_apos.x, _apos.y, ability_list,4); 
+
+
+_apos = _anchors[4,10];
+var _bw = 60;
+var _bh = 20;
+play_btn = new basic_button(_apos.x, _apos.y, _bw, _bh, 0, "Play");
+close_btn = new basic_button(_apos.x + play_btn.width + 10, _apos.y, _bw, _bh, 0, "Close");

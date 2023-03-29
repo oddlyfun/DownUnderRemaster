@@ -1,5 +1,7 @@
 my_window.draw_me();
-my_window.draw_ac_points();
+//my_window.draw_ac_points();
+
+
 
 var _anchors = my_window.ac_points;
 
@@ -85,7 +87,7 @@ color_block_size = 12;
 
 
 
-_apos = _anchors[0,7];
+_apos = _anchors[0,5];
 _apos_x = _apos.x + color_block_size;
 _apos_y = _apos.y;
 var _cbb = 2;
@@ -147,22 +149,28 @@ switch color_index
 //***********************************************************************************
 
 
-_apos = _anchors[1,7];
+_apos = _anchors[1,5];
 _apos_x = _apos.x;
 _apos_y = _apos.y;
 
-var _ocean_width = 100;
-var _ocean_height = 100; 
+var _ocean_width = 140;
+var _ocean_height = 120; 
 
+
+if ( CAF_image_index > sprite_get_number(spr_CAF_01) )
+{
+	CAF_image_index = 0;
+}
 
 draw_sprite_part(spr_BG_Game,0,0,0,_ocean_width,_ocean_height, _apos_x, _apos_y);
 
 shader_set(shd_color_caf);
-	shaer_set_uniform_f_array(uni_color,COLOR_PICK);
-	draw_sprite(spr_CAF_01, 0, _apox_x, _apos_y);
+	shader_set_uniform_f_array(uni_color,COLOR_PICK);
+	draw_sprite(spr_CAF_01, CAF_image_index, _apos_x + (_ocean_width/2), _apos_y + (_ocean_height/2) );
 shader_reset();
 
 
+CAF_image_index = CAF_image_index + CAF_animation_speed;
 
 //***********************************************************************************
 //
@@ -170,7 +178,7 @@ shader_reset();
 //
 //***********************************************************************************
 
-
 play_btn.draw_me();
 close_btn.draw_me();
 input_fish_name.draw_me();
+ability_drop.draw_me();

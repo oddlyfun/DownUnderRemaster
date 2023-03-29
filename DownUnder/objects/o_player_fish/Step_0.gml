@@ -58,7 +58,7 @@ if ( is_eating == false )
 //			instance_place_list(x, y, obj, list, ordered);
 //******************************************************************
 	var _ds_cleaner = ds_list_create();
-	instance_place_list(x, y, o_sea_life, _ds_cleaner, false);
+	var _num_ = instance_place_list(x, y, o_sea_life, _ds_cleaner, false);
 
 	for ( var i = 0; i < ds_list_size(_ds_cleaner); i++ )
 	{

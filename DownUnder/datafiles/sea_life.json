@@ -1818,7 +1818,7 @@
       "cleaner",
       "nibble"
     ],
-    "ability": "",
+    "ability": "Cleaner",
     "playable": "",
     "active": "DAY",
     "scientific_name": "Labroides dimidiatus",
@@ -1921,7 +1921,7 @@
       "cleaner",
       "nibble"
     ],
-    "ability": "",
+    "ability": "Cleaner",
     "playable": "",
     "active": "NIGHT",
     "scientific_name": "Stenopus hispidus",
@@ -2407,5 +2407,29 @@
     "scientific_name": "Amphiprion rubrocinctus",
     "notes": "",
     "depth_range_meters": ""
+  },
+  "81": {
+    "full_name": "CUSTOM_FISH",
+    "size": "M",
+    "sprite_name": "medium",
+    "avg_size_inch": "",
+    "avg_size_cm": "",
+    "health_rate": "50",
+    "energy_rate": "50",
+    "energy_value": "50",
+    "swim_speed": "2",
+    "turn_speed": "1",
+    "eats_desc": "",
+    "enemies": "",
+    "food_good": "",
+    "food_ok": "",
+    "food_bad": "",
+    "tags": "",
+    "ability": "",
+    "playable": "",
+    "active": "ANYTIME",
+    "scientific_name": "Custom Fishy",
+    "notes": "",
+    "depth_range_meters": "100"
   }
 }

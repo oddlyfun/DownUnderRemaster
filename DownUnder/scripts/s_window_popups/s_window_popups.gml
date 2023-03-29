@@ -103,7 +103,7 @@ function window_popup(_width, _height,_title_string="Hello",_vert_anchors_amount
 			{
 				var _pos = ac_points[@ i,j];
 				
-				draw_circle_color(x + _pos.x, y + _pos.y, 2, c_green, c_green, false);
+				draw_circle_color(_pos.x, _pos.y, 2, c_green, c_green, false);
 			}
 		}
 	}

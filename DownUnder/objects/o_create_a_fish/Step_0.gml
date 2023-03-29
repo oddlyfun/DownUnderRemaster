@@ -1,4 +1,5 @@
 my_window.check_close_hover();
+ability_drop.toggle_click_check();
 
 play_btn.check_hover();
 close_btn.check_hover();
@@ -8,7 +9,7 @@ input_fish_name.typing_on_me();
 
 if ( mouse_check_button_pressed(mb_left) )
 {
-	if ( window_display.hover_close == true  or close_btn.hover == true)
+	if ( my_window.hover_close == true  or close_btn.hover == true)
 	{
 		instance_create_layer(0,0,"Instances",o_game_mode_selector);
 		instance_destroy(id);

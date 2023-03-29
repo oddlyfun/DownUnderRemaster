@@ -63,15 +63,19 @@ function input_bar(_x=0,_y=0,_start_string="") constructor
 	y = _y;
 	string_value = _start_string;
 	has_focus = false;
-	width = 60;
+	max_size = 16;
+	width = (string_width("A") * max_size) + 2;
 	height = 10;
 
 	static draw_me = function()
 	{
-		var w = c_white;
-		if ( has_focus == true ) then w = c_gray;
-		draw_rectangle(x, y, x + width, y + height, w,w,w,w, false);
-		write_text(x, y, c_black, string_value);
+		var b = c_black;
+		var w = c_gray;
+		if ( has_focus == true ) then w = c_white;
+		
+		draw_rectangle_color(x-1, y-1, x + width + 1, 1 + y + height, b,b,b,b, false);
+		draw_rectangle_color(x, y, x + width, y + height, w,w,w,w, false);
+		write_text(x+1, y+1, c_black, string_value);
 	}
 
 	static clicked_on = function()
@@ -105,8 +109,6 @@ function input_bar(_x=0,_y=0,_start_string="") constructor
 	}
 
 }
-
-
 
 
 function scroll_bar(_x, _y, _item_list, _items_per_page) constructor
@@ -334,4 +336,46 @@ function scroll_bar(_x, _y, _item_list, _items_per_page) constructor
 		toggle.x = x + width;
 		bulb.x = toggle.x;
 	}		
+}
+
+
+function check_box(_x, _y, _text="") constructor
+{
+	checked = false;
+	sprite = spr_check_box;
+	x = _x;
+	y = _y;
+	text = _text;
+	hover = false;
+	width = sprite_get_width(sprite) + string_width(text);
+	height = sprite_get_height(sprite);
+	
+	
+	static draw_me = function()
+	{
+		draw_sprite(sprite,checked,x,y);
+		var _x = sprite_get_width(sprite) + 2;
+		var _h = string_height("A") / 4;
+		write_text(x + _x, y + _h, c_black, text);
+	}
+	
+	static check_hover = function()
+	{
+		if ( mouse_check_button_pressed(mb_left) )
+		{
+			hover = false;
+			var _check = gui_element_collision(x,y, width, height);
+			
+			if ( _check == true )
+			{
+				if ( checked == true )
+				{
+					checked = false;
+				} else
+				{
+					checked = true;
+				}
+			}
+		}
+	}
 }

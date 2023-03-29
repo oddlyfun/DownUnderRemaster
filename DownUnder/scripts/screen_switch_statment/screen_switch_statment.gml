@@ -1,6 +1,6 @@
 /*
 		game_items = 		["New","Continue","Exit"];
-		settings_items = 	["Sound","Graphics"];
+		settings_items = 	["Game Settings"];
 		rulers_items = 		["Challenge", "Gauntlet"];
 		help_items = 		["How to Play","Info"];
 		
@@ -41,10 +41,11 @@ function title_menu_choice(_option)
 		//*******************************************************************
 		//			Settings
 		//*******************************************************************
-		case "Sound":
+		case "Game Settings":
+			room_goto(ro_settings);
 		break;
-		case "Graphics":
-		break;
+		//case "Graphics":
+		//break;
 		//*******************************************************************
 		//			Reef Rulers
 		//*******************************************************************
