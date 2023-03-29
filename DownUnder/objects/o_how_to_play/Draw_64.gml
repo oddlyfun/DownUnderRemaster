@@ -1,12 +1,2 @@
-/// @description Insert description here
-// You can write your code in this editor
-
-
-
-
-
-
-
-
-
-
+my_window.draw_me();
+okay_btn.draw_me();
