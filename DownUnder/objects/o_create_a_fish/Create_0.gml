@@ -5,9 +5,6 @@ var _vh = display_get_gui_height();
 my_win_w = floor(_vw * 0.70);
 my_win_h = floor(_vh * 0.85);
 
-CAF_ID = 81;
-CAF_STRUCT = variable_struct_get(global.all_life, string(CAF_ID));
-
 my_window = new window_popup(my_win_w,my_win_h, "Create a Fish", 4, true); 
 my_window.change_anchor_config(14,6,my_window.x, my_window.y);
 
@@ -18,9 +15,6 @@ max_points = 1500;
 // Attribs
 attr_list = ["Agility", "Endurance", "Size"];
 attr_index = [0,0,0];
-//attr_agi_index = 0;
-//attr_end_index = 0;
-//attr_siz_index = 0;
 
 attr_max_blocks = 10;
 attr_block_w = 6;
@@ -39,6 +33,9 @@ color_list = [c_blue, c_green, c_purple, c_red, c_yellow];
 color_index = 0;
 color_block_size = 12;
 
+CAF_ID = 81;
+CAF_STRUCT = variable_struct_get(global.all_life, string(CAF_ID));
+CAF_sprite_string = "spr_CAF_01";
 CAF_sprite = spr_CAF_01;
 CAF_image_index = 0;
 CAF_animation_speed = 5 / 60;
@@ -51,12 +48,12 @@ ability_list = [
 	"Squirt Ink"
 ];
 
-ability_cost = [
-	"100",
-	"200",
-	"300",
-	"400"
-];
+//ability_cost = [//
+//	"100",//
+//	"200",
+//	"300",
+//	"400"
+//];
 
 fishy_name = "Bobby B";
 
