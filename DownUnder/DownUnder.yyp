@@ -86,6 +86,7 @@
     {"id":{"name":"Coral_big_test_355x367","path":"sprites/Coral_big_test_355x367/Coral_big_test_355x367.yy",},"order":0,},
     {"id":{"name":"o_settings","path":"objects/o_settings/o_settings.yy",},"order":7,},
     {"id":{"name":"o_game_master","path":"objects/o_game_master/o_game_master.yy",},"order":2,},
+    {"id":{"name":"ro_how_to_play","path":"rooms/ro_how_to_play/ro_how_to_play.yy",},"order":7,},
     {"id":{"name":"spr_title_screen_lay1","path":"sprites/spr_title_screen_lay1/spr_title_screen_lay1.yy",},"order":5,},
     {"id":{"name":"o_spawner","path":"objects/o_spawner/o_spawner.yy",},"order":3,},
     {"id":{"name":"yellow_coral_goby","path":"sprites/yellow_coral_goby/yellow_coral_goby.yy",},"order":6,},
@@ -204,9 +205,9 @@
     {"roomId":{"name":"ro_test","path":"rooms/ro_test/ro_test.yy",},},
     {"roomId":{"name":"ro_continue","path":"rooms/ro_continue/ro_continue.yy",},},
     {"roomId":{"name":"ro_settings","path":"rooms/ro_settings/ro_settings.yy",},},
+    {"roomId":{"name":"ro_how_to_play","path":"rooms/ro_how_to_play/ro_how_to_play.yy",},},
   ],
   "Folders": [
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Steamworks","folderPath":"folders/Steamworks.yy","order":12,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Fonts","folderPath":"folders/Fonts.yy","order":7,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Objects","folderPath":"folders/Objects.yy","order":9,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Controllers","folderPath":"folders/Objects/Controllers.yy","order":1,},
@@ -250,6 +251,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"UI Elements","folderPath":"folders/Sprites/UI Elements.yy","order":2,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"dropdown","folderPath":"folders/Sprites/UI Elements/dropdown.yy","order":4,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Window","folderPath":"folders/Sprites/UI Elements/Window.yy","order":5,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Steamworks","folderPath":"folders/Steamworks.yy","order":12,},
   ],
   "AudioGroups": [
     {"resourceType":"GMAudioGroup","resourceVersion":"1.3","name":"audiogroup_default","targets":-1,},

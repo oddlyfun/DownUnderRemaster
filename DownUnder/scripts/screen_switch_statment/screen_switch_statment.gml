@@ -65,6 +65,7 @@ function title_menu_choice(_option)
 		//			Help
 		//*******************************************************************
 		case "How to Play":
+			room_goto(ro_how_to_play);
 		break;
 		case "Info":
 		break;
