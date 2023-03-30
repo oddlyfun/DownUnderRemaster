@@ -18,8 +18,6 @@ if ( mouse_check_button_pressed(mb_left) )
 	if ( play_btn.hover == true )
 	{
 		global.player_fish_id = CAF_ID;
-		CAF_STRUCT.sprite_name = "";
-		CAF_STRUCT.is_custom = true; // new item
-		// something about shaders
+		CAF_STRUCT.sprite_name = CAF_sprite_string; // string value
 	}
 }
