@@ -1,6 +1,3 @@
-
-//var _cam = view_camera[0];
-
 var _bar_w = 150;
 var _bar_h = 20;
 var _view_w = display_get_gui_width()
@@ -23,11 +20,11 @@ var _text_y = floor(_y + (_sh / 2));
 
 var _clicked = gui_element_collision(_x, _y, _bar_w, _bar_h);
 
-if ( mouse_check_button_pressed(mb_left) and first_keypress == false )
-{
-	first_keypress = true;
-	keyboard_string = "";
-}
+//if ( mouse_check_button_pressed(mb_left) and first_keypress == false )
+//{
+//	first_keypress = true;
+//	keyboard_string = "";
+//}
 
 
 if ( string_length(keyboard_string) > 20 )
