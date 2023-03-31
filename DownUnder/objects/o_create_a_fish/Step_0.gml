@@ -7,6 +7,13 @@ close_btn.check_hover();
 input_fish_name.clicked_on();
 input_fish_name.typing_on_me();
 
+var _agility = attr_index[0];
+var _endurance = attr_index[1];
+var _size = attr_index[2];
+
+
+
+
 if ( mouse_check_button_pressed(mb_left) )
 {
 	if ( my_window.hover_close == true  or close_btn.hover == true)
@@ -18,23 +25,17 @@ if ( mouse_check_button_pressed(mb_left) )
 	if ( play_btn.hover == true )
 	{
 		global.player_fish_id = CAF_ID;
+		global.SHADER_COLOR = COLOR_PICK;
 		CAF_STRUCT.sprite_name = CAF_sprite_string; // string value
 		CAF_STRUCT.ability = ability_drop.item_list[@ ability_drop.selected_index]; //should be a string
-		global.SHADER_COLOR = COLOR_PICK;
-		// also set what they eat and such
+		CAF_STRUCT.full_name = input_fish_name.string_value;
+		CAF_STRUCT.energy_rate = agi_results[_agility];
+		CAF_STRUCT.health_rate = end_results[_endurance];
+		CAF_STRUCT.food_good   = siz_results[_size];
 		room_goto(ro_game);
 	}
 }
 
-
-
-
-//attr_list = ["Agility", "Endurance", "Size"];
-//attr_index = [0,0,0];
-
-var _agility = attr_index[0];
-var _endurance = attr_index[1];
-var _size = attr_index[2];
 
 var _spr_string = "spr_CAF_";
 var _winner_index = 1;
