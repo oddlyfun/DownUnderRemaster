@@ -54,6 +54,7 @@ turn_speed = real(turn_speed);
 
 health_decline = my_health / ( global.GAME_FPS * health_rate);
 energy_decline = my_energy / ( global.GAME_FPS * energy_rate);
+uni_color = shader_get_uniform(shd_color_caf, "_custom_color");
 
 
 event_inherited();

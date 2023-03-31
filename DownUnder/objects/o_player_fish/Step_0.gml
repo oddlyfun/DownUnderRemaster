@@ -27,7 +27,6 @@ if ( is_eating == false )
 	var _dist = floor( _distance_between_two_points(_mouth_x, _mouth_y, mouse_x, mouse_y));
 	var _full_dist = floor( _distance_between_two_points(x,y,mouse_x, mouse_y) );
 	
-	show_debug_message(_full_dist);
 	var _energy_redux = 0;
 
 	if ( _dist <= 10 )

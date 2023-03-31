@@ -29,14 +29,14 @@ YELLOW = 	[1.0, 1.0 ,0.0];
 COLOR_PICK = BLUE;
 
 uni_color = shader_get_uniform(shd_color_caf, "_custom_color");
-color_list = [c_blue, c_green, c_purple, c_red, c_yellow];
+color_list = [c_yellow, c_green, c_purple, c_red, c_blue];
 color_index = 0;
 color_block_size = 12;
+color_block_width = 24;
 
 CAF_ID = 81;
 CAF_STRUCT = variable_struct_get(global.all_life, string(CAF_ID));
 CAF_sprite_string = "spr_CAF_01";
-CAF_sprite = spr_CAF_01;
 CAF_image_index = 0;
 CAF_animation_speed = 5 / 60;
 
@@ -48,12 +48,6 @@ ability_list = [
 	"Squirt Ink"
 ];
 
-//ability_cost = [//
-//	"100",//
-//	"200",
-//	"300",
-//	"400"
-//];
 
 fishy_name = "Bobby B";
 

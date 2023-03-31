@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "o_CAF_test",
   "spriteId": {
-    "name": "spr_CAF_01",
-    "path": "sprites/spr_CAF_01/spr_CAF_01.yy",
+    "name": "spr_CAF_1",
+    "path": "sprites/spr_CAF_1/spr_CAF_1.yy",
   },
   "solid": false,
   "visible": true,

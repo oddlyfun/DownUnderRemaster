@@ -99,11 +99,11 @@ for ( var i = 0; i < array_length(color_list); i++ )
 
 	if ( color_index == i )
 	{
-		draw_rectangle_color(_apos_x - _cbb, _apos_y - _cbb, _apos_x + color_block_size + _cbb, _apos_y + color_block_size + _cbb, c_black, c_black, c_black, c_black, false);
+		draw_rectangle_color(_apos_x - _cbb, _apos_y - _cbb, _apos_x + color_block_width + _cbb, _apos_y + color_block_size + _cbb, c_black, c_black, c_black, c_black, false);
 	}
 
-	draw_rectangle_color(_apos_x, _apos_y, _apos_x + color_block_size, _apos_y + color_block_size, _col, _col, _col, _col, false);
-	_check = gui_element_collision(_apos_x, _apos_y, color_block_size, color_block_size);
+	draw_rectangle_color(_apos_x, _apos_y, _apos_x + color_block_width, _apos_y + color_block_size, _col, _col, _col, _col, false);
+	_check = gui_element_collision(_apos_x, _apos_y, color_block_width, color_block_size);
 
 	if ( mouse_check_button_released(mb_left) )
 	{
@@ -125,7 +125,7 @@ color_index = 0;
 switch color_index 
 {
 	case 0:
-		COLOR_PICK = BLUE;
+		COLOR_PICK = YELLOW;
 	break;
 	case 1:
 		COLOR_PICK = GREEN;
@@ -137,7 +137,7 @@ switch color_index
 		COLOR_PICK = RED;
 	break;
 	case 4:
-		COLOR_PICK = YELLOW;
+		COLOR_PICK = BLUE;
 	break;
 }
 
@@ -157,7 +157,15 @@ var _ocean_width = 140;
 var _ocean_height = 120; 
 
 
-if ( CAF_image_index > sprite_get_number(spr_CAF_01) )
+var _use_sprite = asset_get_index(CAF_sprite_string);
+
+if ( !sprite_exists(_use_sprite) )
+{
+	_use_sprite = spr_CAF_1;
+}
+
+
+if ( CAF_image_index > sprite_get_number(_use_sprite) )
 {
 	CAF_image_index = 0;
 }
@@ -166,7 +174,7 @@ draw_sprite_part(spr_BG_Game,0,0,0,_ocean_width,_ocean_height, _apos_x, _apos_y)
 
 shader_set(shd_color_caf);
 	shader_set_uniform_f_array(uni_color,COLOR_PICK);
-	draw_sprite(spr_CAF_01, CAF_image_index, _apos_x + (_ocean_width/2), _apos_y + (_ocean_height/2) );
+	draw_sprite(_use_sprite, CAF_image_index, _apos_x + (_ocean_width/2), _apos_y + (_ocean_height/2) );
 shader_reset();
 
 

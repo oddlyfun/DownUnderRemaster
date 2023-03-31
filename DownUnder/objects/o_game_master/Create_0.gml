@@ -51,6 +51,8 @@ global.REEF_RULER_FILENAME = "ReefRulers.save";
 global.player_fish_id = 5;
 global.player_score = 0;
 global.reef_rulers = load_reef_rulers();
+
+global.SHADER_COLOR = [0.0,0.0,0.0];
 //
 // Orginize all sea life into different lists based on their attributes
 // These lists will contain structs with added field of the fish ID
