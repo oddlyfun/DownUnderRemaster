@@ -4,11 +4,11 @@ var _vy = camera_get_view_y(_cam);
 x = my_x + _vx;
 y = my_y + _vy;
 
-if ( keyboard_check_pressed(vk_backspace) and first_keypress == false)
-{
-	first_keypress = true;
-	keyboard_string = "";
-}
+//if ( keyboard_check_pressed(vk_backspace) and first_keypress == false)
+//{
+	//first_keypress = true;
+	//keyboard_string = "";
+//}
 
 
 click_ok.check_hover();
