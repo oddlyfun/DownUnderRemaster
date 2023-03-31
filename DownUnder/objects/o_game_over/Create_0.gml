@@ -2,7 +2,7 @@ first_keypress = false;
 
 click_ok = new basic_button(0,0,60,20,0,"OK");
 
-keyboard_string = "UNKNOWN";
+keyboard_string = default_text;
 
 
 var _cam = view_camera[0];
