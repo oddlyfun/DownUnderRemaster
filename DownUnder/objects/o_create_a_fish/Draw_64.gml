@@ -2,28 +2,21 @@ my_window.draw_me();
 //my_window.draw_ac_points();
 
 
-
 var _anchors = my_window.ac_points;
 
-// 3 Attributes for the fish
-/*
-// Attribs
-attr_list =  ["Agility", 	"Endurance", 	"Size"];
-attr_index = [0,			0,     			 0]
+var _apos = _anchors[0,1];
+var _sum_attrs = sum_array_values(attr_index);
+var _points_aval = "Points available: " + string( max_points - _sum_attrs );
 
-attr_max_blocks = 10;
-attr_block_w = 4;
-attr_block_h = 6;
+write_text(_apos.x, _apos.y, c_black, _points_aval);
 
-function write_text(_x, _y, _color, _string, _font=global.fnt_spr_small)
-*/
 
 //***********************************************************************************
 //
 //Selection for the Agility(speed) / Endurance(Energy/Health) / Size (Small..Large)
 //
 //***********************************************************************************
-var _apos = _anchors[1,1];
+_apos = _anchors[1,1];
 var _apos_x = _apos.x;
 var _apos_y = _apos.y;
 var _check = false;
@@ -43,8 +36,15 @@ for ( var i = 0; i < array_length(attr_list); i++ )
 		if ( _check == true )
 		{
 			var _index = floor( (mouse_x - camera_get_view_x(view_camera[0]) - _apos_x ) / (attr_block_w+4) );
-			//show_debug_message(string(_index) +"," + string(i));
-			attr_index[@ i] = _index;
+			
+			// check to make sure the value does not go over the max allowed
+			var _over_max = _sum_attrs - attr_index[@ i];
+			var _over_max = _over_max + _index;
+
+			if ( _over_max <= max_points )
+			{
+				attr_index[@ i] = _index;
+			}
 		}
 	}
 	
