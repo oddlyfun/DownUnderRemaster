@@ -117,3 +117,40 @@ function load_reef_rulers()
 		return empty_reef_ruler();
 	}
 }
+
+function load_game_settings()
+{
+	var _filename = global.GAME_SETTINGS_FILENAME;
+	var _buffer = 0;
+
+	if ( file_exists(_filename) )
+	{
+	    _buffer = buffer_load(_filename);
+	} else
+	{
+	    _buffer = buffer_load("default_game_settings.json");
+	}
+
+	var _str = buffer_read(_buffer, buffer_text);
+	buffer_delete(_buffer);
+	var data = json_parse(_str);
+}
+
+function save_game_settings()
+{
+	var _filename = global.GAME_SETTINGS_FILENAME;
+
+	var _settings_struct = {
+		res_x : window_get_width(),
+		res_y : window_get_height(),
+		music_gain : 1,
+		sfx_gain : 1,
+		fullscreen : window_get_fullscreen()
+	}
+
+	var _str = json_stringify(_settings_struct);
+	var _buffer = buffer_create(string_byte_length(_str), buffer_fixed,1);
+	buffer_write(_buffer, buffer_text, _str);
+	buffer_save(_buffer, _filename);
+	buffer_delete(_buffer);
+}
