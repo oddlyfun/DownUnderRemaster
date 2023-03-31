@@ -66,3 +66,21 @@ var _bw = 60;
 var _bh = 20;
 play_btn = new basic_button(_apos.x, _apos.y, _bw, _bh, 0, "Play");
 close_btn = new basic_button(_apos.x + play_btn.width + 10, _apos.y, _bw, _bh, 0, "Close");
+
+max_points = 15;
+agi_results = ["60", "65", "70", "80", "85", "90", "95", "110", "115", "120"];
+end_results = ["60", "65", "70", "80", "85", "90", "95", "110", "115", "120"];
+
+
+
+var _e0 = ["ES"];
+var _e1 = ["ES", "S"];
+var _e2 = ["ES", "S"];
+var _e3 = ["ES", "S", "MS"];
+var _e4 = ["ES", "S", "MS"];
+var _e5 = ["ES", "S", "MS", "M"];
+var _e6 = ["ES", "S", "MS", "M"];
+var _e7 = ["ES", "S", "MS", "M"];
+var _e8 = ["ES", "S", "MS", "M", "L"];
+var _e9 = ["ES", "S", "MS", "M", "L"];
+siz_results = [_e0, _e1, _e2, _e3, _e4, _e5, _e6, _e7, _e8, _e9];
