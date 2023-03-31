@@ -192,11 +192,21 @@ function fish_name_from_number_list(_list)
 	return _new_list;
 }
 
-
-
 function _distance_between_two_points(x1, y1, x2, y2)
 {
 	var _xx = sqr( abs(x2 - x1) );
 	var _yy = sqr( abs(y2 - y1) );
 	return sqrt( _xx + _yy );
+}
+
+function sum_array_values(_array)
+{
+	var _sum = 0;
+
+	for ( var a = 0; a < array_length(_array); a++ )
+	{
+		_sum = _sum + _array[@ a];
+	}
+
+	return _sum;
 }
