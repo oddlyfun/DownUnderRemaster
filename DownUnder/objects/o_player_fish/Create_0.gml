@@ -11,9 +11,7 @@ facing_dir = 1;
 is_dead = false;
 ability_active = false;
 
-
 frame = 0;
-
 
 var _fish = variable_struct_get(global.all_life, string(global.player_fish_id) );
 
@@ -25,7 +23,6 @@ if ( !sprite_exists(sprite_index) )
 {
 	sprite_index = spr_not_applicable;
 }
-
 
 fish_name				= _fish.full_name;
 fish_size				= _fish.size;
@@ -50,11 +47,8 @@ energy_rate = real(energy_rate);
 energy_value = real(energy_value);
 turn_speed = real(turn_speed);
 
-
-
 health_decline = my_health / ( global.GAME_FPS * health_rate);
 energy_decline = my_energy / ( global.GAME_FPS * energy_rate);
 uni_color = shader_get_uniform(shd_color_caf, "_custom_color");
-
 
 event_inherited();
