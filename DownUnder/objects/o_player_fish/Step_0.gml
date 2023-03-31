@@ -168,7 +168,10 @@ if ( global.LEVEL_OVER == false )
 		global.PAUSED = true;
 		global.LEVEL_OVER = true;
 		global.player_score = global.player_score + my_score;
-		instance_create_layer(0,0,"Exit_Menu",o_game_over);
+		instance_create_layer(0,0,"Exit_Menu",o_game_over, 
+			{
+				default_text : fish_name
+			});
 		remove_save_file(); // delete the save file 
 		//instance_destroy(id);
 	}
