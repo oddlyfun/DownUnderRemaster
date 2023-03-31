@@ -11,10 +11,9 @@ supported_resolutions = [
 my_window = new window_popup(400,160,"Graphic Settings",4);
 my_window.change_anchor_config(6,6,my_window.x, my_window.y);
 
+var _a = my_window.ac_points;
 
-var _anchor = my_window.ac_points;
-
-fs_checkbox = new check_box(0,0,"Fullscreen");
-
-
+fs_checkbox = new check_box( _a[3,1].x, _a[3,1].y, "Fullscreen");
 fs_checkbox.checked = FULL_SCREEN;
+
+sb_reso = new scroll_bar(_a[1,1].x, _a[1,1].x, supported_resolutions, 4);
