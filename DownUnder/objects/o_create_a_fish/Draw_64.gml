@@ -4,7 +4,7 @@ my_window.draw_me();
 
 var _anchors = my_window.ac_points;
 
-var _apos = _anchors[0,1];
+var _apos = _anchors[1,1];
 var _sum_attrs = sum_array_values(attr_index);
 var _points_aval = "Points available: " + string( max_points - _sum_attrs );
 
@@ -16,7 +16,7 @@ write_text(_apos.x, _apos.y, c_black, _points_aval);
 //Selection for the Agility(speed) / Endurance(Energy/Health) / Size (Small..Large)
 //
 //***********************************************************************************
-_apos = _anchors[1,1];
+_apos = _anchors[1,2];
 var _apos_x = _apos.x;
 var _apos_y = _apos.y;
 var _check = false;
@@ -39,7 +39,7 @@ for ( var i = 0; i < array_length(attr_list); i++ )
 			
 			// check to make sure the value does not go over the max allowed
 			var _over_max = _sum_attrs - attr_index[@ i];
-			var _over_max = _over_max + _index;
+			_over_max = _over_max + _index;
 
 			if ( _over_max <= max_points )
 			{
@@ -153,8 +153,8 @@ _apos = _anchors[1,5];
 _apos_x = _apos.x;
 _apos_y = _apos.y;
 
-var _ocean_width = 140;
-var _ocean_height = 120; 
+var _ocean_width = 160;
+var _ocean_height = 140; 
 
 
 var _use_sprite = asset_get_index(CAF_sprite_string);

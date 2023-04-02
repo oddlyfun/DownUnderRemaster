@@ -7,7 +7,7 @@
     "path": "sprites/spr_static_coral/spr_static_coral.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,

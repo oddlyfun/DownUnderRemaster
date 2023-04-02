@@ -7,7 +7,7 @@
     "path": "sprites/spr_static_sponge/spr_static_sponge.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,

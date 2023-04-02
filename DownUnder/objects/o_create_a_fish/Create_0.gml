@@ -67,7 +67,7 @@ var _bh = 20;
 play_btn = new basic_button(_apos.x, _apos.y, _bw, _bh, 0, "Play");
 close_btn = new basic_button(_apos.x + play_btn.width + 10, _apos.y, _bw, _bh, 0, "Close");
 
-max_points = 15;
+max_points = 12;
 agi_results = ["60", "65", "70", "80", "85", "90", "95", "110", "115", "120"];
 end_results = ["60", "65", "70", "80", "85", "90", "95", "110", "115", "120"];
 

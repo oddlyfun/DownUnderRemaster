@@ -7,7 +7,7 @@
     "path": "sprites/spr_static_grass/spr_static_grass.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,

@@ -7,7 +7,7 @@
     "path": "sprites/spr_static_algae/spr_static_algae.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
