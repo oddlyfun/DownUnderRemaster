@@ -379,3 +379,64 @@ function check_box(_x, _y, _text="") constructor
 		}
 	}
 }
+
+
+function slider_bar(_x=0,_y=0) constructor
+{
+	x = _x;
+	y = _y;
+	width = 200;
+	height = 20;
+	
+	amount = 1;
+	hover = false;
+	clicked = false;
+
+	static draw_me = function()
+	{
+		var _b = c_black;
+		var _c = make_color_rgb(104,247,72);
+		var _color_width = width * amount;
+		draw_rectangle_color(x, y, x + width, y + height, _b,_b,_b,_b, true );
+		draw_rectangle_color(x, y, x + width, y + height, _c,_c,_c,_c, false );
+
+		var _am = string( floor( amount * 100 ) );
+
+		draw_set_color(c_black);
+		draw_set_font(FONT);
+		draw_text(x + (width/2), y , _am );
+		
+	}
+
+	static check_hover = function()
+	{
+		hover = gui_element_collision(x,y,width,height);
+	}
+
+	static clicked_on = function()
+	{
+		if ( mouse_check_button_pressed(mb_left) and hover == true )
+		{
+			clicked = true;
+		}
+	}
+
+	static lose_focus = function()
+	{
+		if ( mouse_check_button_released(mb_left))
+		{
+			clicked = false;
+		}
+	}
+
+	static adjust_amount = function()
+	{
+		if ( mouse_check_button(mb_left) and clicked == true )
+		{
+			var _ax = mouse_x - x;
+			_ax = _ax / width;
+			_ax = clamp(_ax,0,1);
+			amount = _ax;
+		}
+	}
+}
