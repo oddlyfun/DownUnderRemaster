@@ -8,8 +8,12 @@ global.LEVEL_OVER = false;
 global.WIN_LEVEL = false;
 
 // Load gamesettings
-global.GAME_SETTINGS_FILENAME = "game_settings.json"
+global.GAME_SETTINGS_FILENAME = "game_settings.json";
+global.MUSIC_GAIN = 1;
+global.SFX_GAIN = 1;
+global.RES_INDEX = 0;
 load_game_settings();
+
 // loading the sea life json data
 global.all_life = undefined;
 global.all_life_json_filename = "sea_life.json";
