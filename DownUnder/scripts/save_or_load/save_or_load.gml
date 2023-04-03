@@ -143,8 +143,9 @@ function save_game_settings()
 	var _settings_struct = {
 		res_x : window_get_width(),
 		res_y : window_get_height(),
-		music_gain : 1,
-		sfx_gain : 1,
+		res_index : global.RES_INDEX,
+		music_gain : global.MUSIC_GAIN,
+		sfx_gain : global.SFX_GAIN,
 		fullscreen : window_get_fullscreen()
 	}
 
