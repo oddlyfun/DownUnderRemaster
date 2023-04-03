@@ -1,4 +1,8 @@
 {
-  "res_x" : 640,
-  "res_y" : 360
+    "res_x"       : 640,
+    "res_y"       : 360,
+    "res_index"   : 0,
+    "music_gain"  : 1,
+    "sfx_gain"    : 1,
+    "fullscreen"  : false
 }
