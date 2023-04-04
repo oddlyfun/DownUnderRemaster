@@ -17,7 +17,7 @@
   "soundFile": "sfx_bad_noise.mp3",
   "duration": 0.626938,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "SFX",
+    "path": "folders/Sounds/SFX.yy",
   },
 }

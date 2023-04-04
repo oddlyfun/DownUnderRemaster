@@ -17,7 +17,7 @@
   "soundFile": "sfx_being_eaten.wav",
   "duration": 1.32322,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "SFX",
+    "path": "folders/Sounds/SFX.yy",
   },
 }

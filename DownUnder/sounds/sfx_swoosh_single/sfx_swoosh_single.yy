@@ -17,7 +17,7 @@
   "soundFile": "sfx_swoosh_single.mp3",
   "duration": 0.496327,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "SFX",
+    "path": "folders/Sounds/SFX.yy",
   },
 }

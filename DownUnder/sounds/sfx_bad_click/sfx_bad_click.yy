@@ -17,7 +17,7 @@
   "soundFile": "sfx_bad_click.wav",
   "duration": 1.363651,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "SFX",
+    "path": "folders/Sounds/SFX.yy",
   },
 }

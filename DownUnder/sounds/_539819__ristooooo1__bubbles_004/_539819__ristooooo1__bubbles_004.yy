@@ -17,7 +17,7 @@
   "soundFile": "_539819__ristooooo1__bubbles_004.wav",
   "duration": 3.339167,
   "parent": {
-    "name": "DownUnder",
-    "path": "DownUnder.yyp",
+    "name": "SFX",
+    "path": "folders/Sounds/SFX.yy",
   },
 }

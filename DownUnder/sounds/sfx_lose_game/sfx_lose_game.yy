@@ -17,7 +17,7 @@
   "soundFile": "sfx_lose_game.wav",
   "duration": 1.228209,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "SFX",
+    "path": "folders/Sounds/SFX.yy",
   },
 }

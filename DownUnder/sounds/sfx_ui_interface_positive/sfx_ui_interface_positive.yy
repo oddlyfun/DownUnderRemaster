@@ -17,7 +17,7 @@
   "soundFile": "sfx_ui_interface_positive.wav",
   "duration": 1.695057,
   "parent": {
-    "name": "DownUnder",
-    "path": "DownUnder.yyp",
+    "name": "SFX",
+    "path": "folders/Sounds/SFX.yy",
   },
 }

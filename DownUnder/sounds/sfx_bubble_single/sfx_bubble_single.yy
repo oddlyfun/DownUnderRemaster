@@ -18,6 +18,6 @@
   "duration": 0.128,
   "parent": {
     "name": "Bubbles",
-    "path": "folders/Sounds/Bubbles.yy",
+    "path": "folders/Sounds/SFX/Bubbles.yy",
   },
 }

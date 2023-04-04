@@ -17,7 +17,7 @@
   "soundFile": "_497198__abacagi__bubble_pops.wav",
   "duration": 6.1,
   "parent": {
-    "name": "DownUnder",
-    "path": "DownUnder.yyp",
+    "name": "SFX",
+    "path": "folders/Sounds/SFX.yy",
   },
 }

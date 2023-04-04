@@ -398,7 +398,7 @@ function slider_bar(_x=0,_y=0) constructor
 		var _c = make_color_rgb(104,247,72);
 		var _color_width = width * amount;
 		draw_rectangle_color(x, y, x + width, y + height, _b,_b,_b,_b, true );
-		draw_rectangle_color(x, y, x + width, y + height, _c,_c,_c,_c, false );
+		draw_rectangle_color(x, y, x + _color_width, y + height, _c,_c,_c,_c, false );
 
 		var _am = string( floor( amount * 100 ) );
 

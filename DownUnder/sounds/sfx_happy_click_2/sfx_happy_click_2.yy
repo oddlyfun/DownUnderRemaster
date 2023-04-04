@@ -17,7 +17,7 @@
   "soundFile": "sfx_happy_click_2.wav",
   "duration": 3.474396,
   "parent": {
-    "name": "DownUnder",
-    "path": "DownUnder.yyp",
+    "name": "SFX",
+    "path": "folders/Sounds/SFX.yy",
   },
 }

@@ -10,6 +10,9 @@ sfx_slider.check_hover();
 music_slider.clicked_on();
 sfx_slider.clicked_on();
 
+music_slider.adjust_amount();
+sfx_slider.adjust_amount();
+
 music_slider.lose_focus();
 sfx_slider.lose_focus();
 
@@ -17,7 +20,7 @@ ok_btn.check_hover();
 
 sb_reso.toggle_click_check();
 sb_reso.bulb_click_checks();
-sb_reso.mov_bulb();
+sb_reso.move_bulb(mouse_y - prev_mouse_y);
 
 if ( mouse_check_button_released(mb_left) )
 {
@@ -56,3 +59,6 @@ if ( mouse_check_button_released(mb_left) )
 	}
 
 }
+
+
+prev_mouse_y = mouse_y;

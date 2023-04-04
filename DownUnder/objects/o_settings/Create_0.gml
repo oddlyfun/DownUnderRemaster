@@ -23,3 +23,5 @@ music_slider 	= new slider_bar(_a[1,2].x,  _a[1,2].y);
 sfx_slider 		= new slider_bar(_a[1,3].x,  _a[1,3].y);
 
 ok_btn = new basic_button(_a[2,5].x,  _a[2,5].y);
+
+prev_mouse_y = mouse_y;
