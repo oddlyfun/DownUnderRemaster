@@ -20,7 +20,6 @@
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances_1","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4D14F366","properties":[],"isDnd":false,"objectId":{"name":"o_player_fish","path":"objects/o_player_fish/o_player_fish.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":true,"inheritItemSettings":false,"x":736.0,"y":160.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_78D8606C","properties":[],"isDnd":false,"objectId":{"name":"o_cam_help","path":"objects/o_cam_help/o_cam_help.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":true,"inheritItemSettings":false,"x":736.0,"y":192.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6AE9C905","properties":[],"isDnd":false,"objectId":{"name":"o_CAF_test","path":"objects/o_CAF_test/o_CAF_test.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":64.0,"y":32.0,},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances_2","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_33475DDB","properties":[],"isDnd":false,"objectId":{"name":"o_create_a_fish","path":"objects/o_create_a_fish/o_create_a_fish.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":true,"inheritItemSettings":false,"x":0.0,"y":0.0,},
@@ -44,7 +43,6 @@
     {"name":"inst_78D8606C","path":"rooms/ro_test/ro_test.yy",},
     {"name":"inst_33475DDB","path":"rooms/ro_test/ro_test.yy",},
     {"name":"inst_1F368675","path":"rooms/ro_test/ro_test.yy",},
-    {"name":"inst_6AE9C905","path":"rooms/ro_test/ro_test.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

@@ -35,11 +35,11 @@ if (ds_list_size(spawn_list) < max_spawns)
 
 		if ( irandom_range(0,1) == 0 )
 		{
-			_rx = irandom_range(-40,-20);
+			_rx = irandom_range(-100,-120);
 			_dir = 0;
 		} else
 		{
-			_rx = _cam_w + 100;
+			_rx = _cam_w + 200;
 			_dir = 180;
 		}
 

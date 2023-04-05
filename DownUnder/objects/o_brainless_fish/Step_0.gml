@@ -1,4 +1,4 @@
-if ( x > room_width or x < -200 )
+if ( x > room_width + 500 or x < -500 )
 {
 	instance_destroy();
 }

@@ -4,7 +4,8 @@
 //music_please_wake_up
 //music_sunset_landscape
 
-//audio_group_load(groupID);
+audio_group_load(MainMusic);
+
 
 all_music = [ 
     music_away,

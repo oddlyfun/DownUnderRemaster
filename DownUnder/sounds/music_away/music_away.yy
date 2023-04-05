@@ -15,7 +15,7 @@
     "path": "audiogroups/MainMusic",
   },
   "soundFile": "music_away.mp3",
-  "duration": 199.99664,
+  "duration": 176.0653,
   "parent": {
     "name": "Music",
     "path": "folders/Sounds/Music.yy",
