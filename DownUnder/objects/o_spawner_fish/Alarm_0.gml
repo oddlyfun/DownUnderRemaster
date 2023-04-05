@@ -28,9 +28,9 @@ if ( _center_cam == false and _left_cam == false and _right_cam == false )
 	if (ds_list_size(spawn_list) < max_spawns)
 	{
 		// get a random index to spawn
-		var _r = irandom(ds_list_size(spawn_id_list)-1);
+		var _r = irandom(array_length(spawn_id_list)-1);
 		// _r will refrence the type of fish based on the master list
-		_r = spawn_id_list[| _r];
+		_r = spawn_id_list[@ _r];
 		
 		// gets the fish from the all life struct and then sets all the variables for the new fish
 		var _fish = variable_struct_get(global.all_life, string(_r) );
