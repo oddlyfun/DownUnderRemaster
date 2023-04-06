@@ -41,18 +41,3 @@ function instance_three_way(_x, _y, _objects)
 	var _items = [_player_loc, _click_chk];
 	return _items;
 }
-
-
-function instance_place_three_way(_x, _y, _objects)
-{
-	if ( _x < 0 )
-	{
-		return instance_place(_x + room_width , _y, _objects);
-	} else if ( _x > room_width )
-	{
-		return instance_place(_x - room_width , _y, _objects);
-	} else
-	{
-		return instance_place(_x, _y, _objects);
-	}
-}

@@ -65,6 +65,7 @@ if ( is_eating == false )
 		if ( _sea_life.my_abilities == "Cleaner")
 		{
 			my_health = my_health + 1;
+			my_health = clamp(my_health,0,100);
 		}
 	}
 
