@@ -19,8 +19,8 @@ fs_checkbox.checked = FULL_SCREEN;
 sb_reso = new scroll_bar(_a[1,1].x, _a[1,1].y, supported_resolutions, 4);
 sb_reso.selected_index = global.RES_INDEX;
 
-music_slider 	= new slider_bar(_a[1,2].x,  _a[1,2].y);
-sfx_slider 		= new slider_bar(_a[1,3].x,  _a[1,3].y);
+music_slider 	= new slider_bar(_a[1,2].x,  _a[1,2].y, "Music Volume");
+sfx_slider 		= new slider_bar(_a[1,3].x,  _a[1,3].y, "Sound Effects Volume");
 
 ok_btn = new basic_button(_a[3,5].x,  _a[3,5].y, 100, 20, 0, "OK");
 
