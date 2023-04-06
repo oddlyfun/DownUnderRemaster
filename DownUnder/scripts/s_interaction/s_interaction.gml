@@ -381,7 +381,7 @@ function check_box(_x, _y, _text="") constructor
 }
 
 
-function slider_bar(_x=0,_y=0) constructor
+function slider_bar(_x=0,_y=0, name="None") constructor
 {
 	x = _x;
 	y = _y;
@@ -391,6 +391,7 @@ function slider_bar(_x=0,_y=0) constructor
 	amount = 1;
 	hover = false;
 	clicked = false;
+    slider_name = name;
 
 	static draw_me = function()
 	{
@@ -400,7 +401,7 @@ function slider_bar(_x=0,_y=0) constructor
 		draw_rectangle_color(x, y, x + width, y + height, _b,_b,_b,_b, true );
 		draw_rectangle_color(x, y, x + _color_width, y + height, _c,_c,_c,_c, false );
 
-		var _am = string( floor( amount * 100 ) );
+		var _am = slider_name + " : " + string( floor( amount * 100 ) );
 
 		draw_set_color(c_black);
 		draw_set_font(FONT);
