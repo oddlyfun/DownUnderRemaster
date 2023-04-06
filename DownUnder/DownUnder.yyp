@@ -115,7 +115,6 @@
     {"id":{"name":"o_mouse","path":"objects/o_mouse/o_mouse.yy",},},
     {"id":{"name":"spr_basic_button","path":"sprites/spr_basic_button/spr_basic_button.yy",},},
     {"id":{"name":"o_steam_manager","path":"objects/o_steam_manager/o_steam_manager.yy",},},
-    {"id":{"name":"_497198__abacagi__bubble_pops","path":"sounds/_497198__abacagi__bubble_pops/_497198__abacagi__bubble_pops.yy",},},
     {"id":{"name":"o_static_BG_life","path":"objects/o_static_BG_life/o_static_BG_life.yy",},},
     {"id":{"name":"spr_great_white_shark","path":"sprites/spr_great_white_shark/spr_great_white_shark.yy",},},
     {"id":{"name":"sfx_happy_click_2","path":"sounds/sfx_happy_click_2/sfx_happy_click_2.yy",},},

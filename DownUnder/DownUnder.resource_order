@@ -38,7 +38,6 @@
     {"name":"o_mouse","order":5,"path":"objects/o_mouse/o_mouse.yy",},
     {"name":"spr_basic_button","order":2,"path":"sprites/spr_basic_button/spr_basic_button.yy",},
     {"name":"o_steam_manager","order":9,"path":"objects/o_steam_manager/o_steam_manager.yy",},
-    {"name":"_497198__abacagi__bubble_pops","order":6,"path":"sounds/_497198__abacagi__bubble_pops/_497198__abacagi__bubble_pops.yy",},
     {"name":"sfx_happy_click_2","order":9,"path":"sounds/sfx_happy_click_2/sfx_happy_click_2.yy",},
     {"name":"o_game_mode_selector","order":4,"path":"objects/o_game_mode_selector/o_game_mode_selector.yy",},
     {"name":"spr_dotted_outline","order":3,"path":"sprites/spr_dotted_outline/spr_dotted_outline.yy",},
