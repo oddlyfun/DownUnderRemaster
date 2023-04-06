@@ -133,7 +133,6 @@
     {"name":"o_grass_03","order":2,"path":"objects/o_grass_03/o_grass_03.yy",},
     {"name":"grass_01","order":2,"path":"sprites/grass_01/grass_01.yy",},
     {"name":"o_sponge_79","order":4,"path":"objects/o_sponge_79/o_sponge_79.yy",},
-    {"name":"spr_fish_icons","order":3,"path":"sprites/spr_fish_icons/spr_fish_icons.yy",},
     {"name":"s_utils","order":3,"path":"scripts/s_utils/s_utils.yy",},
     {"name":"spr_clown_coris","order":5,"path":"sprites/spr_clown_coris/spr_clown_coris.yy",},
     {"name":"o_win_level","order":5,"path":"objects/o_win_level/o_win_level.yy",},
