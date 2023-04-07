@@ -1,4 +1,3 @@
-
 FULL_SCREEN = window_get_fullscreen();
 
 supported_resolutions = [
@@ -25,3 +24,8 @@ sfx_slider 		= new slider_bar(_a[1,3].x,  _a[1,3].y, "Sound Effects Volume");
 ok_btn = new basic_button(_a[3,5].x,  _a[3,5].y, 100, 20, 0, "OK");
 
 prev_mouse_y = mouse_y;
+
+
+
+music_slider.amount = global.MUSIC_GAIN;
+sfx_slider.amount = global.SFX_GAIN;
