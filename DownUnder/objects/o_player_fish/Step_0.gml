@@ -199,6 +199,14 @@ if ( global.LEVEL_OVER == false )
 				global.player_score = global.player_score + 1000;
 				instance_create_layer(0,0,"Exit_Menu",o_game_over);
 			}
+
+
+
+			// steam achievment stuff
+			if ( global.STEAM_API )
+			{
+				steam_fish_win(sprite_index);
+			}
 		}
 	}
 }
