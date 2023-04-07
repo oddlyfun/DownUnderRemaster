@@ -134,6 +134,15 @@ function load_game_settings()
 	var _str = buffer_read(_buffer, buffer_text);
 	buffer_delete(_buffer);
 	var data = json_parse(_str);
+
+    var _res_w = data.res_x;
+    var _res_h = data.res_y;
+    global.MUSIC_GAIN = data.music_gain;
+	global.SFX_GAIN = data.sfx_gain;
+	global.RES_INDEX = data.res_index;
+	window_set_size(_res_w, _res_h);
+	window_set_fullscreen(data.fullscreen);
+
 }
 
 function save_game_settings()
