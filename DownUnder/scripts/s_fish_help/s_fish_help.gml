@@ -267,3 +267,26 @@ function set_static_background_object_vars(_id)
 	my_notes				= _fish.notes;
 	my_scientific_name		= _fish.scientific_name;
 }
+
+
+function steam_fish_win(spr_index)
+{
+	var _name = sprite_get_name(spr_index);
+
+//string_split(string, delimiter, [remove_empty], [max_splits]);
+	_name = string_split(_name,"_");
+
+	var _ach_name = "ACHIEVE";
+
+	for ( var i = 1; i < array_length(_name); i++ )
+	{
+		var _str = _name[@ i];
+
+		_ach_name = _ach_name + "_" + _str;
+	}
+
+	if ( !steam_get_achievement(_ach_name) )
+	{
+		steam_set_achievement(_ach_name);
+	}
+}
