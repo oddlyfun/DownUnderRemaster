@@ -1,7 +1,7 @@
 randomize();
 global.GAME_FPS = 60;
 game_set_speed(global.GAME_FPS, gamespeed_fps);
-
+global.STEAM_API = false;
 window_set_cursor(cr_none);
 global.PAUSED = false;
 global.LEVEL_OVER = false;
