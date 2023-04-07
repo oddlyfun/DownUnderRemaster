@@ -40,7 +40,7 @@
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"food_ok","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"","varType":6,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"food_bad","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"","varType":6,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"my_tags","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":6,},
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"my_abilities","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"","varType":6,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"my_abilities","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"","varType":2,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"playable","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"False","varType":2,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"when_active","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"never","varType":2,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"my_notes","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"","varType":2,},
