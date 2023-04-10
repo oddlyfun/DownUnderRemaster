@@ -183,6 +183,7 @@
     {"id":{"name":"o_game_master","path":"objects/o_game_master/o_game_master.yy",},},
     {"id":{"name":"ro_how_to_play","path":"rooms/ro_how_to_play/ro_how_to_play.yy",},},
     {"id":{"name":"spr_title_screen_lay1","path":"sprites/spr_title_screen_lay1/spr_title_screen_lay1.yy",},},
+    {"id":{"name":"o_loading_screen","path":"objects/o_loading_screen/o_loading_screen.yy",},},
     {"id":{"name":"shd_gray_scale","path":"shaders/shd_gray_scale/shd_gray_scale.yy",},},
     {"id":{"name":"spr_CAF_2","path":"sprites/spr_CAF_2/spr_CAF_2.yy",},},
     {"id":{"name":"o_grass_04","path":"objects/o_grass_04/o_grass_04.yy",},},

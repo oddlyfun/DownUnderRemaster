@@ -1,20 +1,3 @@
-function draw_basic_button(_x, _y, b_width, b_height, state, text)
-{
-	draw_set_font(fnt_game);
-
-	var _spr_info = sprite_get_nineslice(spr_basic_button);
-	var _text_x_off = _x + _spr_info.left;
-	var _text_y_off = _y + _spr_info.top;
-	
-	var _height_mid = (((b_height -_spr_info.bottom) - _spr_info.top) / 2) - ( string_height(text) / 2 );
-	var _width_mid = (((b_width -_spr_info.right) - _spr_info.left) / 2) - ( string_width(text) / 2 );
-	
-	draw_sprite_stretched(spr_basic_button, state, _x, _y, b_width, b_height);
-
-	write_text(_text_x_off + _width_mid, _text_y_off + _height_mid,c_black,text)
-}
-
-
 function basic_button(_gx=0, _gy=0, _width=0, _height=0, _state=0, _text="") constructor
 {
     gx = _gx;
@@ -126,6 +109,8 @@ function scroll_bar(_x, _y, _item_list, _items_per_page) constructor
 	text_margin = 2;
 	text_height = string_height("Height");
 	mouse_hover_index = 0;
+	
+	select_disabled = false;
 
 //***********************************
 // 		Struct Parts
@@ -166,7 +151,7 @@ function scroll_bar(_x, _y, _item_list, _items_per_page) constructor
 	var _w = 0;
 	var _arl = array_length(item_list);
 	// Setting the width
-	for ( var i = 0; i < array_length(item_list); i++ )
+	for ( var i = 0; i < _arl; i++ )
 	{
 		var _string = item_list[@ i];
 		var _len = string_width(_string);
@@ -236,9 +221,13 @@ function scroll_bar(_x, _y, _item_list, _items_per_page) constructor
 			if ( _hover == true and bulb.clicked == false)
 			{
 				draw_sprite_stretched(spr_blue_highlight,0, _start_x, _start_y, width - text_margin, text_height);
-				write_text(_start_x, _start_y, c_white, _item);
 				
-				if ( mouse_check_button_released(mb_left) )
+				var _c = c_white;
+				if ( select_disabled == true ) then _c = c_gray;
+				
+				write_text(_start_x, _start_y, _c, _item);
+				
+				if ( mouse_check_button_released(mb_left) and select_disabled == false)
 				{
 					selected_index = _start_index;
 					toggle.state = false;
@@ -248,7 +237,9 @@ function scroll_bar(_x, _y, _item_list, _items_per_page) constructor
 				
 			} else
 			{
-				write_text(_start_x, _start_y, c_black, _item);
+				var _c = c_black;
+				if ( select_disabled == true ) then _c = c_gray;
+				write_text(_start_x, _start_y, _c, _item);
 			}
 			
 			

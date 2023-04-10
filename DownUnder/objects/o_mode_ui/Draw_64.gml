@@ -44,17 +44,13 @@ if ( sprite_exists(_sprite) )
 	}
 }
 
-
 drop_fishy.draw_me();
-
 
 //******************************************************************
 //
 // 							Right Panel
 //
 //******************************************************************
-
-// eats
 
 var _eat_string = "Eats: " 			+ _fish_info.eats_desc
 var _special_abilty = "Special: " 	+ _fish_info.ability

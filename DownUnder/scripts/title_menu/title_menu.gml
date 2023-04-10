@@ -34,8 +34,8 @@ function top_title_menu() constructor
 		{
 			var _header = top_items[@ i];
 			var _string_h = string_height(_header);
-			var _string_w = string_width(_header);
-			var _string_y = (_bar_h / 2) - (_string_h / 2);
+			var _string_w = floor( string_width(_header) );
+			var _string_y = floor( (_bar_h / 2) - (_string_h / 2) );
 
 			var _hover = gui_element_collision(_string_x, 0, _string_w, _bar_h);
 

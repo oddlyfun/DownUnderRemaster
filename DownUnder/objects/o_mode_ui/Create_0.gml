@@ -2,7 +2,6 @@ draw_set_font(FONT);
 fishy_list = [];
 drop_list = [];
 window_title = "";
-drop_disabled = true;
 
 
 switch ( global.GAME_MODE )
@@ -19,7 +18,6 @@ switch ( global.GAME_MODE )
 
 	case PRACTICE:
 		fishy_list = fishy_practice();
-		drop_disabled = false;
 		window_title = "Practice";
 	break;
 
@@ -95,3 +93,8 @@ btn_gap = 10;
 var _pos = panel_left_anchors[0][0];
 drop_fishy = new scroll_bar(_pos.x, _pos.y, drop_list, items_per_page);
 drop_fishy.set_width(panel_left_width - 20);
+
+if ( global.GAME_MODE == CHALLENGE or global.GAME_MODE == GAUNTLET )
+{
+	drop_fishy.select_disabled = true;
+}
