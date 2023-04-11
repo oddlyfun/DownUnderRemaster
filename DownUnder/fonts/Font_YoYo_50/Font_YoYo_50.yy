@@ -4,7 +4,7 @@
   "name": "Font_YoYo_50",
   "AntiAlias": 1,
   "applyKerning": 0,
-  "ascender": 0,
+  "ascender": 59,
   "ascenderOffset": 0,
   "bold": false,
   "canGenerateBitmap": true,
