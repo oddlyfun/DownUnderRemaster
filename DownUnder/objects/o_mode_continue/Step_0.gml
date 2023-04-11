@@ -64,9 +64,7 @@ if ( mouse_check_button_pressed(mb_left) )
 
 	if ( window_display.hover_close == true )
 	{
-		instance_create_layer(0,0,"Instances",o_game_mode_selector);
-		instance_destroy(id);
-		//show_debug_message("This isn't the title screen room");
+		room_goto(ro_title_screen);
 	}
 
 }
@@ -105,8 +103,7 @@ if ( mouse_check_button_released(mb_left) )
 		{
 			if ( i == 0 )
 			{
-				instance_destroy(id);
-				instance_create_layer(0,0,"Instances",o_game_mode_selector);
+				room_goto(ro_title_screen);
 			}
 			if ( i == 1 )
 			{
