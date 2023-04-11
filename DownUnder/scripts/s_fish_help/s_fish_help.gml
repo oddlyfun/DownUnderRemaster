@@ -5,8 +5,8 @@ function s_check_food(_fish, _target)
 	var _good = _fish.food_good;
 	var _ok = _fish.food_ok;
 	var _bad = _fish.food_bad;
-	var _clean = _fish.my_tags;
 
+	var _clean = _target.my_tags;
 	var _tar_id = _target.fish_id;
 	var _tar_size = _target.fish_size;
 
@@ -68,17 +68,19 @@ function s_check_food(_fish, _target)
 	if ( _is_bad == true )
 	{
 		_can_i_eat = false;
-		_eat_message = "Couldn't eat"
+		_eat_message = "Not on your menu"
 	} else if ( _is_good == true)
 	{
 		_can_i_eat = true;
 		_eat_message = "Yummy! Food!"
-	} 
-	
-	if ( _is_bad == false and _is_good == false and _is_ok == false )
+	} else if ( _is_ok == true )
+	{
+		_cal_i_eat = true;
+		_eat_message = "A tasty treat!"
+	} else if ( _is_bad == false and _is_good == false and _is_ok == false )
 	{
 		_can_i_eat = false;
-		_eat_message = "Not on your menu";
+		_eat_message = "You can't eat that!";
 	}
 
 
