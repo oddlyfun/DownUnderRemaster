@@ -75,7 +75,7 @@ function s_check_food(_fish, _target)
 		_eat_message = "Yummy! Food!"
 	} else if ( _is_ok == true )
 	{
-		_cal_i_eat = true;
+		_can_i_eat = true;
 		_eat_message = "A tasty treat!"
 	} else if ( _is_bad == false and _is_good == false and _is_ok == false )
 	{

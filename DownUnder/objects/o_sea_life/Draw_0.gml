@@ -22,7 +22,7 @@ draw_sprite_ext(sprite_index,image_index,x-room_width,y,facing_dir,1, direction-
 
 image_angle = direction;
 
-
+/*
 var _energy = state_ai._BRAIN_[@ ENERGY];
 var _health = state_ai._BRAIN_[@ HEALTH];
 var _threat = state_ai._BRAIN_[@ THREAT];
@@ -42,3 +42,4 @@ write_text(x,y+20,_c,	"P: " + string( _player) );
 write_text(x,y+30,_c,	"T: " + string( _threat) );
 write_text(x,y+40,_c,	"S: " + string( _swim) );
 write_text(x,y+50,_c,	"S: " + _string );
+*/
