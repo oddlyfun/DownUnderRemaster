@@ -4,15 +4,9 @@ var _height = display_get_gui_height();
 var _start_y = _height - BAR_SIZE;
 var _player = instance_nearest(x,y,o_player_fish);
 var _mouse = instance_nearest(x,y,o_mouse);
-// I want it to look like an old school game and have a basic bottom bar
-
-// bottom bar colors from Odell
-// Look at that its freakin grey!
-
 
 draw_rectangle_color(0, _start_y, _width, _height, BAR_BG, BAR_BG, BAR_BG,BAR_BG, false );
 draw_line_color(0, _start_y - 1, _width, _start_y - 1, c_black, c_black);
-
 
 //*********************************************************************************************************
 //
@@ -42,7 +36,7 @@ draw_set_color(c_black);
 var _energy_txt = "ENERGY: "
 var _health_txt = "HEALTH: "
 
-var _hpbar_start_x = floor(_width * 0.35);
+var _hpbar_start_x = floor(_width * 0.45);
 
 draw_text(_hpbar_start_x - string_width(_energy_txt), _start_y + 1, _energy_txt);
 draw_text(_hpbar_start_x - string_width(_health_txt), _start_y + string_height(_energy_txt) + 1, _health_txt);
