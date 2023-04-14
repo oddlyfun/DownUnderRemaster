@@ -8,6 +8,7 @@ eating_zone = 0;
 energy_recovery = 12;
 my_score = 0;
 facing_dir = 1;
+prev_facing = facing_dir;
 is_dead = false;
 ability_active = false;
 
