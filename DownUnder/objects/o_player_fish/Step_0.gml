@@ -131,6 +131,7 @@ if ( is_eating == true )
 			my_energy = my_energy + energy_recovery;
 			my_energy = clamp(my_energy,0, 100);
 			my_score = my_score + 500;
+			audio_play_sound(sfx_being_eaten, 1, false, global.SFX_GAIN);
 
 			var _nibble = false;
 			for ( var n = 0; n < array_length(my_tags); n++)
@@ -151,15 +152,6 @@ if ( is_eating == true )
 		speed = swim_speed;
 	}
 }
-
-// floor causing movement issues
-//x = round(x);
-//y = round(y);
-
-
-// check for dying 
-
-
 
 
 if ( global.LEVEL_OVER == false ) 
@@ -197,10 +189,11 @@ if ( global.LEVEL_OVER == false )
 			{
 				// Actually BEAT challenge or gauntlet mode
 				global.player_score = global.player_score + 1000;
-				instance_create_layer(0,0,"Exit_Menu",o_game_over);
+				instance_create_layer(0,0,"Exit_Menu",o_game_over, 
+				{
+					default_text : fish_name
+				});
 			}
-
-
 
 			// steam achievment stuff
 			if ( global.STEAM_API )
