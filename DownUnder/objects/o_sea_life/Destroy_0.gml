@@ -1,0 +1,1 @@
+instance_create_layer(x,y,"Exit_Menu",o_aargh);

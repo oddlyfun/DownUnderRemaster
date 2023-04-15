@@ -10,10 +10,10 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 1.32322,
+  "duration": 0.584467,
   "parent": {
-    "name": "SFX",
-    "path": "folders/Sounds/SFX.yy",
+    "name": "DownUnder",
+    "path": "DownUnder.yyp",
   },
   "preload": false,
   "sampleRate": 44100,
