@@ -32,5 +32,5 @@
     "path": "sprites/spr_cam_help/spr_cam_help.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

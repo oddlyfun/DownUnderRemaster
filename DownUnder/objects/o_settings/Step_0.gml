@@ -1,26 +1,32 @@
 var _screen_width = window_get_width();
 var _screen_height = window_get_height();
 
-my_window.check_close_hover();
-fs_checkbox.check_hover();
-
-music_slider.check_hover();
-sfx_slider.check_hover();
-
-music_slider.clicked_on();
-sfx_slider.clicked_on();
-
-music_slider.adjust_amount();
-sfx_slider.adjust_amount();
-
-music_slider.lose_focus();
-sfx_slider.lose_focus();
-
-ok_btn.check_hover();
-
 sb_reso.toggle_click_check();
 sb_reso.bulb_click_checks();
 sb_reso.move_bulb(mouse_y - prev_mouse_y);
+
+
+if ( sb_reso.toggle.state == false )
+{
+	my_window.check_close_hover();
+	fs_checkbox.check_hover();
+
+	music_slider.check_hover();
+	sfx_slider.check_hover();
+
+	music_slider.clicked_on();
+	sfx_slider.clicked_on();
+
+	music_slider.adjust_amount();
+	sfx_slider.adjust_amount();
+
+	music_slider.lose_focus();
+	sfx_slider.lose_focus();
+}
+
+ok_btn.check_hover();
+
+
 
 if ( mouse_check_button_released(mb_left) )
 {
@@ -44,6 +50,7 @@ if ( mouse_check_button_released(mb_left) )
 		global.SFX_GAIN = sfx_slider.amount;
 		global.RES_INDEX = sb_reso.selected_index;
 		save_game_settings();
+		room_goto(ro_start_screen);
 	}
 
 

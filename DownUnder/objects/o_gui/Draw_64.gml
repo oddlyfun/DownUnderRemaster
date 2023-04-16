@@ -128,5 +128,10 @@ if ( _player != noone )
 		_score_string = "Score: " + string(global.player_score);
 	}
 	
-	draw_text(_score_x, _score_y, _score_string);
+	if ( global.GAME_MODE != PRACTICE ) {
+		draw_text(_score_x, _score_y, _score_string);
+	} else
+	{
+		draw_text(_score_x, _score_y, "Practice Mode");
+	}
 }

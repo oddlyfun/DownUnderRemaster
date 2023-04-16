@@ -13,23 +13,19 @@ function draw_a_message(_x, _y, _struct, _alpha, _width, _height)
 {
 	draw_set_font(FONT);
 	
+	//draw_sprite_stretched_ext(spr_popup,0, _x, _y, _width, _height, c_white, _alpha);
 	
-	
-	draw_sprite_stretched_ext(spr_popup,0, _x, _y, _width, _height, c_white, _alpha);
-
-
 	var _msg = _struct.msg;
 	var _typ = _struct.typ;
 	
-	var _begin_msg_y = 20 + _y;
-	var _begin_msg_x = 4 + _x;
 	
 	draw_set_alpha(_alpha);
 		draw_set_color(c_white);
-		//title
-		//draw_text(_x + 4, _y + 4, _typ);
-		draw_text_transformed(_x + 4, _y + 4, _typ, 0.5, 0.5, 0);
-		draw_set_color(c_black);
-		draw_text(_begin_msg_x + 4, _begin_msg_y + 2, _msg);
+		var _xx = _x + 4;
+		var _yy = _y + 4;
+		var _sh = string_height(_msg);
+		
+		draw_text_transformed(_xx, _yy, _typ, 1, 1, 0);
+		draw_text(_xx + 6, _yy + _sh, _msg);
 	draw_set_alpha(1);
 }

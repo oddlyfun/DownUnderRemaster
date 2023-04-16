@@ -108,7 +108,7 @@ function scroll_bar(_x, _y, _item_list, _items_per_page) constructor
 	selected_index = 0;
 	text_margin = 2;
 	text_height = string_height("Height");
-	mouse_hover_index = 0;
+	//mouse_hover_index = 0;
 	
 	select_disabled = false;
 
@@ -387,16 +387,20 @@ function slider_bar(_x=0,_y=0, name="None") constructor
 	static draw_me = function()
 	{
 		var _b = c_black;
+		var _w = c_white;
 		var _c = make_color_rgb(104,247,72);
 		var _color_width = width * amount;
-		draw_rectangle_color(x, y, x + width, y + height, _b,_b,_b,_b, true );
+		draw_rectangle_color(x-1, y-1, x + width + 1, y + height + 1, _b,_b,_b,_b, false );
+		draw_rectangle_color(x, y, x + width, y + height, _w,_w,_w,_w, false );
 		draw_rectangle_color(x, y, x + _color_width, y + height, _c,_c,_c,_c, false );
 
 		var _am = slider_name + " : " + string( floor( amount * 100 ) );
-
+		var _text_x = floor( x + (width / 2 ) - ( string_width(_am) / 2 ) );
+		var _text_y = floor( y + (height / 2 ) - ( string_height(_am) / 2 ) );
+		
 		draw_set_color(c_black);
 		draw_set_font(FONT);
-		draw_text(x + (width/2), y , _am );
+		draw_text(_text_x , _text_y , _am );
 		
 	}
 

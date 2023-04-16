@@ -143,6 +143,9 @@ if ( is_eating == true )
 			{
 				instance_destroy(eating_target);
 			}
+		} else if ( _was_eaten.edible == false )
+		{
+			audio_play_sound(sfx_bad_click,1,false,global.SFX_GAIN);
 		}
 		add_message(_was_eaten.msg, _was_eaten.fish_name);
 		eating_target = noone;

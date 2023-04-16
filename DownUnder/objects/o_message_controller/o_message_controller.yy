@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "In Game",
-    "path": "folders/Objects/UI/In Game.yy",
+    "name": "Controllers",
+    "path": "folders/Objects/Controllers.yy",
   },
   "parentObjectId": null,
   "persistent": false,

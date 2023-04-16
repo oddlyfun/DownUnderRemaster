@@ -12,8 +12,8 @@
   "conversionMode": 0,
   "duration": 0.584467,
   "parent": {
-    "name": "DownUnder",
-    "path": "DownUnder.yyp",
+    "name": "SFX",
+    "path": "folders/Sounds/SFX.yy",
   },
   "preload": false,
   "sampleRate": 44100,

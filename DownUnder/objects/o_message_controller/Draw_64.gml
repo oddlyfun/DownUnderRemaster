@@ -6,7 +6,7 @@ if ( _near != noone )
 	var _above_bot_bar =  display_get_gui_height() - _near.BAR_SIZE 
 	
 	var _size = ds_list_size(message_list);
-	var _h = 50;
+	var _h = 25;
 	var _w = 160;
 	
 	var _start_y = _above_bot_bar - _h;
