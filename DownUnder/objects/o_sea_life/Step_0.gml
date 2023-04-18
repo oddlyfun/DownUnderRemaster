@@ -54,7 +54,7 @@ if ( frozen == false )
 	switch _largest_index
 	{
 //******************************************************************************
-//			Eating Some FISHY
+//							Eating Some FISHY
 //******************************************************************************
 		case ENERGY:
 			var _meals = state_ai._HUNGER_;
@@ -104,6 +104,12 @@ if ( frozen == false )
 						}
 					}
 
+				} else
+				{
+					if ( random(1) >= 0.50 )
+					{
+						meal_target.forzen = true;
+					}
 				}
 			}
 		break;
@@ -196,4 +202,7 @@ if ( frozen == false )
 	
 	my_energy = clamp(my_energy,0,100);
 	my_health = clamp(my_health,0,100);
+} else if ( frozen == true )
+{
+	speed = 0;
 }
