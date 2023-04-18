@@ -202,7 +202,7 @@ function state_machine(_fish_brain)
 //				Base line action to swim				
 //
 //****************************************************************************
-	fish_brain[@ SWIM] = 0.85 //Base line activity of just swiming around [?wont interrupt if already moving?]
+	fish_brain[@ SWIM] = 0.65 //Base line activity of just swiming around [?wont interrupt if already moving?]
 
 //****************************************************************************
 //
