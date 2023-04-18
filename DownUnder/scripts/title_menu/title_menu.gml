@@ -75,6 +75,7 @@ function top_title_menu() constructor
 //							Sub Items Displayed
 //
 //****************************************************************************************
+				var _on_sub_menu = false;
 				for ( var z = 0; z < array_length(_sub); z++ )
 				{
 					var _sub_text = _sub[@ z];
@@ -85,6 +86,7 @@ function top_title_menu() constructor
 					{
 						write_text(_sub_x+2, _sub_y+2, c_white, _sub_text);
 						item_pick = _sub_text;
+						_on_sub_menu = true;
 					} else {
 						write_text(_sub_x+2, _sub_y+2, _blk, _sub_text);
 					}
@@ -94,7 +96,7 @@ function top_title_menu() constructor
 				}
 				
 				
-				if ( mouse_check_button_released(mb_left) )
+				if ( mouse_check_button_released(mb_left) and _on_sub_menu == true )
 				{
 					title_menu_choice(item_pick);
 				}
@@ -110,8 +112,6 @@ function top_title_menu() constructor
 		{
 			toggle_item = top_level_hover;
 		}
-
-
 
 
 	}
