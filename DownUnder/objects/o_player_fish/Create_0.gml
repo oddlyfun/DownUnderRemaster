@@ -11,6 +11,7 @@ facing_dir = 1;
 prev_facing = facing_dir;
 is_dead = false;
 ability_active = false;
+y_scale = 1;
 
 frame = 0;
 
