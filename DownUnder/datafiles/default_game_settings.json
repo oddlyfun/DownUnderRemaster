@@ -1,7 +1,7 @@
 {
-    "res_x"       : 640,
-    "res_y"       : 360,
-    "res_index"   : 0,
+    "res_x"       : 1280,
+    "res_y"       : 720,
+    "res_index"   : 1,
     "music_gain"  : 1,
     "sfx_gain"    : 1,
     "fullscreen"  : false
