@@ -106,10 +106,7 @@ if ( frozen == false )
 
 				} else
 				{
-					if ( random(1) >= 0.50 )
-					{
-						meal_target.forzen = true;
-					}
+					meal_target.frozen = true;
 				}
 			}
 		break;
