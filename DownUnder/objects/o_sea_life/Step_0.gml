@@ -203,3 +203,8 @@ if ( frozen == false )
 {
 	speed = 0;
 }
+
+if ( my_energy <= 0 or my_health <= 0)
+{
+	instance_destroy(id);
+}
