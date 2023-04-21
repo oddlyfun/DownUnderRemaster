@@ -4,5 +4,6 @@
     "res_index"   : 1,
     "music_gain"  : 1,
     "sfx_gain"    : 1,
+    "first_run"   : true,
     "fullscreen"  : false
 }
