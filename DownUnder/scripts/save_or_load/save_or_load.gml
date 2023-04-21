@@ -140,6 +140,7 @@ function load_game_settings()
     global.MUSIC_GAIN = data.music_gain;
 	global.SFX_GAIN = data.sfx_gain;
 	global.RES_INDEX = data.res_index;
+	global.FIRST_LOAD = data.first_run;
 	window_set_size(_res_w, _res_h);
 	window_set_fullscreen(data.fullscreen);
 
@@ -155,6 +156,7 @@ function save_game_settings()
 		res_index : global.RES_INDEX,
 		music_gain : global.MUSIC_GAIN,
 		sfx_gain : global.SFX_GAIN,
+		first_run : global.FIRST_LOAD,
 		fullscreen : window_get_fullscreen()
 	}
 
