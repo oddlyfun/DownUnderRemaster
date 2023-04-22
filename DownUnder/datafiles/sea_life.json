@@ -1501,7 +1501,10 @@
       "74",
       "60",
       "76",
-      "68"
+      "68",
+      "63",
+      "66",
+      "58"
     ],
     "food_ok": "",
     "food_bad": "",
@@ -1931,7 +1934,7 @@
   "61": {
     "full_name": "Brittle Star",
     "size": "NA",
-    "sprite_name": "spr_starfish",
+    "sprite_name": "spr_brittlestar",
     "avg_size_inch": "24",
     "avg_size_cm": "60.96",
     "health_rate": "80",

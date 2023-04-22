@@ -12,6 +12,7 @@ global.GAME_SETTINGS_FILENAME = "game_settings.json";
 global.MUSIC_GAIN = 1;
 global.SFX_GAIN = 1;
 global.RES_INDEX = 0;
+global.FIRST_LOAD = true;
 load_game_settings();
 
 // loading the sea life json data

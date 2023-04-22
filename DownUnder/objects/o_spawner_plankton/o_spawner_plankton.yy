@@ -1,19 +1,20 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "o_loading_screen",
+  "name": "o_spawner_plankton",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Controllers",
-    "path": "folders/Objects/Controllers.yy",
+    "name": "Spawners",
+    "path": "folders/Objects/Spawners.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "o_spawner_fish",
+    "path": "objects/o_spawner_fish/o_spawner_fish.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -30,9 +31,9 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_loading_text",
-    "path": "sprites/spr_loading_text/spr_loading_text.yy",
+    "name": "spr_spawner_plankton",
+    "path": "sprites/spr_spawner_plankton/spr_spawner_plankton.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }
