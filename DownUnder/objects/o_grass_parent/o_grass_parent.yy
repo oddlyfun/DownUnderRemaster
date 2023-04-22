@@ -1,18 +1,17 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "o_grass_00",
-  "eventList": [],
+  "name": "o_grass_parent",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
     "name": "Animated Background",
     "path": "folders/Objects/Animated Background.yy",
   },
-  "parentObjectId": {
-    "name": "o_grass_parent",
-    "path": "objects/o_grass_parent/o_grass_parent.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -28,10 +27,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "grass_00",
-    "path": "sprites/grass_00/grass_00.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

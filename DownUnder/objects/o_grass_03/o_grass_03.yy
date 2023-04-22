@@ -9,7 +9,10 @@
     "name": "Animated Background",
     "path": "folders/Objects/Animated Background.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "o_grass_parent",
+    "path": "objects/o_grass_parent/o_grass_parent.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

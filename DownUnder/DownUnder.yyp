@@ -143,6 +143,7 @@
     {"id":{"name":"spr_title_screen_BG","path":"sprites/spr_title_screen_BG/spr_title_screen_BG.yy",},},
     {"id":{"name":"spr_redtooth_triggerfish","path":"sprites/spr_redtooth_triggerfish/spr_redtooth_triggerfish.yy",},},
     {"id":{"name":"sfx_bubble_single","path":"sounds/sfx_bubble_single/sfx_bubble_single.yy",},},
+    {"id":{"name":"o_grass_parent","path":"objects/o_grass_parent/o_grass_parent.yy",},},
     {"id":{"name":"o_exit_menu","path":"objects/o_exit_menu/o_exit_menu.yy",},},
     {"id":{"name":"music_please_wake_up","path":"sounds/music_please_wake_up/music_please_wake_up.yy",},},
     {"id":{"name":"spr_radial_button","path":"sprites/spr_radial_button/spr_radial_button.yy",},},
