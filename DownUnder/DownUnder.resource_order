@@ -1,9 +1,9 @@
 {
   "FolderOrderSettings": [
+    {"name":"Ability","order":11,"path":"folders/Sounds/SFX/Ability.yy",},
     {"name":"Alternative","order":1,"path":"folders/Sprites/background/Alternative.yy",},
     {"name":"Animated","order":2,"path":"folders/Sprites/background/Animated.yy",},
     {"name":"Steamworks","order":2,"path":"folders/Steamworks.yy",},
-    {"name":"Ability","order":11,"path":"folders/Sounds/SFX/Ability.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"grass_04","order":5,"path":"sprites/grass_04/grass_04.yy",},
@@ -83,6 +83,7 @@
     {"name":"spr_football_trout","order":2,"path":"sprites/spr_football_trout/spr_football_trout.yy",},
     {"name":"spr_yellowspot_emperor","order":18,"path":"sprites/spr_yellowspot_emperor/spr_yellowspot_emperor.yy",},
     {"name":"spr_oriental_sweetlip","order":5,"path":"sprites/spr_oriental_sweetlip/spr_oriental_sweetlip.yy",},
+    {"name":"ro_how_to_play","order":8,"path":"rooms/ro_how_to_play/ro_how_to_play.yy",},
     {"name":"o_message_controller","order":11,"path":"objects/o_message_controller/o_message_controller.yy",},
     {"name":"spr_CAF_8","order":2,"path":"sprites/spr_CAF_8/spr_CAF_8.yy",},
     {"name":"spr_giant_grouper","order":1,"path":"sprites/spr_giant_grouper/spr_giant_grouper.yy",},
@@ -90,7 +91,7 @@
     {"name":"spr_moorish_idol","order":10,"path":"sprites/spr_moorish_idol/spr_moorish_idol.yy",},
     {"name":"o_settings","order":6,"path":"objects/o_settings/o_settings.yy",},
     {"name":"o_game_master","order":2,"path":"objects/o_game_master/o_game_master.yy",},
-    {"name":"ro_how_to_play","order":7,"path":"rooms/ro_how_to_play/ro_how_to_play.yy",},
+    {"name":"ro_loading_screen","order":7,"path":"rooms/ro_loading_screen/ro_loading_screen.yy",},
     {"name":"spr_title_screen_lay1","order":4,"path":"sprites/spr_title_screen_lay1/spr_title_screen_lay1.yy",},
     {"name":"o_loading_screen","order":10,"path":"objects/o_loading_screen/o_loading_screen.yy",},
     {"name":"shd_gray_scale","order":1,"path":"shaders/shd_gray_scale/shd_gray_scale.yy",},
