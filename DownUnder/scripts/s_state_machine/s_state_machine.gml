@@ -182,7 +182,7 @@ function state_machine(_fish_brain)
 			for ( var i = 0; i < array_length(_arr); i++ )
 			{
 				var _dist = _arr[@ i];
-				if ( _dist <= 200 )
+				if ( _dist <= 100 )
 				{
 					_hunt_player = 1;
 					break;
@@ -194,7 +194,7 @@ function state_machine(_fish_brain)
 	if ( _player.ability_active == true ) then _hunt_player = _hunt_player / 2;
 
 	// Turned this off for testing
-	fish_brain[@ PLAYER] = 0; //_hunt_player;
+	fish_brain[@ PLAYER] = _hunt_player;
 
 
 //****************************************************************************

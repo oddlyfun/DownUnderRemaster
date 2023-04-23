@@ -108,10 +108,40 @@ if ( is_eating == false )
 			if ( my_abilities == "Inflating")
 			{
 				y_scale = y_scale + 0.05;
-				
 			}
 			my_energy = my_energy - (_energy_redux * 0.10)
 		}
+		
+		if ( ability_on != ability_active )
+		{
+			if ( ability_active == true )
+			{
+				audio_play_sound(sfx_ability_on,10,false, global.SFX_GAIN);
+			} else if ( ability_active == false )
+			{
+				audio_play_sound(sfx_ability_off,10,false,global.SFX_GAIN);
+			}
+			ability_on = ability_active;
+			
+			
+			
+			if ( ability_on == true and my_abilities == "Squirt Ink" )
+			{
+				instance_create_layer(x,y,"Ability", o_ink_squirt, {
+					inst_attch : id
+				});	
+			} else if ( ability_on == false and my_abilities == "Squirt Ink" )
+			{
+				with ( o_ink_squirt )
+				{
+					instance_destroy();
+				}
+			}
+			
+			
+		}
+		
+
 	}
 
 	if ( ability_active == false and y_scale > 1 )
@@ -120,10 +150,15 @@ if ( is_eating == false )
 	}
 
 	y_scale = clamp(y_scale,1,2);
-
-
 }
 
+
+
+
+
+//******************************************************************
+//				Eating Food
+//******************************************************************
 
 if ( is_eating == true )
 {

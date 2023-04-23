@@ -27,3 +27,12 @@ if ( fish_id == 81 )
 {
 	draw_sprite_ext(sprite_index,image_index,x,y,facing_dir, y_scale, direction-_correction,c_white,1);
 }
+
+
+
+// Squirt Ability
+
+//if ( ability_on == true and my_abilities == "Squirt Ink" )
+//{
+//	draw_sprite_ext(spr_shoot_ink,)
+//}

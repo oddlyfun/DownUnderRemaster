@@ -182,6 +182,17 @@ if ( frozen == false )
 //							Chase the player
 //******************************************************************************
 		case PLAYER:
+			show_debug_message("Targting Player");
+			var _player = instance_nearest(x,y, o_player_fish);
+			if ( instance_exists(_player) )
+			{
+				direction = point_direction(x,y, _player.x, _player.y);
+				var _dist_to_player = distance_to_object(_player);
+				if ( _dist_to_player <= 5 )
+				{
+					_player.my_health = 0;
+				}
+			}
 		break;
 		
 	}

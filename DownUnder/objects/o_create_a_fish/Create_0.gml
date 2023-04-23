@@ -45,6 +45,7 @@ ability_list = [
 	"Sharp Spines",
 	"Electric Shock",
 	"Tail Stinger",
+	"Inflating",
 	"Squirt Ink"
 ];
 
