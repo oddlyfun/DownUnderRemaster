@@ -2,7 +2,7 @@ gui_w = display_get_gui_width();
 gui_h = display_get_gui_height();
 
 my_title = "Fish Finished";
-win_width = string_width(my_title) + 10;
+win_width = string_width(my_title) + 40;
 
 
 win_window = new window_popup(win_width,40,my_title,2,false);
