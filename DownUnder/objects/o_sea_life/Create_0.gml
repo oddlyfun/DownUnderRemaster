@@ -28,6 +28,7 @@ energy_value = real(energy_value);
 turn_speed = real(turn_speed);
 
 facing_dir = 1;
+attack_player = false;
 
 // ******
 //

@@ -57,6 +57,7 @@ if ( frozen == false )
 //							Eating Some FISHY
 //******************************************************************************
 		case ENERGY:
+			attack_player = false;
 			var _meals = state_ai._HUNGER_;
 			if ( !instance_exists(meal_target) )
 			{
@@ -114,6 +115,7 @@ if ( frozen == false )
 //							Just Keep Swiming
 //******************************************************************************
 		case SWIM:
+			attack_player = false;
 			if ( is_swiming == false )
 			{
 				state_ai._SWIM_.x = irandom_range(0,room_width);
@@ -136,6 +138,7 @@ if ( frozen == false )
 //							Run Away
 //******************************************************************************
 		case THREAT:
+			attack_player = false;
 			var _run = state_ai._RUNAWAY_;
 			var _len_run = array_length(_run);
 			var _avg_dir = 0;
@@ -160,6 +163,7 @@ if ( frozen == false )
 //							Find a Cleaner fish
 //******************************************************************************
 		case HEALTH:
+			attack_player = false;
 			var _clean = state_ai._HEALTH_;
 			if ( array_length(_clean) > 0 )
 			{
@@ -182,15 +186,35 @@ if ( frozen == false )
 //							Chase the player
 //******************************************************************************
 		case PLAYER:
-			show_debug_message("Targting Player");
+			if ( attack_player == false )
+			{ 
+				var _dir = point_direction(x,y, o_player_fish.x, o_player_fish.y)
+				var _xl = floor( x + lengthdir_x(sprite_width / 2, _dir) );
+				var _yl = floor( y + lengthdir_y(sprite_width / 2, _dir) );
+				instance_create_layer(_xl, _yl, "Ability", o_alert);
+				attack_player = true;	
+			}
+			
+			var _nibble = false;
+			var _cleaner = false;
+			for ( var n = 0; n < array_length(my_tags); n++)
+			{
+				if ( my_tags[@ n] == "nibble") then _nibble = true;
+				if ( my_tags[@ n] == "cleaner") then _cleaner = true;
+			}
+			
+			
 			var _player = instance_nearest(x,y, o_player_fish);
 			if ( instance_exists(_player) )
 			{
 				direction = point_direction(x,y, _player.x, _player.y);
-				var _dist_to_player = distance_to_object(_player);
-				if ( _dist_to_player <= 5 )
+				var _dist_to_player = point_distance(x,y, _player.x, _player.y);
+				if ( _dist_to_player <= 4 )
 				{
-					_player.my_health = 0;
+					if ( _nibble == false and _cleaner == false )
+					{
+						_player.my_health = 0;
+					}
 				}
 			}
 		break;

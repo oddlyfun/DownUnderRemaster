@@ -21,3 +21,12 @@ pre_load_array = [
 main_index = 0;
 sub_index = 0;
 finished_loading = false;
+
+items_loaded = 0;
+sum_of_lists = 1;
+
+for ( var i = 0; i < array_length(pre_load_array); i++ )
+{
+	var _list = pre_load_array[@ i];
+	sum_of_lists = sum_of_lists + array_length(_list);
+}

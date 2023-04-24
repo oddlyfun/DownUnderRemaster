@@ -84,8 +84,8 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "DownUnder",
-    "path": "DownUnder.yyp",
+    "name": "Animated",
+    "path": "folders/Sprites/background/Animated.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

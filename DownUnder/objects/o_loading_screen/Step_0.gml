@@ -16,6 +16,8 @@ if ( finished_loading == false )
 		sub_index = 0;
 	}
 	
+	items_loaded++;
+	
 } else if ( finished_loading == true )
 {
 	if ( global.FIRST_LOAD == false )

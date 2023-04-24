@@ -10,6 +10,7 @@ my_score = 0;
 facing_dir = 1;
 prev_facing = facing_dir;
 is_dead = false;
+is_hidden = false;
 ability_active = false;
 y_scale = 1;
 
