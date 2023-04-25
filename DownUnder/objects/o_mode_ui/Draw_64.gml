@@ -62,6 +62,51 @@ draw_set_font(FONT);
 
 _anchor = panel_right_anchors[0][0];
 draw_text_wrap(_anchor.x, _anchor.y, _anchor.x + panel_right_width, -1, _eat_string);
+
+_anchor = panel_right_anchors[0][1];
+var _preview = _fish.info.food_preview; // an array of IDs
+
+var _food_x = _anchor.x;
+var _food_y = _anchor.y;
+for ( var i = 0; i < array_length(_preview); i++ )
+{
+	var _food = _preview[@ i]; // a string
+	_food = global.all_life[$ _food]; // struct
+	var _pre_size = 24;
+	var _food_sprite = asset_get_index(_food.sprite_name);
+	var _c = c_black;
+	draw_rectangle_colour(_food_x - 1, _food_y - 1, 
+		_food_x + _pre_size + 1, _food_y + _pre_size + 1, 
+		_c, _c, _c, _c, false);
+
+	if ( sprite_exists(_food_sprite) )
+	{
+		var _sw = sprite_get_width(_food_sprite);
+		var _sh = sprite_get_height(_food_sprite);
+
+		var _left = sprite_get_width(_food_sprite) - _pre_size;
+		var _top = floor ( (sprite_get_height(_food_sprite) / 2)  - (_pre_size / 2) );
+		var _wid = _pre_size;
+		var _hei = _pre_size;
+
+		if ( _sw < _pre_size )
+		{
+			_left = 0;
+			_wid = _sw;
+		}
+
+		if ( _sh < _pre_size ) 
+		{
+			 _top = 0; 
+			 _hei = _sh;
+		}
+
+		draw_sprite_part(_food_sprite, 0, _left, _top, _wid, _hei, _food_x, _food_y);
+	}
+
+	_food_x + _food_x + _pre_size + 4;
+}
+
 draw_text_anchor(panel_right_anchors[0][2], _special_abilty);
 draw_text_anchor(panel_right_anchors[0][3], _depth_info);
 
