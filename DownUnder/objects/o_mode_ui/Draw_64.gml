@@ -64,10 +64,10 @@ _anchor = panel_right_anchors[0][0];
 draw_text_wrap(_anchor.x, _anchor.y, _anchor.x + panel_right_width, -1, _eat_string);
 
 _anchor = panel_right_anchors[0][1];
-var _preview = _fish.info.food_preview; // an array of IDs
+var _preview = _fish_info.food_preview; // an array of IDs
 
 var _food_x = _anchor.x;
-var _food_y = _anchor.y;
+var _food_y = _anchor.y - 8;
 for ( var i = 0; i < array_length(_preview); i++ )
 {
 	var _food = _preview[@ i]; // a string
@@ -104,7 +104,7 @@ for ( var i = 0; i < array_length(_preview); i++ )
 		draw_sprite_part(_food_sprite, 0, _left, _top, _wid, _hei, _food_x, _food_y);
 	}
 
-	_food_x + _food_x + _pre_size + 4;
+	_food_x = _food_x + _pre_size + 4;
 }
 
 draw_text_anchor(panel_right_anchors[0][2], _special_abilty);

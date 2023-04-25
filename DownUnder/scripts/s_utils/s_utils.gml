@@ -3,8 +3,8 @@ function draw_text_wrap(_x, _y, r_bound, _height, _words)
 	//draw_set_color(c_black);
 	draw_set_font(global.fnt_spr_small);
 
-	var _top_buffer = 4;
-	var _right_buffer = 4;
+	var _top_buffer = 0;
+	var _right_buffer = 0;
 
 	_x = _x + _right_buffer;
 	_y = _y + _top_buffer;
@@ -226,6 +226,6 @@ function timer_format(_time)
 	}
 
 
-	var _time_string = string(format_min) + " : " + format_sec;
+	var _time_string = string(format_min) + ":" + format_sec;
 	return _time_string;
 }

@@ -17,6 +17,10 @@
       "L",
       "EL"
     ],
+    "food_preview": [
+      "65",
+      "77"
+    ],
     "food_good": [
       "65",
       "77"
@@ -49,6 +53,10 @@
       "L",
       "EL"
     ],
+    "food_preview": [
+      "69",
+      "76"
+    ],
     "food_good": [
       "69",
       "76"
@@ -56,7 +64,7 @@
     "food_ok": "",
     "food_bad": "",
     "tags": "",
-    "ability": "",
+    "ability": "Sharp Spines",
     "playable": "Y",
     "active": "ANYTIME",
     "scientific_name": "Scolopsis lineata",
@@ -79,10 +87,16 @@
       "5",
       "EL"
     ],
+    "food_preview": [
+      "17",
+      "27",
+      "34"
+    ],
     "food_good": [
       "S",
       "M",
-      "L"
+      "ES",
+      "MS"
     ],
     "food_ok": "ES",
     "food_bad": "",
@@ -109,6 +123,11 @@
     "enemies": [
       "L",
       "EL"
+    ],
+    "food_preview": [
+      "78",
+      "75",
+      "68"
     ],
     "food_good": [
       "75",
@@ -142,6 +161,11 @@
     "turn_speed": "1",
     "eats_desc": "Smaller Fish, including puffers and electric rays",
     "enemies": "EL",
+    "food_preview": [
+      "41",
+      "21",
+      "19"
+    ],
     "food_good": [
       "S",
       "MS",
@@ -149,7 +173,8 @@
       "ML",
       "MS",
       "63",
-      "66"
+      "66",
+      "L"
     ],
     "food_ok": "",
     "food_bad": "",
@@ -179,6 +204,11 @@
       "ML",
       "L"
     ],
+    "food_preview": [
+      "63",
+      "74",
+      "60"
+    ],
     "food_good": [
       "63",
       "74",
@@ -187,7 +217,7 @@
     "food_ok": "69",
     "food_bad": "",
     "tags": "",
-    "ability": "",
+    "ability": "Hide",
     "playable": "Y",
     "active": "ANYTIME",
     "scientific_name": "Neoniphon sammara",
@@ -212,9 +242,15 @@
       "ML",
       "L"
     ],
+    "food_preview": [
+      "74",
+      "76",
+      "34"
+    ],
     "food_good": [
       "74",
-      "ES"
+      "ES",
+      "76"
     ],
     "food_ok": "",
     "food_bad": "",
@@ -242,6 +278,11 @@
       "ML",
       "L",
       "EL"
+    ],
+    "food_preview": [
+      "33",
+      "58",
+      "67"
     ],
     "food_good": [
       "62",
@@ -275,6 +316,11 @@
     "enemies": [
       "EL",
       "5"
+    ],
+    "food_preview": [
+      "74",
+      "60",
+      "70"
     ],
     "food_good": [
       "74",
@@ -311,6 +357,11 @@
       "L",
       "EL"
     ],
+    "food_preview": [
+      "69",
+      "76",
+      "58"
+    ],
     "food_good": [
       "69",
       "76",
@@ -339,6 +390,11 @@
     "turn_speed": "1",
     "eats_desc": "Bites of other fish",
     "enemies": "",
+    "food_preview": [
+      "54",
+      "53",
+      "50"
+    ],
     "food_good": [
       "EL",
       "L",
@@ -377,6 +433,11 @@
       "L",
       "EL"
     ],
+    "food_preview": [
+      "68",
+      "75",
+      "74"
+    ],
     "food_good": [
       "68",
       "75",
@@ -411,6 +472,11 @@
       "ML",
       "L",
       "EL"
+    ],
+    "food_preview": [
+      "78",
+      "80",
+      "57"
     ],
     "food_good": [
       "S",
@@ -448,6 +514,11 @@
       "L",
       "EL"
     ],
+    "food_preview": [
+      "74",
+      "70",
+      "54"
+    ],
     "food_good": [
       "S",
       "ES",
@@ -480,6 +551,11 @@
       "5",
       "EL"
     ],
+    "food_preview": [
+      "49",
+      "47",
+      "43"
+    ],
     "food_good": [
       "MS",
       "S",
@@ -510,6 +586,11 @@
     "enemies": [
       "L",
       "EL"
+    ],
+    "food_preview": [
+      "43",
+      "47",
+      "41"
     ],
     "food_good": [
       "MS",
@@ -542,6 +623,11 @@
       "ML",
       "L",
       "EL"
+    ],
+    "food_preview": [
+      "76",
+      "74",
+      "72"
     ],
     "food_good": [
       "76",
@@ -576,6 +662,11 @@
       "24",
       "21"
     ],
+    "food_preview": [
+      "63",
+      "74",
+      "47"
+    ],
     "food_good": [
       "ES",
       "63",
@@ -584,7 +675,7 @@
     "food_ok": "",
     "food_bad": "",
     "tags": "",
-    "ability": "",
+    "ability": "Hidden",
     "playable": "Y",
     "active": "ANYTIME",
     "scientific_name": "Scorpaenopsis diabolus",
@@ -607,6 +698,11 @@
       "ML",
       "L",
       "EL"
+    ],
+    "food_preview": [
+      "52",
+      "48",
+      "34"
     ],
     "food_good": [
       "MS",
@@ -642,7 +738,14 @@
       "ML",
       "L"
     ],
-    "food_good": "69",
+    "food_preview": [
+      "69",
+      "76"
+    ],
+    "food_good": [
+      "69",
+      "76"
+    ],
     "food_ok": "",
     "food_bad": "",
     "tags": "",
@@ -668,6 +771,11 @@
     "enemies": [
       "L",
       "EL"
+    ],
+    "food_preview": [
+      "38",
+      "35",
+      "27"
     ],
     "food_good": [
       "M",
@@ -695,10 +803,15 @@
     "energy_value": "10",
     "swim_speed": "2",
     "turn_speed": "1",
-    "eats_desc": "Smaller fish, crustaceans, turtles and small sharks",
+    "eats_desc": "Smaller fish, crustaceans",
     "enemies": [
       "5",
       "EL"
+    ],
+    "food_preview": [
+      "63",
+      "21",
+      "15"
     ],
     "food_good": [
       "ML",
@@ -733,6 +846,11 @@
     "turn_speed": "1",
     "eats_desc": "Just about anything!",
     "enemies": "23",
+    "food_preview": [
+      "5",
+      "12",
+      "22"
+    ],
     "food_good": [
       "M",
       "ML",
@@ -768,6 +886,11 @@
     "enemies": [
       "5",
       "EL"
+    ],
+    "food_preview": [
+      "66",
+      "21",
+      "19"
     ],
     "food_good": [
       "M",
@@ -811,9 +934,15 @@
       "M",
       "ML"
     ],
+    "food_preview": [
+      "69",
+      "74",
+      "76"
+    ],
     "food_good": [
       "69",
-      "74"
+      "74",
+      "76"
     ],
     "food_ok": "",
     "food_bad": "",
@@ -842,6 +971,11 @@
       "L",
       "EL"
     ],
+    "food_preview": [
+      "63",
+      "74",
+      "20"
+    ],
     "food_good": [
       "S",
       "ES",
@@ -851,7 +985,7 @@
     "food_ok": "",
     "food_bad": "",
     "tags": "poison",
-    "ability": "",
+    "ability": "Sharp Spines",
     "playable": "Y",
     "active": "DAY",
     "scientific_name": "Pterois volitans",
@@ -876,6 +1010,11 @@
       "ML",
       "L",
       "EL"
+    ],
+    "food_preview": [
+      "62",
+      "74",
+      "67"
     ],
     "food_good": [
       "62",
@@ -909,6 +1048,11 @@
       "L",
       "EL"
     ],
+    "food_preview": [
+      "77",
+      "76",
+      "58"
+    ],
     "food_good": [
       "77",
       "76",
@@ -941,6 +1085,10 @@
       "L",
       "EL"
     ],
+    "food_preview": [
+      "79",
+      "76"
+    ],
     "food_good": [
       "79",
       "76"
@@ -972,6 +1120,11 @@
       "ML",
       "L"
     ],
+    "food_preview": [
+      "74",
+      "58",
+      "59"
+    ],
     "food_good": [
       "ES",
       "74"
@@ -1002,6 +1155,11 @@
       "ML",
       "L",
       "EL"
+    ],
+    "food_preview": [
+      "66",
+      "54",
+      "52"
     ],
     "food_good": [
       "63",
@@ -1036,6 +1194,11 @@
       "ML",
       "L",
       "EL"
+    ],
+    "food_preview": [
+      "74",
+      "70",
+      "43"
     ],
     "food_good": [
       "74",
@@ -1076,9 +1239,15 @@
       "L",
       "EL"
     ],
+    "food_preview": [
+      "79",
+      "77",
+      "76"
+    ],
     "food_good": [
       "79",
-      "77"
+      "77",
+      "76"
     ],
     "food_ok": "",
     "food_bad": "",
@@ -1108,9 +1277,15 @@
       "ML",
       "L"
     ],
+    "food_preview": [
+      "69",
+      "77",
+      "76"
+    ],
     "food_good": [
       "69",
-      "77"
+      "77",
+      "76"
     ],
     "food_ok": "",
     "food_bad": "",
@@ -1138,6 +1313,11 @@
       "ML",
       "L",
       "EL"
+    ],
+    "food_preview": [
+      "70",
+      "76",
+      "63"
     ],
     "food_good": [
       "70",
@@ -1174,6 +1354,11 @@
       "L",
       "EL"
     ],
+    "food_preview": [
+      "44",
+      "41",
+      "33"
+    ],
     "food_good": [
       "MS",
       "S",
@@ -1209,6 +1394,11 @@
       "ML",
       "L"
     ],
+    "food_preview": [
+      "34",
+      "47",
+      "59"
+    ],
     "food_good": "ES",
     "food_ok": "76",
     "food_bad": "",
@@ -1239,7 +1429,14 @@
       "L",
       "EL"
     ],
-    "food_good": "69",
+    "food_preview": [
+      "69",
+      "76"
+    ],
+    "food_good": [
+      "69",
+      "76"
+    ],
     "food_ok": "",
     "food_bad": "",
     "tags": "",
@@ -1268,6 +1465,10 @@
       "ML",
       "L",
       "EL"
+    ],
+    "food_preview": [
+      "77",
+      "65"
     ],
     "food_good": [
       "77",
@@ -1299,6 +1500,11 @@
       "MS",
       "M",
       "ML"
+    ],
+    "food_preview": [
+      "65",
+      "75",
+      "69"
     ],
     "food_good": [
       "65",
@@ -1335,6 +1541,11 @@
       "L",
       "EL"
     ],
+    "food_preview": [
+      "77",
+      "65",
+      "78"
+    ],
     "food_good": [
       "77",
       "65",
@@ -1365,6 +1576,11 @@
     "enemies": [
       "L",
       "EL"
+    ],
+    "food_preview": [
+      "74",
+      "58",
+      "57"
     ],
     "food_good": [
       "M",
@@ -1402,6 +1618,11 @@
       "L",
       "EL"
     ],
+    "food_preview": [
+      "79",
+      "69",
+      "72"
+    ],
     "food_good": [
       "79",
       "69",
@@ -1433,6 +1654,11 @@
       "ML",
       "L",
       "EL"
+    ],
+    "food_preview": [
+      "61",
+      "67",
+      "57"
     ],
     "food_good": [
       "61",
@@ -1467,6 +1693,10 @@
       "ML",
       "L"
     ],
+    "food_preview": [
+      "79",
+      "77"
+    ],
     "food_good": [
       "79",
       "77"
@@ -1496,6 +1726,11 @@
     "enemies": [
       "5",
       "EL"
+    ],
+    "food_preview": [
+      "74",
+      "60",
+      "63"
     ],
     "food_good": [
       "74",
@@ -1536,11 +1771,18 @@
       "L",
       "EL"
     ],
-    "food_good": "69",
+    "food_preview": [
+      "69",
+      "76"
+    ],
+    "food_good": [
+      "69",
+      "76"
+    ],
     "food_ok": "",
     "food_bad": "",
     "tags": "",
-    "ability": "",
+    "ability": "Quick",
     "playable": "Y",
     "active": "ANYTIME",
     "scientific_name": "Spratelloides gracilis",
@@ -1564,6 +1806,11 @@
       "ML",
       "L",
       "EL"
+    ],
+    "food_preview": [
+      "76",
+      "59",
+      "57"
     ],
     "food_good": [
       "S",
@@ -1598,6 +1845,11 @@
       "L",
       "EL"
     ],
+    "food_preview": [
+      "62",
+      "78",
+      "77"
+    ],
     "food_good": [
       "62",
       "78",
@@ -1630,6 +1882,10 @@
       "L",
       "EL"
     ],
+    "food_preview": [
+      "69",
+      "77"
+    ],
     "food_good": [
       "69",
       "77"
@@ -1659,6 +1915,11 @@
     "enemies": [
       "L",
       "EL"
+    ],
+    "food_preview": [
+      "60",
+      "47",
+      "44"
     ],
     "food_good": [
       "M",
@@ -1698,6 +1959,11 @@
       "ML",
       "L"
     ],
+    "food_preview": [
+      "74",
+      "45",
+      "34"
+    ],
     "food_good": [
       "S",
       "ES",
@@ -1726,6 +1992,11 @@
     "turn_speed": "1",
     "eats_desc": "Crabs, squid, and smaller fish",
     "enemies": "EL",
+    "food_preview": [
+      "63",
+      "16",
+      "36"
+    ],
     "food_good": [
       "63",
       "16",
@@ -1762,6 +2033,11 @@
       "L",
       "EL"
     ],
+    "food_preview": [
+      "75",
+      "74",
+      "58"
+    ],
     "food_good": [
       "ES",
       "75",
@@ -1790,6 +2066,7 @@
     "turn_speed": "1",
     "eats_desc": "",
     "enemies": "",
+    "food_preview": "",
     "food_good": "",
     "food_ok": "",
     "food_bad": "",
@@ -1814,6 +2091,7 @@
     "turn_speed": "1",
     "eats_desc": "",
     "enemies": "",
+    "food_preview": "",
     "food_good": "",
     "food_ok": "",
     "food_bad": "",
@@ -1841,6 +2119,7 @@
     "turn_speed": "1",
     "eats_desc": "",
     "enemies": "",
+    "food_preview": "",
     "food_good": [
       "76",
       "77",
@@ -1869,6 +2148,7 @@
     "turn_speed": "1",
     "eats_desc": "",
     "enemies": "",
+    "food_preview": "",
     "food_good": "69",
     "food_ok": "",
     "food_bad": "",
@@ -1893,6 +2173,7 @@
     "turn_speed": "1",
     "eats_desc": "",
     "enemies": "",
+    "food_preview": "",
     "food_good": "69",
     "food_ok": "",
     "food_bad": "",
@@ -1917,6 +2198,7 @@
     "turn_speed": "1",
     "eats_desc": "",
     "enemies": "",
+    "food_preview": "",
     "food_good": "",
     "food_ok": "",
     "food_bad": "",
@@ -1944,6 +2226,7 @@
     "turn_speed": "1",
     "eats_desc": "",
     "enemies": "",
+    "food_preview": "",
     "food_good": "",
     "food_ok": "",
     "food_bad": "",
@@ -1968,6 +2251,7 @@
     "turn_speed": "1",
     "eats_desc": "",
     "enemies": "",
+    "food_preview": "",
     "food_good": "",
     "food_ok": "",
     "food_bad": "",
@@ -1992,6 +2276,7 @@
     "turn_speed": "1",
     "eats_desc": "",
     "enemies": "",
+    "food_preview": "",
     "food_good": "",
     "food_ok": "",
     "food_bad": "",
@@ -2016,6 +2301,7 @@
     "turn_speed": "1",
     "eats_desc": "",
     "enemies": "",
+    "food_preview": "",
     "food_good": "",
     "food_ok": "",
     "food_bad": "",
@@ -2030,7 +2316,7 @@
   "65": {
     "full_name": "Sea Grass",
     "size": "NA",
-    "sprite_name": "not_applicable",
+    "sprite_name": "spr_sea_grass",
     "avg_size_inch": "36",
     "avg_size_cm": "91.44",
     "health_rate": "80",
@@ -2040,6 +2326,7 @@
     "turn_speed": "1",
     "eats_desc": "",
     "enemies": "",
+    "food_preview": "",
     "food_good": "",
     "food_ok": "",
     "food_bad": "",
@@ -2064,6 +2351,7 @@
     "turn_speed": "1",
     "eats_desc": "",
     "enemies": "",
+    "food_preview": "",
     "food_good": "",
     "food_ok": "",
     "food_bad": "",
@@ -2088,6 +2376,7 @@
     "turn_speed": "1",
     "eats_desc": "",
     "enemies": "",
+    "food_preview": "",
     "food_good": "",
     "food_ok": "",
     "food_bad": "",
@@ -2112,6 +2401,7 @@
     "turn_speed": "1",
     "eats_desc": "",
     "enemies": "",
+    "food_preview": "",
     "food_good": "",
     "food_ok": "",
     "food_bad": "",
@@ -2136,6 +2426,7 @@
     "turn_speed": "1",
     "eats_desc": "",
     "enemies": "",
+    "food_preview": "",
     "food_good": "",
     "food_ok": "",
     "food_bad": "",
@@ -2160,6 +2451,7 @@
     "turn_speed": "1",
     "eats_desc": "",
     "enemies": "",
+    "food_preview": "",
     "food_good": "",
     "food_ok": "",
     "food_bad": "",
@@ -2184,6 +2476,7 @@
     "turn_speed": "1",
     "eats_desc": "",
     "enemies": "",
+    "food_preview": "",
     "food_good": "",
     "food_ok": "",
     "food_bad": "",
@@ -2208,6 +2501,7 @@
     "turn_speed": "1",
     "eats_desc": "",
     "enemies": "",
+    "food_preview": "",
     "food_good": "",
     "food_ok": "",
     "food_bad": "",
@@ -2232,6 +2526,7 @@
     "turn_speed": "1",
     "eats_desc": "",
     "enemies": "",
+    "food_preview": "",
     "food_good": "",
     "food_ok": "",
     "food_bad": "",
@@ -2256,6 +2551,7 @@
     "turn_speed": "1",
     "eats_desc": "",
     "enemies": "",
+    "food_preview": "",
     "food_good": "",
     "food_ok": "",
     "food_bad": "",
@@ -2280,6 +2576,7 @@
     "turn_speed": "1",
     "eats_desc": "",
     "enemies": "",
+    "food_preview": "",
     "food_good": "",
     "food_ok": "",
     "food_bad": "",
@@ -2304,6 +2601,7 @@
     "turn_speed": "1",
     "eats_desc": "",
     "enemies": "",
+    "food_preview": "",
     "food_good": "",
     "food_ok": "",
     "food_bad": "",
@@ -2318,7 +2616,7 @@
   "77": {
     "full_name": "Algae",
     "size": "NA",
-    "sprite_name": "not_applicable",
+    "sprite_name": "spr_sea_algae",
     "avg_size_inch": "",
     "avg_size_cm": "",
     "health_rate": "999",
@@ -2328,6 +2626,7 @@
     "turn_speed": "1",
     "eats_desc": "",
     "enemies": "",
+    "food_preview": "",
     "food_good": "",
     "food_ok": "",
     "food_bad": "",
@@ -2342,7 +2641,7 @@
   "78": {
     "full_name": "Coral",
     "size": "NA",
-    "sprite_name": "not_applicable",
+    "sprite_name": "spr_sea_coral",
     "avg_size_inch": "",
     "avg_size_cm": "",
     "health_rate": "999",
@@ -2352,6 +2651,7 @@
     "turn_speed": "1",
     "eats_desc": "",
     "enemies": "",
+    "food_preview": "",
     "food_good": "",
     "food_ok": "",
     "food_bad": "",
@@ -2366,7 +2666,7 @@
   "79": {
     "full_name": "Sea-Sponge",
     "size": "NA",
-    "sprite_name": "not_applicable",
+    "sprite_name": "spr_sea_sponge",
     "avg_size_inch": "",
     "avg_size_cm": "",
     "health_rate": "999",
@@ -2376,6 +2676,7 @@
     "turn_speed": "1",
     "eats_desc": "",
     "enemies": "",
+    "food_preview": "",
     "food_good": "",
     "food_ok": "",
     "food_bad": "",
@@ -2400,6 +2701,7 @@
     "turn_speed": "1",
     "eats_desc": "",
     "enemies": "",
+    "food_preview": "",
     "food_good": "69",
     "food_ok": "",
     "food_bad": "",
@@ -2424,6 +2726,7 @@
     "turn_speed": "1",
     "eats_desc": "",
     "enemies": "",
+    "food_preview": "",
     "food_good": "",
     "food_ok": "",
     "food_bad": "",

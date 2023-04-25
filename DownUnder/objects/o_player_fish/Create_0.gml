@@ -16,6 +16,12 @@ y_scale = 1;
 
 frame = 0;
 
+if ( global.GAME_MODE == CREATE_A_FISH )
+{
+	instance_create_layer(0,0,"Exit_Menu",o_timer_caf);
+}
+
+
 var _fish = variable_struct_get(global.all_life, string(global.player_fish_id) );
 
 fish_id = global.player_fish_id;
