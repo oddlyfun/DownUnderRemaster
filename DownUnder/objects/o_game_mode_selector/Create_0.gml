@@ -24,7 +24,7 @@ mode_text_array = [
 mode_text_info = [
 "Let the computer pick four fish for you to play. Start as the smallest fish. Move up to a larger fish when you earn enough points.",
 "Conqure the reef! Become each of the creatures available for play, from the smallest fish to the Great White Shark at the top of the food chain.",
-"Create your own fish and try it out on the reef! Choose the color and give it a name! Use your points to buy extra features for your creation.",
+"Create your own fish and try to survive for 5 minutes! Choose the color and give it a name! Use your points to buy extra features for your creation.",
 "Choose the fish you want to become, explore the reef, and learn how to survive."
 ];
 
