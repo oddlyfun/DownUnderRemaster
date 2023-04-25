@@ -210,3 +210,22 @@ function sum_array_values(_array)
 
 	return _sum;
 }
+
+function timer_format(_time)
+{
+
+
+	var format_min = floor( _time / 60 );
+	var format_sec = floor( _time );
+	var format_sec = format_sec mod 60;
+
+	if ( format_sec <= 9 ) {
+	    format_sec = "0" + string(format_sec);
+	} else {
+	    format_sec = string(format_sec);
+	}
+
+
+	var _time_string = string(format_min) + " : " + format_sec;
+	return _time_string;
+}
