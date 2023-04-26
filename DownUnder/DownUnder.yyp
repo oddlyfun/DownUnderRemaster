@@ -80,6 +80,7 @@
     {"id":{"name":"grass_04","path":"sprites/grass_04/grass_04.yy",},},
     {"id":{"name":"spr_popup_titlebar_blank","path":"sprites/spr_popup_titlebar_blank/spr_popup_titlebar_blank.yy",},},
     {"id":{"name":"shd_color_caf","path":"shaders/shd_color_caf/shd_color_caf.yy",},},
+    {"id":{"name":"o_credits_info","path":"objects/o_credits_info/o_credits_info.yy",},},
     {"id":{"name":"spr_painted_frogfish","path":"sprites/spr_painted_frogfish/spr_painted_frogfish.yy",},},
     {"id":{"name":"spr_overlay","path":"sprites/spr_overlay/spr_overlay.yy",},},
     {"id":{"name":"music_freezing_but_warm","path":"sounds/music_freezing_but_warm/music_freezing_but_warm.yy",},},

@@ -9,6 +9,7 @@
   ],
   "ResourceOrderSettings": [
     {"name":"grass_04","order":5,"path":"sprites/grass_04/grass_04.yy",},
+    {"name":"o_credits_info","order":13,"path":"objects/o_credits_info/o_credits_info.yy",},
     {"name":"spr_painted_frogfish","order":7,"path":"sprites/spr_painted_frogfish/spr_painted_frogfish.yy",},
     {"name":"spr_overlay","order":9,"path":"sprites/spr_overlay/spr_overlay.yy",},
     {"name":"music_freezing_but_warm","order":1,"path":"sounds/music_freezing_but_warm/music_freezing_but_warm.yy",},
