@@ -236,7 +236,7 @@ if ( frozen == false )
 	my_health = clamp(my_health,0,100);
 } else if ( frozen == true )
 {
-	speed = 0;
+	speed = speed * 0.20;
 }
 
 if ( my_energy <= 0 or my_health <= 0)
