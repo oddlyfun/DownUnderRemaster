@@ -69,6 +69,7 @@
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"default_game_settings.json","CopyToMask":-1,"filePath":"datafiles",},
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"music_credits","CopyToMask":-1,"filePath":"datafiles",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"sea_life.json","CopyToMask":3035426170322551022,"filePath":"datafiles",},
   ],
   "isEcma": false,
@@ -193,6 +194,7 @@
     {"id":{"name":"spr_title_screen_lay1","path":"sprites/spr_title_screen_lay1/spr_title_screen_lay1.yy",},},
     {"id":{"name":"o_loading_screen","path":"objects/o_loading_screen/o_loading_screen.yy",},},
     {"id":{"name":"shd_gray_scale","path":"shaders/shd_gray_scale/shd_gray_scale.yy",},},
+    {"id":{"name":"ro_credits","path":"rooms/ro_credits/ro_credits.yy",},},
     {"id":{"name":"spr_CAF_2","path":"sprites/spr_CAF_2/spr_CAF_2.yy",},},
     {"id":{"name":"o_grass_04","path":"objects/o_grass_04/o_grass_04.yy",},},
     {"id":{"name":"o_spawner_fish","path":"objects/o_spawner_fish/o_spawner_fish.yy",},},
@@ -316,6 +318,7 @@
     {"roomId":{"name":"ro_settings","path":"rooms/ro_settings/ro_settings.yy",},},
     {"roomId":{"name":"ro_loading_screen","path":"rooms/ro_loading_screen/ro_loading_screen.yy",},},
     {"roomId":{"name":"ro_how_to_play","path":"rooms/ro_how_to_play/ro_how_to_play.yy",},},
+    {"roomId":{"name":"ro_credits","path":"rooms/ro_credits/ro_credits.yy",},},
   ],
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},

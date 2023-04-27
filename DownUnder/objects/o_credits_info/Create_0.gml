@@ -4,8 +4,8 @@ dev_lines = [
 
 artist_lines = [
 	"Background Art - @catherinehigh",
-	"    Coral Reef - @porevaari"
-	"     Fishy Art - @diconcilio"
+	"    Coral Reef - @porevaari",
+	"     Fishy Art - @diconcilio",
 	"   Sprite Work - @tedshaq"
 ];
 
