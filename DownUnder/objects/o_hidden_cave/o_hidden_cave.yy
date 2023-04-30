@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Animated Background",
-    "path": "folders/Objects/Animated Background.yy",
+    "name": "Static Background Edibles",
+    "path": "folders/Objects/Lifeforms/Static Background Edibles.yy",
   },
   "parentObjectId": null,
   "persistent": false,

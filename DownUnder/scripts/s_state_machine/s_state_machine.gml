@@ -24,7 +24,9 @@ function state_machine(_fish_brain)
 
 	var _food_radius = 200 + floor(sprite_width / 2);
 	var _life_check = ds_list_create();
-	var _coll_circ = collision_circle_list(x,y, _food_radius, o_sea_life,false,true,_life_check,false);
+	var _coll_circ = noone;
+	
+	_coll_circ = collision_circle_list(x,y, _food_radius, o_sea_life,false,true,_life_check,false);
 
 	
 //****************************************************************************
@@ -188,12 +190,29 @@ function state_machine(_fish_brain)
 					break;
 				}
 			}
-		}
+			
+			if ( _player.is_hidden == true )
+			{
+				_hunt_player = _hunt_player + 0.25;
+			} else 
+			{
+				_hunt_player = _hunt_player + 1;
+			}
+			
+			if ( _player.speed > 0 )
+			{
+				_hunt_player = _hunt_player + 0.05;
+			} else
+			{
+				_hunt_player = _hunt_player + 1;
+			}
+		
+			_hunt_player = _hunt_player / 3;
+		
+			if ( _player.ability_active == true ) then _hunt_player = _hunt_player / 2;
+		}		
 	}
 
-	if ( _player.ability_active == true ) then _hunt_player = _hunt_player / 2;
-
-	// Turned this off for testing
 	fish_brain[@ PLAYER] = _hunt_player;
 
 

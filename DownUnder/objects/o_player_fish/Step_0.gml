@@ -6,6 +6,12 @@ if ( global.PAUSED == true )
 	exit;
 }
 
+is_hidden = false;
+
+if ( place_meeting(x,y, o_grass_65) or place_meeting(x,y, o_hidden_cave) )
+{
+	is_hidden = true;
+}
 
 var _cursor = instance_nearest(0,0,o_mouse);
 if ( !instance_exists(_cursor) ) then exit;

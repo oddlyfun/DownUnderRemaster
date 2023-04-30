@@ -64,7 +64,7 @@ if ( mouse_check_button_pressed(mb_left) )
 
 	if ( window_display.hover_close == true )
 	{
-		room_goto(ro_title_screen);
+		room_goto(ro_start_screen);
 	}
 
 }

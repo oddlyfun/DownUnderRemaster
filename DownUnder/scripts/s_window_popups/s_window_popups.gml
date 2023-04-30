@@ -104,6 +104,8 @@ function window_popup(_width, _height,_title_string="Hello",_vert_anchors_amount
 				var _pos = ac_points[@ i,j];
 				
 				draw_circle_color(_pos.x, _pos.y, 2, c_green, c_green, false);
+				var _str = string(i) + "," + string(j);
+				write_text(_pos.x + 4, _pos.y, c_black, _str);
 			}
 		}
 	}

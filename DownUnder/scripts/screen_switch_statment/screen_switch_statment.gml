@@ -68,6 +68,7 @@ function title_menu_choice(_option)
 			room_goto(ro_how_to_play);
 		break;
 		case "Info":
+			room_goto(ro_credits);
 		break;
 	}
 }
