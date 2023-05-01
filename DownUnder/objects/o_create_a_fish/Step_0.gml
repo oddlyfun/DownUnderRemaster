@@ -64,7 +64,7 @@ if ( _size >= _agility and _size >= _endurance )
 } else if ( _agility > _size and _agility >= _endurance ) 
 {
 	// agility is the largest number
-	switch _agility
+	switch _size
 	{
 		case 0:
 		case 1:
@@ -84,7 +84,7 @@ if ( _size >= _agility and _size >= _endurance )
 } else if ( _endurance > _size and _endurance > _agility ) 
 {
 	// agility is the largest number
-	switch _endurance
+	switch _size
 	{
 		case 0:
 		case 1:
