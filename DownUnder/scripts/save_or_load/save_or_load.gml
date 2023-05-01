@@ -49,6 +49,7 @@ function save_reef_rulers()
 	buffer_write(_buffer, buffer_text, _str);
 	buffer_save(_buffer, _filename);
 	buffer_delete(_buffer);
+	global.player_score = 0;
 }
 
 function add_reef_ruler(_the_ruler)

@@ -13,7 +13,7 @@ y = my_y + _vy;
 
 click_ok.check_hover();
 
-if ( mouse_check_button_released(mb_left) and click_ok.hover == true )
+if ( ( mouse_check_button_released(mb_left) or keyboard_check_released(vk_enter) ) and click_ok.hover == true )
 {
 	//global.GAME_MODE = CHALLENGE;
 	var _name = keyboard_string;
