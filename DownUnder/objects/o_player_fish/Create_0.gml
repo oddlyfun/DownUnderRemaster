@@ -13,6 +13,7 @@ is_dead = false;
 is_hidden = false;
 ability_active = false;
 y_scale = 1;
+swoosh = true;
 
 frame = 0;
 

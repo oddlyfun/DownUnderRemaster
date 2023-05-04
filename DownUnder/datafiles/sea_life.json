@@ -1152,7 +1152,7 @@
     "energy_value": "10",
     "swim_speed": "2",
     "turn_speed": "1",
-    "eats_desc": "Smaller fish, crabs and lobseters. Can eat poisonous fish.",
+    "eats_desc": "Smaller fish, crabs and lobsters. Can eat poisonous fish.",
     "enemies": [
       "ML",
       "L",
