@@ -177,40 +177,39 @@ function state_machine(_fish_brain)
 		var _eat_check = s_check_food(id,_player);
 		if ( _eat_check.edible == true )
 		{
-			var _center = point_distance(x,y,_player.x,_player.y);
-			var _right = point_distance(x + room_width, y, _player.x, _player.y);
-			var _left = point_distance(x - room_width, y, _player.x, _player.y);
-			var _arr = [_center, _right, _left];
-			for ( var i = 0; i < array_length(_arr); i++ )
+			var _mouth_x = floor( (sprite_width / 2) );
+			var _mouth_y = y;
+			_mouth_x = x + lengthdir_x(_mouth_x, direction);
+			_mouth_y = y + lengthdir_y(_mouth_x, direction);
+
+			var _center = point_distance(_mouth_x, _mouth_y, _player.x, _player.y);
+			
+			if ( _center <= 100 )
 			{
-				var _dist = _arr[@ i];
-				if ( _dist <= 100 )
+				_hunt_player = 1;
+
+				if ( _player.is_hidden == true )
 				{
-					_hunt_player = 1;
-					break;
+					_hunt_player = _hunt_player + 0.025;
+					if ( _player.speed > 0 )
+					{
+						_hunt_player = _hunt_player + 1;
+					} else
+					{
+						_hunt_player = _hunt_player + 0.025;
+					}
+				} else 
+				{
+					_hunt_player = _hunt_player + 2;
 				}
+
+				_hunt_player = _hunt_player / 3;
+				if ( _player.ability_active == true ) then _hunt_player = _hunt_player / 2;
 			}
-			
-			if ( _player.is_hidden == true )
-			{
-				_hunt_player = _hunt_player + 0.25;
-			} else 
-			{
-				_hunt_player = _hunt_player + 1;
-			}
-			
-			if ( _player.speed > 0 )
-			{
-				_hunt_player = _hunt_player + 0.05;
-			} else
-			{
-				_hunt_player = _hunt_player + 1;
-			}
-		
-			_hunt_player = _hunt_player / 3;
-		
-			if ( _player.ability_active == true ) then _hunt_player = _hunt_player / 2;
-		}		
+		}
+
+
+
 	}
 
 	fish_brain[@ PLAYER] = _hunt_player;
