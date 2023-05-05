@@ -149,6 +149,7 @@
     {"id":{"name":"o_grass_00","path":"objects/o_grass_00/o_grass_00.yy",},},
     {"id":{"name":"spr_title_screen_BG","path":"sprites/spr_title_screen_BG/spr_title_screen_BG.yy",},},
     {"id":{"name":"spr_loading_text","path":"sprites/spr_loading_text/spr_loading_text.yy",},},
+    {"id":{"name":"shd_outline","path":"shaders/shd_outline/shd_outline.yy",},},
     {"id":{"name":"spr_redtooth_triggerfish","path":"sprites/spr_redtooth_triggerfish/spr_redtooth_triggerfish.yy",},},
     {"id":{"name":"sfx_bubble_single","path":"sounds/sfx_bubble_single/sfx_bubble_single.yy",},},
     {"id":{"name":"o_grass_parent","path":"objects/o_grass_parent/o_grass_parent.yy",},},

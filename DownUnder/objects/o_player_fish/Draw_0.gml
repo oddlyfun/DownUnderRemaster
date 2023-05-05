@@ -22,6 +22,18 @@ if ( facing_dir != prev_facing )
 	prev_facing = facing_dir;
 }
 
+
+
+
+if ( ability_on == true )
+{
+	shader_set(shd_outline);
+		draw_sprite_ext(sprite_index,image_index,x,y,facing_dir + (0.1 * facing_dir), y_scale + 0.1, direction-_correction,c_white,1);
+	shader_reset();
+}
+
+
+
 if ( fish_id == 81 )
 {
 	shader_set(shd_color_caf);
@@ -37,7 +49,3 @@ if ( fish_id == 81 )
 
 // Squirt Ability
 
-//if ( ability_on == true and my_abilities == "Squirt Ink" )
-//{
-//	draw_sprite_ext(spr_shoot_ink,)
-//}
