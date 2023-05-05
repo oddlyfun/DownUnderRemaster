@@ -86,7 +86,6 @@ color_block_size = 12;
 //***********************************************************************************
 
 
-
 _apos = _anchors[0,5];
 _apos_x = _apos.x + color_block_size;
 _apos_y = _apos.y;
@@ -177,8 +176,10 @@ shader_set(shd_color_caf);
 	draw_sprite(_use_sprite, CAF_image_index, _apos_x + (_ocean_width/2), _apos_y + (_ocean_height/2) );
 shader_reset();
 
-
 CAF_image_index = CAF_image_index + CAF_animation_speed;
+
+var _apos = _anchors[4,4];
+draw_text_wrap(_apos.x, _apos.y, _apos.x + 100, 999, how_to_play_pt0);
 
 //***********************************************************************************
 //

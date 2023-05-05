@@ -6,13 +6,11 @@ function draw_text_wrap(_x, _y, r_bound, _height, _words)
 	var _top_buffer = 0;
 	var _right_buffer = 0;
 
-	_x = _x + _right_buffer;
-	_y = _y + _top_buffer;
-	//string_split(string, delimiter, [remove_empty], [max_splits]);
-	// string split is not in the LTS
-	var _word_array = create_string_array(_words); //string_split(_words, " "); // this is new I hope it works in the TTL
-	
+	_x = floor(_x) + _right_buffer;
+	_y = floor(_y) + _top_buffer;
 
+	var _word_array = create_string_array(_words);
+	
 	var _size = array_length(_word_array);
 	var _ini_x = _x;
 	var _ini_y = _y;

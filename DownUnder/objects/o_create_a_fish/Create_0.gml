@@ -46,11 +46,12 @@ ability_list = [
 	"Electric Shock",
 	"Tail Stinger",
 	"Inflating",
+	"Intimidate",
 	"Squirt Ink"
 ];
 
 
-fishy_name = "Bobby B";
+fishy_name = "Name";
 
 var _anchors = my_window.ac_points;
 
@@ -59,7 +60,7 @@ input_fish_name = new input_bar(_apos.x,_apos.y,fishy_name);
 
 _apos = _anchors[4,2];
 
-ability_drop = new scroll_bar(_apos.x, _apos.y, ability_list,4); 
+ability_drop = new scroll_bar(_apos.x, _apos.y, ability_list, 6); 
 
 
 _apos = _anchors[4,10];
@@ -69,13 +70,12 @@ play_btn = new basic_button(_apos.x, _apos.y, _bw, _bh, 0, "Play");
 close_btn = new basic_button(_apos.x + play_btn.width + 10, _apos.y, _bw, _bh, 0, "Close");
 
 max_points = 12;
-agi_results = ["60", "65", "70", "80", "85", "90", "95", "110", "115", "120"];
-end_results = ["60", "65", "70", "80", "85", "90", "95", "110", "115", "120"];
+agi_results = ["50", "55", "60", "70", "75", "80", "85", "100", "105", "110"];
+end_results = ["50", "55", "60", "70", "75", "80", "85", "100", "105", "110"];
 
 
-
-var _e0 = ["ES"];
-var _e1 = ["ES", "S"];
+var _e0 = ["ES","69","76"];
+var _e1 = ["ES", "S","76"];
 var _e2 = ["ES", "S"];
 var _e3 = ["ES", "S", "MS"];
 var _e4 = ["ES", "S", "MS"];
@@ -85,3 +85,5 @@ var _e7 = ["ES", "S", "MS", "M"];
 var _e8 = ["ES", "S", "MS", "M", "L"];
 var _e9 = ["ES", "S", "MS", "M", "L"];
 siz_results = [_e0, _e1, _e2, _e3, _e4, _e5, _e6, _e7, _e8, _e9];
+
+how_to_play_pt0 = "Survive for 5 minutes in the Reef! Press SPACEBAR to use your ability.";

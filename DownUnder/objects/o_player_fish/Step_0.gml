@@ -221,7 +221,8 @@ if ( global.LEVEL_OVER == false )
 				default_text : fish_name
 			});
 		remove_save_file(); // delete the save file 
-		//instance_destroy(id);
+		sprite_index = spr_aargh;
+		direction = 0;
 	}
 
 	if ( global.GAME_MODE == GAUNTLET or global.GAME_MODE == CHALLENGE)
@@ -254,7 +255,11 @@ if ( global.LEVEL_OVER == false )
 			if ( global.STEAM_API )
 			{
 				steam_fish_win(sprite_index);
+				sprite_index = spr_aargh;
+				direction = 0;
 			}
+			sprite_index = spr_aargh;
+			direction = 0;
 		}
 	}
 }

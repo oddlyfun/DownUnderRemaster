@@ -167,7 +167,7 @@
     {"name":"spr_sea_coral","order":5,"path":"sprites/spr_sea_coral/spr_sea_coral.yy",},
     {"name":"save_or_load","order":8,"path":"scripts/save_or_load/save_or_load.yy",},
     {"name":"ro_continue","order":5,"path":"rooms/ro_continue/ro_continue.yy",},
-    {"name":"apr_aargh","order":6,"path":"sprites/apr_aargh/apr_aargh.yy",},
+    {"name":"spr_aargh","order":6,"path":"sprites/spr_aargh/spr_aargh.yy",},
     {"name":"o_gui","order":1,"path":"objects/o_gui/o_gui.yy",},
     {"name":"o_how_to_play","order":6,"path":"objects/o_how_to_play/o_how_to_play.yy",},
     {"name":"spr_cam_help","order":7,"path":"sprites/spr_cam_help/spr_cam_help.yy",},

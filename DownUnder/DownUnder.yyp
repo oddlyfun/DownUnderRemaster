@@ -259,7 +259,7 @@
     {"id":{"name":"spr_sea_coral","path":"sprites/spr_sea_coral/spr_sea_coral.yy",},},
     {"id":{"name":"save_or_load","path":"scripts/save_or_load/save_or_load.yy",},},
     {"id":{"name":"ro_continue","path":"rooms/ro_continue/ro_continue.yy",},},
-    {"id":{"name":"apr_aargh","path":"sprites/apr_aargh/apr_aargh.yy",},},
+    {"id":{"name":"spr_aargh","path":"sprites/spr_aargh/spr_aargh.yy",},},
     {"id":{"name":"o_gui","path":"objects/o_gui/o_gui.yy",},},
     {"id":{"name":"spr_yellow_seahorse","path":"sprites/spr_yellow_seahorse/spr_yellow_seahorse.yy",},},
     {"id":{"name":"o_how_to_play","path":"objects/o_how_to_play/o_how_to_play.yy",},},

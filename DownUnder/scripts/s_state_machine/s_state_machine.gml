@@ -177,10 +177,9 @@ function state_machine(_fish_brain)
 		var _eat_check = s_check_food(id,_player);
 		if ( _eat_check.edible == true )
 		{
-			var _mouth_x = floor( (sprite_width / 2) );
-			var _mouth_y = y;
-			_mouth_x = x + lengthdir_x(_mouth_x, direction);
-			_mouth_y = y + lengthdir_y(_mouth_x, direction);
+			var _mouth_len = floor( (sprite_width / 2) );
+			var _mouth_x = x + lengthdir_x(_mouth_len, direction);
+			var _mouth_y = y + lengthdir_y(_mouth_len, direction);
 
 			var _center = point_distance(_mouth_x, _mouth_y, _player.x, _player.y);
 			

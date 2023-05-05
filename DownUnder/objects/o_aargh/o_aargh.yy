@@ -30,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "apr_aargh",
-    "path": "sprites/apr_aargh/apr_aargh.yy",
+    "name": "spr_aargh",
+    "path": "sprites/spr_aargh/spr_aargh.yy",
   },
   "spriteMaskId": null,
   "visible": true,
