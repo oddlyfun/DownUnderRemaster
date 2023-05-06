@@ -7,6 +7,7 @@ global.PAUSED = false;
 global.LEVEL_OVER = false;
 global.WIN_LEVEL = false;
 
+
 // Load gamesettings
 global.GAME_SETTINGS_FILENAME = "game_settings.json";
 global.MUSIC_GAIN = 1;
