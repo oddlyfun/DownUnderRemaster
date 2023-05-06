@@ -186,34 +186,42 @@ if ( frozen == false )
 //							Chase the player
 //******************************************************************************
 		case PLAYER:
-			if ( attack_player == false )
-			{ 
+			var _player = instance_nearest(x,y, o_player_fish);
+
+			if ( instance_exists(_player) )
+			{
 				var _dir = point_direction(x,y, o_player_fish.x, o_player_fish.y)
 				var _xl = floor( x + lengthdir_x(sprite_width / 2, _dir) );
 				var _yl = floor( y + lengthdir_y(sprite_width / 2, _dir) );
-				instance_create_layer(_xl, _yl, "Ability", o_alert);
-				attack_player = true;	
-			}
 			
-			var _nibble = false;
-			var _cleaner = false;
-			for ( var n = 0; n < array_length(my_tags); n++)
-			{
-				if ( my_tags[@ n] == "nibble") then _nibble = true;
-				if ( my_tags[@ n] == "cleaner") then _cleaner = true;
-			}
+				if ( attack_player == false )
+				{ 
+					instance_create_layer(_xl, _yl, "Ability", o_alert);
+					attack_player = true;	
+				}
 			
+				var _nibble = false;
+				var _cleaner = false;
+				for ( var n = 0; n < array_length(my_tags); n++)
+				{
+					if ( my_tags[@ n] == "nibble") then _nibble = true;
+					if ( my_tags[@ n] == "cleaner") then _cleaner = true;
+				}
 			
-			var _player = instance_nearest(x,y, o_player_fish);
-			if ( instance_exists(_player) )
-			{
-				direction = point_direction(x,y, _player.x, _player.y);
-				var _dist_to_player = point_distance(x,y, _player.x, _player.y);
-				if ( _dist_to_player <= 4 )
+				direction = point_direction(x,y, _xl, _yl);
+				var _dist_to_player = point_distance(x, y, _player.x, _player.y);
+				
+				var _mouth_on = collision_point(_xl, _yl, o_player_fish, false, true);
+				
+				//if ( _dist_to_player <= 4 )
+				if ( _mouth_on != noone or _dist_to_player <= 5)
 				{
 					if ( _nibble == false and _cleaner == false )
 					{
 						_player.my_health = 0;
+					} else if ( _nibble == true and _cleaner == false )
+					{
+						_player.my_health = _player.my_health - 0.01;
 					}
 				}
 			}

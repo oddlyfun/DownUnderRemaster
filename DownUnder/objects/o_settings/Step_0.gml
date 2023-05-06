@@ -26,6 +26,9 @@ if ( sb_reso.toggle.state == false )
 
 ok_btn.check_hover();
 
+audio_group_set_gain(MainMusic, music_slider.amount,0);
+//global.MUSIC_GAIN = music_slider.amount;
+//global.SFX_GAIN = sfx_slider.amount;
 
 
 if ( mouse_check_button_released(mb_left) )
@@ -46,8 +49,6 @@ if ( mouse_check_button_released(mb_left) )
 
 	if ( ok_btn.hover == true )
 	{
-		global.MUSIC_GAIN = music_slider.amount;
-		global.SFX_GAIN = sfx_slider.amount;
 		global.RES_INDEX = sb_reso.selected_index;
 		save_game_settings();
 		room_goto(ro_start_screen);

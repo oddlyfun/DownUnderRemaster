@@ -1,3 +1,5 @@
+if ( global.LEVEL_OVER  ) exit;
+
 // 5 Minute Timer to DEATH
 if ( floor(time) >= (60 * 5 ) )
 {

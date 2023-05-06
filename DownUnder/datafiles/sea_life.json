@@ -443,6 +443,7 @@
       "75",
       "74",
       "76",
+      "66",
       "63"
     ],
     "food_ok": "77",
@@ -2692,7 +2693,7 @@
   },
   "80": {
     "full_name": "Dusky Anemonefish",
-    "size": "S",
+    "size": "ES",
     "sprite_name": "spr_dusky_anemonefish",
     "avg_size_inch": "4",
     "avg_size_cm": "10.16",

@@ -115,7 +115,13 @@ if ( is_eating == false )
 			{
 				y_scale = y_scale + 0.05;
 			}
-			my_energy = my_energy - (_energy_redux * 0.10)
+			my_energy = my_energy - (_energy_redux * 1.10)
+			
+			if ( my_abilities == "Swim Away" )
+			{
+				speed = speed * 2;
+				my_energy = my_energy - (_energy_redux * 1.10);
+			}
 		}
 		
 		if ( ability_on != ability_active )
@@ -142,12 +148,8 @@ if ( is_eating == false )
 				{
 					instance_destroy();
 				}
-			}
-			
-			
+			}	
 		}
-		
-
 	}
 
 	if ( ability_active == false and y_scale > 1 )
@@ -249,17 +251,15 @@ if ( global.LEVEL_OVER == false )
 				{
 					default_text : fish_name
 				});
+				remove_save_file();
 			}
 
 			// steam achievment stuff
 			if ( global.STEAM_API )
 			{
 				steam_fish_win(sprite_index);
-				sprite_index = spr_aargh;
-				direction = 0;
+
 			}
-			sprite_index = spr_aargh;
-			direction = 0;
 		}
 	}
 }

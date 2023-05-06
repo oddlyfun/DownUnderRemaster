@@ -17,6 +17,6 @@ if ( audio_group_is_loaded(MainMusic) )
 	{
 	    var _r = irandom_range(0,_len - 1);
 	    audio_play_sound(all_music[_r], 10, false, global.MUSIC_GAIN);
-		show_debug_message(string(_r) + " Music Index is playing");
+		//show_debug_message(string(_r) + " Music Index is playing");
 	}
 }

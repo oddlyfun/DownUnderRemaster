@@ -7,7 +7,7 @@ supported_resolutions = [
 	"2560 x 1440"
 ];
 
-my_window = new window_popup(400,160,"Graphic Settings",4);
+my_window = new window_popup(400,160,"Settings",4);
 my_window.change_anchor_config(6,6,my_window.x, my_window.y);
 
 var _a = my_window.ac_points;

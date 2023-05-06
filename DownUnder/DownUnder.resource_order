@@ -75,6 +75,7 @@
     {"name":"spr_bluegill_longfin","order":3,"path":"sprites/spr_bluegill_longfin/spr_bluegill_longfin.yy",},
     {"name":"o_grass_00","order":1,"path":"objects/o_grass_00/o_grass_00.yy",},
     {"name":"spr_loading_text","order":5,"path":"sprites/spr_loading_text/spr_loading_text.yy",},
+    {"name":"shd_outline_red","order":3,"path":"shaders/shd_outline_red/shd_outline_red.yy",},
     {"name":"shd_outline","order":2,"path":"shaders/shd_outline/shd_outline.yy",},
     {"name":"spr_redtooth_triggerfish","order":5,"path":"sprites/spr_redtooth_triggerfish/spr_redtooth_triggerfish.yy",},
     {"name":"o_grass_parent","order":6,"path":"objects/o_grass_parent/o_grass_parent.yy",},

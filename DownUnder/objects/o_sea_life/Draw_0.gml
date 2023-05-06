@@ -11,16 +11,31 @@ if ( (direction <= 90 and direction >= 0) or (direction >= 270 and direction <= 
 	_correction = 180;
 }
 
+if ( attack_player == true )
+{
+	shader_set(shd_outline_red)
+		draw_sprite_ext(sprite_index,image_index,x,y,facing_dir * (1.05), 1 + 0.10, direction-_correction,c_white,1);
+		draw_sprite_ext(sprite_index,image_index,x+room_width,y,facing_dir * (1.05), 1 + 0.10, direction-_correction,c_white,1);
+		draw_sprite_ext(sprite_index,image_index,x-room_width,y,facing_dir * (1.05), 1 + 0.10, direction-_correction,c_white,1);
+	shader_reset();
+}
+
 
 draw_sprite_ext(sprite_index,image_index,x,y,facing_dir,1, direction-_correction,c_white,1);
-
-// have to draw self in 'another place' because of screen wrap
-// I need to know where I exist in those other places 
-
 draw_sprite_ext(sprite_index,image_index,x+room_width,y,facing_dir,1, direction-_correction,c_white,1);
 draw_sprite_ext(sprite_index,image_index,x-room_width,y,facing_dir,1, direction-_correction,c_white,1);
 
-image_angle = direction;
+
+//var _player = instance_nearest(x,y,o_player_fish);
+
+//if ( instance_exists(_player) )
+//{
+//	var _dir = point_direction(x,y, o_player_fish.x, o_player_fish.y)
+//	var _xl = floor( x + lengthdir_x(sprite_width / 2, _dir) );
+//	var _yl = floor( y + lengthdir_y(sprite_width / 2, _dir) );
+	
+//	draw_circle(_xl, _yl, 3, false);	
+//}
 
 
 /*
