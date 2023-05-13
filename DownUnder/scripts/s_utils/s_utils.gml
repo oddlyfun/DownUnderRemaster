@@ -140,7 +140,8 @@ function draw_text_anchor(_anchor, _string)
 	var _x = _anchor.x;
 	var _y = _anchor.y;
 
-	draw_text(_x,_y,_string);
+	//draw_text(_x,_y,_string);
+	write_text(_x,_y, c_black, _string);
 }
 
 

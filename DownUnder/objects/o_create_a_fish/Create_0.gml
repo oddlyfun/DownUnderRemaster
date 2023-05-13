@@ -86,4 +86,4 @@ var _e8 = ["ES", "S", "MS", "M", "L"];
 var _e9 = ["ES", "S", "MS", "M", "L"];
 siz_results = [_e0, _e1, _e2, _e3, _e4, _e5, _e6, _e7, _e8, _e9];
 
-how_to_play_pt0 = "Survive for 5 minutes in the Reef! Press SPACEBAR to use your ability.";
+how_to_play_pt0 = "Survive for 5 minutes in the Reef! Hold the RIGHT MOUSE BUTTON to use your ability.";

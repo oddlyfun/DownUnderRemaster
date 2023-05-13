@@ -106,7 +106,7 @@ if ( is_eating == false )
 	ability_active = false;
 	if ( string_length(my_abilities) > 1 )
 	{
-		if ( keyboard_check(vk_space) )
+		if ( mouse_check_button(mb_right) )
 		{
 			ability_active = true;
 			// only a few abilities something extra happens
@@ -247,7 +247,7 @@ if ( global.LEVEL_OVER == false )
 			{
 				// Actually BEAT challenge or gauntlet mode
 				global.player_score = global.player_score + 1000;
-				instance_create_layer(0,0,"Exit_Menu",o_game_over, 
+				instance_create_layer(0,0,"Exit_Menu", o_win_game_floaty_text, 
 				{
 					default_text : fish_name
 				});

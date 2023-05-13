@@ -58,6 +58,7 @@ if ( frozen == false )
 //******************************************************************************
 		case ENERGY:
 			attack_player = false;
+			bite_timer = 0;
 			var _meals = state_ai._HUNGER_;
 			if ( !instance_exists(meal_target) )
 			{
@@ -116,6 +117,7 @@ if ( frozen == false )
 //******************************************************************************
 		case SWIM:
 			attack_player = false;
+			bite_timer = 0;
 			if ( is_swiming == false )
 			{
 				state_ai._SWIM_.x = irandom_range(0,room_width);
@@ -139,6 +141,7 @@ if ( frozen == false )
 //******************************************************************************
 		case THREAT:
 			attack_player = false;
+			bite_timer = 0;
 			var _run = state_ai._RUNAWAY_;
 			var _len_run = array_length(_run);
 			var _avg_dir = 0;
@@ -164,6 +167,7 @@ if ( frozen == false )
 //******************************************************************************
 		case HEALTH:
 			attack_player = false;
+			bite_timer = 0;
 			var _clean = state_ai._HEALTH_;
 			if ( array_length(_clean) > 0 )
 			{
@@ -218,7 +222,12 @@ if ( frozen == false )
 				{
 					if ( _nibble == false and _cleaner == false )
 					{
-						_player.my_health = 0;
+						if ( bite_timer >= bite_time_max ) 
+						{
+							_player.my_health = 0;
+						}
+						
+						bite_timer = bite_timer + 1;
 					} else if ( _nibble == true and _cleaner == false )
 					{
 						_player.my_health = _player.my_health - 0.01;

@@ -108,7 +108,17 @@ for ( var i = 0; i < array_length(_preview); i++ )
 }
 
 draw_text_anchor(panel_right_anchors[0][2], _special_abilty);
-draw_text_anchor(panel_right_anchors[0][3], _depth_info);
+
+var _sub_x = panel_right_anchors[0][2].x;
+var _sub_y = panel_right_anchors[0][2].y + string_height("HOLD");
+var _subtext_01 = "Hold the RIGHT MOUSE BUTTON";
+var _subtext_02 = "to activiate your ability";
+write_text(_sub_x, _sub_y, c_purple, _subtext_01);
+write_text(_sub_x, _sub_y + string_height("HOLD"), c_purple, _subtext_02);
+
+var _sub_x = panel_right_anchors[0][3].x;
+var _sub_y = panel_right_anchors[0][3].y + string_height("HOLD");
+write_text(_sub_x, _sub_y, c_black, _depth_info);
 
 _anchor = panel_right_anchors[0][5];
 

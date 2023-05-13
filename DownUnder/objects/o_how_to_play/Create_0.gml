@@ -12,7 +12,7 @@ header_text = "Explore the Reef:";
 
 parag_01 = "Using the mouse will move the cursor around and your fish will follow. In the bottom left of the screen will show you the name of the things you hover over with the cursor. Try to remember what your fish will eat and select the correct item. Watch out not everyone is friendly beneath the waves.";
 
-parag_02 = "If you have a special ability you can use the SPACEBAR to use it. However you will run out of energy faster the longer you use it.";
+parag_02 = "If you have a special ability you can hold the RIGHT MOUSE BUTTON to use it. However you will run out of energy faster the longer you use it.";
 
 parag_03 = "Two things to watch out for is your Energy and Health bars. If either of them are empty you lose the game. Eating will recover Energy and finding a cleaner fish will restore your health.";
 

@@ -8,6 +8,7 @@ artist_lines = [
 ];
 
 music_lines = [
+	"-Music-",
 	"Otjanbird Pt. II by Spheria",
 	"Sunset Landscape by Keys of Moon",
 	"Away by Meydan",

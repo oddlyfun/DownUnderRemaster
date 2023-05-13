@@ -25,7 +25,7 @@ if ( finished_loading == false )
 	write_text(_x, _y, c_white, _string, FONT);
 }
 
-var _ver = GM_version;
+var _ver = "v." + GM_version;
 
 var _x = camera_get_view_width(view_camera[0]) - string_width(_ver) - 10;
 var _y = camera_get_view_height(view_camera[0]) - string_height(_ver) - 4;
