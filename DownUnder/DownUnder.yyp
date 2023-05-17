@@ -66,6 +66,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"dropdown","folderPath":"folders/Sprites/UI Elements/dropdown.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Window","folderPath":"folders/Sprites/UI Elements/Window.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Steamworks","folderPath":"folders/Steamworks.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Trailer","folderPath":"folders/Objects/Trailer.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"default_game_settings.json","CopyToMask":-1,"filePath":"datafiles",},
@@ -233,6 +234,7 @@
     {"id":{"name":"spr_spawner_plankton","path":"sprites/spr_spawner_plankton/spr_spawner_plankton.yy",},},
     {"id":{"name":"spr_shorttail_electric_ray","path":"sprites/spr_shorttail_electric_ray/spr_shorttail_electric_ray.yy",},},
     {"id":{"name":"spr_BG_trans","path":"sprites/spr_BG_trans/spr_BG_trans.yy",},},
+    {"id":{"name":"o_target","path":"objects/o_target/o_target.yy",},},
     {"id":{"name":"s_3way_functions","path":"scripts/s_3way_functions/s_3way_functions.yy",},},
     {"id":{"name":"o_sea_life","path":"objects/o_sea_life/o_sea_life.yy",},},
     {"id":{"name":"s_messages","path":"scripts/s_messages/s_messages.yy",},},
@@ -247,6 +249,7 @@
     {"id":{"name":"o_title_spawner","path":"objects/o_title_spawner/o_title_spawner.yy",},},
     {"id":{"name":"spr_clown_coris","path":"sprites/spr_clown_coris/spr_clown_coris.yy",},},
     {"id":{"name":"o_win_level","path":"objects/o_win_level/o_win_level.yy",},},
+    {"id":{"name":"o_moron_fish","path":"objects/o_moron_fish/o_moron_fish.yy",},},
     {"id":{"name":"grass_06","path":"sprites/grass_06/grass_06.yy",},},
     {"id":{"name":"sfx_bubble_single_2","path":"sounds/sfx_bubble_single_2/sfx_bubble_single_2.yy",},},
     {"id":{"name":"spr_blackspotted_puffer","path":"sprites/spr_blackspotted_puffer/spr_blackspotted_puffer.yy",},},

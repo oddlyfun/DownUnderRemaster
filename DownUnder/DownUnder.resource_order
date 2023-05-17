@@ -11,6 +11,7 @@
     {"name":"pixel fonts","order":3,"path":"folders/Sprites/pixel fonts.yy",},
     {"name":"UI Elements","order":4,"path":"folders/Sprites/UI Elements.yy",},
     {"name":"Steamworks","order":2,"path":"folders/Steamworks.yy",},
+    {"name":"Trailer","order":1,"path":"folders/Objects/Trailer.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"grass_04","order":5,"path":"sprites/grass_04/grass_04.yy",},
@@ -157,6 +158,7 @@
     {"name":"s_utils","order":3,"path":"scripts/s_utils/s_utils.yy",},
     {"name":"spr_clown_coris","order":5,"path":"sprites/spr_clown_coris/spr_clown_coris.yy",},
     {"name":"o_win_level","order":5,"path":"objects/o_win_level/o_win_level.yy",},
+    {"name":"o_moron_fish","order":1,"path":"objects/o_moron_fish/o_moron_fish.yy",},
     {"name":"sfx_bubble_single_2","order":1,"path":"sounds/sfx_bubble_single_2/sfx_bubble_single_2.yy",},
     {"name":"ro_reef_rulers","order":3,"path":"rooms/ro_reef_rulers/ro_reef_rulers.yy",},
     {"name":"spr_banded_coral_shrimp","order":13,"path":"sprites/spr_banded_coral_shrimp/spr_banded_coral_shrimp.yy",},
