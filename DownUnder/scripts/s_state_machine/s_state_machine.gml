@@ -71,6 +71,17 @@ function state_machine(_fish_brain)
 		}
 
 	}
+
+// add player to valid enemy
+	var _pf = instance_nearest(o_player_fish);
+	if ( _pf != noone )
+	{
+		var _is_enemy = s_check_for_enemies(id, _pf);
+		if ( _is_enemy == true )
+		{
+			_valid_enemy[@ array_length(_valid_enemy) ] = _pf;
+		}
+	}
 // check it
 	_fish_brain._HUNGER_ = _valid_to_eat;
 	_fish_brain._RUNAWAY_ = _valid_enemy;
