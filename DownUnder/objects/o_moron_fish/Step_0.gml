@@ -1,4 +1,4 @@
-var _point = instance_nearest(o_target);
+var _point = instance_nearest(x,y,o_target);
 
 if ( _point != noone )
 {
@@ -11,7 +11,7 @@ if ( _point != noone )
 	{
 		var _max = _point.x + 20;
 		var _min = _point.x - 20;
-		speed = 1; 
+		speed = 0; 
 
 		if ( x >= _max )
 		{
@@ -22,3 +22,5 @@ if ( _point != noone )
 		}
 	}
 }
+
+image_angle = direction;

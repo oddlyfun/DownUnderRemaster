@@ -30,7 +30,7 @@ turn_speed = real(turn_speed);
 facing_dir = 1;
 attack_player = false;
 bite_timer = 0;
-bite_time_max = 30;
+bite_time_max = 15;
 
 // ******
 //

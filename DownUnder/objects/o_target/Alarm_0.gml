@@ -8,7 +8,7 @@ if ( array_length(fish_spawn_list) > 0 )
 
 	if ( _sprite_name == -1 ) then _sprite_name = spr_not_applicable;
 
-	var _inst = instance_create_layer(_rx,_ry,"Instances", o_moron_fish,{
+	var _inst = instance_create_layer(x,y-200,"Instances", o_moron_fish,{
 		sprite_index			: _sprite_name
 	});
 	array_push(spawn_list, _inst);

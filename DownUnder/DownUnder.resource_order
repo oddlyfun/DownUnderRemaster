@@ -2,6 +2,7 @@
   "FolderOrderSettings": [
     {"name":"Player","order":3,"path":"folders/Objects/Lifeforms/Player.yy",},
     {"name":"Title Screen Brainless FIsh","order":1,"path":"folders/Objects/Lifeforms/Static Background Edibles/Title Screen Brainless FIsh.yy",},
+    {"name":"Trailer","order":1,"path":"folders/Objects/Trailer.yy",},
     {"name":"SFX","order":1,"path":"folders/Sounds/SFX.yy",},
     {"name":"Ability","order":8,"path":"folders/Sounds/SFX/Ability.yy",},
     {"name":"Alternative","order":1,"path":"folders/Sprites/background/Alternative.yy",},
@@ -11,7 +12,6 @@
     {"name":"pixel fonts","order":3,"path":"folders/Sprites/pixel fonts.yy",},
     {"name":"UI Elements","order":4,"path":"folders/Sprites/UI Elements.yy",},
     {"name":"Steamworks","order":2,"path":"folders/Steamworks.yy",},
-    {"name":"Trailer","order":1,"path":"folders/Objects/Trailer.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"grass_04","order":5,"path":"sprites/grass_04/grass_04.yy",},
@@ -101,6 +101,7 @@
     {"name":"s_window_popups","order":5,"path":"scripts/s_window_popups/s_window_popups.yy",},
     {"name":"spr_football_trout","order":2,"path":"sprites/spr_football_trout/spr_football_trout.yy",},
     {"name":"spr_yellowspot_emperor","order":18,"path":"sprites/spr_yellowspot_emperor/spr_yellowspot_emperor.yy",},
+    {"name":"ro_trailer","order":10,"path":"rooms/ro_trailer/ro_trailer.yy",},
     {"name":"spr_oriental_sweetlip","order":5,"path":"sprites/spr_oriental_sweetlip/spr_oriental_sweetlip.yy",},
     {"name":"sfx_warn","order":9,"path":"sounds/sfx_warn/sfx_warn.yy",},
     {"name":"ro_how_to_play","order":8,"path":"rooms/ro_how_to_play/ro_how_to_play.yy",},

@@ -73,7 +73,7 @@ function state_machine(_fish_brain)
 	}
 
 // add player to valid enemy
-	var _pf = instance_nearest(o_player_fish);
+	var _pf = instance_nearest(x, y, o_player_fish);
 	if ( _pf != noone )
 	{
 		var _is_enemy = s_check_for_enemies(id, _pf);

@@ -182,10 +182,23 @@ if ( is_eating == true )
 		// done eating
 		if ( _was_eaten.edible == true )
 		{
-			my_energy = my_energy + energy_recovery;
-			my_energy = clamp(my_energy,0, 100);
-			my_score = my_score + 500;
-			audio_play_sound(sfx_being_eaten, 1, false, global.SFX_GAIN);
+			if ( eating_target.nibbled_on < eating_target.nibbled_on_max )
+			{
+				my_energy = my_energy + energy_recovery;
+				my_energy = clamp(my_energy,0, 100);
+				eating_target.nibbled_on = eating_target.nibbled_on + 1;
+				my_score = my_score + (500 * ( 1 / eating_target.nibbled_on) );
+				audio_play_sound(sfx_being_eaten, 1, false, global.SFX_GAIN);
+				add_message(_was_eaten.msg, _was_eaten.fish_name);
+			} else
+			{
+				with( eating_target )
+				{
+					alarm_set(0,game_get_speed(gamespeed_fps) * 2 );
+				}
+				add_message("Nothing left to eat.", "Picked Clean");
+				audio_play_sound(sfx_bad_click,1,false, global.SFX_GAIN);
+			}
 
 			var _nibble = false;
 			for ( var n = 0; n < array_length(my_tags); n++)
@@ -199,9 +212,11 @@ if ( is_eating == true )
 			}
 		} else if ( _was_eaten.edible == false )
 		{
+			add_message(_was_eaten.msg, _was_eaten.fish_name);
 			audio_play_sound(sfx_bad_click,1,false,global.SFX_GAIN);
 		}
-		add_message(_was_eaten.msg, _was_eaten.fish_name);
+		
+		
 		eating_target = noone;
 		is_eating = false;
 	} else
