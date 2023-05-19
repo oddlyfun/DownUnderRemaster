@@ -1,4 +1,4 @@
-if ( array_length(fish_spawn_list) > 0 )
+if ( array_length(fish_spawn_list) > 0 and array_length(spawn_list) < 2 )
 {
 	var _id =  fish_spawn_list[0];
 
@@ -8,10 +8,20 @@ if ( array_length(fish_spawn_list) > 0 )
 
 	if ( _sprite_name == -1 ) then _sprite_name = spr_not_applicable;
 
-	var _inst = instance_create_layer(x,y-200,"Instances", o_moron_fish,{
+	var _rx = irandom_range(-100,600);
+	var _ry = irandom_range(-100, - 50 );
+	
+	show_debug_message(_rx);
+	
+
+	var _inst = instance_create_layer(_rx, _ry,"Instances", o_moron_fish,{
 		sprite_index			: _sprite_name
 	});
+	_inst.my_target = array_last(spawn_list);
 	array_push(spawn_list, _inst);
 	array_delete(fish_spawn_list,0,1);
 	alarm_set(0,30);	
+} else
+{
+	alarm_set(0,15);
 }
