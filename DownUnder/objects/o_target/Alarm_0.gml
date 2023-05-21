@@ -1,5 +1,7 @@
-if ( array_length(fish_spawn_list) > 0 and array_length(spawn_list) < 2 )
+if ( array_length(fish_spawn_list) > 0 and array_length(spawn_list) < 2 and start_trailer == true)
 {
+	
+	
 	var _id =  fish_spawn_list[0];
 
 	var _fish = variable_struct_get(global.all_life, string(_id) );
@@ -10,9 +12,6 @@ if ( array_length(fish_spawn_list) > 0 and array_length(spawn_list) < 2 )
 
 	var _rx = irandom_range(-100,600);
 	var _ry = irandom_range(-100, - 50 );
-	
-	show_debug_message(_rx);
-	
 
 	var _inst = instance_create_layer(_rx, _ry,"Instances", o_moron_fish,{
 		sprite_index			: _sprite_name

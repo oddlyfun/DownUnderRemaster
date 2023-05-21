@@ -13,9 +13,10 @@ if ( array_length(spawn_list) > 1 )
 	{
 		instance_create_layer(_prey.x, _prey.y, "Exit_Menu", o_aargh);
 		instance_destroy(_prey);
+		audio_play_sound(sfx_being_eaten,1,false);
 		_hunt.my_target = noone;
 
-		_hunt.speed = 1;
+		_hunt.speed = 6;
 		array_delete(spawn_list,0,1);
 	}
 }

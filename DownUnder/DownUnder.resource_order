@@ -101,7 +101,6 @@
     {"name":"s_window_popups","order":5,"path":"scripts/s_window_popups/s_window_popups.yy",},
     {"name":"spr_football_trout","order":2,"path":"sprites/spr_football_trout/spr_football_trout.yy",},
     {"name":"spr_yellowspot_emperor","order":18,"path":"sprites/spr_yellowspot_emperor/spr_yellowspot_emperor.yy",},
-    {"name":"ro_trailer","order":10,"path":"rooms/ro_trailer/ro_trailer.yy",},
     {"name":"spr_oriental_sweetlip","order":5,"path":"sprites/spr_oriental_sweetlip/spr_oriental_sweetlip.yy",},
     {"name":"sfx_warn","order":9,"path":"sounds/sfx_warn/sfx_warn.yy",},
     {"name":"ro_how_to_play","order":8,"path":"rooms/ro_how_to_play/ro_how_to_play.yy",},

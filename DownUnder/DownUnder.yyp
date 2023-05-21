@@ -181,7 +181,6 @@
     {"id":{"name":"s_window_popups","path":"scripts/s_window_popups/s_window_popups.yy",},},
     {"id":{"name":"spr_football_trout","path":"sprites/spr_football_trout/spr_football_trout.yy",},},
     {"id":{"name":"spr_yellowspot_emperor","path":"sprites/spr_yellowspot_emperor/spr_yellowspot_emperor.yy",},},
-    {"id":{"name":"ro_trailer","path":"rooms/ro_trailer/ro_trailer.yy",},},
     {"id":{"name":"spr_oriental_sweetlip","path":"sprites/spr_oriental_sweetlip/spr_oriental_sweetlip.yy",},},
     {"id":{"name":"sfx_warn","path":"sounds/sfx_warn/sfx_warn.yy",},},
     {"id":{"name":"ro_how_to_play","path":"rooms/ro_how_to_play/ro_how_to_play.yy",},},
@@ -325,7 +324,6 @@
     {"roomId":{"name":"ro_loading_screen","path":"rooms/ro_loading_screen/ro_loading_screen.yy",},},
     {"roomId":{"name":"ro_how_to_play","path":"rooms/ro_how_to_play/ro_how_to_play.yy",},},
     {"roomId":{"name":"ro_credits","path":"rooms/ro_credits/ro_credits.yy",},},
-    {"roomId":{"name":"ro_trailer","path":"rooms/ro_trailer/ro_trailer.yy",},},
   ],
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},
