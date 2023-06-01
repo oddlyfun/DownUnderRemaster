@@ -121,7 +121,6 @@
     {"name":"yellow_coral_goby","order":5,"path":"sprites/yellow_coral_goby/yellow_coral_goby.yy",},
     {"name":"spr_red_lionfish","order":7,"path":"sprites/spr_red_lionfish/spr_red_lionfish.yy",},
     {"name":"o_all_life","order":1,"path":"objects/o_all_life/o_all_life.yy",},
-    {"name":"ro_test","order":4,"path":"rooms/ro_test/ro_test.yy",},
     {"name":"sfx_lose_game","order":1,"path":"sounds/sfx_lose_game/sfx_lose_game.yy",},
     {"name":"spr_painted_flutemouth","order":9,"path":"sprites/spr_painted_flutemouth/spr_painted_flutemouth.yy",},
     {"name":"o_coral_78","order":2,"path":"objects/o_coral_78/o_coral_78.yy",},

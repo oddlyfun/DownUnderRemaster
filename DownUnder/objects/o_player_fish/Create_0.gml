@@ -51,6 +51,13 @@ when_active				= _fish.active;
 my_notes				= _fish.notes;
 my_scientific_name		= _fish.scientific_name;
 
+
+
+// remove any npc fish around so I don't get eaten in 1 second
+
+
+
+
 swim_speed = real(swim_speed) + 2;
 health_rate = real(health_rate);
 energy_rate = real(energy_rate);

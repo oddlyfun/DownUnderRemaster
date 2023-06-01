@@ -64,9 +64,7 @@ if ( _center_cam == false and _left_cam == false and _right_cam == false )
 			enemies					: _fish.enemies
 			
 		});
-		
-		//show_debug_message("Fish Spawn");
-		
+				
 		ds_list_add(spawn_list,_inst);
 	}
 }

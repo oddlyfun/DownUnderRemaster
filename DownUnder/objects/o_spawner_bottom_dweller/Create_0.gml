@@ -17,4 +17,4 @@ spawn_id_list =
 
 max_spawns = 1;
 
-alarm_set(0,1);
+alarm_set(0,5);
